@@ -1,11 +1,13 @@
-##运行环境步骤
-* 1、npm install
-* 2、npm start
-* 3、http://localhost:8081
+##Table 性能优化Demo
+* https://xdz.jchl.com/#/edfx-app-root/inv-app-ledger-list
 
-##后端服务地址配置
+  ​
 
-* webpack.config.js文件中修改devServer的后端服务地址
+##dev项目地址
+
+http://dev-xdz.bj.jchl.com:8089/#/edfx-app-root/ttk-dzgl-app-login
+
+13671457739111111Hhm
 
 ##开发模式与线上环境运行区别
 
