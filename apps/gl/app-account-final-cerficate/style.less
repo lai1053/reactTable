@@ -1,0 +1,103 @@
+.app-account-final-cetficate{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: #fff;
+    &-header{
+        padding: 12px;
+        &-left{
+            float: left;
+        }
+        &-right{
+            float: right;
+        }
+    }
+    &-content {
+        padding: 20px;
+        &-list {
+            // display: flex;
+            .item {
+                width: 250px;
+                height: 150px;
+                margin-right: 10px;
+                float: left;
+                margin-bottom: 10px;
+                border: 1px solid #d9d9d9;
+                position: relative;
+                border-radius: 3px;
+                &:hover{
+                    background: #fff !important;
+                }
+                .header {
+                    height: 37px;
+                    line-height: 37px;
+                    background: #F5F5F5;
+                    padding-left: 10px;
+                    padding-right: 5px;
+                    color: #252525;
+                    i{
+                        font-size: 26px;
+                        height: 37px;
+                        line-height: 37px;
+                        &:hover{
+                            cursor: pointer;
+                            color: @primary-color
+                        }
+                    }
+                    .headerLeft{
+                        float: left;
+                        width: 175px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    .headerRight{
+                        float: right;
+                    }
+                }
+                .content{
+                    font-size: 12px;
+                    border-top: 1px solid #d9d9d9;
+                    .subContent{
+                        padding: 10px;
+                        .amount{}
+                    }
+                    
+                }
+                .footer{
+                    position: absolute;
+                    bottom: 10px;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+        &-add {
+            width: 250px;
+            height: 150px;
+            border: 1px dashed #d9d9d9;
+            border-radius: 3px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+            &-container{
+                display: flex;
+                .addIcon{
+                    font-size: 28px;
+                }
+                .addTitle{
+                    color: #666;
+                    height: 28px;
+                    line-height: 28px;
+                }
+                &:hover{
+                    cursor: pointer;
+                    // color: @primary-color
+                }
+                
+            }
+        }
+    }
+}

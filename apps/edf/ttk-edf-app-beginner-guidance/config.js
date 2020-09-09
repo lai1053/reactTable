@@ -1,0 +1,205 @@
+import webapi from './webapi'
+
+let data = [{
+	top: '122px',
+	left: '46px',
+	name: '采集发票',
+	hasLink: false,
+	linkApp: null,
+	linkAppName: null
+}, {
+	top: '92px',
+	left: '170px',
+	name: '销项',
+	hasLink: true,
+	linkApp: '销项',
+	linkAppName: 'ttk-scm-app-sa-invoice-list'
+}, {
+	top: '145px',
+	left: '170px',
+	name: '进项',
+	hasLink: true,
+	linkApp: '进项',
+	linkAppName: 'ttk-scm-app-pu-invoice-list'
+}, {
+	top: '326px',
+	left: '34px',
+	name: '导入资产卡片',
+	hasLink: true,
+	linkApp: '资产卡片',
+	linkAppName: 'app-asset-list'
+}, {
+	top: '298px',
+	left: '170px',
+	name: '资产卡片',
+	hasLink: true,
+	linkApp: '资产卡片',
+	linkAppName: 'app-asset-list'
+}, {
+	top: '352px',
+	left: '170px',
+	name: '折旧摊销',
+	hasLink: true,
+	linkApp: '折旧摊销清单',
+	linkAppName: 'app-asset-depreciation'
+}, {
+	top: '508px',
+	left: '49px',
+	name: '银行对账单导入',
+	hasLink: true,
+	linkApp: '银行对账单',
+	linkAppName: 'ttk-scm-add-bank-statement-list',
+	appProps: {
+		accessType: '5',
+		importId: undefined,
+		bankAccountId: 1
+	}
+}, {
+	top: '508px',
+	left: '148px',
+	name: '收支明细账',
+	hasLink: true,
+	linkApp: '资金',
+	linkAppName: 'ttk-scm-app-incomeexpenses-rpt'
+}, {
+	top: '200px',
+	left: '450px',
+	name: '填制凭证',
+	hasLink: true,
+	linkApp: '填制凭证',
+	linkAppName: 'app-proof-of-charge'
+}, {
+	top: '200px',
+	left: '542px',
+	name: '审核凭证',
+	hasLink: true,
+	linkApp: '凭证管理',
+	linkAppName: 'app-proof-of-list'
+}, {
+	top: '354px',
+	left: '440px',
+	name: '查凭证',
+	hasLink: true,
+	linkApp: '凭证管理',
+	linkAppName: 'app-proof-of-list'
+}, {
+	top: '354px',
+	left: '500px',
+	name: '查账簿',
+	hasLink: true,
+	linkApp: '余额表',
+	linkAppName: 'app-balancesum-rpt'
+}, {
+	top: '354px',
+	left: '562px',
+	name: '查报表',
+	hasLink: true,
+	linkApp: '资产负债表',
+	linkAppName: 'app-balancesheet-rpt'
+}, {
+	top: '508px',
+	left: '460px',
+	name: '期末凭证',
+	hasLink: true,
+	linkApp: '月末结账',
+	linkAppName: 'app-account-monthaccount'
+}, {
+	top: '508px',
+	left: '553px',
+	name: '结账',
+	hasLink: true,
+	linkApp: '月末结账',
+	linkAppName: 'app-account-monthaccount'
+}, {
+	top: '349px',
+	left: '794px',
+	name: '税务申报表',
+	hasLink: true,
+	linkApp: '申报缴款',
+	linkAppName: 'ttk-taxapply-app-taxlist'
+}, {
+	top: '349px',
+	left: '875px',
+	name: '申报',
+	hasLink: true,
+	linkApp: '申报缴款',
+	linkAppName: 'ttk-taxapply-app-taxlist'
+}, {
+	top: '349px',
+	left: '928px',
+	name: '缴款',
+	hasLink: true,
+	linkApp: '申报缴款',
+	linkAppName: 'ttk-taxapply-app-taxlist'
+}, {
+	top: '40px',
+	left: '112px',
+	name: '发票',
+	hasLink: false,
+	linkApp: null,
+	linkAppName: null
+}, {
+	top: '246px',
+	left: '112px',
+	name: '资产',
+	hasLink: false,
+	linkApp: null,
+	linkAppName: null
+}, {
+	top: '445px',
+	left: '112px',
+	name: '资金',
+	hasLink: false,
+	linkApp: null,
+	linkAppName: null
+}, {
+	top: '310px',
+	left: '288px',
+	name: '生成凭证',
+	hasLink: false,
+	linkApp: null,
+	linkAppName: null
+}, {
+	top: '142px',
+	left: '496px',
+	name: '凭证管理',
+	hasLink: false,
+	linkApp: null,
+	linkAppName: null
+}, {
+	top: '292px',
+	left: '505px',
+	name: '查账',
+	hasLink: false,
+	linkApp: null,
+	linkAppName: null
+}, {
+	top: '454px',
+	left: '505px',
+	name: '结账',
+	hasLink: false,
+	linkApp: null,
+	linkAppName: null
+}, {
+	top: '292px',
+	left: '852px',
+	name: '税务申报',
+	hasLink: false,
+	linkApp: null,
+	linkAppName: null
+},]
+
+var _options = {
+	webapi,
+	data
+}
+
+function config(options) {
+	if (options) {
+		Object.assign(_options, options)
+	}
+}
+
+config.current = _options
+
+export default config

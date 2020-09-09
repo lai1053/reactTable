@@ -1,0 +1,88 @@
+@Color: #fff;
+.ttk-gl-app-auxiliary-setting {
+    width: 100%;
+    background: @Color;
+    padding: 0px;
+    overflow: hidden;
+    &-content {
+        display: flex;
+        flex: 1;
+        justify-content: start;
+        align-content: start;
+        flex-direction: column;
+        height: 350px;
+        background: @Color;
+        &-assistForm {
+            height: 300px;
+        }
+        &-header {
+            margin-bottom: 8px;
+            margin-left: 9px;
+            height: 20px;
+            color: #f56f23;
+        }
+        &-title {
+            height: 30px;
+        }
+        .FormList {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 6px 8px;
+            .item-list {
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                margin-bottom: 10px;
+                .item-list-top {
+                    width: 100%;
+                    height: 20px;
+                    line-height: 20px;
+                    display: flex;
+                    .item-list-top-title {
+                        padding-right: 20px;
+                    }
+                    .item-list-top-line-container {
+                        flex: 1;
+                        cursor: pointer;
+                        .item-list-top-line {
+                            width: 100%;
+                            border-top: 1px dashed #aaa;
+                            position: relative;
+                            top: 10px;
+                        }
+                    }
+                    .item-list-top-line-action {
+                        padding-left: 20px;
+                        &>span {
+                            margin: 0 5px;
+                            cursor: pointer;
+                            &:hover {
+                                color: @link-color;
+                            }
+                        }
+                    }
+                }
+                .item-list-bottom {
+                    width: 100%;
+                    height: auto;
+                    overflow: hidden;
+                    margin: 15px 0 0 0;
+                    padding-left: 25px;
+                    padding-right: 90px;
+                }
+            }
+        }
+    }
+    .operateheader {
+        display: flex;
+        justify-content: space-between;
+        &-codeAndName {
+            margin-left: 7px;
+        }
+        &-customerArchBtn {
+            margin-right: 15px;
+            color: @primary-color;
+            border: 1px solid @primary-color;           
+        }
+    }
+}

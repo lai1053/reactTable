@@ -1,0 +1,134 @@
+.ttk-scm-app-collate-invoice-form-current{
+    .has-error{
+        border-color: red;
+    }
+    .ant-select-selection__clear {
+        margin-right: 10px;
+    }
+    .current-account{
+        overflow-x: hidden;
+        &-header{
+            padding: 10px 2px;
+            .ant-input-search{
+                width: 240px;
+                margin-left: -2px;
+                height: 30px;
+                input{
+                    height: 30px;
+                    font-size: 12px;
+                }
+                margin-right: 8px;
+            }
+            .header-radio{
+                margin-right: 8px;
+                float: right;
+                line-height: 30px;
+                .mk-radio{
+                    font-size: 12px;
+                }
+            }
+            .header-btn{
+                float: right;
+            }
+            .header-btn-color {
+                color: @primary-color;
+                border-color: @primary-color;
+                &:hover{
+                    background-color: @button-hover-color;
+                    border-color: @primary-color;
+                    color: #fff;
+                }
+            }
+        }
+        &-table{
+            height: 250px;
+            .ant-table-body{
+                border-right: 1px solid #d9d9d9;
+                overflow-x: hidden !important;
+            }
+            .row-supplier{
+                .col-supplier{
+                    display: none;
+                }
+            }
+            .row-supplier:hover{
+                .col-supplier{
+                    width: 125px;
+                    display: inline-block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    text-align: left;
+                }
+                .relateSpan{
+                    display: inline-block;
+                    width: 180px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    padding-top: 5px;
+                    margin-right: 6px;
+                }
+                .relateSpan11{
+                    display: inline-block;
+                    width: 280px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    padding-top: 5px;
+                }
+            }
+            .relateSpan{
+                display: inline-block;
+                width: 280px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding-top: 5px;
+            }
+            .relateSpan2{
+                float: right;
+                padding-top: 5px;
+            }
+            .relateSpan3{
+                text-align: right;
+                padding-top: 5px;
+            }
+            .relateSpan3:hover{
+                text-decoration: underline;
+            }
+            .ant-select{
+                height: 28px;
+                .ant-select-selection{
+                    height: 28px;
+                    font-size: 12px;
+                    .ant-select-selection__rendered{
+                        line-height: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+.accountSubjectClass{
+    .ant-select-dropdown-menu{
+        max-height: 210px;
+    }
+}
+.current-account-model-table {
+    .mk-form-item {
+        .ant-form-item-control-wrapper {
+            .ant-select-selection--single {
+                width: 270px !important;
+            }
+        }
+    }
+    .ant-form-item-label label:after{
+        content: ''
+    }
+}
+.subject {
+    span {
+        font-size: 12px;
+    }
+}

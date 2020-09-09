@@ -1,0 +1,105 @@
+.ttk-scm-app-split-sheet {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    color: #666;
+    background: #fff;
+    padding: 0 0px 0 0 !important;
+    margin-bottom: 10px;
+    overflow-y: hidden;
+
+    .ttk-scm-app-split-sheet-list{
+        height: 73px !important;
+        flex: none;
+        .public_fixedDataTable_main {
+            border-top: 1px solid #d9d9d9;
+            border-left: 1px solid #d9d9d9;
+            height: 73px !important;
+            .fixedDataTableLayout_rowsContainer{
+                height: 73px !important;
+            }
+        }
+    }
+    .ttk-scm-app-split-sheet-center {
+        overflow: hidden;
+        background: #fff;
+        padding: 10px 10px;
+        .mk-form-item, 
+        .ant-form-item-label,
+        .ant-form-item-control-wrapper{
+            float: left;
+            line-height: 50px;
+        }
+        .ant-form-item{
+            margin-bottom: 0;
+            font-size: 12px;
+            margin-right: 15px;
+            .ant-form-item-control{
+                line-height: 50px;
+            }
+            .ant-calendar-picker-input.ant-input {
+                height: 30px;
+                font-size: 12px;
+            }
+        }
+        .ant-form-item:nth-child(2){
+            .ant-form-item-control-wrapper {
+                width: 125px;
+            }
+        }
+        .ant-form-item:nth-child(3){
+            .ant-select-enabled {
+                width: 150px;
+            }
+        }
+    }
+    &-content{
+        flex: none;
+        max-height:180px;
+        overflow: auto;
+        .ttk-scm-app-split-sheet-form-details{
+            height:180px;
+            .public_fixedDataTable_main{
+                height:180px;
+                border-right:0;
+                .fixedDataTableLayout_rowsContainer{
+                    height:180px;
+                }
+            }
+        }
+        .mk-datagrid .mk-datagrid-cellContent{
+            text-align: center
+        }
+        .mk-datagrid .public_fixedDataTable_main {
+			border-left: none;
+		}
+		.mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+			color: #333333;
+		}
+		.public_fixedDataTable_scrollbarSpacer {
+            top: 0px;
+		    background: #eaeaea;
+        }
+        .mk-datagrid-sequence-cell {
+            border-left: 1px solid #d9d9d9; 
+        }
+        .public_fixedDataTableCell_cellContent {
+            border-left: 1px solid #d9d9d9; 
+        }
+    }
+
+    .ttk-scm-app-split-sheet-bottom {
+        overflow: hidden;
+        background: #fff;
+        padding: 10px 10px 10px 380px;
+        .mk-form-item, 
+        .ant-form-item-label,
+        .ant-form-item-control-wrapper{
+            float: left;
+            line-height: 38px;
+        }
+        .ant-form-item{
+            width:120px;
+        }
+    }
+}

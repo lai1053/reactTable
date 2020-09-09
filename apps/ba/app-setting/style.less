@@ -1,0 +1,50 @@
+.app-setting{
+    position: relative;
+	.mk-list-header-right{
+        position: absolute;
+        top: 0;
+        right: 0;
+		display: flex;
+		justify-content: flex-end;
+		//margin-bottom: -34px;
+	}
+	.ant-btn{
+		position: relative;
+		z-index: 2;
+	}
+    .ant-tabs-bar {
+        margin-bottom: 0;
+        .ant-tabs-ink-bar {
+            background-color: transparent;
+        }
+        .ant-tabs-nav {
+            .ant-tabs-tab {
+                margin-right: 0;
+                line-height: 20px;
+                width: 120px;
+                padding: 5px 20px;
+                text-align: center;
+            }
+            .ant-tabs-tab-active {
+                border-radius: 4px 4px 0 0;
+                border: 1px solid #d9d9d9;
+                border-bottom: 1px solid #fff;
+                background-color: #fff;
+            }
+        }
+    }
+    .ant-tabs-content-no-animated {
+        padding: 10px 28px;
+        height: 180px;
+        border: 1px solid #d9d9d9;
+        border-top: 0;
+        .ant-tabs-tabpane {
+            display: block;
+            >div{
+              width:25%;
+              display: inline-block;
+              line-height: 36px;
+            }
+        }
+    }
+}

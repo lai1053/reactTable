@@ -1,0 +1,141 @@
+.ttk-app-inventory-list {
+	width: 100%;
+	height: 100%;
+	padding: 10px 0;
+	&-backgroundColor {
+		border: 1px solid #d9d9d9;
+		background-color: #fff;
+	}
+	&-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 9px 10px;
+		height: 50px;
+		&-left, &-right {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			overflow: hidden;
+			.btn {
+				height: 30px;
+				margin-left: 8px;
+				outline: none;
+			}
+		}
+		&-left {
+			justify-content: flex-start;
+			.filter-input{
+				width: 190px;
+				vertical-align: middle;
+				.ant-input{
+				  border-bottom-right-radius: 0;
+				  border-top-right-radius: 0;
+				  border-right: none;
+				  padding-left: 30px !important;
+				  font-size: 12px;
+				}
+			}
+			.header-item{
+				margin-right: 8px;
+			}
+			.filter-btn{
+				font-size: 18px;
+				display: inline-block;
+				border: 1px solid #d9d9d9;
+				line-height: 30px;
+				height: 32px;
+				width: 32px;
+				text-align: center;
+				vertical-align: middle;
+				border-bottom-right-radius: 3px;
+				border-top-right-radius: 3px;
+			}
+		}
+	}
+	&-content {
+		flex: 1;
+		.mk-datagrid .public_fixedDataTable_main {
+			border-left: none;
+		}
+		.mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+			color: #333333;
+		}
+		.public_fixedDataTable_scrollbarSpacer {
+			top: 0px;
+		}
+		//滚动条上部
+		.public_fixedDataTable_scrollbarSpacer {
+			top: 0px;
+			background: #eaeaea;
+		}
+		.del {
+			cursor: pointer;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		.content-caozuo{
+			line-height: 37px;
+			font-size: 12px;
+			a{
+				padding: 0 4px;
+			}
+		}
+	}
+	&-footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		height: 30px;
+		margin-top: 10px;
+	}
+}
+.ttk-app-inventory-list-popover {
+	left: 195px !important;
+	top: 165px !important;
+	.ant-popover-inner-content{
+		padding: 12px 0;
+	}
+	.ant-popover-arrow{
+	  display: none;
+	}
+	.content{
+	  width: 250px;
+	  padding-top: 12px;
+	  .ant-input{
+		font-size: 12px;
+	  }
+	  .filter-content{
+		padding: 0 10px;
+		.item{
+			display: inline-block;
+			margin-bottom: 12px;
+		}
+		.ant-select{
+			width: 168px;
+			display: inline-block;
+		}
+		.label{
+			display: inline-block;
+			font-size: 12px;
+		}
+	  }
+	  .filter-footer{
+		padding-top: 10px;
+		border-top: 1px solid #e8e8e8;
+		text-align: right;
+		padding-right: 10px;
+		.reset-btn{
+		  	margin-left: 10px;
+		}
+	  }
+	}
+}
+
+.ttk-app-inventory-copy-archive{
+	.ant-modal-body{
+		padding: 12px 0;
+	}
+}
+

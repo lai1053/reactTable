@@ -1,0 +1,120 @@
+@border-color: #777;
+@label-color: #eaeaea;
+@font-size: 13px;
+
+.table-container {
+    position: relative;
+
+    .vt-table {
+        border-color: @border-color;
+
+        .vt-header-container {
+            border-color: @border-color;
+
+            .vt-header-cell {
+                border-color: @border-color;
+                font-size: @font-size;
+            }
+
+            .inv-detail {
+                line-height: 34px;
+                padding: 0px;
+            }
+        }
+
+        .vt-body {
+            border-color: @border-color;
+
+            .vt-body-row {
+                .vt-body-row-cell {
+                    border-color: @border-color;
+                    font-size: @font-size;
+
+                    .editable-cell-value-wrap {
+                        &.has-error {
+                            border: 1px solid #e94033;
+                        }
+                    }
+
+                    &.inv-detail {
+                        .ant-row.ant-form-item {
+                            margin: -2px -9px 0px -9px !important;
+                        }
+                    }
+                }
+
+                &:nth-child(2n) {
+                    .vt-body-row-cell {
+                        background-color: #fff;
+                    }
+                }
+            }
+
+            .editable-row {
+                .editable-cell-value-wrap {
+                    height: 33px;
+                    line-height: 32px;
+                    margin-left: -10px;
+                    margin-right: -10px;
+                    padding: 2px 10px;
+                    overflow: hidden;
+                }
+            }
+        }
+
+        .vt-body-scroll-bar {
+            border-color: @border-color;
+        }
+
+        .vt-summary {
+            // background-color: #fff;
+            border-color: @border-color;
+
+            div {
+                height: 34px;
+                line-height: 34px;
+                font-size: @font-size;
+                border-color: @border-color;
+            }
+        }
+    }
+
+    .label-bg {
+        background-color: @label-color;
+    }
+
+    .strong {
+        font-weight: bold;
+    }
+
+    &.full-screen,
+    &.full-client {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        padding: 25px;
+    }
+
+    .full-view-btn,
+    .exit-full-view-btn {
+        position: absolute;
+        right: -24px;
+        background-color: #fff;
+        width: 24px;
+        border-radius: 8px;
+        cursor: pointer;
+        color: #0066b3;
+        line-height: 16px;
+        padding: 5px 8px 5px 5px;
+        box-shadow: @box-shadow-left;
+    }
+
+    .exit-full-view-btn {
+        margin-top: 25px;
+        right: 1px;
+    }
+}

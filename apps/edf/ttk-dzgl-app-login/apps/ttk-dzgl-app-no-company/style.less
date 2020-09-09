@@ -1,0 +1,133 @@
+.ttk-dzgl-app-no-company{
+	@primary-color:rgba(24,102,174,1);
+	@primary-color-hover:rgba(24,102,174,0.2);
+	@primary-color-focus:rgba(24,102,174,0.7);
+	width: 100%;
+	height: 100%;
+
+	&-header{
+	    height: 55px;
+	    flex: 0 0 55px;
+	    border-bottom: 1px solid rgb(222, 222, 222);
+    	font-size: 20px;
+    	font-weight: bold;
+    	flex-direction:row;
+    	align-items:center;
+    	overflow: hidden;
+		justify-content: space-between;
+
+		&-left {
+			height: 54px;
+			flex-direction: row;
+			line-height: 55px;
+			color: #ffffff;
+			padding-left:190px;
+			overflow: hidden;
+			display: flex;
+			align-items: center;
+
+			&-logo {
+				width: 104px;
+				height: 28px;
+				margin: 0 0 0 0;
+				cursor: pointer;
+			}
+
+			&-sitename {
+				font-family: 'Microsoft Yahei', 'PingFang SC';
+				font-style: normal;
+				font-size: 24px;
+				color: #FFFFFF;
+				margin:0 auto;
+				margin: 0px 0px 0px 10px;
+			}
+
+			&-split {
+				width: 1px;
+				height: 14px;
+				background: #e0e0e0;
+				margin: 0 20px;
+				// display: none;
+			}
+
+			&-login {
+				font-size: 18px;
+				font-weight: 400;
+				display: none;
+			}
+		}
+
+		&-right{
+			display: block;
+			width:80px;
+			line-height:30px;
+			border:1px solid @primary-color;
+			border-radius: 5px;
+			font-size:14px;
+			font-weight:400;
+			text-align: center;
+			color:@primary-color;
+			margin-right:30px;
+			cursor: pointer;
+		}
+
+		&-right:hover{
+			color:#ffffff;
+			background: @primary-color;
+		}
+	}
+
+	&-content {
+		flex: 1;
+		flex-direction: column;
+		position: relative;
+		overflow: hidden;
+		justify-content: center;
+		margin-left: 150px;
+		&-title{
+			color: #60D16F;
+			font-size: 30px;
+			margin: 35px 0;
+			&-label1{
+				display: inline-block;
+			}
+		}
+		&-content{
+			margin: 12px 0;
+			&-login{
+				display: inline-block;
+				width: 110px;
+				height: 40px;
+				font-size: 16px;
+				background: #60D16F;
+				color: #fff;
+				border-radius: 15px;
+				text-align: center;
+				line-height: 40px;
+				margin-left: 50px;
+				cursor: pointer;
+				&:hover{
+					background-color: rgba(96,209,111,0.7);
+				}
+			}
+		}
+	}
+	&-footer{
+    	height: 80px;
+    	flex: 0 0 80px;;
+    	justify-content: center;
+    	align-items: center;
+		background:#ffffff;
+		border-top: 1px solid rgb(222, 222, 222);
+		color:#a1a1a1;
+		font-size:14px;
+		font-weight:400;
+		line-height:normal;
+		p{
+			margin:0;
+		}
+		a{
+			color:@primary-color;
+		}
+	}
+}

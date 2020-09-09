@@ -1,0 +1,118 @@
+.ttk-edf-app-article{
+    &-header{
+        flex:0 0 32px;
+        display: flex;
+        justify-content: space-between;
+        &-title{
+            float:left;
+            color:#333333;
+            line-height:32px;
+        }
+        &-bar{
+            float:right;
+            display: flex;
+            .more{
+                line-height:32px;
+                color:#333333;
+                cursor: pointer;
+                font-size:12px;
+                color:@primary-color;
+            }
+            .more:hover{
+                text-decoration: underline;
+            }
+            .refresh{
+                color: #45ACF7;
+                border: 1px solid #d9d9d9;
+                border-radius: 5px;
+                margin-left: 8px;
+                font-size: 30px;
+                display: flex;
+            }
+            .refresh:hover{
+                border-color:#45ACF7;
+            }
+        }
+    }
+    &-body{
+        flex:1;
+        overflow:hidden;
+        display: flex;
+        flex-direction: column;
+        &-ad{
+            width:100%;
+            height:141px;
+            margin-top:5px;
+            .ant-carousel{
+                width:100%;
+                height:141px;
+                background:red;
+                li{
+                    min-width:100%;
+                }
+            }
+            img{
+                width:100%;
+                height:141px;
+                background:#ffffff;
+            }
+        }
+        &-list{
+            flex:1;
+            overflow:hidden;
+            margin-bottom:0;
+            text-align: left;
+            padding: 0;
+            margin-top:6px;
+            li{
+                overflow:hidden;
+                line-height:26px;
+                position: relative;
+                padding-left:8px;
+            }
+            li:before{
+                content:'';
+                width:3px;
+                height:3px;
+                background:#333333;
+                position: absolute;
+                top:50%;
+                left:0;
+                transform: translateY(-50%);
+                margin-left:1px;
+                border-radius:3px;
+            }
+            .ttk-edf-app-article-title{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position:absolute;
+                top:0;
+                left:8px;
+                color:#333333;
+                cursor: pointer;
+                font-size:12px;
+            }
+            .ttk-edf-app-article-title:hover{
+                color:@primary-color;
+                text-decoration: underline;
+            }
+            .ttk-edf-app-article-hot{
+                color: red;
+                font-size: 12px;
+                position: absolute;
+                width:32px;
+                right:86px;
+                top:8px;
+            }
+            .ttk-edf-app-article-newsdate{
+                position: absolute;
+                width:70px;
+                right:0;
+                margin-left:10px;
+                color:#999999;
+                font-size:12px;
+            }
+        }
+    }
+}

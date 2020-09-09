@@ -1,0 +1,513 @@
+.edf-company-manage-modal{
+    top:50%;
+    margin-top:-105px;
+    .ant-btn-primary:hover{
+        background:@button-hover-color;
+    }
+}
+.checkInvoiceModal{
+    &>div{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        padding-bottom:0;
+    }
+    .downloadInvoice{
+        font-size:30px;
+        cursor: pointer;
+        color:#45acf7;
+        border:1px solid #d9d9d9;
+        border-radius: 5px;
+    }
+    .downloadInvoice:hover{
+        border: 1px solid #45acf7;
+    }
+}
+.orderDetailModal{
+    &>div{
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin:auto;
+        padding-bottom:0;
+    }
+    .ant-modal-body{
+        height:452px;
+        padding-left:30px;
+        padding-top:16px;
+        padding-left:30px;
+    }
+}
+.orderDetailModal.hidePayBtn{
+    .ant-modal-footer button:nth-of-type(1){
+        background: @primary-color;
+        color: #ffffff;
+        border:none;
+    }
+    .ant-modal-footer button:nth-of-type(1):hover{
+        background: @button-hover-color;
+    }
+    .ant-modal-footer button:nth-of-type(2){
+        display: none;
+    }
+}
+.applyForInvoiceModal{
+    .applyForInvoiceModal{
+        text-align: center;
+        margin-right:0!important;
+        .ant-form-explain{
+            position: absolute;
+            font-size: 12px;
+        }
+        .ant-form-item{
+            text-align: center;
+            margin-bottom:0;
+        }
+        .ant-form-item-label {
+            display: inline-block;
+            height:32px;
+            line-height:30px;
+            width:100px;
+        }
+        .ant-form-item-control-wrapper{
+            display: inline-block;
+            text-align: left;
+        }
+        .invoiceHead{
+            button{
+                width:60px;
+                height:28px;
+            }
+            button.active{
+                background:@primary-color;
+                border-color:@primary-color;
+                color:#ffffff;
+            }
+        }
+    }
+}
+.edf-company-manage {
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    bottom: 0px;
+    left: 0;
+    padding:20px 0 15px 0!important;
+    &-tab.ant-tabs.ant-tabs-card{
+        height:100%;
+        .ant-tabs-nav-scroll{
+            width: 85%;
+            margin: 0 auto;
+        }
+        .ant-tabs-bar{
+            margin-bottom:19px;
+        }
+        .ant-tabs-bar .ant-tabs-tab{
+            width: 78px;
+            height: 30px;
+            margin-right: 9px;
+            padding: 0;
+            line-height: 30px;
+            text-align: center;
+            border-bottom: 1px solid #d9d9d9;
+        }
+        .ant-tabs-bar .ant-tabs-tab-active{
+            border-bottom:none;
+        }
+        .ant-tabs-content{
+            height: calc(~"100% - 50px");
+            .ant-tabs-tabpane{
+                height: 100%;
+                position: relative;
+                width: 85%;
+                margin: 0 auto;
+            }
+        }
+        .edf-company-manage-tab-order{
+            .edf-company-manage-header{
+                height:132px;
+                margin:0;
+                &-search{
+                    margin-bottom:20px;
+                }
+                &-condition{
+                    height:26px;
+                    margin-bottom:10px;
+                    font-size:12px;
+                    line-height:26px;
+                    &>span{
+                        display: inline-block;
+                        height:26px;
+                        cursor: pointer;
+                        margin: 0 4px;
+                        padding:0 8px;
+                    }
+                    &>span.typeActive, &>span.statusActive{
+                        border-radius: 3px;
+                        background:@primary-color;
+                        color:#ffffff;
+                    }
+                    &>span:first-child{
+                        cursor: default;
+                        color:#888888;
+                        padding:0;
+                        margin-right:3px;
+                        margin-left:0;
+                    }
+                }
+            }
+            .edf-company-manage-content{
+                top: 132px;
+            }
+        }
+    }
+    .portalOrgName{
+        overflow:hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        line-height:36px;
+    }
+    .orderNo{
+        color: @primary-color;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .manageList .edf-company-manage-font {
+        display: block;
+        max-width:254px;
+        height:100%;
+        color: @primary-color;
+        font-size: 12px;
+        overflow:hidden;
+        letter-spacing: -0.03px;
+        margin:0 auto;
+        text-align: center;
+
+        .vessel:hover{
+            text-decoration: none;
+            span:hover{
+                text-decoration: underline;
+            }
+        }
+        &>span:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .order{
+            width: 30px;
+            margin-right:15px;
+            display: inline-block;
+        }
+        .importAccount{
+            width: 48px;
+            margin-right:17px;
+        }
+        .importAccount.disabledImportAccount{
+            color:#999999;
+            text-decoration: none!important;
+        }
+        .deleteManage{
+            width: 24px;
+        }
+        .deleteManage.isOtherUser{
+            color:#999999;
+        }
+        .deleteManage.isOtherUser:hover{
+            text-decoration: none;
+        }
+        .order + .deleteManage{
+            display: inline-block;
+            width: 48px;
+            text-align: center;
+        }
+    }
+    .orderList .edf-company-manage-font {
+        display: block;
+        max-width:200px;
+        height:100%;
+        color: @primary-color;
+        font-size: 12px;
+        overflow:hidden;
+        letter-spacing: -0.03px;
+        margin:0 auto;
+        text-align: left;
+
+        &>span:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        span:nth-of-type(1){
+            width: 48px;
+            margin-right:17px;
+        }
+        span:nth-of-type(2){
+            width: 48px;
+            margin-right:17px;
+        }
+        span:nth-of-type(3){
+            width: 48px;
+
+        }
+    }
+
+    &-headerBgColor {
+        background-color: #E4E4E4;
+        color: #333333;
+        &:hover{
+            color: #333333 !important;
+            text-decoration: none !important;
+        }
+    }
+    &-back {
+        button{
+            width:70px;
+            height:30px;
+        }
+        margin-right:10px;
+    }
+    &-header {
+        height:32px;
+        align-items: center;
+        margin: 0px 0px 15px;
+        &-right {
+            float:right;
+            overflow: hidden;
+            &>div, &>button{
+                float:left;
+            }
+            &-btn {
+                width: 70px;
+                height:30px !important;
+                background-color: @primary-color;
+                color: #fff;
+                border: none;
+                border-radius: 3px;
+                &:hover {
+                    background-color: @button-hover-color;
+                    border-color: transparent;
+                    color: #fff;
+                }
+                &:focus {
+                    background-color: @button-hover-color;
+                    border-color: transparent;
+                    color: #fff;
+                }
+            }
+        }
+        input {
+            width: 260px;
+            color: #726F6F;
+            font-size: 14px;
+        &:focus {
+            border: 1px solid @primary-color !important;
+            outline: none;
+            box-shadow: none
+        }
+        &:hover {
+            border: 1px solid @primary-color !important;
+            outline: none;
+        }
+        &:active {
+            border: 1px solid @primary-color !important;
+            outline: none;
+        }
+    }
+    &-company-btn {
+        width: 70px;
+        padding-left: 0px;
+        //argin-left: 8px;
+        //outline: none;
+        border: none;
+      }
+      &-search {
+        width: 260px;
+        input{
+            padding-right:30px!important;
+        }
+        span {
+          i {
+            font-size: 15px;
+          }
+          input {
+            color: #726F6F;
+            font-size: 14px;
+          }
+
+          &-company-btn {
+              width: 70px;
+              padding-left: 0px;
+              //argin-left: 8px;
+              //outline: none;
+              border: none;
+              font-size: 14px;
+              color: #454545;
+          }
+
+        }
+        .public_fixedDataTableCell_main:nth-child(3) {
+
+          .mk-datagrid-cellContent {
+            padding: 0px 5px;
+          }
+        }
+        .public_fixedDataTableCell_main:nth-child(4) {
+
+          .mk-datagrid-cellContent {
+            padding: 0px 5px;
+
+          }
+        }
+        .public_fixedDataTableCell_main:last-child {
+          border-right: transparent !important;
+        }
+      }
+    }
+
+
+
+    &-content {
+        position: absolute;
+        top: 47px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        .mk-datagrid {
+            height:100%;
+            .public_fixedDataTable_main{
+                height: auto !important
+            }
+            /* .ScrollbarLayout_faceVertical{
+                 left: 6px !important;
+             }*/
+            .fixedDataTableLayout_main{
+                border: none !important;
+                .ScrollbarLayout_main{
+                    top:35px!important;
+                    border-top:1px solid #e4e4e4;
+                    border-right:1px solid #d9d9d9;
+                    border-left: none;
+                }
+            }
+            .public_fixedDataTableCell_main{
+                font-size: 14px;
+                color: #454545;
+            }
+            .public_fixedDataTableCell_main:first-child{
+                .mk-datagrid-cellContent{
+                    &:hover{
+                        color: @primary-color;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .public_fixedDataTableCell_main:nth-child(1){
+
+                .mk-datagrid-cellContent{
+                    justify-content: center;
+                }
+                .mk-datagrid-cellContent:first-child{
+                    justify-content: left !important;
+                    padding: 0 21px 0 21px;
+                    color: @primary-color;
+                    &:hover{
+
+                    }
+                }
+            }
+            .public_fixedDataTableCell_main:nth-child(1){
+                .mk-datagrid-cellContent:first-child[name='header']{
+                    justify-content:center  !important;
+                    color: #333333;
+                }
+            }
+            .public_fixedDataTableCell_main:nth-child(3){
+
+                .mk-datagrid-cellContent{
+                    padding: 0px 5px;
+                    line-height: 36px;
+                }
+            }
+            .public_fixedDataTableCell_main:nth-child(4){
+
+                .mk-datagrid-cellContent{
+                    padding: 0px 5px;
+                    line-height: 36px;
+
+                }
+            }
+            .public_fixedDataTableCell_main:first-child{
+                border-left: 1px solid #e9e9e9;
+                text-align: left;
+            }
+        }
+        .ScrollbarLayout_faceVertical{
+            width: 13px !important;
+        }
+        .fixedDataTableLayout_rowsContainer{
+            min-height: 400px;
+            .public_fixedDataTable_header {
+                background:#e4e4e4 !important;
+            }
+            .fixedDataTableRowLayout_rowWrapper .public_fixedDataTable_header{
+                border-right:1px solid #d9d9d9;
+            }
+            .fixedDataTableRowLayout_rowWrapper:last-child {
+                .public_fixedDataTable_bodyRow{
+                    border-bottom:1px solid #d9d9d9!important;
+                }
+            }
+        }
+        .del {
+            cursor: pointer;
+        }
+
+    }
+    .fixedDataTableLayout_rowsContainer {
+      // border-left: 1px solid #d9d9d9;
+      // height: auto !important;
+      min-height: 400px;
+      div:last-child {
+        // height: 300px !important;
+      }
+      .public_fixedDataTable_header {
+        background: #e4e4e4 !important;
+      }
+    }
+    .del {
+      cursor: pointer;
+    }
+
+  }
+
+  &-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0 10px;
+  }
+// }
+.importAccountModal{
+    .importAccountModalBody{
+        padding: 25px 0 25px 44px;
+        i{
+            color: #fa954c;
+            font-size:30px;
+            margin-right:9px;
+            display:inline-block;
+            vertical-align: middle;
+        }
+        span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}

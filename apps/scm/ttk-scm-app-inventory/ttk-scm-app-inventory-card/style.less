@@ -1,0 +1,169 @@
+.ttk-scm-app-inventory-card {
+	&-helpPopover {
+		font-size: 12px;
+	}
+	.ant-calendar-picker {
+		:hover{
+			.ant-calendar-picker-input:not(.ant-input-disabled)~.ant-calendar-picker-icon:after{
+				color: @primary-color;
+			}
+		}
+	}
+	&-form {
+		display: flex;
+		flex-direction: column;
+		height: auto !important;
+		padding-bottom: 20px;
+		overflow: hidden;
+		.ant-select-selection{
+			width: 163px
+		}
+		.ant-input{
+			width: 163px
+		}
+		.ant-radio-group{
+			display: flex;
+			flex-direction: column;
+			>.ant-radio-wrapper {
+				display: block;
+			}
+			label{
+				font-size: 12px;
+			}
+		}
+		.ant-form-item {
+			margin-bottom: 0;
+		}
+
+		.ant-form-item-label, .ant-form-item-control-wrapper {
+			vertical-align: middle;
+		}
+		.ant-form-item-label {
+			width: 90px !important;
+		}
+		.formitem .ant-form-item-label {
+			padding: 0 !important;
+			position: relative;
+			bottom: 32px;
+		}
+		.formitem-cost .ant-form-item-label {
+			bottom: 18px;
+		}
+		.ant-form-item-control-wrapper, .ant-form-item-label {
+			display: inline-block
+		}
+		.ant-form-item-control-wrapper {
+			display: inline-block;
+		}
+		.formitem1 {
+			margin-bottom: 15px;
+			.ant-form-item-label {
+				width: 84.89px !important;
+			}
+		}
+		
+		.ant-radio-wrapper {
+			margin-bottom: 10px;
+			font-family: "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		}
+
+		.method-group-item {
+			position: relative;
+			bottom: 108px;
+			left: 175px;
+			height: 0;
+		}
+
+		.valuationMethod {
+			position: relative;
+			.ant-form-item-label {
+				bottom: 57px;
+			}
+			.ant-radio-wrapper:first-child {
+				margin-bottom: 60px;
+			}
+		}
+
+		.number {
+			margin: 0 0 0 114px;
+			position: relative;
+			bottom: 62px;
+			left: 187px;
+			height: 0px;
+			input {
+				width: 60px;
+				text-align: right;
+				font-size: 12px;
+			}
+			div{
+				display: inline-block;
+				margin-right: 5px;
+				font-size: 14px;
+				color: #f5222d;
+			}
+			input.error {
+				border-color: red;
+			}
+			.helpIcon {
+				font-size: 25px;
+				line-height: 30px;
+				color: @primary-color;
+				cursor: pointer;
+				vertical-align: top;
+			}
+		}
+
+		.number.number-pro {
+			left: 187px;
+			bottom: 34px;
+		}
+		.number.number-production {
+			left: 187px;
+		}
+
+		.production {
+			.ant-form-item-label {
+				bottom: 32px;
+			}
+			margin-top: 20px;
+		}
+		.production-bom {
+			.ant-form-item-label {
+				bottom: 32px;
+			}
+			.ant-form-item-control-wrapper .ant-form-item-children {
+				.ant-radio-wrapper:last-child {
+					margin-top: 0;
+				}
+			}
+		}
+
+		.recoilMode {
+			.ant-form-item-label {
+				bottom: 32px;
+				margin: 30px 0 0 0px;
+			}
+			margin-top: 10px;
+		}
+		.recoilMode-bom {
+			.ant-form-item-label {
+				bottom: 32px;
+			}
+			.ant-form-item-control-wrapper .ant-form-item-children {
+				.ant-radio-wrapper:last-child {
+					margin-top: 0;
+				}
+			}
+		}
+
+		.formitem-cost {
+			margin-left: 108px;
+			.ant-form-item-label {
+				width: 150px;
+			}
+		}
+	}
+	.date{
+		margin-left: 0;
+	}
+}

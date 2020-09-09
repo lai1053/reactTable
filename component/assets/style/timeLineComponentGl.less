@@ -1,0 +1,110 @@
+.mk-timeline-componentwrap {
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-right: none;
+    font-size: 13px;
+    padding: 0 10px;
+    height: 100%;
+    // width: 75px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+        width: 0px !important;
+        height: 0px !important;
+    }
+    &:hover{
+        &::-webkit-scrollbar{
+            width: 6px !important;
+            height: 6px !important;
+        }
+    }
+
+    ul{
+        list-style-type: none;
+        padding-left: 0 !important;
+        height: 100%;
+        margin-bottom: 0px;
+        .ant-timeline-item-tail,.ant-timeline-item-tail-title,.ant-timeline-item-tail-title-head {
+            position: absolute;
+            top: 10px;
+            left: 4px;
+            height: calc(100% - 10px);
+            // border-left: 2px solid #f0f0f0;
+            border-left: 1px dashed #dfdfdf;
+        }
+        .ant-timeline-item-tail-title {
+            top: 20px;
+        }
+        .ant-timeline-item-tail-title-head {
+            top: 0px;
+            height: 20px;
+        }
+        .ant-timeline-item-head {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #fff;
+            // border: 2px solid transparent;
+            border: 1px solid #666;
+            border-radius: 100px;
+        }
+        
+        .ant-timeline-item-head-blue {
+            color: #0066B3;
+            border-color: #0066B3;
+        }
+        .ant-timeline-item-content {
+            position: relative;
+            top: -5px;
+            word-break: break-word;
+            font-size: 12px;
+            padding: 0 0 0 16px;
+            margin-left: 0px !important;
+        }
+
+        .ant-timeline-item {
+            position: relative;
+            margin: 0;
+            padding-bottom: 20px;
+            list-style: none;
+            cursor: pointer;
+            .title {
+                font-size: 13px;
+                // font-weight: bold;
+                color: #0066B3;
+                // color: #333;
+            }
+            .anticon-arrow-down {
+                color: #0066B3;
+            }
+        }
+
+        .ant-timeline-itemDis {
+            position: relative;
+            margin: 0;
+            padding-bottom: 20px;
+            list-style: none;
+            .title {
+                font-size: 13px;
+                color: #333;
+            }
+            &:hover{
+                cursor: not-allowed !important;
+            }
+            opacity: 0.6;
+        }
+
+        .ant-timeline-item-selectItem {
+            height: 25px;
+            color: #fff;
+            background: #0066B3;
+            border-radius: 25px;
+            line-height: 25px;
+            left: -5px;
+            cursor: pointer;
+        }
+    }
+}

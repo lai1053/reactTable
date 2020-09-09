@@ -1,0 +1,201 @@
+@Color: #fff;
+@ColorEven: #f8f8f8;
+@iconBorder: 1px solid #D9D9D9;
+@iconDayin: #45ACF7;
+@iconDaochu: #00B38A;
+@hoverTdColor: #e6f7f3;
+
+.ttk-gl-app-multicolumnaccount-rpt {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 0 10px 10px 0;
+
+    &-header {
+        display: flex;
+        padding: 10px;
+        height: 50px;
+        justify-content: space-between;
+        background: @Color;
+        border: @iconBorder;
+        border-bottom: none;
+
+        &-left {
+            display: flex;
+            align-items: center;
+
+            .mk-rangePicker {
+                width: 80px;
+                margin-right: 6px;
+
+                .ant-input {
+                    padding: 3px 2px 3px 2px;
+                    height: 30px;
+                    font-size: 12px;
+
+                    input {
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .mk-rangePicker:hover {
+                .ant-calendar-picker-input:not(.ant-input-disabled)+.ant-calendar-picker-icon:after {
+                    color: @primary-color;
+                }
+            }
+
+            .reload {
+                width: 30px;
+                height: 30px;
+                font-size: 28px;
+                border-radius: 5px;
+                border: @iconBorder;
+                cursor: pointer;
+                color: @iconDayin;
+                background: @Color;
+
+                &:hover {
+                    border-color: @iconDayin
+                }
+            }
+
+            .selectone {
+                margin-right: 5px;
+                width: 195px;
+            }
+
+            .selecttwo {
+                margin-right: 8px;
+                width: 170px;
+            }
+        }
+
+        &-right {
+            display: flex;
+            align-items: center;
+
+            .selectthree {
+                margin-right: 8px;
+                width: 140px;
+            }
+
+            .mk-checkbox {
+                font-size: 12px;
+                margin-left: 8px;
+            }
+
+            .dayin {
+                display: block;
+                text-align: center;
+                box-sizing: border-box;
+                background: @Color;
+                margin-left: 8px;
+            }
+
+            .daochu {
+                display: block;
+                text-align: center;
+                box-sizing: border-box;
+                background: @Color;
+                margin-left: 8px;
+            }
+        }
+
+
+
+        .edficon {
+            width: 30px;
+            height: 30px;
+            font-size: 28px;
+            border-radius: 5px;
+            border: @iconBorder;
+            cursor: pointer;
+        }
+
+        .edficon-shuaxin,
+        .edficon-dayin {
+            color: @iconDayin;
+        }
+
+        .edficon-shuaxin:hover {
+            border-color: @iconDayin
+        }
+
+        .edficon-dayin:hover {
+            border-color: @iconDayin
+        }
+
+        .edficon-daochu {
+            color: @iconDaochu;
+        }
+
+        .edficon-daochu:hover {
+            border-color: @iconDaochu
+        }
+
+    }
+
+    &-tbody {
+        flex: 1;
+        background: #fff;
+        border-right: 1px solid #d9d9d9;
+
+        table tr td:last-child {
+            border-right: none !important;
+        }
+
+        .ant-table-placeholder {
+            border-right: none !important;
+            border-left: none !important;
+        }
+
+        .ant-table-fixed-header table tr th:last-child {
+            border-right: 1px solid #d9d9d9 !important;
+        }
+
+        .ant-table-fixed-header table tr td:last-child {
+            border-right: 1px solid #d9d9d9 !important;
+        }
+
+        table tr.totalRow td {
+            background: #fff6ea !important;
+            font-weight: bold;
+        }
+
+    }
+
+    &-footer {
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-top: 10px;
+        flex: none;
+        height: 40px;
+        overflow: hidden;
+    }
+
+    .ant-select-dropdown-menu-item,
+    .selection__placeholder,
+    .ant-select-selection-selected-value {
+        font-size: 12px;
+    }
+
+    .mk-table .ant-table .ant-table-fixed tr td {
+        text-overflow: ellipsis;
+    }
+
+
+
+
+
+    // .mk-table .ant-table-tbody tr:last-child td {
+    //     background: #fff6ea !important;
+    // }
+
+    //合计行滑过不变色
+    .mk-table .ant-table .ant-table-fixed tr:last-child:hover {
+        td {
+            background: linear-gradient(#fff6ea, #fff6ea);
+        }
+    }
+}

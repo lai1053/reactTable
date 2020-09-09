@@ -1,0 +1,243 @@
+.ttk-stock-app-carryOver-product-cost{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    color: black!important;
+    .mk-btn.ant-btn{
+        margin-left: 8px;
+    }
+    .vt-table{
+        border-radius: 0;
+        .vt-body .vt-body-row .vt-body-row-cell{
+            padding: 0 6px;
+        }
+        .vt-body .has-vertical-scroll .vt-body-row .last-cell{
+            padding-right: 20px;
+        }
+    }
+	&-div{
+        text-align: center;
+        padding: 10px;
+    }
+    &-header{
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+        padding-top: 0;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        // border-bottom: none;
+        &-title{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 35px;
+        }
+        &-others{
+            &-left{
+                float:left;
+                text-align: left;
+                height: 32px;
+                line-height: 32px;
+                // &-top{
+                .back-btn{
+                    position: relative;
+                    display: inline-block;
+                    height: 32px;
+                    width: 34px;
+                    border: 1px solid #d9d9d9;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    background: url(../commonAssets/img/return.png) no-repeat center center;
+                }
+                .carryOver-filter-container{
+                    display: inline-block;
+                    margin-left: 10px;
+                    width: 240px;
+
+                    .ant-input-affix-wrapper .ant-input-prefix{
+                        left: 8px;
+                    }
+                    .mk-input{
+                        width: 200px;
+                        float: left;
+                        .ant-input{
+                            border-top-right-radius: 0;
+                            border-bottom-right-radius: 0;
+                            padding-left: 25px!important;
+                        }
+                    }
+                    .filter-btn{
+                        display: inline-block;
+                        width: 30px;
+                        height: 32px;
+                        border: 1px solid #d9d9d9;
+                        border-left: none;
+                        background-color: #fff;
+                        float: left;
+                        text-align: center;
+                        border-top-right-radius: 4px;
+                        border-bottom-right-radius: 4px;
+                    }
+
+                }
+                .ttk-stock-app-completion-warehousing-filter-container .ttk-stock-app-completion-warehousing-filter{
+                    margin-bottom: 0;
+                    height: auto;
+                }
+                .period{
+                    position: relative;
+                    top: -10px;
+                    color:rgba(0, 0, 0, 0.65);
+                }
+            }
+            &-right{
+                float:right;
+                text-align: right;
+                &-top{
+                    .mk-btn.ant-btn{
+                        margin-left: 10px;
+                    }
+                    .is-show-subject-modal-tips{
+                        margin: 0 13px;
+                        .is-show-subject-modal-tips-icon{
+                            position: relative;
+                            display: inline-block;
+                            top: 3px;
+                            right: 0px;
+                            width: 16px;
+                            height: 16px;
+                            background: url(../commonAssets/img/icon_why.png) no-repeat center center;
+                        }
+                    }
+                }
+                // &-bottom{
+                //     margin-top: 10px;
+                // }
+            }
+        }
+    }
+
+    &-main{
+        overflow: hidden;
+        .ant-table-body{ 
+            overflow-x: hidden!important;
+            overflow-y: scroll!important;
+        }
+        .ant-table-scroll{ overflow: hidden; }
+        .ant-table-footer{
+            padding: 0;
+            border: none;
+            .table-footer-div{
+                border: 1px solid #d9d9d9;
+                border-left: none;
+                border-bottom: none;
+                height: 38px;
+                position: relative;
+                top: 0px;
+                .ant-table-body{
+                    tr:nth-of-type(1){background: #f9f9f9;}
+                }
+                .ant-table-wrapper.mk-table {
+                    border: none;
+                }
+            }
+            
+        }
+        .carry-over-production-costRate{
+            position: relative;
+            padding-right: 10px;
+            .cost-rate-sign{
+                font-size: 13px;
+                position: absolute;
+                top: 0px;
+                right: -5px;
+                font-style: normal;
+            }
+        }
+        
+        .ant-table.ant-table-bordered .ant-table-footer{border:none;}
+    }
+
+    .cost-rate-txt{
+        position: relative;
+        font-size: 900;
+        height: 36px;
+        padding: 0 10px;
+        text-align: right;
+        &.warning{
+            color: #e94033;
+            border: 1px solid #e94033;
+        }
+    }
+
+    &-footer{
+        text-align: right;
+        padding: 15px 20px 0 0;
+    }
+    .ant-select-selection__rendered{margin-left: 5px;}
+    .input_container{
+        input{ width: 96%; padding: 0 6px; }
+    }
+
+    .textOverflow{
+        display: block;
+        width: 100%;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.stock-carry-batchCopyDoc-modal{
+    .fixedDataTableRowLayout_rowWrapper{
+        top: 2px;
+    }
+    .app-proof-of-charge .gridDiv{
+       min-height: 400px;
+       height: auto;
+    }
+}
+
+.ttk-stock-distribition{
+   .distribution-title{
+        padding-top: 10px;
+        height: 48px;
+        position: relative;
+        background-color: #fff;
+        border: 1px solid #d9d9d9;
+        border-bottom: none;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 32px;
+            width: 310px;
+            background: #fff url(../commonAssets/img/distribution_step1.png) no-repeat right 0;
+        }
+
+        &.step2{
+            &::after{
+                background: #fff url(../commonAssets/img/distribution_step2.png) no-repeat right 0;
+            }
+        }
+    }
+
+    .borderRed{
+        border-color: red;
+        // box-sizing: unset;
+    }
+
+    .distribution-footer{
+        height: 54px;
+        padding: 12px 30px;
+        background-color: #fafafa;
+        text-align: right;
+    }
+   
+    
+}
+

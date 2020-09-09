@@ -1,0 +1,151 @@
+.ttk-scm-app-matching-unit{
+    &-waring {
+        font-size: 12px;
+        color: #FA954C;
+        margin-bottom: 10px;
+    }
+    &-header {
+        padding: 0 12px;
+        height: 40px;
+        &-search {
+            width: 200px;
+            display: inline-block;
+            margin-right: 330px;
+            input {
+                font-size: 12px;
+                height: 30px;
+            }
+        }
+        .ant-radio-group {
+            label:first-child {
+                margin-right: 8px;
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+        .ant-btn {
+            float: right;
+            border-color: @primary-color; 
+            color: @primary-color;
+            &:hover {
+                background-color: @primary-color;
+                color: #fff;
+            }
+        }
+    }
+    &-list {
+        height: 270px;
+        margin: 0 12px;
+        border-left: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        &-archiveType {
+            font-size: 12px;
+            margin: 0;
+            line-height: 37px;
+            .ant-radio-wrapper{
+                display: inline;
+                margin: 0;
+                line-height: 35px;
+            }
+        }
+        &-archiveSelect {
+            width: 100%;
+        }
+        .mk-radio {
+            font-size: 12px;
+            .ant-radio {
+                margin-left: 8px;
+            }
+        }
+        .ant-select {
+            width: 100%;
+        }
+        .ant-select-selection--single {
+            height: 26px;
+            margin: 5px;
+            .ant-select-selection__rendered {
+                line-height: 26px;
+                font-size: 12px;
+                margin-left: 8px;
+                .ant-select-selection-selected-value {
+                    text-align: left;
+                }
+            }
+        }
+        .ant-select-selection__clear {
+            right: 22px;
+        }
+
+        .subjectError .ant-select-selection{
+            border-color: red;
+        }
+        .fixedDataTableLayout_rowsContainer div:nth-child(3) .mk-datagrid-cellContent {
+            line-height: 37px;
+            font-family: Microsoft Yahei,Helvetica Neue,Helvetica,Arial,sans-serif;
+            color: rgba(0,0,0,.65);
+        }
+        .mk-nodata {
+            height: 150px !important;
+            margin-top: -75px !important;
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+
+    &-list.accountenable {
+        height: 295px;
+    }
+
+    &-footer {
+        margin-top: 12px;
+        padding-top: 12px;
+        text-align: center;
+        border-top: 1px solid #e8e8e8;
+        &-btnGroup-item {
+            margin: 0 4px;
+            width: 70px;
+        }
+    }
+}
+
+.correspondent-unit {
+    .ant-modal-body {
+        padding: 10px 0;
+    }
+    .ant-modal-footer .ant-btn:first-child {
+        display: inline-block;
+    }
+}
+
+.currentBatchCss{
+    .ant-modal{
+        .ant-modal-body{
+            height: 195px;
+            .subject{
+                width: 260px;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                span {
+                    font-size: 12px;
+                }
+            }
+            .ant-select-selection{
+                width: 200px;
+                font-size: 12px;
+                display: inline-block;
+                height: 30px;
+            }
+            .ant-select{
+                width: 200px !important;
+                margin-left: 6px;
+            }
+        }
+    }
+}

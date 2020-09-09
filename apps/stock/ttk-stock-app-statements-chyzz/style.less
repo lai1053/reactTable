@@ -1,0 +1,120 @@
+.ttk-stock-app-statements-chyzz {
+  height: 100%;
+  width: 100%;
+  padding: 10px !important;
+  // position: relative;
+  background: #fff;
+
+  &-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-index {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-header-title {
+    text-align: center;
+    padding-bottom: 10px;
+  }
+
+  &-header-filter {
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    &-text {
+      margin-left: 10px;
+      width: 50px;
+    }
+
+    .tip {
+      color: red;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      padding: 0 8px;
+    }
+  }
+
+  &-main {
+    flex: 1;
+
+    &.balance,
+    &.out-off-balance {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 99999;
+        width: 122px;
+        height: 100px;
+        top: -15px;
+        right: 20px;
+      }
+    }
+
+    &.balance:after {
+      background-image: url("../commonAssets/img/balance.png");
+    }
+
+    &.out-off-balance:after {
+      background-image: url("../commonAssets/img/no-balance.png");
+    }
+  }
+
+  // .no-scroll-bar{
+  //     -ms-overflow-style: none;
+  //     overflow: -moz-scrollbars-none;
+  //     &::-webkit-scrollbar {
+  //         display: none;
+  //     }
+  // }
+  .mk-table .ant-table-tbody td {
+    padding: 0 8px !important;
+  }
+
+  &-first-table {
+    .ant-spin-nested-loading,
+    .ant-spin-container,
+    .ant-table-empty {
+      height: 100%;
+    }
+
+    .ant-table-empty {
+      // 保证高度，让ant-table-placeholder正常显示
+      .ant-table-content,
+      .ant-table-scroll {
+        height: 100%;
+      }
+
+      .ant-table-body {
+        height: 100% !important;
+        //   height: auto !important;
+        //   overflow: hidden !important;
+      }
+
+      .ant-table-placeholder {
+        position: absolute;
+        top: 74px;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        bottom: 24px;
+      }
+    }
+  }
+
+  &-footer-table {
+    // padding-right: 10px;
+    // background: #fff6ea;
+    overflow: hidden;
+  }
+}

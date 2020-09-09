@@ -1,0 +1,131 @@
+@iconDayin: #45ACF7;
+@iconDaochu: #00B38A;
+@iconBorder: 1px solid #D9D9D9;
+.ttk-scm-app-add-tax-total{
+    width: 100%;
+    height: 100%;
+    // flex:1;
+    overflow: hidden;
+    .ant-calendar-picker {
+        width: 100px;
+        :hover{
+            .ant-calendar-picker-input:not(.ant-input-disabled)~.ant-calendar-picker-icon:after{
+                color: @primary-color;
+            }
+        }
+    }
+    .anticon-xiazai {
+		font-size: 23px !important;
+    }
+    .dayin, .daochu {
+        width: 30px;
+        height: 30px;
+        font-size: 28px;
+        border-radius: 5px;
+        border: @iconBorder;
+        cursor: pointer;
+        display: block;
+        text-align: center;
+        box-sizing: border-box;
+        background: #FFFFFF;
+        margin-left: 8px;
+        margin-top: 7px;
+        line-height: 30px;
+        float: right;
+    }
+    .dayin {
+        color: @iconDayin;
+    }
+    .dayin:hover{
+        border-color: @iconDayin;
+    }
+    .daochu {
+        color: @iconDaochu;
+    }
+    .daochu:hover{
+        border-color: @iconDaochu;
+    }
+
+    &-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background: #fff;
+        border-left: 1px solid #d9d9d9;
+		border-right: 1px solid #d9d9d9;
+        padding: 0px 10px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 12px;
+        position: relative;
+        .ttk-scm-app-add-tax-total-header-left {
+            display: flex;
+        }
+
+        &-export {
+            position: absolute;
+            right: 10px;
+            top: 0;
+        }
+
+        .edficon-shuaxin{
+            color: #45ACF7;
+            width: 30px;
+            height: 30px;
+            font-size: 28px;
+            border-radius: 5px;
+            border: 1px solid #D9D9D9;
+            cursor: pointer;
+        }
+    }
+    .height45 {
+        height:45px;
+    }
+
+    &-content {
+        flex: 1;
+        background: #fff;
+        font-size: 12px;
+        border-left: 1px solid #d9d9d9;
+        @diff : 46px;
+        height: -moz-calc(~"100% - @{diff}");
+        height: -webkit-calc(~"100% - @{diff}");
+        height: calc(~"100% - @{diff}");
+        .content-title {
+            padding-left: 10px;
+            border-left: 1px solid #d9d9d9;
+		    border-right: 1px solid #d9d9d9;
+        }
+        .operation {
+           cursor: pointer;
+        }
+        .ttk-scm-app-add-tax-total-form-details {
+            border-left: 1px solid #d9d9d9;
+            border-right: 1px solid #d9d9d9;
+		    border-bottom: 1px solid #d9d9d9;
+        }
+        .mk-datagrid .public_fixedDataTable_main .fixedDataTableLayout_rowsContainer > div:nth-child(3) div.app-oprate {
+            text-overflow: inherit;
+            padding: 0;
+            padding-top: 4px;
+        }
+        .mk-datagrid .public_fixedDataTable_main{
+            border-left: none;
+        }
+        .mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main{
+            //background: #e4e4e4 !important;
+            color: #333333;
+            
+        }
+        .public_fixedDataTableCell_main{
+            .anticon-youcezhankailanmushezhi{
+                font-size: 28px;
+                cursor: pointer;
+                margin-top: 4px;
+            }
+        }
+        .public_fixedDataTable_scrollbarSpacer{
+            top: 0px;
+        }
+    }
+}

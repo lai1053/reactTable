@@ -1,0 +1,589 @@
+.edfx-app-org-dz, .isOem .edfx-app-org{
+    right:0!important;
+    bottom:0!important;
+}
+.edfx-app-org{
+    background:#ffffff;
+    border:1px solid #d9d9d9;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 10px;
+    left: 0;
+    padding:0!important;
+    overflow:hidden;
+	&.topImportant{
+		top: 0 !important;
+	}
+    .topRemind{
+        position: absolute;
+        top:0;
+        left:0;
+        height:36px;
+        width:100%;
+        background:#FFEFEF;
+        text-align: center;
+    }
+    .mainContent{
+        position: absolute;
+        left:0;
+        bottom:0;
+        width:100%;
+    }
+    .remindClose{
+        font-size:22px;
+        cursor: pointer;
+        position: absolute;
+        right: 27px;
+        top: 7px;
+    }
+    .authenticationWebsite{
+        height:40px!important;
+        .ant-form-item-label{
+            vertical-align: middle;
+            label{
+                top:2px;
+                color: rgba(0, 0, 0, 0.65);
+            }
+        }
+        .ant-form-item-control-wrapper{
+            vertical-align: middle;
+            text-align: left;
+            a{
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: inline-block;
+                // width:600px;
+            }
+        }
+    }
+    .helpModalBtn{
+        position: absolute;
+        color: #FF913A;
+        font-size: 26px;
+        right: -28px;
+        top: -4px;
+        cursor: pointer;
+    }
+    .vatTaxpayerPopover{
+        top:140px!important;
+        .ant-popover-inner-content{
+            width: 300px;
+            padding: 12px;
+            border-radius: 3px;
+            span{
+                font-size:12px;
+                color:#585858;
+            }
+            .ant-popover-inner{
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+    .vatTaxpayerPopover.vatTaxpayerPopoverHide{
+        display: none;
+    }
+    .accountingStandardsPopover{
+        top:260px!important;
+        .ant-popover-inner-content{
+            width: 300px;
+            padding: 12px;
+            border-radius: 3px;
+            span{
+                font-size:12px;
+                color:#585858;
+            }
+            .ant-popover-inner{
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+            }
+        }
+    }
+    .accountingStandardsPopover.accountingStandardsPopoverHide{
+        display: none;
+    }
+    .shadow{
+        position: absolute;
+        top:0;
+        right:0;
+        bottom:0;
+        left:0;
+        opacity: 0;
+    }
+    .transformVatTaxpayer .ant-popover-inner-content{
+        display: none;
+    }
+    // .modifyVatTaxpayer{
+    //     position: absolute;
+    //     top:7px;
+    //     right:-26px;
+    //     font-size: 24px;
+    //     cursor: pointer;
+    //     &:before{
+    //         color: @primary-color!important;
+    //     }
+    // }
+
+    .reinit{
+        position:absolute;
+        right:20px;
+        top:3px;
+        font-size: 12px;
+        color: #333333;
+        line-height:26px;
+        i{
+            font-size:28px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        span{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    .reinit:hover{
+        color:@link-color;
+        cursor: pointer;
+    }
+
+    &-main{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .ant-tabs-content.ant-tabs-content-no-animated::selection{
+            background: #ffffff;
+        }
+        .sfzxxTab,.zgrdTab{
+            height:100%;
+            overflow:hidden;
+            position: relative;
+            .refreshBtn{
+                position: absolute;
+                top:0;
+                left:10px;
+                right:10px;
+                height:52px;
+                padding-top: 10px;
+                i{
+                    border: 1px solid #d9d9d9;
+                    border-radius: 5px;
+                    color:#45ACF7;
+                    cursor: pointer;
+                    padding:0 1px;
+                    margin-right:10px;
+                }
+                i:hover{
+                    border-color:#45ACF7;
+                }
+            }
+            &>div:nth-of-type(2){
+                position: absolute;
+                top:52px;
+                left:10px;
+                right:10px;
+                bottom:10px;
+                .mk-datagrid {
+                    border-bottom: 1px solid #d9d9d9 !important;
+                    border-left: 1px solid #d9d9d9;
+                    border-right: 1px solid #d9d9d9;
+                }
+            }
+        }
+        .cwbbszTab {
+            .itemLine {
+                text-align: left;
+            }
+            .cwbbszTabTitle{
+                margin: 10px 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .ant-form-item-required {
+                width: 130px;
+                text-align: right;
+            }
+            .refreshBtn i {
+                border: none;
+                border-radius: 5px;
+                color: #45acf7;
+                cursor: pointer;
+                padding: 0 1px;
+                margin-right: 0px;
+                flex:1;
+            }
+            .refreshTip{
+                line-height: 30px;
+                margin-left: 10px;
+            }
+            .messageTitle {
+                color: rgb(253,148,1)
+            }
+            .messageTitle, .messageItem {
+                height: 30px;
+                line-height: 100%;
+            }
+            .textTips{
+                font-size: 12px;
+                display: flex;
+                margin-top:20px;
+            }
+        }
+        .tab4Footer {
+            display: flex;
+            justify-content: flex-end;
+            flex:1;
+            .footerBtn {
+                margin-right: 10px;
+                width: 80px;
+
+            }
+        }
+        .ant-tabs-tab{
+            padding: 8px 16px 8px 8px;
+            margin-left:0;
+            margin-right:22px;
+        }
+        .ant-tabs-bar{
+            margin-bottom:0px;
+            padding:0 10px;
+            border-bottom:none;
+            .ant-tabs-nav-container{
+                border-bottom: 1px solid #d9d9d9;
+            }
+        }
+        .ant-tabs-content{
+            position: absolute;
+            top: 37px;
+            bottom: 0;
+            width: 100%;
+            overflow-y: auto;
+            padding:0 10px;
+        }
+        .bottomTitle{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            .add{
+                overflow:hidden;
+                button{
+                   margin: 12px 0 12px 8px;
+
+                }
+            }
+        }
+        .save{
+            overflow:hidden;
+            button{
+                margin: 10px 25px 0;
+                float: right;
+            }
+        }
+        &-content-orgInfo>div::selection{
+            background:#ffffff;
+        }
+        &-content{
+            width: 1030px;
+            margin:0 auto;
+            //padding-bottom:20px;
+            .blockTitle{
+                width:100%;
+                height:25px;
+                position: relative;
+                overflow: hidden;
+                span{
+                    float: left;
+                    background: white;
+                    position: absolute;
+                    z-index: 1;
+                    padding-right: 20px;
+                    line-height: 25px;
+                    font-weight: 500;
+                }
+                .assistLine{
+                    height:1px;
+                    width:100%;
+                    border-top: 1px dashed #d9d9d9;
+                    position: absolute;
+                    top: 50%;
+                }
+                .blockTitle-arrow{
+                    position: absolute;
+                    right:0;
+                    top:0;
+                    height:30px;
+                    width:30px;
+                    margin-left:20px;
+                    z-index: 1;
+                    background:#ffffff;
+                    cursor: pointer;
+                    i{
+                        font-size: 28px;
+                        position: absolute;
+                        top:50%;
+                        left:50%;
+                        transform: translate(-50%,-50%);
+                    }
+                    i:hover{
+                        color:@primary-color;
+                    }
+                }
+            }
+            .beijingTip{
+	            margin-bottom: 8px;
+	            font-size: 12px;
+                color: #f5222d;
+                padding-left:108px;
+	            .beijingTipText{
+		            color: @primary-color;
+		            cursor: pointer;
+	            }
+            }
+            .connectInfo .itemLine {
+                .ant-form-item{
+                    .ant-form-item-label{
+                        width: 100px
+                    }
+                }
+                .ant-form-item.minInput{
+                    .ant-form-item-control-wrapper{
+                        width: 80px;
+                        margin-right: 10px;
+                    }
+                }
+                .ant-form-item.normalInput{
+                    .ant-form-item-control-wrapper{
+                        width: 160px;
+                        margin-right: 10px;
+                        .ant-select-selection{
+                            width: 180px;
+                        }
+                    }
+
+                }
+            }
+            .itemLine{
+                text-align: center;
+                margin-bottom:15px;
+
+                .mk-btn.ant-btn-primary:disabled:hover{
+                    color: rgba(0, 0, 0, 0.25);
+                    background-color: #f5f5f5;
+                    border-color: #d9d9d9;
+                }
+                .tutorialDate .ant-form-item-label .ant-form-item-required{
+                    float: left; 
+                }
+                .ant-form-item{
+                    display: inline-block;
+                    text-align: center;
+                    height:32px;
+                    margin-bottom:0px;
+                    .ant-form-item-label{
+                        display: inline-block;
+                        width: 120px;
+                        height: 32px;
+                        line-height: 32px;
+                        padding: 0;
+                        font-size:12px;
+                        label{
+                            top:2px;
+                        }
+                    }
+                    .ant-form-item-control-wrapper{
+                        display: inline-block;
+                        width: 300px;
+                        height: 31px;
+                        line-height: 32px;
+                        margin-right: 50px;
+                        .ant-form-explain{
+                            font-size: 12px;
+                            top: 37px;
+                            position: absolute;
+                            white-space: nowrap;
+                        }
+                        .ant-calendar-picker,.ant-select-selection{
+                            width:300px;
+                        }
+                        .ant-input,.ant-select{
+                            font-size:12px;
+                        }
+                    }
+                }
+                //即征即退
+                .jzjt{
+                    text-align: left;
+                    .ant-checkbox-wrapper{
+                        margin-left:-26px;
+                        &>span:nth-of-type(2){
+                            padding-left:10px;
+                            color: rgba(0, 0, 0, 0.85);
+                        }
+                    }
+                }
+                .more{
+                    width: 70px;
+                    height: 26px;
+                    border: none;
+                    background: #F9F8FA;
+                    display: inline-block;
+                    font-size: 12px;
+                    line-height: 26px;
+                    cursor: pointer;
+                }
+                .more:hover{
+                    color:@primary-color;
+                }
+                .vatTaxpayerNum{
+		            .ant-form-item-children {
+			            display: block;
+			            .oldVatTaxpayerNumInput{
+				            position: absolute;
+				            width: 100px;
+				            right: -110px;
+				            top: 0;
+                            font-size: 12px;
+                            z-index: 20;
+				            .edficon-bangzhutishi {
+					            color: #0066B3;
+					            font-size: 26px;
+					            transform: translate(0px, 4px);
+				            }
+			            }
+		            }
+	            }
+            }
+            .itemLine.textarea.tax{
+                height:40px;
+                .ant-form-item-label{
+                    margin-top:0;
+                }
+                .ant-form-item-control-wrapper{
+                    width:770px;
+                    textarea{
+                        height:32px;
+                        resize: none;
+                    }
+                    .ant-form-explain{
+                        top:42px;
+                    }
+                }
+            }
+            .itemLine.textarea{
+                .ant-form-item{
+                    height:102px;
+                }
+                .ant-form-item-label{
+                    margin-top:-94px;
+                }
+                .ant-form-item-control-wrapper{
+                    width:770px;
+                    textarea{
+                        height:80px;
+                        resize: none;
+                    }
+                    .ant-form-explain{
+                        top:83px;
+                    }
+                }
+            }
+            .itemLine.readOrgBtn{
+                .edficon-bangzhutishi{
+                    color:@primary-color;
+                    font-size: 26px;
+                    transform: translate(4px,4px);
+                }
+                .ant-popover-inner{
+                    font-size:12px;
+                }
+            }
+            //CA登录
+            .caHandle{
+                font-size:12px;
+                padding-left:169px;
+                .stepName{
+                    margin-left:-19px;
+                }
+                i{
+                    font-size:20px;
+                }
+                .CATitle:hover{
+                    color:@primary-color;
+                }
+            }
+        }
+    }
+    .enableDate{
+        .ant-calendar-picker:hover .ant-calendar-picker-icon:after{
+            color: @primary-color
+        }
+    }
+    .ant-select-disabled,.ant-input-disabled{
+        color:#919191;
+    }
+}
+.dkswjgshHelp{
+    p{
+        margin-bottom:0;
+    }
+    .ant-modal-footer{
+        button:nth-of-type(1){
+            display:none;
+        }
+    }
+    .ant-modal{
+        top:50px;
+    }
+}
+//转换纳税人性质弹窗
+.modifyNatureModal{
+    .ant-modal{
+        padding-bottom:0;
+    }
+    .ant-modal-content{
+        width:100%;
+        height:100%;
+        position: relative;
+    }
+    .ant-modal-footer{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    p{
+        margin-bottom:5px;
+    }
+}
+.ttk-es-app-ztconnetlist-content-content {
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    background-color: #ffffff;
+    .fixedDataTableLayout_main.public_fixedDataTable_main{
+      min-height: 250px;
+    }
+  }
+@media screen and (min-width: 1680px) {//大于1680样式
+    .dkswjgshHelp .ant-modal{
+        width: 880px!important;
+    }
+}
+
+@media screen and (min-width: 1280px) {//大于1280样式
+    .dkswjgshHelp .ant-modal{
+        width: 700px!important;
+    }
+}
+
+@media screen and (max-width: 1279px) {//小于1280样式
+    .dkswjgshHelp .ant-modal{
+        width: 520px!important;
+
+    }
+}
+
+// @media screen and (max-width: 1023px) {//小于1024样式
+//     .dkswjgshHelp .ant-modal{
+//         width: 430px!important;
+//         height: 250px;
+//     }
+// }

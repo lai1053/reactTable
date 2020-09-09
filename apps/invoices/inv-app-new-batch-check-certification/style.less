@@ -1,0 +1,154 @@
+.inv-app-new-batch-check-certification {
+    height: 100%;
+
+    &-header {
+        padding: 10px 8px;
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+
+        &-left {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .ianbcc-filter-form {
+            display: inline-block;
+
+            .ant-form-inline .ant-form-item {
+                margin-right: 8px;
+            }
+
+            .ant-form-item-control,
+            .ant-form-item-label {
+                line-height: 30px;
+            }
+
+            .ianbcc-filter-form-search {
+                font-size: 12px;
+
+                .ant-input {
+                    padding-left: 30px !important;
+                }
+            }
+
+            .filter-icon {
+                margin-left: -1px;
+                height: 32px;
+
+                &.active {
+                    border-color: #0066b3;
+                }
+            }
+        }
+    }
+
+    .tabs-container,
+    .ant-tabs,
+    .ant-spin-nested-loading,
+    .ant-spin-container,
+    .ant-tabs-tabpane,
+    .ant-tabs:not(.ant-tabs-vertical) > .ant-tabs-content {
+        height: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .ant-tabs-tabpane-inactive {
+            flex: 0;
+        }
+    }
+
+    .ant-spin-nested-loading {
+        width: 100%;
+        overflow: hidden;
+
+        .ant-spin {
+            max-height: 100%;
+        }
+    }
+}
+
+.ianbcc-filter-form-popover {
+    width: 300px;
+    left: 9px !important;
+}
+
+.ianbcc-table {
+    flex: 1;
+    border-right: 1px solid #d9d9d9;
+    border-radius: 2px;
+}
+
+.inv-app-new-batch-check-certification-modal {
+    width: 480px !important;
+
+    .ant-modal-body {
+        padding: 12px 40px !important;
+    }
+
+    &-info {
+        .ant-modal-body {
+            padding: 20px 24px 24px 48px !important;
+        }
+    }
+
+    &-confirm {
+        .ant-modal-body {
+            padding: 32px !important;
+        }
+    }
+}
+
+.inv-app-new-batch-check-certification-link-modal {
+    width: 366px !important;
+
+    .ant-modal-content {
+        background-color: #f6f6f6;
+    }
+
+    .ant-modal-footer {
+        text-align: right !important;
+        border-top: none;
+    }
+
+    &-loading {
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: url(./img/loading.gif) no-repeat center center;
+        background-size: 20px;
+        background-color: #999;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+.bovms-common-table-style {
+    .ant-table-scroll table {
+        width: fit-content;
+    }
+
+    .ant-table-body {
+        overflow-y: scroll !important;
+    }
+}
+
+.inv-app-new-batch-check-certification-info-modal {
+    font-size: 16px;
+    color: #5a5a5a;
+
+    .anticon.anticon-exclamation-circle {
+        color: #fa7c63 !important;
+    }
+
+    .ant-confirm-content {
+        margin-top: 0px !important;
+    }
+}

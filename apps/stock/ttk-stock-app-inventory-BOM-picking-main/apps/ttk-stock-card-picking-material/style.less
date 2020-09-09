@@ -1,0 +1,171 @@
+.ttk-stock-app-picking-material{
+    position: relative;
+    height: 450px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    color: black!important;
+    .selectNameDiv{width: 81%;}
+	&-div{
+        text-align: center;
+        padding: 10px;
+    }
+    &-header{
+        position: relative;
+        overflow: hidden;
+        // padding: 10px 10px 0 10px;
+        margin: 0 0 12px 10px;
+
+        &-title{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20px;
+
+        }
+        &-others{
+            &-left{
+                float:left;
+                text-align: left;
+                &-top{
+                    display: inline-block;
+                    height: 30px;
+                    width: 34px;
+                    border: 1px solid #d9d9d9;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    background: url(../../../commonAssets/img/return.png) no-repeat center center;
+                }
+                &-bottom{
+                    margin-top: 20px;
+                }
+            }
+            &-right{
+                float:right;
+                text-align: right;
+                &-top{
+                    .update-icon{
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: middle;
+                        margin: -4px 10px 0 0;
+                        background: url(../../../commonAssets/img/keyboard.png);
+                    }
+                }
+                &-bottom{
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+
+    .mk-table{
+        border: none;
+    }
+
+    &-main{
+        border: 1px solid #d9d9d9;
+        border-top: none;
+        .ant-table-body{
+            overflow-x: hidden!important;    
+            overflow-y: scroll!important;    
+        }
+    }
+
+    &-footer{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 50px;
+        width: 100%;
+        text-align: right;
+        padding-top: 10px;
+        border-top: 1px solid #e8e8e8;
+        &-btn:nth-of-type(2){
+            margin: 0 20px 0 10px;
+        }
+    }
+
+    .ant-table-tbody > tr{
+        .xh{ display: inline; }  
+        .add-delect-icons{
+            display: none;
+            font-size: 15px;
+            color: #a8a8a8;
+            cursor: pointer;
+            z-index: 2;
+        }
+        &:hover{
+            .xh{ display: none; }  
+            .add-delect-icons{
+                display: block;
+                font-size: 15px;
+                color: #a8a8a8;
+                cursor: pointer;
+                z-index: 3;
+            }
+        }
+    }
+
+    .tdChme{
+        display: block;
+        .selectMoreName{
+            border-radius: 2px;
+            float: right;
+            margin-top: 4px;
+            height: 22px;
+            line-height: 22px;
+            width: 24px;
+            color: #b0b0b0;
+            cursor: pointer;
+            border: 1px solid #d9d9d9;
+            text-align: center;
+        }
+        .anticon-ellipsis{
+            font-size: 14px;
+            font-weight: 777;
+        }
+    }
+    .ant-select-selection__rendered{margin-left: 5px;}
+    
+    /* 表格的数字输入框 start */
+    .mk-table table td > div{
+        display: block;  
+    }
+    .ant-input-number-handler-wrap{
+        display: none;
+    } 
+    .ant-input-number-input-wrap{
+        input{text-align: right;}
+    }
+    /* 表格的数字输入框 end */
+
+    // .mk-table .ant-table-tbody tr:not(.lazy_table_tr) td{
+    //     overflow: visible;
+    // }
+
+    .input_container{
+        input{ width: 96%; padding: 0 6px; }
+    }
+    
+    .ant-table-thead > tr > th {
+        text-align: center !important;
+    }
+}
+
+
+.ttk-stock-card-BOM-select-product-container{
+    .ant-modal-body{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            bottom: 54px;
+            left: 0;
+            border-top: 1px solid #d9d9d9;
+        }
+    }
+}

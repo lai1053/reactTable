@@ -1,0 +1,675 @@
+.app-detailaccount-rpt{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
+
+    &-body {
+        display: flex;
+        flex-direction: row;
+        background-color: #ebebed;
+        .panel-container {
+            display: flex;
+            flex:1;
+            width: 100%;
+            .panel:last-child{
+                margin-left: 0px;
+                border: 1px solid #E1E1E1;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+            }
+          }
+         .mk-tableSetting{
+            // bottom: 10px !important;
+            // height: 556px;
+            // top: auto !important;
+          }
+          .ant-spin-container{
+              height: 100%;
+          }
+        .resizer {
+            width: 2px;
+            background: #ebebed;
+            position: relative;
+            cursor: col-resize;
+            flex-shrink: 0;
+            -webkit-user-select: none;  /* Chrome all / Safari all */
+            -moz-user-select: none;     /* Firefox all */
+            -ms-user-select: none;      /* IE 10+ */
+            user-select: none;          /* Likely future */ 
+        }
+        
+        .resizer::after,
+        .resizer::before {
+            content: "";
+            border-left: 1px solid #333;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-100%);
+            right: 0;
+            display: inline-block;
+            height: 20px;
+            margin: 0 2px;
+        }
+        .resizer::before {
+            left: 0;
+        }
+        &-left{
+            width: 80px;
+            font-size: 12px;
+            border: 1px solid #d9d9d9;
+            border-right: none;
+            padding: 0px 6px 0 6px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+            background-color: #fff;
+            .TimeWrap {
+                width: 70px;
+                .TimelineDiv {
+                    padding: 0 6px 0 15px;
+                    .Timeline {
+                        .ant-timelineItem, .ant-timelineItemYear {
+                            padding: 0 0 40px;
+                            font-size: 12px;
+                            .ant-timeline-item-head-custom {
+                                padding: 0;
+                            }
+
+                            .yearLabel,.yearLabelDis {
+                                font-size: 12px;
+                                color: #0066B3;
+                                span{
+                                    margin-left: 10px;
+                                }
+                            }
+                            .yearLabelDis {
+                                color: #d9d9d9;
+                            }
+                            .ant-timeline-item-head {
+                                border: none !important;
+                            }
+                        }
+                        .ant-timelineItemYear {
+                            padding: 0 0 35px;
+                        }
+                        
+                        .ant-timeline-item {
+                            &:hover{
+                                cursor: pointer;
+                            }
+                            .ant-timeline-item-tail {
+                                border:1px dotted #d9d9d9;
+                            }
+                            &:last-child{
+                                padding: 0 0 5px;
+                            }
+                            .ant-timeline-item-content {
+                                font-size: 12px;
+                                position: relative;
+                                top: -3px;
+                                color: #333;
+                            }
+                            .ant-timeline-item-head {
+                                margin: 2px 0;
+                                border: 1px solid transparent;
+                                z-index: 222;
+                            }
+                        }
+                        .ant-timeline-item-last .ant-timeline-item-content {
+                            height: 15px;
+                        }
+                        .nodeDiv {
+                            background-color: @primary-color;
+                            color: #fff;
+                            width: 65px;
+                            margin-left: 25px;
+                            height: 26px;
+                            border-radius: 13px;
+                            line-height: 25px;
+                            font-size: 12px;
+                        }
+                        .line {
+                            width: 0px;
+                            border: 1px dotted #d9d9d9;
+                            margin-left: 4px;
+                            height: 20px;
+                        }
+                        .ant-timelineItemDis {
+                            &:hover{
+                                cursor: not-allowed !important;
+                            }
+                            opacity: 0.6;
+                        }
+                        .selectItem {
+                            padding: 0 0 40px;
+                        }
+                        .ant-timelineEnabled {
+                            .ant-timeline-item-head {
+                                border: none !important;
+                            }
+                        }
+                    }
+                    ul>li{
+                        &:last-child {
+                            padding: 0px !important;
+                        }
+                    }
+                }
+            }
+            
+            overflow-y: auto;
+
+            &::-webkit-scrollbar{
+                width: 0px !important;
+                height: 0px !important;
+            }
+            &:hover {
+                &::-webkit-scrollbar{
+                    width: 6px !important;
+                    height: 6px !important;
+                }
+            }
+        }
+
+        
+    }
+    .cl_fixed {
+        text-align: center;
+        width: 63px;
+        span {
+            cursor: pointer;
+        }
+        .columnset::before {
+            margin-right: 0;
+            font-size: 28px;
+        }
+    }
+    .app-detailaccount-rpt-right {
+        position: relative;
+    }
+    &-rightFiexd{
+        position: relative;
+        .setting {
+            width: 34px;
+            height: 26px;
+            font-weight: 600;
+            font-size: 22px;
+            z-index: 19;
+            line-height: 26px;
+            box-shadow: 0 2px 4px 0 rgba(171, 178, 184, 0.45);
+        }
+        .setting-box {
+            text-align: right;
+            padding: 0 10px;
+            position: absolute;
+            background: #fff;
+            right: 0px;
+            top: 18px;
+            margin-top: -13px;
+            border-radius: 13px 0 0 13px;
+            cursor: pointer;
+            transition: width 1s;
+            -moz-transition: width 1s;
+            -webkit-transition: width 1s;
+            -o-transition: width 1s;
+        }
+    }
+        .mk-table .ant-table-tbody td{
+            position: relative;      
+        }
+        .mk-table .ant-table-thead tr th{
+            position: relative;
+            .ellipsis{
+                // top: 10px;
+                overflow: hidden;
+                display: flex;
+                text-align: center;
+                position: relative;
+                height: 37px;
+                justify-content: center;
+                div{
+                    width: 90%;
+                    left: 0px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .mk-table .ant-table-tbody tr:not(.lazy_table_tr) td{
+            position: relative;
+            .div{
+                white-space: nowrap;
+                overflow: hidden;
+                position: absolute;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                display: flex;
+                height: 100%;
+                top: 0px;
+                left: 0px;
+                // text-align: left;
+                padding: 0 8px;
+                text-overflow: ellipsis;
+                .renderNameDiv{
+                    overflow: hidden;
+                    width: 100%;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .mk-table .ant-table-thead > tr th{
+            position: relative;
+            text-overflow: ellipsis;
+            .ellipsis{
+                // top: 10px;
+                overflow: hidden;
+                display: flex;
+                text-align: center;
+                position: relative;
+                height: 37px;
+                justify-content: center;
+                div{
+                    width: 90%;
+                    left: 0px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .mk-table .ant-table-fixed-left{
+            box-shadow: none !important;
+            .ant-table-thead tr th{
+                position: relative;
+                // height: 37px;
+                .ellipsis{
+                    // top: 10px;
+                    overflow: hidden;
+                    display: flex;
+                    text-align: center;
+                    position: relative;
+                    height: 37px;
+                    justify-content: center;
+                    div{
+                        width: 90%;
+                        left: 0px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+            
+            .ant-table-fixed-header table tr td{
+                position: relative;
+            }
+            .ant-table-header-column{
+                width: 100%;
+            }
+    
+            // .ant-table-tbody{
+            //     border-right: 1px solid #ccc;
+            // }
+        }
+        .mk-input{
+            width: 225px;
+            margin-right: 6px;
+            height: 30px;
+            input{
+                font-size: 10px;
+                height: 30px;
+            }
+    
+        }
+        .mk-normal-search{
+            .checkboxShow-label{
+                font-size: 12px;
+            }
+            .app-detailaccount-rpt-daochu{
+                text-align: center;
+                box-sizing: border-box;
+                border: none;
+                cursor: pointer;
+                color: #00B38A;
+                font-size: 28px;
+                line-height: 28px;
+            }
+            .app-detailaccount-rpt-daochuBut{
+                &:hover{
+                    border: 1px solid #00B38A !important;
+                }
+            }
+            .app-detailaccount-rpt-dayinBut{
+                &:hover{
+                    border: 1px solid #45ACF7 !important;
+                }
+            }
+            .app-detailaccount-rpt-dayin {
+                text-align: center;
+                box-sizing: border-box;
+                border: none;
+                cursor: pointer;
+                color: #45ACF7;
+                font-size: 28px;
+                line-height: 30px;
+            }
+            .app-detailaccount-rpt-dayin-down{
+                position: relative;
+                top: -5px;
+                color: #45ACF7;
+            }
+            .app-detailaccount-rpt-dayin-down1{
+                color: #00B38A;
+            }
+            .app-sumaccount-rpt-normalSearch{
+                display: inline-block;
+                position: relative;
+                margin-right: 8px;
+                .edficon{
+                    font-size: 19px;
+                }
+                .app-sumaccount-rpt-normalSearch-leftBtn{
+                    display: inline-block;
+                    position: absolute;
+                    left: 1px;
+                    top: 1px;
+                    width: 25px;
+                    z-index: 10;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    cursor: pointer;
+                    color: #ACACAC;
+                    border: none;
+                }
+                .app-sumaccount-rpt-normalSearch-input{
+                    width: 210px;
+                    height: 30px;
+                    .ant-select-selection--single{
+                        height: 30px;
+                        line-height: 1.1
+                    }
+                    .ant-select-arrow{
+                        margin-right: 15px;
+                        // display: none;
+                    }
+                    .ant-select-selection__rendered{
+                        height: 30px;
+                        line-height: 22px;
+                        margin: 0 20px;
+                        padding-right: 5px;
+                        .ant-select-selection-selected-value{
+                            font-size: 12px;
+                            line-height: 30px;
+                            padding-right: 0;
+                        }
+                    }
+                }
+                .app-sumaccount-rpt-normalSearch-rightBtn{
+                    display: inline-block;
+                    position: absolute;
+                    right: 1px;
+                    top: 1px;
+                    z-index: 10;
+                    height: 30px;
+                    width: 25px;
+                    line-height: 30px;
+                    text-align: center;
+                    cursor: pointer;
+                    color: #ACACAC;
+                    border: none;
+                }
+            }
+        }
+        .mk-title-otherBtn {
+            float:right !important;
+            // width:18.5% !important;
+            label,button {
+                float:none !important;
+            }
+        }
+        .mk-title-otherBtn{
+            display: flex;
+        }
+    
+       .app-detailaccount-rpt-table-Body{
+            flex: 1;
+            background: #fff;
+            border-right: 1px solid #d9d9d9;
+            table tr td:last-child{
+                border-right: 1px solid #d9d9d9 !important;
+            }
+            table tr td:first-child{
+                // text-align: center;
+            }
+            .ant-table .ant-table-thead {
+                tr {
+                    th:last-child {
+                        border-right: 1px solid #d9d9d9;
+                    }
+    
+                    th {
+                        text-align: center !important;
+                    }
+                }
+            }
+            .ant-table .ant-table-thead{
+                tr{
+                    th:last-child{
+                        border-right: 1px solid #d9d9d9 !important;
+                    }
+                }
+            }
+            .ant-table-body{
+                padding-bottom: 5px;
+            }
+            .ant-table-placeholder{
+                border-right: none !important;
+                border-left: none !important;
+            }
+            .ant-table-fixed-header table tr th:last-child{
+                border-right: 1px solid #d9d9d9 !important;
+            }
+            .ant-table-fixed-header table tr td:last-child{
+                border-right: 1px solid #d9d9d9 !important;
+            }
+            .table_center{
+                text-align: center;
+            }
+            table tr td{
+                a:hover{
+                    text-decoration: underline;
+                }
+                .total_data_weight{
+                    font-weight: bold;
+                }
+            }
+    
+            table tr td[rowspan]{
+                background: #fff !important;
+            }
+            table tr:hover td[rowspan]{
+                // background: rgba(30, 181, 173, 0.07) !important;
+            }
+            table tr.totalRow td{
+                background: #fff6ea !important;
+                span{
+                    font-weight: bold;
+                }
+            }
+        }
+    
+            &-content {
+            flex-direction: row;
+            background-color: #EBEBED;
+            // overflow: hidden;
+            &-left{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                flex: 1;
+                .ant-table-body{
+                    height: 100%;
+                }
+            }
+            &-treeTitle {
+                font-weight: 700;
+                background-color: #fff;
+            }
+            .treeTitle1 {
+                border: 1px solid #E1E1E1;
+                border-bottom: none;
+                height: 32px;
+                line-height: 32px;
+                padding-left: 10px;
+            }
+    
+            &-right {
+                // width: 255px;
+                // margin-left: 6px;
+                // // border: 1px solid #E1E1E1;
+                // overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                // background-color: #fff;
+    
+                &-title {
+                    display: flex;
+                    height: 42px;
+                    line-height: 36px;
+                    border-bottom: 1px solid #E1E1E1;
+    
+                    .app-detailaccount-rpt-content-treeTitle {
+                        flex: 1;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        padding-left: 10px;
+                    }
+                }
+    
+                &-input {
+                    margin: 10px 10px 0;
+                    width: 90%;
+                }
+    
+                &-tree {    
+                    height: 100%;
+                    overflow-y: scroll;
+                    overflow-x: scroll;
+    
+                    li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        color: #fff;
+                        width: 100%;
+                    }
+                }
+            }
+            &-right1 {
+                width: 25px;
+            }
+        }
+    
+        &-footer{
+            overflow: hidden;
+            align-items: right;
+            padding-top: 10px;
+            height: 40px;
+        }
+    // }
+}
+.app-detailaccount-rpt-account-select-item{
+    font-size: 12px;
+}
+
+.app-detailaccount-rpt-print-modal-container {
+    .ant-modal-body {
+        padding: 0;
+    }
+    .mk-app-proof-of-list-sort {
+        padding: 12px 15px;
+    }
+    .ant-select {
+        .ant-select-selection-selected-value {
+            padding-left: 20px;
+            padding-right: 0px;
+        }
+    }
+    .ant-input-number {
+        .ant-input-number-handler-wrap {
+            opacity: 1;
+        }
+        .ant-input-number-input {
+            text-align: right;
+            padding-right: 27px; 
+            height: 26px;
+            font-size: 12px;
+        }
+    }
+}
+@media screen and(-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .app-detailaccount-rpt{
+        .app-detailaccount-rpt-body-left{
+            width: 120px;
+            overflow-x: hidden;
+        }
+        .mk-table .ant-table-tbody tr:not(.lazy_table_tr) td{
+            position: relative;
+            .div{
+                position: relative;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                left: 0px;
+                // text-align: left;
+                padding: 0 8px;
+                text-overflow: ellipsis;
+                div{
+                    position: absolute;
+                    top: 50%;
+                    left: 0px;
+                    vertical-align: middle;
+                    margin-top:-10px;
+                }
+                .renderNameDiv{
+                    overflow: hidden;
+                    width: 100%;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .ant-table-fixed-left{
+            .ant-table-fixed{
+                .ant-table-thead tr th{
+                    .ellipsis{
+                        div{
+                            left: 0px;
+                        }
+                    }
+                }
+            }
+            .ant-table-thead tr th{
+                position: relative;
+                // height: 37px;
+                .ellipsis{
+                    div{
+                        left: 0px;
+                    }
+                }
+            }
+        
+        }
+    }
+}

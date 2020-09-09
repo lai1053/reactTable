@@ -1,0 +1,268 @@
+.ttk-scm-app-batch-orders{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &-selectdropdown {
+        .ant-select-dropdown-menu {
+            max-height: 210px;
+        }
+    }
+    .ant-calendar-picker {
+        width: 100%;
+        :hover{
+            .ant-calendar-picker-input:not(.ant-input-disabled)~.ant-calendar-picker-icon:after{
+                color: @primary-color;
+            }
+        }
+    }
+    .ant-cascader-menu:first-child>li:last-child{
+        position: absolute;
+		bottom: 0px;
+		left: 0;
+		right: 0;
+		background-color: @primary-color;
+		color: #ffffff;
+		text-align: center;
+    }
+    .mk-cascader, .ant-select, .ant-input {
+        font-size: 12px;
+        text-align: left;
+        .ant-select-selection-selected-value {
+            line-height: 34px;
+        }
+        .ant-cascader-picker-label {
+            padding-left: 8px !important;
+            font-family: Microsoft Yahei,PingFang SC;
+        }
+    }
+    &-modal {
+        .ant-modal-body {
+            padding: 0;
+            .mk-btn.ant-btn{
+                padding: 0 15px;
+                height: 32px;
+                font-size: 14px;
+            }
+        }
+        .mk-form {
+            margin: 30px 0 60px 80px;
+        }
+        .ant-select {
+            width: 200px;
+        }
+        a {
+            margin-left: 8px;
+        }
+        .mk-cascader {
+            width: 200px;
+        }
+        .ant-cascader-picker-label {
+            font-size: 12px;
+            line-height: 22px;
+        }
+    }
+    &-top {
+        overflow: hidden;
+        padding-right: 10px;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 51px;
+        .top-content {
+            height: 51px;
+            background: #fff;
+            width: 100%;
+            border: 1px solid #d9d9d9;
+            border-bottom: none;
+            padding: 0 10px;
+        }
+        .mk-form-item, 
+        .ant-form-item-label,
+        .ant-form-item-control-wrapper{
+            float: left;
+            line-height: 50px;
+        }
+        .ant-form-item{
+            margin-bottom: 0;
+            font-size: 12px;
+            margin-right: 16px;
+            .ant-form-item-control{
+                line-height: 50px;
+            }
+            .ant-calendar-picker-input.ant-input {
+                height: 30px;
+                font-size: 12px;
+            }
+        }
+        .mk-btn {
+            float: right;
+            margin: 10px 0 10px 8px;
+        }
+        .ant-calendar-picker {
+            width: 98px;
+        }
+        .name {
+            height: 30px;
+        }
+        .ant-form-item-label label::after {
+            content: ''
+        }
+        input.ant-input-disabled:hover {
+            border-color: #d9d9d9;
+        }
+    }
+    &-body {
+        background: #fff;
+        flex: 1;
+        clear: both;
+        border-right: 1px solid #d9d9d9;
+        margin-top: 51px;
+        // cursor: pointer;
+        .ant-select-selection__rendered{
+            margin-left: 8px
+        }
+        .ant-input{
+            font-size: 12px;
+        }
+        table td > div{
+            font-size: 12px;
+        }
+        .ant-form-item-label {
+            width: 100%;
+            .mk-cascader {
+                width: 100%;
+            }
+        }
+        // .mk-cascader:before{
+        //     display: inline-block;
+        //     content: "*";
+        //     font-family: SimSun;
+        //     font-size: 14px;
+        //     color: red;
+        //     line-height: 1;
+        // }
+        table{
+            width: 100%;
+            overflow: hidden;
+            .ant-select {
+                height: 26px;
+            }
+            .mk-datepicker{
+                height: 26px;
+                input{
+                    height: 26px;
+                }
+            }
+            .ant-select-selection{
+                height: 26px;
+            }
+            .ant-select-selection__rendered{
+                line-height: 26px;
+                .ant-select-selection-selected-value {
+                    line-height: 24px;
+                }
+            }
+            .ant-cascader-input{
+                height: 27px;
+                font-family: Microsoft Yahei,PingFang SC;
+            }
+            .ant-cascader-picker {
+                position: relative;
+                top: 0.5px;
+            }
+            .mk-cascader:hover .ant-cascader-input {
+                box-shadow: none;
+            }
+        }
+        .ant-table-tbody tr.ant-table-row td.table-seq, .ant-table-tbody tr.ant-table-row td.mk-table-checkbox{
+            background: #fff;
+            text-align: center;
+        }
+        .ant-table-tbody tr td .td_ellipsis {
+            // display: inline-block;
+            width: 100%;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+        .ant-table-tbody tr:nth-child(even) td {
+            background: #fff;
+            // border-right: none;
+        }
+        .ant-table-tbody tr:nth-child(even) td:last-child {
+            // border-right: 1px solid #d9d9d9;
+        }
+        .ant-table-tbody tr:nth-child(odd) td {
+            background: #f8f8f8;
+        }
+        .ant-table-bordered.ant-table-empty .ant-table-placeholder{
+            border-left: none;
+        }
+        .ant-table-tbody tr.ant-table-row .table-align-right{
+             text-align: right;
+         }
+         .mk-cascader:hover{
+            .ant-cascader-input{
+                border-color: @primary-color;
+                outline: 0;
+                box-shadow: 0 0 0 2px rgba(30,181,173,.2);
+                border-right-width: 1px!important;
+            }
+         }
+        .business-type-label {
+            .ant-cascader-picker-label {
+                padding: 0 24px 0 0;
+            }
+            .ant-form-item-label {
+                padding-right: 11px;
+                height: 40px;
+            }
+            .ant-form-item-control-wrapper {
+                display: none;
+            }
+            label:after{
+                content: "";
+            }
+        }
+        .amount-right {
+            text-align: right;
+        }
+
+        .ant-table-bordered .ant-table-header > table {
+            border-left: none !important;
+        }
+    }
+    .footer {
+        height: 40px;
+        width: 100%;
+        padding-top: 10px;
+        text-align: center;
+        button {
+            margin: 0 4px;
+            width: 90px;
+        }
+    }
+}
+.ttk-scm-app-batch-orders-Cascader {
+    height: 210px;
+    ul {
+        min-width: 218px;
+        li {
+            height:30px;
+        }
+    }
+    .ant-cascader-menu {
+        font-size: 12px;
+    }
+    .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled), .ant-cascader-menu-item-active:not(.ant-cascader-menu-item-disabled):hover {
+        background: @primary-1;
+        color: @primary-color;
+        font-weight: normal;
+    }
+    .ant-cascader-menu-item:hover{
+        background: @primary-1;
+        color: @primary-color;
+        font-weight: normal;
+    }
+}

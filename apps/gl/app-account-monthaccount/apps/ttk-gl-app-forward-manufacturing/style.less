@@ -1,0 +1,191 @@
+.app-account-cerficate-add {
+    height: 430px;
+    overflow: auto;
+
+    .ant-form-item-required:before {
+        font-family: "Microsoft YaHei";
+        vertical-align: middle;
+    }
+
+    .ant-select-selection-selected-value {
+        padding-right: 17px !important;
+    }
+
+    &-defineTitle {
+        display: flex;
+        margin-bottom: 10px;
+        height: 50px;
+        // margin-top: 5px;
+        align-items: center;
+
+        .ant-form-item-control-wrapper {
+            width: 210px;
+            // overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .title {
+            // width:65px;
+        }
+
+        input {
+            height: 30px;
+            line-height: 30px;
+            max-width: 220px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+    }
+
+    &-body {
+        border-right: 1px solid #d9d9d9;
+
+        th {
+            &>span:before {
+                display: inline-block;
+                margin-right: 4px;
+                content: "*";
+                font-family: "Microsoft YaHei";
+                line-height: 1;
+                font-size: 14px;
+                color: #f5222d;
+                vertical-align: middle;
+            }
+        }
+
+        .ant-select {
+            height: 26px;
+
+            div {
+                height: 26px;
+                line-height: 26px;
+            }
+
+            .ant-select-selection__rendered {
+                margin-left: 8px;
+            }
+        }
+
+        .ant-select-selection-selected-value {
+            font-size: 12px;
+        }
+
+        td {
+            text-align: center;
+        }
+
+        .summaryInput {
+            font-size: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            height: 26px;
+            vertical-align: middle;
+
+            input {
+                height: 26px;
+                font-size: 12px;
+            }
+        }
+
+        .mouseRow {
+
+            td:first-child,
+            td:nth-child(4) {
+                // padding: 0px;
+            }
+
+            td {
+                position: relative;
+
+                .summary {
+                    .addAndMinus {
+                        display: none;
+
+                        i {
+                            display: block;
+                            font-size: 16px;
+                            height: 16px;
+                            line-height: 16px;
+                            color: #666;
+                        }
+
+                        .addIcon:hover {
+                            color: #00B38A;
+                            cursor: pointer;
+                        }
+
+                        .delIcon:hover {
+                            color: #FB756A;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .num {
+                        // display: none;
+                    }
+
+                    .num {
+                        // position: absolute;
+                        // left: 50%;
+                        // top: 50%;
+                        // /* bottom: 50%; */
+                        // /* right: 0; */
+                        // transform: translate(-50%,-50%);
+
+                    }
+                }
+
+            }
+
+            &:hover {
+
+                .summary {
+                    .addAndMinus {
+                        display: flex;
+                        text-align: center;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .num {
+                        display: none;
+                    }
+                }
+
+            }
+
+        }
+
+        .td_input_antNumber {
+            width: 100%;
+            overflow: hidden;
+
+            .ant-input-number {
+                height: 26px;
+                ;
+                width: 100%;
+
+                .ant-input-number-handler-wrap {
+                    display: none;
+                }
+
+                input {
+                    text-align: right;
+                    height: 26px;
+                }
+            }
+        }
+    }    
+}
+
+.add-cerficate-select {
+    width: 300px !important;
+
+    li {
+        font-size: 12px;
+    }
+}

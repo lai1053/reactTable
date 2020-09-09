@@ -1,0 +1,538 @@
+.ttk-stock-app-inventory-assessment-add{
+    width: 100%;
+    height: 100%;
+    .fixedDataTableRowLayout_rowWrapper {
+        top: 1px;
+    }
+    &-header-title{
+        background: #FFFFFF;
+        // height: 80px;
+        .ttk-stock-app-inventory-h2{
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 700;
+            color: #971d18;
+            line-height: 1;
+        }
+        .helloworld-add-Button{
+            position: absolute;
+            right: 10px;
+        }
+        .helloworld-add-form{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            overflow:hidden;
+            padding: 16px 0px;
+            .ant-form-item-label{
+                padding: 0; 
+                line-height: unset;
+                width: fit-content;
+            }
+            .ant-select-selection{
+                border:none
+            }
+            .ant-form-item-control-wrapper{
+                width: 136px;
+                .ant-form-item-control{
+                    line-height: 17px;
+                    height: 17px;
+                    .ant-input{
+                        border: 0px;
+                        border-bottom: 1px solid #ccc;
+                        border-radius: 0px;
+                        background: transparent;
+                        height: 16px;
+                        padding-top:0;
+                    }
+                    .ant-select-selection--single{
+                        height: 17px;
+                        line-height: 17px;
+                        background: transparent;
+                        &:focus{
+                            box-shadow: none;
+                        }
+                    }
+                    .ant-select-selection__rendered{
+                        line-height: 17px;
+                        height: 19px;
+                        margin: 0;
+                        width: 100%;
+                        text-indent: 10px;
+                        border-bottom: 1px solid #d9d9d9;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+            .wrapperWidth200 .ant-form-item-control-wrapper{
+                width: 200px;
+            }
+
+            .ant-input-affix-wrapper{
+                line-height: 13px;
+            }
+            
+            .ant-form-explain{
+                margin-top: 5px;
+            }
+            .mk-form-item{
+                justify-content: center;
+            }
+            .ant-form-item-control{
+                // line-height: unset;
+                // text-align: left;
+                // border-bottom: 1px solid #d9d9d9;
+            }
+    
+            .mk-datepicker,.mk-select{
+                width:100%;
+                line-height: 1;
+            }
+
+            .span-text{
+                text-indent: 10px;
+            }
+        }
+    }
+    &-content {
+        .mk-datagrid .public_fixedDataTable_main {
+          border-left: none;
+        }
+        .mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+          color: #333333;
+        }
+        .public_fixedDataTable_scrollbarSpacer {
+          top: 0px;
+        }
+        //滚动条上部
+        .public_fixedDataTable_scrollbarSpacer {
+          top: 0px;
+          background: #eaeaea;
+        }
+        .mk-datagrid-cellContent-right {
+            padding-right: 8px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .mk-datagrid-cellContent{
+            padding: 0 8px!important;
+        }
+        .del {
+          cursor: pointer;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        .ttk-stock-app-inventory-assessment-add-Body{
+          min-height: 315px!important;
+          border: 1px solid #ccc;
+          background: #fff;
+          border: 1px solid #d9d9d9;
+          border-top: none;
+          th.table_fixed_width > span {
+              line-height: 33px !important;
+          }
+          .ant-select-selection--single{
+            height: auto;
+          }
+          .amount {
+              text-align: right;
+          }
+          .error {
+              border: 1px solid red;
+          }
+          .ant-table-tbody{
+              height: 100%;
+          }
+          .ant-table-placeholder{
+            top: 65%;
+          }
+          .ttk-stock-app-inventory-assessment-add-td-con{
+              width: 100%;
+              display: block;
+              overflow: hidden;
+              text-overflow:ellipsis;
+              white-space: nowrap;
+              a:hover{
+                  text-decoration: underline;
+              }
+          }
+          tr> td.table_td_align_left{
+              text-align: left;
+          }
+          tr> td.table_td_align_div{
+            padding: 0;
+          }
+          tr> td.table_td_align_right{
+              text-align: right;
+          }
+          tr> td.table_td_align_center{
+              text-align: center;
+          }
+          .ant-table-header{
+              .ant-table-thead tr th{
+                  white-space:nowrap; 
+                  overflow:hidden; 
+                  text-overflow:ellipsis;
+              }
+              >table {
+                  border-left: 0;
+              }
+          }
+          .ant-table-body{
+              overflow-x: hidden!important;
+              overflow-y: scroll!important;
+              &>table {
+                  width: 100%;
+                  overflow: hidden;
+              }
+          }
+          .ant-select{
+            width: 100%;
+            // top: 2px;
+          }
+          .tdChme{
+            border: 1px solid transparent;
+            position: relative;
+            display: block;
+            padding-right: 30px;
+            height: 100%;
+            .selectMoreName{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                right: 3px;
+                height: 22px;
+                line-height: 22px;
+                border-radius: 4px;
+                width: 24px;
+                color: #b0b0b0;
+                cursor: pointer;
+                border: 1px solid #d9d9d9;
+                text-align: center;
+            }
+            .anticon-ellipsis{
+                font-size: 14px;
+                font-weight: 777;
+            }
+          }
+          .fixedDataTableRowLayout_rowWrapper:hover{
+            .tdChme.editable{
+                border: 1px solid #0066B3;
+            }
+          }
+
+          .ant-table-fixed-right{
+              .ant-table-header{
+                  background: #eaeaea;
+              }
+              .ant-table-body-outer {
+                  border-top: 1px solid #d9d9d9;
+              }
+              .ant-table-fixed {
+                  border: 0;
+              }
+          }
+          .columns-title {
+              width: 100%;
+              position: relative;
+              display: block;
+              >div {
+                  vertical-align: middle;
+              }
+              &-item {
+                  display: inline-block;
+              }
+              &-price {
+                  span {
+                      vertical-align: middle;
+                  }
+              }
+              &-icon {
+                  position: absolute;
+                  right: 0;
+              }
+              &-docCode {
+                  margin-left: 30px;
+                  width: 100px;
+                  span, a {
+                      vertical-align: middle;
+                  }
+              }
+              &-settlement {
+                  margin-left: 50px;
+                  position: absolute;
+                  max-width: 60%;
+                  text-align: right;
+                  span {
+                      vertical-align: middle;
+                  }
+                  .settlement-con {
+                      line-height: 23px;
+                      display: inline-block;
+                      max-width: 90%;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis;
+                      position: relative;
+                      top: 0px;
+                      i {
+                          font-style: normal;
+                      }
+                  }
+                  .jiesuan-icon{
+                      position: relative;
+                      bottom: 1px;
+                  }
+                  .jiesuan {
+                      color: @primary-color;
+                  }
+                  .jiesuan.settlement {
+                      color: rgba(0,0,0,.25);
+                  }
+                  >a {
+                      display: inline-block;
+                      line-height: 23px;
+                      vertical-align: middle;
+                  }
+                  .jiesuan-item {
+                      cursor: not-allowed;
+                      text-decoration: none;
+                      color: rgba(0, 0, 0, 0.25);
+                  }
+              }
+          }
+      }
+      }
+    &-tableHeader{
+        border-top: 1px solid #D9D9D9;
+        background: #f8f8f8;
+        color:#333333;
+    }
+    &-tableHeaderNoBoder{
+        border-left: none !important;
+    }
+    .mk-datagrid-sequence-cell{
+        border-left: 1px solid #D9D9D9;
+    }
+    .mk-addDel .public_fixedDataTable_main, .mk-upDown .public_fixedDataTable_main{
+        border-right: 0px;
+    }
+    &-cell {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > div {
+            width: 100%;
+            height: 100%;
+            input{
+                height: 100%;
+            }
+        }
+    }
+    &-footer {
+        position: relative;
+        float: right;
+        display: block !important;
+        .zhidanren{
+            margin-bottom:-9px;
+            overflow: hidden;
+            float: right;
+        }
+        .ant-form-item-control-wrapper{
+            float:right;
+        }
+    }
+    &-form-details {
+        margin: 8px 10px 8px 10px;
+        .fixedDataTableRowLayout_main.public_fixedDataTable_footer{
+            overflow: hidden;
+            .public_fixedDataTable_scrollbarSpacer {
+                background: #fff6ea !important;
+            }
+        }
+        .public_fixedDataTable_header .public_fixedDataTableCell_main {
+            background: #eaeaea !important;
+            color: #666;
+            border-top: 1px solid #d9d9d9;
+            .fixedDataTableCellGroupLayout_cellGroupWrapper {
+                border-top: 1px solid #d9d9d9;
+            }
+        }
+        .public_fixedDataTable_main {
+            border-right: 0px;
+            .fixedDataTableLayout_header .mk-datagrid-cellContent {
+                font-weight: 700;
+                color: #333;
+            }
+            .fixedDataTableLayout_footer .mk-datagrid-cellContent {
+                font-weight: 700;
+                color: #333;
+            }
+            .public_fixedDataTableCell_cellContent {
+                color: #333;
+                font-size: 12px;
+            }
+            .mk-datagrid-sequence-cell {
+                font-size: 12px;
+            }
+            .fixedDataTableLayout_rowsContainer {
+                border: 1px solid #d9d9d9;
+                border-top: 0px;
+
+                .fixedDataTableRowLayout_rowWrapper {
+                    top: 1px;
+                    &>div:last-child{
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            .mk-datagrid-addDelRow-cell {
+                &:hover{
+                    border-right-width: 0px;
+                    z-index: 2;
+                }
+            }
+
+        }
+        .public_fixedDataTable_scrollbarSpacer {
+            background: #eaeaea;
+            border: 1px solid #d9d9d9;
+            border-left:none;
+            border-right: none;
+        }
+        .fixedDataTableLayout_main {
+            margin-right: 10px;
+            border-top: 0px;
+        }
+         .public_Scrollbar_main {
+            border-right: 1px solid #d9d9d9;
+            // display: none !important;
+        }
+
+        .fixedDataTableCellGroupLayout_cellGroupWrapper:first-child .fixedDataTableCellGroupLayout_cellGroup .public_fixedDataTableCell_main{
+            border-left-width: 0px;
+            z-index: 1;
+            &:hover {
+                border-left-width: 0px;
+                z-index: 1;
+            }
+        }
+        .ant-cascader-picker-label {
+            padding-right: 25px;
+        }
+    }
+    &-footer-btn {
+		border-top: 1px solid #e8e8e8;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: -53px;
+		padding-top: 12px;
+		height: 55px;
+		display: flex;
+		background: #fff;
+		border-radius: 0 0 4px 4px;
+		justify-content: space-between;
+		padding-right: 12px;
+		&-btnGroup {
+			&-item {
+				margin-left: 8px;
+				width: 59.39px;
+				float: right;
+			}
+			&-item:nth-child(3) {
+				width: 78px;
+			}
+		} 
+    }
+    &-stockName-add {
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+        width: 100%;
+        color: white;
+        background-color: rgb(0, 102, 179);
+        border: none;
+        cursor: pointer;
+        &:hover {
+            color: white;
+            border: none; 
+            background-color: rgb(0, 102, 179);
+        }
+
+        .add{
+            text-align: center;
+            img{
+                width: 15px;
+                height: 15px; 
+                margin-right: 8px;
+                margin-top: -2px;
+            }
+            span{
+                color: #fff;
+                letter-spacing: 0px;
+            }
+        }
+    }
+}
+.inputSelectClass{
+    font-size: 12px;
+    background: none
+}
+.inputSelectonClick{
+    font-size: 12px;
+    background: #fff
+}
+.alignLeft{
+    text-align: left!important;
+}
+
+.fixedDataTableRowLayout_rowWrapper{
+    &:hover{
+        .fixedDataTableCellGroupLayout_cellGroup{
+            .public_fixedDataTableCell_main{
+                .inputCell{
+                    text-align: right;
+                    height: 100%;
+                    border-color: #0066B3;
+                    border-radius: 0;
+                    &:focus{
+                        border-radius: 4px;
+                    }
+                }
+            }
+        }
+    }
+    .fixedDataTableCellGroupLayout_cellGroup{
+        .public_fixedDataTableCell_main{
+            &:last-child{
+                .inputCell,.unInputCell{
+                    width: 99%;
+                }
+            }
+            .inputCell{
+                text-align: right;
+                height: 100%;
+                border: 1px solid transparent;
+                border-radius: 0;
+            }
+
+            .unInputCell{
+                border: 1px solid transparent;
+            }
+        }
+    }  
+}
+

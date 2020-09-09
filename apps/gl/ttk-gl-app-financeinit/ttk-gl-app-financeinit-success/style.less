@@ -1,0 +1,38 @@
+@Color: #fff;
+.ttk-gl-app-financeinit-success {
+    width: 100%;
+    height: 100%;
+    background: @Color;
+    padding: 0px;
+    &-content {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        background: @Color;
+        margin-top: -80px;
+        .bgImgContainer{
+            // width: 160px;
+            // height: 160px;
+            display: flex;
+            justify-content: center;
+            margin: 0px auto;
+            margin-bottom: 20px;
+           .success{
+               font-size: 36px;
+               color: @primary-color;
+           }
+        }
+        &-tips {
+            display: flex;
+            margin-bottom: 30px;
+            justify-content: center;
+            font-size: 19px;
+        }
+    }
+    .btn {
+        width: 80px;
+        margin: 0 auto;
+    }
+}

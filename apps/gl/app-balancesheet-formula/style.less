@@ -1,0 +1,295 @@
+.app-balancesheet-formula-modal,.profitstatement-formula{
+    // width: 100%;
+    height: 320px;
+    // padding: 10px 0;
+    // overflow: auto;
+    display: block !important;
+    .select-item-lang {
+        width: 250px;
+    }
+    .ant-select-selection__rendered{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .ant-modal-body{
+        // padding: 5px 10px !important;
+    }
+    .app-balancesheet-formula-headerContent {
+        // margin-bottom: 10px;
+        // margin-bottom: 8px;
+        // margin: 0 auto;
+        display: flex;
+        height: 44px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    padding-right: 10px;
+        .app-balancesheet-formula-subject-title,
+        .app-balancesheet-formula-symbol-title,
+        .app-balancesheet-formula-rule-title {
+            margin-left: 10px;
+            margin-right: 0px;
+            height: 47px;
+            .ant-form-item-label{
+                height: 62px;
+                line-height: 48px;
+                label:after{
+                    content: "";
+                }
+            }
+            .ant-form-item-control{
+                height: 36px;
+            }
+        }
+        .ant-select {
+            width: 150px;
+        }
+        .app-balancesheet-formula-subject-input {
+            width: 330px;
+        }
+        .app-balancesheet-formula-symbol-select {
+            width: 65px;
+        }
+        .ant-btn.add {
+            margin-left: 20px;
+        }
+        .ant-btn.reset{
+            margin-left: 10px;
+        }
+    }
+
+    &-businessActiveTable{
+      height: 164px !important;
+      border-left: none !important;
+      border-bottom: none !important;
+      border-right: solid 1px #e7e6e6;
+
+      .ant-table-body{
+          //height: 146px !important;
+          //max-height: 146px !important;
+          border-right: solid 1px #e7e6e6;
+
+          tr > td:nth-child(4) {
+              text-align: right;
+          }
+      }
+    }
+
+    .mk-table .ant-table-tbody tr:last-child td{
+        background: #fff6ea !important;
+        font-weight: bold;
+    }
+
+    &-table-tbody{
+        flex:1;
+        background: #fff;
+        border-right: 1px solid #d9d9d9;
+        table tr td:last-child{
+            border-right: none !important;
+        }
+        .ant-table .ant-table-thead{
+            tr{
+                th:last-child{
+                    border-right: none;
+                }
+            }
+        }
+        .ant-table-placeholder{
+            border-right: none !important;
+            border-left: none !important;
+        }
+        .ant-table-fixed-header table tr th:last-child{
+            border-right: 1px solid #d9d9d9 !important;
+        }
+        .ant-table-fixed-header table tr td:last-child{
+            border-right: 1px solid #d9d9d9 !important;
+        }
+        tr:last-child{
+          td{
+                background:linear-gradient(#fff6ea, #fff6ea);
+                font-weight: bold;
+          }
+        }
+
+    }
+
+    .app-balancesheet-formula-content {
+        flex: 1;
+        height: 268px;
+        min-height: 268px;
+        // border: 1px solid #d9d9d9;
+        padding: 10px;
+        padding-top: 0px;
+        // margin: 0 auto;
+
+        .mk-datagrid{
+            overflow: inherit;
+            .fixedDataTableRowLayout_rowWrapper:last-child{
+                .public_fixedDataTableCell_main{
+                    background: #fff6ea;
+                }
+            }
+        }
+        .mk-datagrid .public_fixedDataTable_main{
+            border: 1px solid #d9d9d9;
+        }
+        // border: 1px solid #d9d9d9;
+        .mk-datagrid .public_fixedDataTableCell_main{
+            border-bottom: 1px solid #d9d9d9 !important;
+        }
+        .mk-datagrid .fixedDataTableRowLayout_rowWrapper:hover .public_fixedDataTableCell_main{
+            border-bottom: 1px solid #d9d9d9 !important;
+        }
+        .mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+			background: #e4e4e4 !important;
+			color: #333333;
+		}
+		.mk-datagrid .fixedDataTableLayout_rowsContainer .fixedDataTableRowLayout_rowWrapper .public_fixedDataTable_header {
+			background: #e4e4e4 !important;
+		}
+        // height: 256px;
+        // .fixedDataTableLayout_rowsContainer:last-child {//合计行样式
+        //     .fixedDataTableRowLayout_rowWrapper:last-child {
+        //         .fixedDataTableRowLayout_main {
+        //             font-weight: bold;
+        //             .fixedDataTableRowLayout_body {
+        //                 .fixedDataTableCellGroupLayout_cellGroupWrapper:nth-child(4) {
+        //                     .public_fixedDataTableCell_main i {
+        //                         display: none;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+        // .fixedDataTableLayout_rowsContainer {
+        //     & > div:nth-child(3) {
+        //         & > .fixedDataTableRowLayout_rowWrapper:last-child {
+        //             .fixedDataTableRowLayout_main {
+        //                 font-weight: bold;
+        //                 .fixedDataTableRowLayout_body {
+        //                     .fixedDataTableCellGroupLayout_cellGroupWrapper:nth-child(4) {
+        //                         .public_fixedDataTableCell_main i {
+        //                             display: none;
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+    }
+
+    .ant-select-selection--single{
+        height: 30px;
+    }
+    .mk-table .ant-table .ant-table-fixed tr td{
+        text-overflow: ellipsis;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .shareIcon{
+        font-size: 19px;
+        vertical-align: middle;
+        margin-left: 0px !important;
+    }
+    &-headerContent {
+        // height: 38px
+        padding-top: 11px;
+        background: #fff;
+        // border: 1px solid #d9d9d9;
+        border-bottom: none;
+    }
+    &-header {
+        display: flex;
+        flex-direction: row;
+        box-sizing:border-box;
+        //justify-content: space-between;
+        //overflow: hidden;
+        height: 34px;
+        margin-bottom: 8px;
+        padding: 0 10px;
+        &-btn{
+            display: flex;
+        }
+        &-left, &-right {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            overflow: hidden;
+            margin-right: 10px;
+            .btn {
+                margin-left: 8px;
+                outline: none;
+            }
+        }
+        &-right{
+            margin-right: 0px;
+        }
+        &-textContent {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            overflow: hidden;
+            .shell {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-right: 15px;
+                font-size: 12px;
+                .title {
+                    font-weight: bold;
+                    margin-right: 3px;
+                    align-self: flex-start !important;
+                }
+            }
+            .text {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                // width: 375px;
+                margin-right: 15px;
+                font-size: 12px;
+
+                .content {
+                    margin-right: 3px;
+                }
+                .iconRed {
+                    color: red;
+                    margin-left: 2px;
+                    margin-right: 5px;
+                }
+                .iconGreen {
+                    // color: red;
+                    margin-left: 2px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+.ant-modal.profitstatement-formula {
+    .ant-modal-body{
+        padding-bottom: 0px !important;
+    }
+    .app-balancesheet-formula-headerContent .ant-select {
+        width: 200px;
+    }
+    .app-balancesheet-formula-headerContent .app-balancesheet-formula-subject-input {
+        width: 420px;
+    }
+    // padding-bottom: 0px;
+    // left: 50%;
+    // top: 50%;
+    // margin-left: -450px;
+    // margin-top: -215px;
+}
+.mk-app-proof-of-list-modal-container{
+    .ant-form-item {
+        label{
+            display: inline;
+        }
+    }
+}
+.app-balancesheet-formula-subject-input-down {
+    // min-width: 350px !important;
+}

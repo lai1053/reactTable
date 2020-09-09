@@ -1,0 +1,61 @@
+.app-archives-list{
+    padding: 10px 0;
+    &-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        padding: 0 10px;
+        &-left, &-right {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            overflow: hidden;
+            .btn {
+                margin-left: 8px;
+                outline: none;
+            }
+        }
+        &-left {
+            justify-content: flex-start;
+        }
+        .refresh {
+            font-size: 20px;
+            padding: 0 5px;
+        }
+    }
+
+    &-content {
+        .mk-tabs {
+            padding: 0 10px;
+        }
+        .mk-tabs .ant-tabs-bar {
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+        .ant-tabs-ink-bar-animated {
+            background-color: transparent;
+        }
+        .ant-tabs-nav {
+            .ant-tabs-tab {
+                margin-right: 0;
+                padding: 3px 30px;
+            }
+        }
+        .ant-tabs-tab-active {
+            border: 1px solid #d9d9d9;
+            border-bottom: 0;
+            border-radius: 6px 6px 0 0;
+        }
+        .del {
+            cursor: pointer;
+        }
+    }
+
+    &-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 0 10px;
+    }
+}

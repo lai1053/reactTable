@@ -1,0 +1,268 @@
+.ttk-stock-app-statements-production-cost {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    color: black !important;
+
+    &-header {
+        position: relative;
+        // padding: 25px 10px 10px 10px;
+        padding: 10px;
+
+        &-title {
+            text-align: center;
+        }
+
+        &-others {
+            &-left {
+                float: left;
+                text-align: left;
+            }
+
+            &-right {
+                float: right;
+                text-align: right;
+                display: flex;
+                align-items: center;
+            }
+
+            &-monthPicker {
+                width: 110px;
+            }
+        }
+    }
+
+    &-main {
+        .ant-table-body {
+            overflow-x: auto !important;
+            overflow-y: scroll !important;
+        }
+
+        .ant-table-scroll {
+            overflow: auto;
+        }
+
+        .ant-table-footer {
+            padding: 0;
+            border: none;
+        }
+
+        .ant-table.ant-table-bordered .ant-table-footer {
+            border: none;
+        }
+    }
+
+    &-footer {
+        text-align: right;
+        padding: 15px 20px 0 0;
+    }
+
+    .ant-select-selection__rendered {
+        margin-left: 5px;
+        line-height: 28px;
+    }
+
+    .mk-table table td > div {
+        display: block;
+    }
+
+    .input_container {
+        input {
+            width: 96%;
+            padding: 0 6px;
+        }
+    }
+
+    .ttk-stock-app-inventory-conent-img {
+        height: 50%;
+    }
+
+    .ant-table-thead > tr > th {
+        text-align: center !important;
+    }
+
+    /* 合计行表格样式 start*/
+    .ant-table-wrapper {
+        overflow-y: hidden;
+        border: none;
+    }
+
+    .ant-table {
+        border-left: 1px solid #d9d9d9;
+    }
+
+    .ant-table-bordered {
+        display: table;
+        width: 100%;
+
+        &.ant-table-empty {
+            .ant-table-placeholder {
+                border: none;
+                border-right: 1px solid #d9d9d9;
+                border-bottom: 1px solid #d9d9d9;
+            }
+        }
+
+        .ant-table-thead > tr > th {
+            padding: 0px;
+            font-size: 12px;
+            background-color: #eaeaea;
+            height: 37px;
+            border-bottom: 1px solid #d9d9d9;
+        }
+
+        .ant-table-thead > tr > th,
+        .ant-table-tbody > tr > td {
+            display: table-cell;
+            border-right: 1px solid #d9d9d9;
+            height: 37px;
+        }
+
+        .ant-table-thead > tr:not(:last-child) > th {
+            border-bottom: 1px solid #d0d0d0;
+        }
+    }
+
+    .ant-table-tbody > tr > td {
+        padding: 0 6px;
+        font-size: 12px;
+    }
+
+    .ant-table.ant-table-bordered .ant-table-footer {
+        border: none;
+        padding: 0;
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+            background-color: #eaeaea;
+        }
+    }
+
+    .table-summary {
+        min-width: 1140px;
+        display: table;
+        height: 35px;
+        line-height: 35px;
+        background: #fff6ea;
+        width: 100%;
+        font-size: 12px;
+        border-top: 1px solid #d9d9d9;
+
+        & > div {
+            display: table-cell;
+            border-right: 1px solid #d9d9d9;
+            border-bottom: 1px solid #d9d9d9;
+            box-sizing: content-box;
+            position: relative;
+
+            & > div {
+                position: absolute;
+                top: 0;
+                right: 6px;
+                width: 90%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+
+        &-cell-1 {
+            width: 80px;
+            font-weight: 700;
+            color: #333;
+            text-align: center;
+        }
+
+        &-cell-2 {
+            width: 140px;
+        }
+
+        &-cell-3 {
+            width: 90px;
+        }
+
+        &-cell-4 {
+            width: 50px;
+        }
+
+        &-cell-5 {
+            width: 80px;
+            text-align: right;
+        }
+
+        &-cell-6 {
+            width: 100px;
+            text-align: right;
+        }
+
+        &-cell-7 {
+            width: 100px;
+            text-align: right;
+        }
+
+        &-cell-8 {
+            width: 60px;
+            text-align: right;
+        }
+
+        &-cell-9 {
+            width: 110px;
+            text-align: right;
+        }
+
+        &-cell-10 {
+            width: 110px;
+            text-align: right;
+        }
+
+        &-cell-11 {
+            width: 110px;
+            text-align: right;
+        }
+
+        &-cell-12 {
+            width: 110px;
+            text-align: right;
+        }
+    }
+
+    /* 合计行表格样式 end */
+
+    // 虚拟表格样式
+    .vt-header-cell {
+        padding: 0 !important;
+    }
+
+    .vt-body-row-cell {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .vt-summary {
+        flex-wrap: nowrap !important;
+
+        div {
+            padding: 0px 10px;
+            text-align: right;
+            border-right: 1px solid #d9d9d9;
+            font-size: 13px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            &:last-child {
+                padding-right: 20px;
+            }
+        }
+
+        .left {
+            text-align: center;
+            font-weight: 700;
+            color: #333;
+        }
+    }
+}

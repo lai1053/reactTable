@@ -1,0 +1,146 @@
+.ttk-scm-app-funds-account-list{
+    .list{
+        padding: 21px 25px 0 25px;
+        border: 1px solid #e4e4e4;
+        border-top: none;
+        min-height: 172px;
+        border-radius: 0 0 5px 5px;
+        overflow: hidden;
+        .mk-card:nth-child(even) {
+            margin-left: 20px;
+        }
+    }
+    .content {
+        border-radius: 5px;
+        min-height: 210px;
+        background: #fff;
+        margin-bottom: 10px;
+        overflow-x: hidden;
+        &-alipay-top {
+            background: rgba(18,166,242,0.7)
+        }
+        &-wechat-top {
+            background: rgba(0,179,138,0.7)
+        }
+        &-bank-top {
+            background: rgba(244,138,42,0.7)
+        }
+        &-cash-top {
+            background: rgba(230,113,108,0.8)
+        }
+        &-top {
+            height: 38px;
+            line-height: 38px;
+            color: #fff;
+            .edficon {
+                font-size: 28px;
+                margin: 5px;
+                vertical-align: top;
+            }
+            .ttk-scm-app-funds-account-list-add {
+                float: right;
+                display: inline-block;
+                margin-right: 11px;
+                cursor: pointer;
+                .edficon {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    &-main {
+        flex: 1;
+        position: relative;
+        // background: #fff;
+        overflow-y: auto;
+        @diff : 50px;
+        height: -moz-calc(~"100% - @{diff}");
+        height: -webkit-calc(~"100% - @{diff}");
+        height: calc(~"100% - @{diff}");
+    }
+    &-card{
+        break-inside : avoid;
+        margin-bottom: 21px;
+        border-radius: 5px;
+        overflow: hidden;
+        @diff : 10px;
+        width: -moz-calc(~"50% - @{diff}");
+        width: -webkit-calc(~"50% - @{diff}");
+        width: calc(~"50% - @{diff}");
+        float: left;
+        cursor: pointer;
+        .ant-card-head{
+            border-bottom: none;
+            padding-left: 31px;
+            padding-right: 5px;
+            background: #fbfcfd;
+            flex: 0 0 49px;
+            .ant-card-head-title {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .ant-card-extra {
+                font-size: 24px;
+                .edficon:hover:before{
+                    color: @primary-color;
+                }
+                .edficon:before {
+                    color: #999;
+                }
+            }
+            .ant-card-head-wrapper {
+                flex: none;
+            }
+        }
+        .ant-card-body{
+            padding: 0;
+            background: #fbfcfd;
+            
+            .accountItem-detial {
+                flex-direction: row;
+                font-size: 12px;
+                line-height: 20px;
+                .detial-items{
+                    margin-bottom: 20px;
+                    padding: 0 20px 0 9px;
+                    border-left: 1px dashed #d9d9d9;
+                    .account {
+                        color: #666;
+                    }
+                    .balance {
+                        color: #333;
+                        font-weight: bold;
+                    }
+                }
+                .detial-items.detial-left{
+                    border-left: none;
+                    padding-left: 31px;
+                    @diff : 229px;
+                    width: -moz-calc(~"100% - @{diff}");
+                    width: -webkit-calc(~"100% - @{diff}");
+                    width: calc(~"100% - @{diff}");
+                    &>div{
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+
+    .ttk-scm-app-funds-account-list-button{
+        height: 38px;
+        font-size: 14px;
+        width: 100%;
+        line-height: 38px;
+        .edficon {
+            font-size: 28px;
+            vertical-align: top;
+            margin-top: 5px;
+        }
+    }
+    .ttk-scm-app-funds-account-list-button > .anticon + span {
+        margin-left: 3px;
+    }
+}

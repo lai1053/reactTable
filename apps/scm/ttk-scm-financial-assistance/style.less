@@ -1,0 +1,197 @@
+.ttk-scm-financial-assistance{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	margin-bottom: 10px;
+	flex: 1;
+	padding: 0 10px 0 0 !important;
+	//background-color: #fff;
+	position: relative;
+	&-top {
+		position: absolute;
+		top: 6px;
+		right: 20px;
+		z-index: 1;
+		cursor: pointer;
+	}
+	.ant-calendar-picker {
+        width: 100%;
+        :hover{
+            .ant-calendar-picker-input:not(.ant-input-disabled)~.ant-calendar-picker-icon:after{
+                color: @primary-color;
+            }
+        }
+    }
+	.mk-datagrid .fixedDataTableLayout_main {
+		border: none;
+		border-right: 1px solid #d9d9d9;
+		border-top: 1px solid #d9d9d9;
+		z-index: 2;
+	}
+    .ant-tabs{
+        display: flex;
+        flex-direction: column;
+        .ant-tabs-content{
+            flex:1;
+		} 
+		.ant-tabs-nav-container {
+			margin-top: 10px;
+			.ant-tabs-nav-wrap .ant-tabs-tab-active, .ant-tabs-tab:hover {
+				color: #fff;
+				background-color: @primary-color;
+				border-color: @primary-color;
+			}
+		}
+		.ant-tabs-bar {
+			padding-left: 10px;
+			.ant-tabs-tab {
+				font-size: 14px;
+				line-height: 28px;
+				margin-right: 6px !important;
+			}
+		}
+	}
+	.mk-search{
+	//	border-left: 1px solid;
+	//	border-right: 1px solid;
+		border-top:none;
+		border-bottom: none;
+	}
+	.ttk-scm-financial-assistance-tab{
+		flex:1;
+	}
+	.ant-tabs.ant-tabs-top.mk-tabs.ant-tabs-line{
+		height: 100%;
+ 	}
+	.ant-tabs-bar {
+		margin: 0;
+		background-color: #fff;
+		border-left: 1px solid #d9d9d9;
+		border-right: 1px solid #d9d9d9;
+		border-top: 1px solid #d9d9d9;
+	}
+	position: relative;
+	.ttk-scm-financial-assistance-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .mk-tabs {
+           display: flex;
+           flex-direction: column;
+		   flex: 1;
+		}
+		.ant-tabs-content{
+			position: relative;
+		}
+        .ant-tabs-tabpane-active{
+           display: flex;
+           flex-direction: column;
+		   flex: 1;
+		   background: #fff;
+		   position: absolute;
+		   left: 0;
+		   top: 0;
+		   height: 100%;
+		   width: 100%;
+		   /*border-left: 1px solid #d9d9d9;
+		   border-right: 1px solid #d9d9d9;
+		   border-bottom: 1px solid #d9d9d9;*/
+           .tab-app-item{
+				overflow: auto;
+				flex: 1;
+				display: flex;
+				flex-direction: column
+		   }
+        }
+        .ant-tabs-content{
+			margin-left: 0 !important;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+    }
+}
+
+.ttk-scm-financial-assistance.notcurrent {
+	.ant-calendar-picker {
+        :hover{
+            .ant-calendar-picker-input:not(.ant-input-disabled)~.ant-calendar-picker-icon:after{
+                color: #0295F1;
+            }
+        }
+    }
+	.ant-tabs{ 
+		.ant-tabs-nav-container {
+			.ant-tabs-nav-wrap .ant-tabs-tab-active, .ant-tabs-tab:hover {
+				background-color: #0295F1;
+				border-color: #0295F1;
+			}
+		}
+		.ant-tabs-ink-bar {
+			background-color: #0295F1 !important;
+		}
+	}
+	.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled),
+	.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+		border-color: #0295F1;
+	}
+	a {
+		color: #0295F1 !important;
+	}
+	input:focus {
+		border-color: #0295F1;
+		box-shadow: 0 0 0 2px rgba(2, 149, 241, 0.2);
+	}
+	input:hover {
+		border-color: #0295F1 !important;
+	}
+	.ant-btn-primary {
+		background-color: #0295F1;
+		border-color: #0295F1;
+	}
+	.mk-datagrid .fixedDataTableRowLayout_rowWrapper:hover .public_fixedDataTableCell_main {
+		background-color: rgba(2, 149, 241, 0.07);
+	}
+	.ant-pagination-item-active {
+		border-color: #0295F1;
+	}
+	.mk-pagination .ant-pagination-item:hover {
+		background: #0295F1 !important;
+		border-color: #0295F1;
+	}
+	.ant-select-selection:hover {
+		border-color: #0295F1 !important;
+	}
+	.ant-pagination-next:hover .ant-pagination-item-link {
+		border-color: #0295F1;
+	}
+	.ant-pagination-prev:hover .ant-pagination-item-link {
+		border-color: #0295F1;
+	}
+	.ant-btn:hover, .ant-btn:focus {
+		color: #0295F1;
+		border-color: #0295F1;
+	}
+	.ant-btn.openJchl:hover, .ant-btn.openJchl:focus {
+		color: #fff !important;
+	}
+	.ttk-scm-app-entry-invoice-footer, .ttk-scm-app-sales-invoice-footer {
+		background-color: #fff;
+		padding-bottom: 10px;
+		padding-right: 10px;
+		border-left: 1px solid #d9d9d9;
+		border-right: 1px solid #d9d9d9;
+		border-bottom: 1px solid #d9d9d9;
+	}
+}
+.financial-assistance {
+	.ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month {
+		background: #0295F1;
+	}
+	.ant-calendar-header a:hover {
+		color: #0295F1;
+	}
+	.ant-calendar-month-panel-month:hover {
+		background: rgba(2, 149, 241, 0.07);
+	}
+}

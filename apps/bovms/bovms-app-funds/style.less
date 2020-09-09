@@ -1,0 +1,138 @@
+.bovms-app-funds {
+    &-upSecretKeyContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 308px;
+        height: 328px;
+        cursor: pointer;
+        background-image: url(../img/funds-import-img.png);
+        background-repeat: no-repeat;
+        background-size: cover
+    }
+
+    &-upSecretKeyContent:hover {
+        background: url(../img/funds-import-img-hover.png);
+    }
+
+    .bovms-app-guidePageImgdivPuchase {
+        font-size: 13px;
+        width: 593px;
+        height: 72px;
+        background: url(../img/funds-import-guide-img.png);
+    }
+
+    .ttk-filter-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 8px;
+
+        .ttk-filter-form-left {
+            overflow: hidden;
+        }
+
+        .ant-form-inline .ant-form-item {
+            margin-right: 8px;
+        }
+
+        .ant-form-item-control,
+        .ant-form-item-label {
+            line-height: 30px
+        }
+
+        .-search {
+            .ant-input {
+                padding-left: 30px !important
+            }
+        }
+
+        .filter-icon {
+            margin-left: -1px
+        }
+
+        .ttk-filter-form-right .ant-btn-group button:first-child {
+            margin-right: 2px
+        }
+    }
+
+    .ant-calendar-picker,
+    .ant-input-search,
+    .ant-input {
+        font-size: 12px;
+    }
+
+    .ttk-filter-form-right>button {
+        margin-right: 4px;
+        margin-left: 4px;
+    }
+
+    .ant-btn,
+    .ant-input,
+    .ant-select-selection {
+        border-radius: 2px;
+        line-height: 30px;
+        height: 30px;
+    }
+
+}
+
+.bovms-app-guidePage-range-step-one {
+    .ant-select-selection--single {
+        height: 32px !important;
+    }
+
+    .bovms-app-guidePage-range-step-one-tip {
+        label {
+            color: #ff852d
+        }
+    }
+
+    .bomvs-app-funds-import-step-one-upload {
+        position: relative;
+
+        #bomvs-app-funds-import-step-one-upload-control {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 50px;
+            opacity: 0;
+        }
+    }
+
+    .ant-input-affix-wrapper .ant-input-suffix {
+        right: 0
+    }
+}
+
+.bovms-app-funds-split-statement {
+    position: relative;
+    margin-top:12px;
+
+    &.read-only {
+        &::before {
+            position: absolute;
+            content: "已记账";
+            color: rgba(204, 0, 0, 0.5);
+            font-size: 24px;
+            width: 116px;
+            height: 42px;
+            left: 50%;
+            top: 80px;
+            z-index: 9999;
+            border: 2px solid;
+            transform: rotate(-25deg) translateX(-60px);
+            border-radius: 2px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .editable-cell-value-wrap:hover {
+            border-color: transparent !important
+        }
+    }
+    .ant-form-item{
+        margin-bottom:12px !important
+    }
+}

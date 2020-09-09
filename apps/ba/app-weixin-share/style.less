@@ -1,0 +1,62 @@
+
+.qrCode{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    .qrContainer{
+        text-align: center;
+        border-radius: 4px;
+        
+        // margin-bottom: 20px;
+        // padding: 30px 50px;
+        // margin: 20px 0;
+    }
+    .qrContainer.filterQr{
+        opacity: 0.7;
+        filter: blur(0.5px);
+        -webkit-filter: blur(0.5px);
+    }
+    .mk-layout{
+        height: 200px;
+    }
+    .spin{
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+        vertical-align: middle;
+        display: inline-block;
+        position: relative;
+        .ant-spin-dot{
+            vertical-align: middle;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+           
+            margin: -24px 0 0 -10px;
+        }
+        .ant-spin-text{
+            vertical-align: middle;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+           
+            margin: 4px 0 0 -27px;
+        }
+    }
+    #qrCode{
+        position: relative;
+        img {
+			margin: 0 auto;
+			// margin-top: 34px;
+			// margin-bottom: 9px;
+			width: 180px !important;
+			height: 180px !important;
+		}
+    }
+    .weixin_popup_foot {
+        font-size: 12px;
+        height: 22px;
+        line-height: 22px;
+    }
+}

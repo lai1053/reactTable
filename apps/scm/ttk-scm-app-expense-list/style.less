@@ -1,0 +1,440 @@
+@iconDayin: #45ACF7;
+@iconDaochu: #00B38A;
+@iconBorder: 1px solid #D9D9D9;
+@hoverIconBorder: 1px solid #0093E2;
+@iconActive: #0093E2;
+@Color: #fff;
+.ttk-scm-app-expense-list{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: auto;
+
+    .ant-calendar-picker {
+        :hover{
+            .ant-calendar-picker-input:not(.ant-input-disabled)~.ant-calendar-picker-icon:after{
+                color: @primary-color;
+            }
+        }
+    }
+
+    &-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 10px 9px;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        border-bottom: none;
+
+        .ant-calendar-picker-input {
+            width: 80px;
+        }
+
+        .ant-calendar-picker {
+            vertical-align: bottom;
+        }
+
+        .ant-input {
+            height: 30px;
+            font-size: 12px;
+        }
+
+        .mk-search {
+            height: 51px !important;
+        }
+
+        &-left {
+            height: 30px;
+        }
+
+        &-right {
+            height: 30px;
+            line-height: 30px;
+
+            .btn-voucher {
+                border-radius: 4px 0 0 4px;
+            }
+            .expense-btn {
+                margin-left: 8px;
+            }
+        }
+
+        .ant-btn:hover, .ant-btn:focus{
+            z-index: 2;
+        }
+
+        .reload{
+            width: 30px;
+            height: 30px;
+            font-size: 28px;
+            border-radius: 5px;
+            border: 1px solid #D9D9D9;
+            cursor: pointer;
+            color: #45ACF7;
+            background: #fff;
+            margin-left: 8px;
+            &:hover{
+                border-color: #45ACF7;
+            }
+        }
+    }
+
+    &-more {
+        margin-left: -1px !important;
+        border-radius: 0 4px 4px 0;
+    }
+
+    .ttk-scm-app-expense-list-Body{
+        flex:1;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        border-top: none;
+        th.table_fixed_width > span {
+            line-height: 33px !important;
+        }
+        .ant-input, .ant-select-selection {
+            font-size: 12px;
+            height: 26px;
+        }
+        .amount {
+            text-align: right;
+        }
+        .error {
+            border: 1px solid red;
+        }
+        .ant-select-selection__rendered {
+            font-size: 12px;
+            line-height: 26px;
+        }
+        .ant-table-tbody{
+            height: 100%;
+        }
+        .ttk-scm-app-expense-list-td-con{
+            width: 100%;
+            display: block;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+        tr> td.table_td_align_left{
+            text-align: left;
+            //line-height: 37px;
+        }
+        tr> td.table_td_align_right{
+            text-align: right;
+            //line-height: 37px;
+        }
+        tr> td.table_td_align_center{
+            text-align: center;
+            //line-height: 37px;
+        }
+        .ant-table-header{
+            .ant-table-thead tr th{
+                white-space:nowrap; 
+                overflow:hidden; 
+                text-overflow:ellipsis;
+            }
+            >table {
+                border-left: 0;
+            }
+        }
+        .ant-table-body{
+            overflow-x: hidden;
+            &>table {
+                width: 100%;
+                overflow: hidden;
+            }
+        }
+        
+        .ant-table-fixed-right{
+            .ant-table-header{
+                background: #eaeaea;
+            }
+            .ant-table-body-outer {
+                border-top: 1px solid #d9d9d9;
+            }
+            .ant-table-fixed {
+                border: 0;
+            }
+        }
+        .columns-title {
+            width: 100%;
+            position: relative;
+            display: block;
+            >div {
+                vertical-align: middle;
+            }
+            &-item {
+                display: inline-block;
+            }
+            &-price {
+                span {
+                    vertical-align: middle;
+                }
+            }
+            &-icon {
+                position: absolute;
+                right: 0;
+            }
+            &-docCode {
+                margin-left: 30px;
+                width: 100px;
+                span, a {
+                    vertical-align: middle;
+                }
+            }
+            &-settlement {
+                margin-left: 50px;
+                position: absolute;
+                max-width: 60%;
+                text-align: right;
+                span {
+                    vertical-align: middle;
+                }
+                .settlement-con {
+                    line-height: 23px;
+                    display: inline-block;
+                    max-width: 90%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    position: relative;
+                    top: 0px;
+                    i {
+                        font-style: normal;
+                    }
+                }
+                .jiesuan-icon{
+                    position: relative;
+                    bottom: 1px;
+                }
+                .jiesuan {
+                    color: @primary-color;
+                }
+                .jiesuan.settlement {
+                    color: rgba(0,0,0,.25);
+                }
+                >a {
+                    display: inline-block;
+                    line-height: 23px;
+                    vertical-align: middle;
+                }
+                .jiesuan-item {
+                    cursor: not-allowed;
+                    text-decoration: none;
+                    color: rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+        .ant-select-selection__clear {
+            margin-right: 10px !important;
+        }
+    }
+    .react-grid-item {
+        .mk-card {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .ant-card-body {
+            padding: 0px; 
+            flex: 1;
+            overflow: hidden;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &-item {
+        width: 100%;
+        &-price {
+            float: right;
+            padding: 10px;
+            color: red
+        }
+        &-title {
+            float: left;
+            padding: 10px;
+        }
+    }
+
+    &-products {
+        overflow: auto;
+    }
+
+    &-footer{
+        flex: auto;
+        justify-content: right;
+        overflow: hidden;
+        align-items: right;
+        padding-top: 10px;
+    }
+
+    .table_fixed_width{
+        text-align: center;
+        width: 63px;
+        span{
+            cursor: pointer;
+        }
+        .ttk-scm-app-expense-columnset::before{
+            margin-right: 0;
+            font-size: 28px;
+            position: relative;
+            top: 6px;
+        }
+    }
+    .ttk-scm-app-expense-list-footer{
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-top: 10px;
+        flex: none;
+    }
+
+    .ant-table-tbody tr td .td_ellipsis {
+        // display: inline-block;
+        margin-bottom: 0;
+        width: 100%;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+    }
+
+    .mk-table .ant-table-tbody tr td[rowspan]{
+		background-color: #fff
+	}
+	.mk-table .ant-table-tbody tr:nth-child(odd) td[rowspan='1']{
+		background-color: #fff
+	}
+	.mk-table .ant-table-tbody tr:nth-child(even) td[rowspan='1']{
+		background-color: #f8f8f8
+	}
+	.mk-table .ant-table-tbody tr.tr_zuofei:nth-child(even) td{
+		background-color: #fff
+	}
+}
+
+.expense-businessType .ant-select-dropdown-menu {
+    max-height: 250px;
+    font-size: 12px
+}
+
+.Popover-ttk-scm-app-expense-list{
+    top: 141px !important;
+    .more_btn_container{
+        width: 140px;
+        height: auto;
+        left: -35px;
+        overflow: hidden;
+        .more_btn_item{
+            width: 100%;
+            height: 34px;
+            text-align: center;
+            line-height: 26px;
+            font-size: 12px;
+            line-height: 34px;
+            &:hover{
+                background: tint(@primary-color, 90%);	
+				cursor: pointer;
+            }
+        }
+        .ant-menu-item-selected{
+            background: inherit;
+            color: inherit;
+        }
+    }
+}
+.mk-ttk-scm-app-expense-list-modal-container{
+    .ant-modal-body{
+        padding: 0;
+        .mk-btn.ant-btn{
+            padding: 0 15px;
+            height: 32px;
+            font-size: 14px;
+        }
+    }
+    .mk-ttk-scm-app-expense-list-sort{
+        padding: 10px 15px;
+       
+    }
+}
+
+.settleClass {
+    .mk-form {
+        display: flex;
+        flex-direction: row; 
+    }
+    .ant-form-item-label {
+        // display: flex;
+        // width: auto !important;
+        width: 70px !important;
+        margin-left: 10px;
+    }
+    .ant-form-item-label label:after {
+        margin: 0 7px 0 1px !important;
+    }
+    .ant-form-item-control-wrapper {
+        width: 120px;
+    }
+    .ant-select-selection__rendered, .ant-select-selection--single {
+        width: 120px !important;
+    }
+    .IconDiv {
+        display: flex;
+        align-items: center;
+        .addIcon, .delIcon {
+            font-size: 24px;
+            margin-left: 8px;
+            &:hover{
+                color: @primary-color;
+            }
+        }
+    }
+
+    .amount{
+        height: 53px;
+        line-height: 53px;
+        text-align: right;
+        div {
+            // width: 15%;
+            display: inline-block;
+            text-align: left;
+            margin-right: 19px;
+        }
+    }
+
+    .ant-select-selection-selected-value {
+        padding-right: 28px !important;
+    }
+
+}
+
+.settlement-personclass {
+    width: 180px !important;
+}
+.openAccountiframe{
+    .ant-modal-body{
+        height: 450px;
+        position: relative;
+        overflow: hidden;
+    }
+    .ttk-edf-app-iframe{
+        top:-1px;
+        bottom: -1px;
+        right: 0;
+        left: -32px;
+        border: none;
+    }
+    .invite-open>div.left{
+        width: 600px !important;
+    }
+}

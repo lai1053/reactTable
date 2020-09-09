@@ -1,0 +1,123 @@
+@borderStyle: 1px solid #e9e9e9;
+.app-proof-of-charge-assistitem{
+    .mk-form-item {
+        display: flex;
+        margin: 1px 0;
+        justify-content: center;
+        height: 38px;
+        .ant-form-item-label {
+            width: 75px;
+            font-size: 12px;
+            label {
+                color: #666;
+            }
+        }
+        .ant-checkbox-wrapper, .ant-radio-wrapper {
+            font-size: 12px;
+        }
+        .mk-btn-bluesky{
+            margin-left: 10px;
+        }
+    }
+    .ant-form-item-no-colon .ant-form-item-label label:after{
+        content: none;
+    }
+    .mk-form-item.check {
+        margin-left: 60px;
+    }
+
+    .ant-form-explain {
+        font-size: 12px;
+        margin-top: 1px;
+    }
+    &-openContent{
+        margin-left: 8px;
+        font-size: 12px;
+    }
+}
+.app-proof-of-charge-modal{
+    .app-list-customer,.app-list-unit,.app-list-currency,.app-list-currency,.app-list-inventory,.app-list-project,.app-list-supplier{
+        padding-top: 0px;
+        &-header{
+            height: 50px !important;
+            &-left-search{
+                height: 30px;
+            }
+        }
+    }
+    .app-list-userdefinecard-grid-header{
+        height: 35px;
+        padding: 0px;
+    }
+    .app-list-userdefinecard-contentHeight{
+        border: 1px solid #d9d9d9;
+        border-top: none;
+    }
+    .app-list-userdefinecard-backgroundColor{
+        border: none !important;
+    }
+    .app-list-userdefinecard-department{
+        border-left: 1px solid #d9d9d9;
+        border-radius: 5px 0px 5px 0px;
+    }
+    .public_Scrollbar_main{
+        border-top:none !important;
+    }
+    .fixedDataTableCellGroupLayout_cellGroup{
+        .public_fixedDataTableCell_main:last-child{
+            // border-right: none;
+        }
+    }
+    .app-list-unit-header,.app-list-currency-header,.app-list-customer-header,.app-list-inventory-header,.app-list-project-header,.app-list-supplier-header,.app-list-customer-header{
+        // height: 54px;
+        padding: 10px 0px;
+    }
+    .app-list-unit,.app-list-currency{
+        padding-top: 0px;
+    }
+    .app-list-unit-backgroundColor{
+        .app-list-unit-content{
+            border: 1px solid #d9d9d9;
+        }
+    }
+    .app-list-currency-backgroundColor,.app-list-unit-backgroundColor,.app-list-inventory-backgroundColor,.app-list-project-backgroundColor,.app-list-supplier-backgroundColor,.app-list-customer-backgroundColor{
+        border: none !important;
+        .app-list-currency-content{
+            border: 1px solid #d9d9d9;
+        }
+    }
+    .app-list-currency-contentHeight ,.app-list-unit-contentHeight,{
+        .fixedDataTableLayout_rowsContainer{
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            height: 100% !important;
+        }
+    }
+    
+    .app-list-currency-content,.app-list-supplier-content,.app-list-project-content,.app-list-unit-content,.app-list-inventory-content,.app-list-inventory-content{
+        border: 1px solid #d9d9d9 !important;
+        // border-bottom: 1px solid #d9d9d9;
+        // border-right: 1px solid #d9d9d9;
+        .mk-datagrid .fixedDataTableLayout_main{
+            border-right: none;
+            border-top: none;
+            // border-left: 1px solid #d9d9d9;
+        }
+    }
+    
+    .fixedDataTableLayout_rowsContainer{
+        width: 100% !important;
+        border: none !important;
+        // border: @borderStyle;.fixedDataTableLayout_rowsContainer
+    }
+    .ant-modal-body{
+        padding:0 12px !important;
+    }
+    [path = 'root.children.root-content.children.header'] {
+        // padding: 11px 0px !important;
+    }
+    [path = 'root.children.root.children.root-content.children.header'] {
+        // padding: 11px 0px !important;
+    }
+}

@@ -1,0 +1,134 @@
+.ttk-app-unit-card {
+	overflow-x: hidden;
+	&-content{
+		&-top{
+			position: relative;
+			margin-bottom: 10px;
+			font-size: 12px;
+			padding-top: 2px;
+			.ant-input-affix-wrapper{
+				width: 578px;
+				margin-left: 10px;
+				.ant-input{
+					height: 30px;
+					font-size: 12px;
+				}
+			}
+		}
+
+		&-bottom{
+			border: 1px solid #d9d9d9;
+			.mk-datagrid .public_fixedDataTable_main {
+				border-top: none !important;
+				border-right: none !important;
+			}
+			.mk-datagrid .public_Scrollbar_main {
+				border-left: none !important;
+			}
+			.mk-datagrid .public_fixedDataTable_bodyRow .public_fixedDataTableCell_main {
+				padding: 4px 6px;
+			}
+			.mk-input , .ant-input{
+				height: 26px !important;
+				font-size: 12px;
+			}
+			.mk-select {
+				width: 100%;
+				height: 26px;
+				font-size: 12px;
+			}
+			.ant-select-selection--single {
+				height: 26px !important;
+			}
+			.mk-datagrid .public_fixedDataTable_footer .public_fixedDataTableCell_main{
+				border-right: none !important;
+				border-left: 1px solid #d9d9d9;
+			}
+			.mk-datagrid .public_fixedDataTable_bodyRow .public_fixedDataTableCell_main{
+				border-right: none !important;
+				border-left: 1px solid #d9d9d9;
+			}
+			.mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main{
+				border-right: none !important;
+				border-left: 1px solid #d9d9d9;
+			}
+			.mk-datagrid .public_Scrollbar_main {
+				border-left: 1px solid #d9d9d9 !important;
+			}
+			.fixedDataTableCellGroupLayout_cellGroupWrapper:first-child .fixedDataTableCellGroupLayout_cellGroup .public_fixedDataTableCell_main{
+				border-left:none; 
+			}
+			
+		}
+	
+	}
+
+	&-form {
+		&-details {
+			.mk-datagrid-addDelRow-cell {
+                &:hover{
+                    border-right-width: 0px;
+                    z-index: 2;
+                }
+			}
+			.public_fixedDataTable_bodyRow .mk-datagrid-cellContent {
+				line-height: 26px !important;
+			}
+			.ant-select-selection__rendered {
+				line-height: 26px !important;
+			}
+			.fixedDataTableRowLayout_rowWrapper:hover{
+				.mk-datagrid-editable-add-row, .mk-datagrid-editable-remove-row{
+					display: block !important;
+				}
+				.addDelrow {
+					display: none !important;
+				}
+			}
+			.public_fixedDataTable_scrollbarSpacer {
+				border-left: 1px solid #d9d9d9;
+				z-index: 666;
+			}
+			.public_fixedDataTable_footer .public_fixedDataTable_scrollbarSpacer {
+				border: 1px solid #d9d9d9;
+			}
+		
+			.ScrollbarLayout_mainVertical .public_Scrollbar_main .public_Scrollbar_mainActive{
+				border: 1px solid #d9d9d9 !important;
+				border-bottom: none !important;
+			}
+		}
+	}
+	&-cell-right {
+        text-align: right;
+    }
+    &-cell-center {
+        text-align: center;
+	}
+	
+	&-helpPopover{
+        .ant-popover-inner-content{
+            width: 320px;
+            font-size: 12px;
+		}
+		.wxtishi{
+			color: #fa7c63;
+		}
+	}
+	.helpIcon{
+        border: none;
+        font-size: 23px;
+		vertical-align: middle;
+		color: @primary-color;
+		font-weight: 100;
+        &:hover{
+            color: @primary-color;
+            cursor: pointer;
+        }
+    }
+}
+.ttk-app-unit-card-add{
+	.ant-modal-body{
+		padding: 12px 35px;
+	}
+}

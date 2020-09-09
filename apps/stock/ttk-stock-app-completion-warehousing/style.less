@@ -1,0 +1,229 @@
+.ttk-stock-app-completion-warehousing {
+    height: 100%;
+    width: 100%;
+    // background-color: #fff;
+    margin: 0 auto;
+    color: black !important;
+
+    &-div {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .mk-btn.ant-btn {
+        height: 32px;
+    }
+
+    &-header {
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+        height: 52px;
+        border: 1px solid #d9d9d9;
+        border-bottom: none;
+        background-color: #fff;
+
+        &-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20px;
+        }
+
+        &-others {
+            &-left {
+                float: left;
+                text-align: left;
+                font-size: 13px;
+                height: 32px;
+                line-height: 32px;
+
+                // &-top {
+                .back-btn {
+                    display: inline-block;
+                    height: 30px;
+                    width: 32px;
+                    border: 1px solid #d9d9d9;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    background: url(../commonAssets/img/return.png) no-repeat center center;
+                }
+
+                .bill-code {
+                    margin: 0 20px 0 10px;
+                    position: relative;
+                    top: -10px;
+                }
+                .bill-code-readOnly{
+                    margin: 0 20px 0 10px;
+                }
+
+                .period {
+                    position: relative;
+                    top: -10px;
+                }
+
+                &-bottom {
+                    margin-top: 20px;
+                }
+            }
+
+            &-right {
+                float: right;
+                text-align: right;
+
+                &-top {
+                    .update-icon {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: middle;
+                        margin: -4px 10px 0 0;
+                        background: url(../commonAssets/img/keyboard.png);
+                    }
+
+                    .delete-btn {
+                        margin-left: 8px;
+                    }
+                }
+
+                &-bottom {
+                    margin-top: 18px;
+                }
+                .print-btn {
+                    vertical-align: top;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+
+    &-main {
+        margin-top: 0px;
+        border: 1px solid #d9d9d9;
+        border-top: none;
+
+        .ant-table-body {
+            overflow-x: hidden !important;
+            overflow-y: scroll !important;
+        }
+
+        .mk-table {
+            border: none;
+        }
+    }
+
+    &-footer {
+        text-align: left;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #d9d9d9;
+        border-top: none;
+
+        &-btn {
+            float: right;
+            // margin:10px 20px 0 0;
+        }
+
+        &-div {
+            color: #333;
+            margin-top: 3px;
+            display: inline-block;
+
+            &-span {
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .ant-table-tbody > tr {
+    }
+
+    .tdChme {
+        // position: relative;
+        display: block;
+
+        // padding-right: 37px;
+        .selectMoreName {
+            // position: absolute;
+            // top: 50%;
+            // transform: translateY(-50%);
+            // -webkit-transform: translateY(-50%);
+            // -ms-transform: translateY(-50%);
+            // right: 0px;
+            float: right;
+            border-radius: 4px;
+            margin-top: 4px;
+            height: 22px;
+            line-height: 22px;
+            width: 24px;
+            color: #b0b0b0;
+            cursor: pointer;
+            border: 1px solid #d9d9d9;
+            text-align: center;
+        }
+
+        .anticon-ellipsis {
+            font-size: 14px;
+            font-weight: 777;
+        }
+    }
+
+    .ant-select-selection__rendered {
+        margin-left: 5px;
+    }
+
+    /* 表格的数字输入框 start */
+    .mk-table table td > div {
+        display: block;
+    }
+
+    .ant-input-number-handler-wrap {
+        display: none;
+    }
+
+    .ant-input-number-input-wrap {
+        input {
+            text-align: right;
+        }
+    }
+
+    /* 表格的数字输入框 end */
+
+    // .mk-table .ant-table-tbody tr:not(.lazy_table_tr) td{
+    //     overflow: visible;
+    // }
+
+    .input_container {
+        input {
+            width: 96%;
+            padding: 0 6px;
+        }
+    }
+}
+
+.vt-body {
+    .vt-body-row-cell {
+        .xh {
+            display: inline;
+        }
+
+        .add-delect-icons {
+            display: none;
+            font-size: 15px;
+            color: #a8a8a8;
+            cursor: pointer;
+            z-index: 3;
+        }
+
+        &:hover {
+            .xh {
+                display: none;
+            }
+
+            .add-delect-icons {
+                display: block;
+            }
+        }
+    }
+}

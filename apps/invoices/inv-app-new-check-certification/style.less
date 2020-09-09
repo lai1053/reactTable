@@ -1,0 +1,315 @@
+.inv-app-new-check-certification {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    &-checkdeduction-header {
+        padding: 4px 8px 10px 8px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        .mk-btn.ant-btn {
+            height: 32px;
+        }
+
+        .iancccd-filter-form {
+            display: inline-block;
+
+            .ant-form-inline .ant-form-item {
+                margin-right: 8px;
+            }
+
+            .ant-form-item-control,
+            .ant-form-item-label {
+                line-height: 30px;
+            }
+
+            .iancccd-filter-form-search {
+                font-size: 12px;
+
+                .ant-input {
+                    padding-left: 30px !important;
+                }
+            }
+
+            .filter-icon {
+                margin-left: -1px;
+
+                &.active {
+                    border-color: #0066b3;
+                }
+            }
+        }
+    }
+
+    &-checkdeduction-header-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &-layout {
+        color: #999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex: 1;
+        background-color: #fff;
+    }
+
+    .tabs-container {
+        background-color: #fff;
+
+        .ant-tabs-bar {
+            margin-bottom: 10px;
+        }
+
+        .tool-link-state {
+            position: absolute;
+            right: 18px;
+            top: 10px;
+        }
+    }
+
+    .tabs-container,
+    .ant-tabs,
+    .ant-spin-nested-loading,
+    .ant-spin-container,
+    .ant-tabs-tabpane,
+    .ant-tabs:not(.ant-tabs-vertical) > .ant-tabs-content {
+        height: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .ant-tabs-tabpane-inactive {
+            flex: 0;
+        }
+    }
+
+    .ant-spin-nested-loading {
+        width: 100%;
+        overflow: hidden;
+
+        .ant-spin {
+            max-height: 100%;
+        }
+    }
+}
+
+.iancc-table {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-right: 1px solid #d9d9d9;
+    border-radius: 2px;
+
+    .ant-table-empty {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .ant-table-content,
+        .ant-table-scroll {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+    }
+
+    .ant-table-title {
+        padding: 10px;
+        border-left: none;
+        border-right: none;
+    }
+
+    .title-container {
+        width: 100%;
+
+        .title {
+            line-height: 37px;
+            text-align: center;
+        }
+
+        .company-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span {
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+.inv-app-new-check-certification-list,
+.inv-app-new-check-certification-lista {
+    height: 100%;
+    background-color: #fff;
+
+    //解决分页下移
+    .ant-taable-placeholder,
+    .mk-nodata {
+        // padding-bottom: 0 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-center {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .text-right {
+        text-align: right;
+        display: inline-block;
+        width: 100%;
+    }
+}
+
+.iancccd-filter-form-popover {
+    // width: 600px !important;
+}
+
+.inv-app-new-check-certification-imgdiv {
+    width: 308px;
+    height: 328px;
+    background-image: url(./imgs/normal.png);
+    margin: 0 auto;
+    cursor: pointer;
+    // margin-top: 120px;
+}
+
+.inv-app-new-check-certification-imgdiv:hover {
+    background-image: url(./imgs/hover.png);
+}
+
+// modal1样式
+.inv-app-new-check-certification-modal1 {
+    .ant-confirm-btns {
+        text-align: right !important;
+    }
+
+    .anticon.anticon-question-circle {
+        color: #53bdbd !important;
+    }
+
+    .inv-app-new-check-certification-modal1-content {
+        margin-bottom: 8px;
+
+        strong {
+            color: #f17712;
+        }
+    }
+}
+
+// modal2样式
+.inv-app-new-check-certification-modal2 {
+    // .ant-modal-footer {
+    //     text-align: right !important;
+    // }
+}
+
+// modal3样式
+.inv-app-new-check-certification-modal3 {
+    width: 380px;
+    // .ant-modal-footer {
+    //     text-align: right !important;
+    // }
+}
+
+// modal4样式
+.inv-app-new-check-certification-modal4 {
+    width: 480px;
+
+    .anticon.anticon-info-circle {
+        color: #fa7c63 !important;
+    }
+}
+
+// modal5样式
+.inv-app-new-check-certification-modal5 {
+    width: 480px !important;
+
+    .ant-modal-body {
+        padding: 12px 40px !important;
+    }
+}
+
+// modal6样式
+.inv-app-new-check-certification-modal6 {
+    width: 680px !important;
+
+    .ant-modal-body {
+        padding: 0 30px 10px !important;
+        overflow-y: scroll;
+        max-height: 620px;
+    }
+
+    &-itemBox {
+        border-bottom: 1px dotted #ddd;
+        padding: 20px 0;
+    }
+
+    &-itemBox:last-child {
+        border: none;
+    }
+}
+
+.bovms-common-table-style {
+    .ant-table-scroll table {
+        width: fit-content;
+    }
+
+    .ant-table-empty {
+        .ant-table-body {
+            height: auto !important;
+        }
+    }
+
+    .ant-table-body {
+        overflow-y: scroll !important;
+    }
+}
+
+.inv-app-new-batch-check-certification-link-modal {
+    width: 366px !important;
+
+    .ant-modal-content {
+        background-color: #f6f6f6;
+    }
+
+    .ant-modal-footer {
+        text-align: right !important;
+        border-top: none;
+    }
+
+    &-loading {
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        background: url(./imgs/loading.gif) no-repeat center center;
+        background-size: 20px;
+        background-color: #999;
+    }
+}
+
+.cds-fail-record-list {
+    height: 250px;
+}
+
+.cds-fail-record-content {
+    padding-top: 8px;
+    line-height: 1.6;
+}

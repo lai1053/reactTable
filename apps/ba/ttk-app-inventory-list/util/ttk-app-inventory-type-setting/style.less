@@ -1,0 +1,143 @@
+.ttk-app-inventory-type-setting {
+	overflow-x: hidden;
+	&-content{
+		&-bottom{
+			border: 1px solid #d9d9d9;
+			.mk-datagrid .public_fixedDataTable_main {
+				border-top: none !important;
+				border-right: none !important;
+			}
+			.mk-datagrid .public_Scrollbar_main {
+				border-left: none !important;
+			}
+			.mk-datagrid .public_fixedDataTable_bodyRow .public_fixedDataTableCell_main {
+				padding: 4px 6px;
+			}
+			.mk-input , .ant-input{
+				height: 26px !important;
+				font-size: 12px;
+			}
+			.mk-select {
+				width: 100%;
+				height: 26px;
+				font-size: 12px;
+			}
+			.ant-select-selection--single {
+				height: 26px !important;
+			}
+			.mk-datagrid .public_fixedDataTable_footer .public_fixedDataTableCell_main{
+				border-right: none !important;
+				border-left: 1px solid #d9d9d9;
+			}
+			.mk-datagrid .public_fixedDataTable_bodyRow .public_fixedDataTableCell_main{
+				border-right: none !important;
+				border-left: 1px solid #d9d9d9;
+			}
+			.mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main{
+				border-right: none !important;
+				border-left: 1px solid #d9d9d9;
+			}
+			.mk-datagrid .public_Scrollbar_main {
+				border-left: 1px solid #d9d9d9 !important;
+			}
+			.fixedDataTableCellGroupLayout_cellGroupWrapper:first-child .fixedDataTableCellGroupLayout_cellGroup .public_fixedDataTableCell_main{
+				border-left:none; 
+			}
+			
+		}
+	
+	}
+
+	&-form {
+		&-details {
+			.mk-datagrid-addDelRow-cell {
+                &:hover{
+                    border-right-width: 0px;
+                    z-index: 2;
+                }
+			}
+			.public_fixedDataTable_bodyRow .mk-datagrid-cellContent {
+				line-height: 26px !important;
+			}
+			.ant-select-selection__rendered {
+				line-height: 26px !important;
+			}
+			.public_fixedDataTable_scrollbarSpacer {
+				border-left: 1px solid #d9d9d9;
+				z-index: 666;
+			}
+			.public_fixedDataTable_footer .public_fixedDataTable_scrollbarSpacer {
+				border: 1px solid #d9d9d9;
+			}
+		
+			.ScrollbarLayout_mainVertical .public_Scrollbar_main .public_Scrollbar_mainActive{
+				border: 1px solid #d9d9d9 !important;
+				border-bottom: none !important;
+			}
+			.fixedDataTableLayout_rowsContainer{
+				div:nth-child(3){
+					.fixedDataTableRowLayout_rowWrapper:nth-of-type(1):hover{
+						.fixedDataTableRowLayout_body{
+							div:first-child {
+								.fixedDataTableCellGroupLayout_cellGroup{
+									.anticon{
+										display: none !important;
+									}
+									.addDelrow{
+										display: block !important;
+									}
+								}
+							}
+						}
+					}
+					.fixedDataTableRowLayout_rowWrapper:nth-of-type(2):hover{
+						.fixedDataTableRowLayout_body{
+							div:first-child {
+								.fixedDataTableCellGroupLayout_cellGroup{
+									.anticon{
+										display: none !important;
+									}
+									.addDelrow{
+										display: block !important;
+									}
+								}
+							}
+						}
+					}
+					.fixedDataTableRowLayout_rowWrapper:nth-of-type(3):hover{
+						.fixedDataTableRowLayout_body{
+							div:first-child {
+								.fixedDataTableCellGroupLayout_cellGroup{
+									.anticon{
+										display: none !important;
+									}
+									.addDelrow{
+										display: block !important;
+									}
+								}
+							}
+						}
+					}     
+					.fixedDataTableRowLayout_rowWrapper:nth-of-type(4):hover{
+						.fixedDataTableRowLayout_body{
+							div:first-child {
+								.fixedDataTableCellGroupLayout_cellGroup{
+									.mk-datagrid-editable-remove-row{
+										display: none !important;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&-cell-right {
+        text-align: right;
+    }
+    &-cell-center {
+        text-align: center;
+	}
+	
+}

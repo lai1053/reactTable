@@ -1,0 +1,132 @@
+.helloworld-addType-chonghui{
+    width: 100%;
+    height: 100%;
+
+    &-header-title{
+      background: #FFFFFF;
+      .inv-app-batch-sale-header{
+        height: 42px;
+        .header-left{
+          float: left;
+
+          .inv-app-batch-sale-header-filter-input{
+            width: 183px;
+            vertical-align: middle;
+            /*有用*/
+            .ant-input{
+              border-radius: 4px;
+              padding-left: 30px !important;
+              font-size: 13px;
+            }
+          }
+        }   
+      }
+  }
+    &-content {
+      min-height: 305px;
+      .ant-input{
+        height: 100%;
+        border-radius: 0;
+        border: 1px solid transparent;
+      }
+      .vt-table .vt-body .vt-body-row {
+        .cell-8{
+          padding: 0;
+          line-height: 0!important;
+        }
+        &:hover{
+          .vt-body-row-cell{
+            background-color: #d4e8ff;
+          }
+          .ant-input{
+            border: 1px solid #0066b3;
+            background-color: transparent;
+            &:focus{
+              border-radius: 4px;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+      .alignLeft{
+        text-align: left;
+      }
+      .alignRight{
+        text-align: right;
+      }
+    }
+    .ant-select{
+        width: 99%;
+        border: none;
+        height: 22px;
+        line-height: 22px;
+        overflow: hidden;
+        .ant-select-selection{
+            height: 24px;
+            line-height: 24px;
+            border: none;
+            background-color: inherit;
+            .ant-select-selection__rendered{
+                height: 24px;
+                line-height: 24px;
+            }
+        }
+    }
+
+  /* 底部按钮样式*/
+    &-footer{
+      position: relative;
+      float: right;
+      display: block !important;
+      height: 42px;
+      padding: 0px;
+      line-height: 42px;
+      &>div{
+        float: left;
+        padding-right: 10px;
+      }
+      .ant-form-item-control-wrapper{
+          float:right;
+      }
+  }
+
+  &-footer-btn{
+    width: 100%;
+    padding-top: 10px;
+    height: 54px;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    position: absolute;
+    bottom: -53px;
+    left: 0;
+    border-top: 1px solid #e8e8e8;
+    &-btnGroup {
+      margin-right: 10px;
+      &-item {
+        margin-left: 8px;
+        width: 59.39px;
+        float: right;
+      }
+      &-item:nth-child(2) {
+        width: 106px;
+      }
+    } 
+  }
+}
+
+/* 弹出框外框的样式 */
+.helloworld-addType-chonghui-wraper{
+  .ant-modal-content{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
+
+.textOverflow{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+

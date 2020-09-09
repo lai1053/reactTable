@@ -1,0 +1,308 @@
+.ttk-dzgl-app-register-organization{
+	@input-placeholder-color:#d9d9d9;
+	@primary-color:rgba(24,102,174,1);
+	@primary-color-hover:rgba(24,102,174,0.2);
+	@primary-color-focus:rgba(24,102,174,0.7);
+	@primary-color-shadow:rgba(24,102,174,0.07);
+
+  width: 100%;
+  height: 100%;
+  .ant-cascader-picker:focus .ant-cascader-input{
+      box-shadow: none;
+  }
+	&-header{
+      height: 55px;
+      flex: 0 0 55px;
+      border-bottom: 1px solid rgb(222, 222, 222);
+      font-size: 20px;
+      font-weight: bold;
+      flex-direction:row;
+      align-items:center;
+      overflow: hidden;
+      justify-content: space-between;
+
+      &-left {
+        height: 54px;
+        flex-direction: row;
+        line-height: 55px;
+        color: #ffffff;
+        padding-left:190px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+
+        &-logo {
+            width: 104px;
+            height: 28px;
+            margin: 0 0 0 0;
+            cursor: pointer;
+        }
+
+        &-sitename {
+            font-family: 'Microsoft Yahei', 'PingFang SC';
+            font-style: normal;
+            font-size: 24px;
+            color: #FFFFFF;
+            margin:0 auto;
+            margin: 0px 0px 0px 10px;
+        }
+
+        &-split {
+            width: 1px;
+            height: 14px;
+            background: #e0e0e0;
+            margin: 0 20px;
+            // display: none;
+        }
+
+        &-login {
+            font-size: 18px;
+            font-weight: 400;
+            display: none;
+        }
+    }
+		&-right{
+			display: block;
+			width:80px;
+			line-height:30px;
+			border:1px solid @primary-color;
+			border-radius: 5px;
+			font-size:14px;
+			font-weight:400;
+			text-align: center;
+			color:@primary-color;
+			margin-right:30px;
+			cursor: pointer;
+		}
+
+		&-right:hover{
+            color:#ffffff;
+			background: @primary-color;
+		}
+	}
+
+    &-form-container{
+        flex:1;
+        overflow-y:auto;
+	    .ant-btn-primary {
+		    color: #fff;
+		    background-color: @primary-color;
+		    border-color: @primary-color;
+	    }
+        .ant-btn-primary[disabled]:hover{
+            color: rgba(0, 0, 0, 0.25);
+            background-color: #f5f5f5;
+            border-color: #d9d9d9;
+        }
+	    .ant-btn:not([disabled]):hover{
+		    background: @primary-color-focus !important;
+		    border-color: @primary-color-focus;
+		    color: #fff !important;
+	    }
+	    a {
+		    color: @primary-color;
+		    &:hover{color: @primary-color-hover}
+	    }
+	    .mk-datepicker:hover .ant-input,.mk-input:hover .ant-input{
+		    border-color: @primary-color;
+		    outline: 0;
+		    box-shadow: 0 0 0 2px @primary-color-shadow;
+	    }
+	    .ant-input:focus {
+		    border-color: @primary-color;
+		    outline: 0;
+		    box-shadow: 0 0 0 2px @primary-color-shadow;
+	    }
+	    .ant-checkbox-inner{
+		    border-color:@primary-color!important;
+	    }
+	    .ant-checkbox-checked .ant-checkbox-inner{
+		    background:@primary-color!important;
+	    }
+    }
+    &-form{
+        width: 387px;
+        min-height: 300px;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        &-title{
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            font-size: 28px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .mk-form-item {
+            width: 387px;
+            margin-bottom: 20px;
+
+            .ant-form-item{
+                font-size: 13px;
+            }
+
+            .ant-form-item-control-wrapper{
+                width: 100%;
+            }
+            .mk-input, .mk-select, .mk-cascader{
+                width: 100%;
+                height: 50px;
+                .ant-select-selection {
+                    height: 50px;
+                    .ant-select-selection-selected-value{
+                        line-height: 50px;
+                    }
+                }
+	            .ant-cascader-input {
+		            outline: transparent;
+                    height: 50px;
+                    .ant-select-selection-selected-value{
+                        line-height: 50px;
+                    }
+                }
+            }
+            .ant-form-explain, .ant-form-extra{
+                margin-top: 3px;
+            }
+            input {
+                padding-left: 20px !important;
+                font-size: 14px;
+            }
+            .ant-input-group-addon{
+                height: 50px;
+                padding: 0;
+                border: none;
+                button{
+                    height: 50px;
+                    border-bottom-left-radius: 0px;
+                    border-top-left-radius: 0px;
+                }
+            }
+        }
+        .ttk-dzgl-app-register-organization-form &-submit{
+            width: 100%;
+            height: 50px;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+	    .ant-cascader-picker-label {
+		    margin-left: 8px;
+		    z-index: 1000;
+	    }
+	    &-name {
+		    margin: 0 !important;
+	    }
+	    &-mail{
+		    .prefixCls {
+			    .ant-form-item-required {
+				    top: 38px;
+				    position: absolute;
+			    }
+		    }
+	    }
+        &-footer{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+    }
+    .ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month,
+    .ant-calendar-decade-panel-selected-cell .ant-calendar-decade-panel-decade,
+    .ant-calendar-year-panel-selected-cell .ant-calendar-year-panel-year{
+        background:@primary-color;
+    }
+    .ant-calendar-header a:hover{
+        color:@primary-color;
+        background:@primary-color-shadow;
+    }
+    .ant-calendar-month-panel-header a:hover,
+    .ant-calendar-header a:hover{
+        background:#ffffff;
+    }
+    .ant-select-dropdown-menu-item-active,.ant-select-dropdown-menu-item-selected{
+        color:@primary-color;
+        background:@primary-color-shadow;
+    }
+
+    &-footer, &-footer-mobile{
+    	height: 80px;
+    	flex: 0 0 80px;;
+    	justify-content: center;
+    	align-items: center;
+		background:#ffffff;
+		border-top: 1px solid rgb(222, 222, 222);
+		color:#a1a1a1;
+		font-size:14px;
+		font-weight:400;
+		line-height:normal;
+        a{
+			color:@primary-color;
+		}
+		p{
+			margin:0;
+		}
+    }
+    &-footer-mobile{
+		display:none;
+	}
+    .editBtn{
+        transform: translateY(3px);
+        font-size: 20px;
+        padding-left: 2px
+    }
+    *::selection {
+        background:@primary-color;
+    }
+    .ant-select-selection{
+        font-size:14px;
+        height:100%;
+        .ant-select-selection__rendered{
+            line-height: 50px;
+        }
+    }
+    .ant-select-selection:hover{
+        border-color: @primary-color;
+    }
+    .ant-select-selection:focus{
+        border-color: @primary-color;
+        outline: 0;
+        box-shadow: 0 0 0 2px @primary-color-shadow;
+    }
+    .provinceSelect{
+        &>div{
+            padding-left:9px;
+        }
+    }
+}
+.mk-loadingMask-1.dljgRegister{
+    .ant-spin-dot i{
+        background-color:@primary-color;
+    }
+    .ant-spin-text{
+        color:@primary-color;
+    }
+}
+.isMobile .ttk-dzgl-app-register-organization-form>div{
+    width:90%;
+    .ant-input-group-wrapper{
+        width:100%;
+    }
+}
+.isMobile .ttk-dzgl-app-register-organization-form .ttk-dzgl-app-register-organization-form-date{
+     .ant-form-item-label{
+        width:83px;
+        margin-left: -8px;
+        margin-right: 6px;
+    }
+    .ant-form-item-control-wrapper{
+        flex:1;
+    }
+    .ant-calendar-picker{
+        width:100%;
+    }
+    .ant-calendar-picker-input{
+        width:100%;
+    }
+}

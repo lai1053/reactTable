@@ -1,0 +1,652 @@
+.ttk-scm-app-warehouse-beginning {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    color: #333;
+    padding: 0 10px 0 0 !important;
+    margin-bottom: 10px;
+    overflow-y: hidden;
+    .ant-radio-group {
+        text-align: center;
+        margin-bottom: 2px;
+    }
+    &-modal {
+		.ant-modal-body {
+			height: 376px
+		}
+		.ant-modal-content {
+			min-width: 750px;
+		}
+	}
+    .ant-form-item-label label, h1 {
+        color: #333;
+    }
+    .classChoiceName {
+        background: #0066B3;
+        color: #fff;
+    }
+    h1 {
+        font-size: 21px;
+        font-weight: 400;
+    }
+    .mkicon {
+        font-size: 22px;
+    }
+    &-cell-left {
+        padding-left: 8px;
+        justify-content: flex-start;
+    }
+    &-cell-right {
+        padding-right: 8px;
+        justify-content: flex-end;
+    }
+    &-cell {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &>div {
+            width: 100%;
+            height: 100%;
+            input {
+                height: 100%;
+            }
+        }
+        /*input{
+            height: 40px;
+        }*/
+        .ant-select-selection {
+            height: 100%
+        }
+        .ant-select-selection__rendered {
+            height: 100%
+        }
+        .ant-select-selection-selected-value {
+            line-height: 40px;
+        }
+    }
+    &-cell-disabled {
+        cursor: not-allowed;
+    }
+    .ant-tabs-bar {
+        margin-bottom: 0px;
+    }
+    &-header {
+        flex-direction: row;
+        padding: 10px 0 10px 10px;
+        flex: 0 0 52px;
+        overflow: hidden;
+        background-color: #fff;
+
+        border-top: 1px solid #d9d9d9;
+        border-left: 1px solid #d9d9d9;
+        border-right: 1px solid #d9d9d9;
+        &-left {
+            flex-direction: row;
+            align-items: center;
+            // overflow: hidden;
+            font-size: 12px;
+            .ant-calendar-picker{
+                font-size: 12px;
+                input{
+                    font-size: 12px;
+                    width: 80px;
+                    margin-left: 5px;
+                }
+            }
+            .ant-select{
+                font-size: 12px
+            }
+
+        }
+        &-right {
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            overflow: hidden;
+            &-but {
+                color: #fff;
+                background-color: @primary-color;
+                border-color: @primary-color;
+                &:hover{
+                    background-color: @button-hover-color;
+                    border-color: @primary-color;
+                    color: #fff;
+                }
+            }
+            .mk-btn {
+                margin-left: 8px;
+                &:hover{
+                    border-color: @primary-color;
+                }
+            }
+            .print, .export, .import{
+                text-align: center;
+                box-sizing: border-box;
+                cursor: pointer;
+                font-size: 28px;
+                line-height: 28px;
+                margin-left: 8px;
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid #D9D9D9;
+            }
+            .export{
+                color: #00B38A;
+                margin-right: 8px;
+                &:hover{
+                    border: 1px solid #00B38A !important;
+                }
+            }   
+            .import{
+                color: #FFC000;
+                &:hover{
+                    border: 1px solid #FFC000 !important;
+                }
+            }
+            .print{
+                color: #45ACF7;
+                &:hover{
+                    border: 1px solid #45ACF7 !important;
+                }
+            }
+        }
+    }
+    &-content{
+        flex: 1;
+        .mk-datagrid .mk-datagrid-cellContent{
+            text-align: center
+        }
+        .mk-datagrid .public_fixedDataTable_main {
+			border-left: none;
+		}
+		.mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+			color: #333333;
+		}
+		.public_fixedDataTable_scrollbarSpacer {
+            top: 0px;
+		    background: #eaeaea;
+        }
+        .mk-datagrid .public_Scrollbar_main{
+            border-left: 1px solid #d3d3d3 !important;
+        }
+    }
+    &-form-details {
+        input{
+            font-size: 12px
+        }
+        // .redBorder{
+        //     border: 1px solid #F5222D;
+        // }
+        .cellRight{
+            text-align: right !important;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .cellLeft{
+            text-align: left !important;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        input{
+            height: 80%;
+            margin-top: 4px;
+            margin-left: 7%;
+            width: 85%;
+            text-align: right;
+        }
+        .mk-datagrid-addDelRow-cell {
+            &:hover{
+                border-right-width: 0px;
+                z-index: 2;
+            }
+        }
+        .fixedDataTableLayout_rowsContainer{
+            border-bottom: 2px solid #d9d9d9;
+            border-left: 1px solid #d9d9d9;
+        }
+    }
+    &-title {
+        flex: 0 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        &-left {
+            flex: 0 0 300px;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 10px;            
+            display: flex;
+            flex-direction: row;
+            overflow: visible;
+            img{
+                zoom: 50%;
+                padding: 0 8px 0 8px;
+            }
+        }
+        &-right {
+            flex: 0 0 300px;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 10px;
+            .code {
+                line-height: 18px;
+                height: 18px;
+                width: 120px;
+                border-bottom: 1px solid #ccc;
+                text-align: center;
+                color: rgb(204, 204, 204);
+            }
+        }
+    }
+    &-form-header {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 18px;
+        margin-left: 10px;
+        .mk-form-item {
+            margin-bottom: 5px;
+            width: 25%;
+        }
+        .ant-form-item-label {
+            padding: 0px;
+            width: 85px;
+        }
+        .ant-form-item-control-wrapper {
+            width: 150px;
+            height:32px;
+        }
+        .mk-select {
+            width: 100%;
+        }
+        .mk-datepicker {
+            width: 100%;
+        }
+        .ant-form-explain {
+            margin-top: 5px;
+        }
+        &-remark {
+            // width: 100% !important;
+            width: 50% !important;
+            .ttk-scm-app-warehouse-beginning-form-header .mk-form-item {
+                width: 50% !important;
+            }
+            .ant-form-item-control-wrapper {
+                // width: 800px;
+                width: 450px !important;
+            }
+        }
+    }
+    
+    &-form-footer {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 10px;
+        .ant-form-item-label {
+            width: 100px;
+        }
+        .ant-form-item-control-wrapper {
+            width: 200px;
+        }
+        .mk-select {
+            width: 100%;
+        }
+
+        &-settlement, &-advance, &-balance{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            .ant-form-item-control-wrapper {
+                width: 150px;
+            }
+        }
+        &-settlement {
+            // align-items: center;
+            &-leftFooter {
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 53px;
+                line-height: 53px;
+                // margin-left: 15px;
+                &-deduction {
+                    margin-left: 40px;
+                }
+                &-deduction1 {
+                    margin-left: 0px;
+                }
+            }
+            &-paymentAmount {
+                margin-right: 24px;
+            }
+            &-payDiv {
+                // display: flex;
+            }
+        }
+        &-balance {
+         &-signLeft {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            
+            &-taxWay {
+                .ant-form-item-control-wrapper {
+                    display: flex;
+                    width: 185px;
+                    align-items: center;
+                }
+                .ant-form-item-label {
+                    // width: 70px !important;
+                    width: auto !important;
+                }
+            }
+         }
+         &-signRight {
+             height: 53px;
+             line-height: 53px;
+             width: 20%;
+             text-align: right;
+         }
+        }
+        &-paymentAmount{
+            &-icon {
+                font-size: 21px;
+                color: @button-hover-color;
+                line-height: 53px;
+                &:hover{
+                    color: @primary-color;
+                }
+            }
+            &-iconDiv {
+                height: 53px;
+                display: flex;
+                flex-direction: row;
+                font-size: 24px;
+                // color: @button-hover-color;
+                align-items: center;
+                // margin-right: 25px;
+                margin-left: 8px;
+                &-iconAdd:hover,&-iconDel:hover {
+                    color: @primary-color;
+                }
+                &-iconDel {
+                    font-size: 24px;
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+    &-selectL{
+        width: 95px;
+        margin-left: 8px;
+        .ant-select-selection__clear{
+            right: 20px;
+        }
+    }
+    &-selectR{
+        width: 160px;
+        margin-left: 8px;
+        input{
+            font-size: 12px
+        }
+    }
+    .reload{
+        width: 31px;
+        height: 31px;
+        font-size: 28px;
+        border-radius: 5px;
+        border: 1px solid #D9D9D9;
+        cursor: pointer;
+        color: #45ACF7;
+        background: #fff;
+        margin-left: 8px;
+        position: absolute;
+        &:hover{
+            border-color: #45ACF7;
+        }
+    }
+
+    .ttk-scm-app-estimate-beginning {
+        &-header {
+            flex-direction: row;
+            padding: 10px 0 10px 10px;
+            flex: 0 0 52px;
+            overflow: hidden;
+            background-color: #fff;
+    
+            border-top: 1px solid #d9d9d9;
+            border-left: 1px solid #d9d9d9;
+            border-right: 1px solid #d9d9d9;
+            &-left {
+                flex-direction: row;
+                align-items: center;
+                // overflow: hidden;
+                font-size: 12px;
+                .ant-calendar-picker{
+                    font-size: 12px;
+                    input{
+                        font-size: 12px;
+                        width: 80px;
+                        margin-left: 5px;
+                    }
+                }
+                .ant-select{
+                    font-size: 12px
+                }
+    
+            }
+            &-right {
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                overflow: hidden;
+                &-but {
+                    color: #fff;
+                    background-color: @primary-color;
+                    border-color: @primary-color;
+                    &:hover{
+                        background-color: @button-hover-color;
+                        border-color: @primary-color;
+                        color: #fff;
+                    }
+                }
+                .mk-btn {
+                    margin-left: 8px;
+                    &:hover{
+                        border-color: @primary-color;
+                    }
+                }
+                .print, .export, .import{
+                    text-align: center;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    font-size: 28px;
+                    line-height: 28px;
+                    margin-left: 8px;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 5px;
+                    border: 1px solid #D9D9D9;
+                }
+                .export{
+                    color: #00B38A;
+                    margin-right: 8px;
+                    &:hover{
+                        border: 1px solid #00B38A !important;
+                    }
+                }   
+                .import{
+                    color: #FFC000;
+                    &:hover{
+                        border: 1px solid #FFC000 !important;
+                    }
+                }
+                .print{
+                    color: #45ACF7;
+                    &:hover{
+                        border: 1px solid #45ACF7 !important;
+                    }
+                }
+            }
+            .ttk-scm-app-estimate-beginning-selectR {
+                font-size: 12px;
+                width: 180px;
+                input{
+                    font-size: 12px;
+                }
+            }
+            .ttk-scm-app-estimate-beginning-selectL {
+                margin: 0 8px;
+                .ant-select-selection--single {
+                    width: 100px;
+                }
+            }
+        }
+        &-content{
+            flex: 1;
+            .mk-datagrid .mk-datagrid-cellContent{
+                text-align: center
+            }
+            .mk-datagrid .public_fixedDataTable_main {
+                border-left: none;
+            }
+            .mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+                color: #333333;
+            }
+            .public_fixedDataTable_scrollbarSpacer {
+                top: 0px;
+                background: #eaeaea;
+            }
+            .mk-datagrid .public_Scrollbar_main{
+                border-left: 1px solid #d3d3d3 !important;
+            }
+        }
+        
+        &-form-details {
+            input{
+                font-size: 12px
+            }
+            // .redBorder{
+            //     border: 1px solid #F5222D;
+            // }
+            .cellRight{
+                text-align: right !important;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .cellLeft{
+                text-align: left !important;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            input{
+                height: 80%;
+                margin-top: 4px;
+                margin-left: 7%;
+                width: 85%;
+                text-align: right;
+            }
+            .mk-datagrid-addDelRow-cell {
+                &:hover{
+                    border-right-width: 0px;
+                    z-index: 2;
+                }
+            }
+            .fixedDataTableLayout_rowsContainer{
+                border-bottom: 2px solid #d9d9d9;
+                border-left: 1px solid #d9d9d9;
+            }
+        }
+        
+    }
+}
+
+.subjectSetCss {
+    .wrap {
+        font-size: 12px;
+        .tip{
+            color: #fa954c;
+        }
+        .ant-select-selection-selected-value {
+            font-size: 12px !important;
+        }
+        .ant-table-body>table{
+            width: 100%;
+        }
+        .ant-table-wrapper {
+            border-top: 1px solid #d9d9d9;
+        }
+    }
+}
+
+.ttk-scm-app-estimate-beginning-content {
+    .ttk-scm-app-estimate-beginning-form-details {
+        .fixedDataTableLayout_main {
+            .fixedDataTableLayout_rowsContainer {
+                div:nth-child(3) {
+                    .fixedDataTableRowLayout_rowWrapper {
+                        .fixedDataTableRowLayout_body{
+                            .fixedDataTableCellGroupLayout_cellGroupWrapper {
+                                .fixedDataTableCellGroupLayout_cellGroup {
+                                    div:nth-child(2),div:nth-child(4),div:nth-child(7){
+                                        .mk-select {
+                                            width: 120px;
+                                            height: 26px;
+                                            line-height: 26px;
+                                            margin: 4px 0 0 7px;
+                                            .ant-select-selection--single{
+                                                height: 26px;
+                                                line-height: 26px;
+                                                .ant-select-selection__rendered{
+                                                    height: 26px;
+                                                    line-height: 26px;
+                                                    .ant-select-selection-selected-value{
+                                                        height: 26px;
+                                                        line-height: 26px; 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .redBorder {
+                                            width: 120px;
+                                            height: 26px;
+                                            line-height: 26px;
+                                            margin: 4px 0 0 7px;
+                                            .ant-select-selection--single{
+                                                height: 26px;
+                                                line-height: 26px;
+                                                border: 1px solid red;
+                                                .ant-select-selection__rendered{
+                                                    height: 26px;
+                                                    line-height: 26px;
+                                                    .ant-select-selection-selected-value{
+                                                        height: 26px;
+                                                        line-height: 26px; 
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

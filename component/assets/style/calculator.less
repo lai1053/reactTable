@@ -1,0 +1,127 @@
+.react-calculator {
+    width: 100%;
+    height: 365px;
+    display: flex;
+    flex-direction: column;
+
+   .result-panel {
+        display: flex;
+        padding-top: 40px;
+        flex: 2;
+        flex-direction: column;
+        background-color: #e3e7e9;
+        text-align: right;
+        padding: 0px 10px;
+        line-height: 40px;
+
+        .last-row {
+            flex: 1;
+            color: #969ba3;
+            font-size: 20px;
+            align-items: flex-end;
+            display: flex;
+            justify-content: flex-end;
+            overflow: auto;
+            max-width: 100%;
+        }
+        .cur-row {
+            flex: 1;
+            color: #46494d;
+            font-size: 22px;
+            overflow: auto;
+            max-width: 100%;
+        }
+    }
+
+    .button-panel{
+        flex: 5;
+
+        .button {
+            cursor: pointer;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            box-shadow: inset 1px 1px 0 0 #e3e7e9;
+            border: none;
+            background-color: #fafafa;
+            font-size: 30px;
+            text-align: center;
+            color: #979ca4;
+            overflow: hidden;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: #aaa;
+                opacity: 0;
+            }
+            &.clicked:before {
+                animation: react-calculator-click .5s ease-out 0s 1 alternate forwards;
+            }
+            &.button-equal {
+                color: #fff;
+                background-color: #fa722e;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+
+    }
+
+    .text-center {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .s1 { flex: 1; }
+    .s2 { flex: 2; }
+    .s3 { flex: 3; }
+    .s4 { flex: 4; }
+    .s5 { flex: 5; }
+    .s6 { flex: 6; }
+    .s7 { flex: 7; }
+    .s8 { flex: 8; }
+    .s9 { flex: 9; }
+    .s10 { flex: 10; }
+    .s11 { flex: 11; }
+    .s12 { flex: 12; }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@keyframes react-calculator-click {
+    0% {
+        transform: scale(1);
+        opacity: .7;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}

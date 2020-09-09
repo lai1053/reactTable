@@ -1,0 +1,161 @@
+.ttk-stock-app-statements-ckhz {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    color: black !important;
+
+    &-header {
+        position: relative;
+        // padding: 25px 10px 10px 10px;
+        padding: 10px;
+
+        &-title {
+            text-align: center;
+        }
+
+        &-others {
+            &-left {
+                float: left;
+                text-align: left;
+            }
+
+            &-right {
+                float: right;
+                text-align: right;
+                display: flex;
+                align-items: center;
+            }
+
+            &-monthPicker {
+                width: 110px;
+                vertical-align: bottom;
+                margin-left: 8px;
+            }
+
+            &-monthRangePicker {
+                vertical-align: bottom;
+                margin-left: 8px;
+            }
+
+            &-inventoryClass {
+                margin-left: 10px;
+                width: 150px;
+
+                .ant-select-selection--single {
+                    height: 32px;
+                }
+            }
+        }
+    }
+
+    .ant-table-footer {
+        padding: 0;
+        // width: 1166px;
+    }
+
+    .table-footer-div {
+        border: 1px solid #d9d9d9;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        height: 38px;
+        position: relative;
+        top: 0px;
+
+        .ant-table-body {
+            tr:nth-of-type(1) {
+                background: #fff6ea;
+            }
+        }
+
+        .ant-table-wrapper.mk-table {
+            border: none;
+        }
+    }
+
+    .vt-header-cell {
+        text-overflow: ellipsis;
+        padding: 0;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    &-main {
+        overflow: hidden;
+
+        .ant-table-body {
+            overflow-x: auto !important;
+            overflow-y: scroll !important;
+        }
+
+        .ant-table-tbody {
+            td {
+                position: relative;
+            }
+        }
+
+        .ant-table-scroll {
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        .ant-table-footer {
+            padding: 0;
+            border: none;
+        }
+
+        .ant-table.ant-table-bordered .ant-table-footer {
+            border: none;
+        }
+
+        .table-summary-row {
+            flex-wrap: nowrap !important;
+            font-size: 12px;
+            font-weight: 700;
+            text-align: right;
+
+            div {
+                // flex: 1;
+                border-right: 1px solid #d9d9d9;
+                padding: 0 10px;
+
+                &:first-child {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    &-footer {
+        text-align: left;
+        padding: 10px 20px 0 20px;
+        color: #b4b4b5;
+        font-size: 14px;
+    }
+
+    .ant-select-selection__rendered {
+        margin-left: 5px;
+        line-height: 28px;
+    }
+
+    .mk-table table td > div {
+        display: block;
+    }
+
+    .input_container {
+        input {
+            width: 96%;
+            padding: 0 6px;
+        }
+    }
+
+    .ttk-stock-app-link-txt {
+        color: #0066b3;
+        cursor: pointer;
+    }
+
+    .ant-table-thead > tr > th {
+        text-align: center !important;
+    }
+}

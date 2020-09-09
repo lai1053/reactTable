@@ -1,0 +1,312 @@
+@yiwancheng: #00b38a;
+@yishenbao:rgb(250, 149, 76);
+@weishenbao:rgb(250, 149, 76);
+@wurenwu: #d0d0d0;
+.ttk-es-app-ghsj {
+    // padding: 10px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    flex: 1;
+    border: 1px solid #d9d9d9;
+    background:#fff;
+    
+    &-top{
+        display: flex;
+        flex-direction: row;
+        height: 50px;
+        padding: 10px;
+        justify-content: space-between;
+
+        .topleft {
+            display: flex;
+            flex-direction: row;
+
+            .XDZsousuo {
+                font-size: 15px;
+            }
+            .ant-input {
+                height: 30px;
+                // border-left: none;
+                padding-left: 28px !important;
+            }
+            .ant-input-prefix {
+                left: 8px !important;
+            }
+            .ant-btn{
+                height: 30px;
+                line-height: 30px;
+            }
+            .ant-input-group-addon {
+                background: #fff;
+                padding: 5px 0px 5px 8px;
+            }
+
+            // .ant-input-search {
+            //     width: 250px;
+            // }
+            
+            .tree {
+                .ant-menu {
+                    border-right: 1px solid #d9d9d9;
+                }
+            }
+        }
+
+        .ant-select  {
+            width: 150px;
+            height: 30px;
+            margin-right: 8px;
+        }
+        .ant-select-selection--single {
+            height: 30px;
+        }
+
+        .helpIcon {
+            color: @primary-color;
+            margin-right: 5px;
+            font-size: 25px;
+            position: relative;
+            top: 5px;
+        }
+
+        &-helpPopover {
+            .popover {
+                span {
+                    margin: 8px;
+                }
+                .anticon {
+                    font-size: 16px;
+                    margin-right: 5px;
+                }
+                .wurenwu {
+                    color: @wurenwu;
+                }
+                .weishenbao {
+                    color: @weishenbao;
+                }
+                .yishenbao {
+                    color: @yishenbao;
+                }
+                .yiwancheng {
+                    color: @yiwancheng;
+                }
+            }
+            &-btn{
+                display: inline-block;
+                padding: 6px 12px;
+                margin-bottom: 0;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 1.42857143;
+                text-align: center;
+                white-space: nowrap;
+                vertical-align: middle;
+                touch-action: manipulation;
+                cursor: pointer;
+                user-select: none;
+                background-image: none;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            &-ghbtn{
+                margin-right:10px;
+            }
+            &-xzbtn{
+                margin-right:10px;
+                background: #0066b3 ;
+                color: #fff;
+                border-color: #0066b3;
+            }
+        }
+    
+        &-renderOverlay {
+            .ant-menu-inline{
+                border-right: 1xp solid #e8e8e8 !important;
+            }
+        }
+
+        .topleftInput {
+            position: relative;
+            .wrap {
+                position: absolute;
+                width: 560px;
+                top: 0px;
+                z-index: 999;
+                .searchwhere{
+                    overflow: hidden;
+                    clear: both;
+                    .searchleft{
+                        float: left;
+                    }
+                    .finishflagrad{
+                        float: right;
+                        .mk-form-item{
+                            height: 30px;
+                        }
+                    }
+                }
+                
+                .inputClass {
+                    .ant-input {
+                        width: 178px;
+                    }
+                    .ant-input {
+                        border-radius:5px 0 0 5px;//
+                        border-right: none;
+                    }
+                }
+                .ant-input-affix-wrapper {
+                    width: 178px;
+                    vertical-align: middle;
+                }
+                
+                .edficon-XDZshaixuan {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 16px;
+                    border: 1px solid #d9d9d9;
+                    line-height: 27px;
+                    border-radius: 0 5px 5px 0;
+                    position: relative;
+                    top: 1px;
+                    // border-left: none;
+                }
+                .fromDiv {
+                    background: #fff;
+                    border: 1px solid #d9d9d9;
+                    width: 380px;
+                    .ant-form-item-label {
+                        width: 70px !important;
+                    }
+                    .person {
+                        width: 150px;
+                        border: 1px solid #d9d9d9;
+                        padding: 5px;
+                        //display: flex;
+                        //flex-direction: row;
+                        .aclass {
+                            height: 20px;
+                            line-height: 24px;
+                        }
+                        a {
+                            a:focus {
+                                text-decoration: none;
+                            }
+                            a:visited {
+                                text-decoration: none;
+                            }
+                        }
+                        .personName {
+                            height: 25px;
+                            border: 1px solid #fa954c;
+                            border-radius: 15px;
+                            color: #fa954c;
+                            font-size: 12px;
+                            line-height: 22px;
+                            padding: 0 5px;
+                            background: #fa954c21;
+                            margin-right: 8px;
+                            display: inline-block;
+                            .edficon-XDZguanbishanchu {
+                                font-size: 8px;
+                                margin-left: 8px;
+                            }
+                            .edficon {
+                                &:hover{
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+                .Form {
+                    padding: 0 10px;
+                    .ant-calendar-picker-input {
+                        padding-left: 10px !important;
+                    }
+                }
+                .btnDiv {
+                    border-top: 1px solid #d9d9d9;
+                    height: 50px;
+                    padding: 10px;
+                    text-align: center;
+                    .ant-btn-primary {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    &-tablediv {
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        right: 10px;
+        bottom: 50px;
+
+        .ant-table-body {
+            border-right: 1px solid #d9d9d9;
+            .XDZzhuangtai-weishenbao {
+                font-size: 15px;
+                color: #d0d0d0;
+            }
+            .XDZzhuangtai-wurenwu {
+                color: #fea772;
+                font-size: 15px;
+            }
+            .XDZzhuangtai-yishenbao {
+                color: #fea772;
+                font-size: 15px;
+            }
+            .XDZzhuangtai-yiwancheng {
+                color: #1ec6f3;
+                font-size: 15px;
+            }
+        }
+
+        .columnset {
+            height: 20px;
+            font-size: 18px;
+            width: 30px;
+            line-height: 20px;
+            text-align: right;
+            position: absolute;
+            right: 0px;
+            top: 57%;
+            margin-top: -13px;
+            cursor: pointer;
+            padding: 0px 7px;
+            background: rgb(255, 255, 255);
+            border-radius: 13px 0px 0px 13px;
+            transition: width 1s ease 0s;
+        }
+    }
+
+    &-footer {
+        height: 50px;
+        padding: 10px 0;
+        justify-content: space-between;
+        font-size: 12px;
+        align-items: center;
+        
+        .right{
+            line-height: 30px;
+            float: right;
+            text-align: right;
+            span{
+                margin-right: 8px;
+            }
+        }
+    }
+    .acxBtnjzjd{
+        margin-right:10px;
+    }
+}
+
+.UpdateStatus {
+    .ant-modal-body {
+        height: 400px;
+    }
+}

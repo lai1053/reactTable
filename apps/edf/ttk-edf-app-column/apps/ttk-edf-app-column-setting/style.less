@@ -1,0 +1,48 @@
+.edfx-app-setting {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    flex-direction: row;
+
+    &-content {
+        flex: 1;
+        .mk-datagrid .public_fixedDataTable_main {
+            border-left: none;
+            border-right: none;
+        }
+        .mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+            background: #e4e4e4 !important;
+            color: #333333;
+        }
+        .mk-datagrid .fixedDataTableLayout_rowsContainer .fixedDataTableRowLayout_rowWrapper .public_fixedDataTable_header {
+            background: #e4e4e4 !important;
+        }
+        .public_fixedDataTable_scrollbarSpacer {
+            top: 0px;
+        }
+        height: 400px;
+        width: 200px;
+        &-footer {
+            flex: 0 0 58px;
+            justify-content: center;
+            align-items: flex-end;
+        }
+    }
+    .mk-card {
+        display: flex;
+        flex-direction: column;
+        .ant-card-head {
+            padding: 0 10px;
+            flex: 0 0 50px;
+            .mk-btn {
+                margin-right: 4px;
+            }
+        }
+        .ant-card-body {
+            padding: 0px;
+            flex:1;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

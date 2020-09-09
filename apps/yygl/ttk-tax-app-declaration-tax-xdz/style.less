@@ -1,0 +1,45 @@
+.ttk-tax-app-declaration-tax-xdz{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    padding: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    display: block;
+    .ttk-tax-app-declaration-tax-xdz-options {
+        width: 100%;
+        border: 1px solid #d9d9d9;
+        background: #ffffff;
+        height: 54px;
+        .yearPicker {
+            display: inline-block;
+            margin: 10px;
+        }
+        .btns {
+            float: right;
+            margin: 10px;
+            .refreshBtn {
+                margin-right: 10px;
+            }
+        }
+    }
+    .ttk-tax-app-declaration-tax-xdz-content {
+        display: block;
+        position: absolute;
+        top: 54px;
+        height: calc(~"100% - 64px");
+        width: calc(~"100% - 10px");
+        .ant-table-thead {
+            th {
+                text-align: center !important;
+            }
+        }
+    }
+    .ant-table-body {
+        .ant-table-row:last-child {
+            td {
+                background: rgb( 255, 245, 233);
+            }
+        }
+    }
+}

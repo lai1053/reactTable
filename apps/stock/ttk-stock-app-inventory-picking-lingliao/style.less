@@ -1,0 +1,474 @@
+.ttk-stock-app-inventory-picking-ling{
+    .vt-table .vt-body .vt-body-row .vt-body-row-cell{
+        overflow: visible;
+    }
+    // position: relative!important;
+    overflow: visible!important;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    .ttk-stock-app-inventory-picking-ling-div{
+        position: relative;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+    }
+    &-title{
+        // position: relative;
+        margin: 0px auto;
+        height: 32px;
+        width: 309px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -154px;
+        &.step1,&.zangu{ background: url(../commonAssets/img/fastPicking_none_step1.png) no-repeat 0 0; }
+        &.step2, &.step2_zangu{ background: url(../commonAssets/img/fastPicking_none_step1.png) no-repeat 0 0; }
+        &.step3{ background: url(../commonAssets/img/fastPicking_none_step2.png) no-repeat 0 0; }  
+    }
+
+    &-bomTitle{
+        // position: relative;
+        margin: 0px auto;
+        height: 32px;
+        width: 309px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -154px;
+        &.step1,&.zangu{ background: url(../commonAssets/img/bom_step1.png) no-repeat 0 0; }
+        &.step2, &.step2_zangu{ background: url(../commonAssets/img/bom_step1.png) no-repeat 0 0; }
+        &.step3{ background: url(../commonAssets/img/bom_step2.png) no-repeat 0 0; }  
+    }
+    
+    &-sub{
+        margin-bottom: 10px;
+        height: 50px;
+        padding-top: 14px;
+        line-height: 36px;
+        align-self: flex-start;
+        display: block;
+        width: 100%;
+        &-search{
+            // flex: 3;
+            width: 20%;
+        }
+        &-lingliaoCash{ // 本次领料金额
+            width: 40%;
+            flex: 3;
+            margin-left: 20px;
+        }
+        &-cashStatics{ //非BOM领料数据统计
+            flex: 6;
+            width: 60%;
+            margin-left: 15px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &>span{
+                margin: 0 7px;
+            }
+        }
+        .sub-component{
+            display: inline-block;
+            width: auto
+        }
+        .ant-input-search{
+            width: 207px;
+            height: 34px;
+            line-height: 33px;
+        }
+        .noBom-picking-money{
+            float: right;
+            &-input{
+                width: 125px;
+            }
+            &-checkbox{
+                margin-left: 15px;
+            }
+            .input_container{
+                display: inline-block;
+                width: 120px;
+            }
+        }
+
+        &-search{
+            float: left;
+            .ant-input{
+                border-top-right-radius: 0px;
+                border-bottom-right-radius: 0px;
+            }
+        }
+    
+    }
+	&-main{
+        text-align: center;
+        position: relative;
+        width: 100%;
+        // height: 470px;
+
+        .inputStyle{
+            width: 100%;
+            height: 100%;
+            padding: 0 8px;
+            border-radius: 0;
+            font-size: 13px;
+            text-align: left;
+            border-color: transparent;
+        }
+        .inputStyleHover{
+            border: 1px solid #0066b3;
+            background-color: transparent;
+            border-radius: 0;
+            font-size: 13px;
+            &:focus{
+                border-radius: 4px;
+                background-color: #fff;
+            }
+        }
+        .input_container{
+            height: 100%;
+            font-size: 0;
+            .input_container_input{
+                .inputStyle
+            }
+        } 
+        .picking-amount-input{
+            .inputStyle
+        }
+        .step2-table{
+            .vt-table .vt-body .vt-body-row .cell-8{
+                padding: 0;
+                line-height: 0!important;
+            }
+        }
+        .step3-table{
+            .vt-table .vt-body .vt-body-row .cell-7{
+                padding: 0;
+                line-height: 0!important;
+            }
+        }
+
+        .vt-table .vt-body .vt-body-row {
+            &:hover{
+                .vt-body-row-cell{
+                    background-color: #d4e8ff;
+                }
+
+                .input_container_input, .picking-amount-input{
+                   .inputStyleHover
+                }
+            }
+          }
+        .alignLeft{
+            text-align: left;
+        }
+        .alignRight{
+            text-align: right;
+        }
+    }
+
+    &-footer{
+        &-btn{
+            position: absolute;
+            left: 0;
+            bottom: -55px;
+            background-color: #fff;
+            width: 100%;
+            height: 55px;
+            line-height: 54px;
+            overflow: hidden;
+            padding-right: 10px;
+            border-top: 1px solid #e8e8e8;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+
+            &-btnGroup{
+                float: right;
+                &-item{
+                    margin-left: 10px
+                }
+            }
+        }
+    }
+
+    .ttk-stock-app-inventory-assessment-add-footer-btn-btnGroup{
+        display: flex;
+    }
+
+    .ttk-stock-app-inventory-assessment-add-footer-btn{
+        height: 42px;
+        padding-top: 10px;
+        position: static;
+        z-index:999;
+        justify-content: space-between;
+        &-actualNum{
+            padding: 4px 0 0 12px;
+            &-num{margin-left: 22px;}
+
+            &.visible{
+                visibility: visible;
+            }
+            
+            &.unVisible{
+                visibility: hidden;
+            }
+        }
+
+        &-btnGroup{
+            &-item{cursor: pointer;}
+            .btn-cancel{width: 59.39px;}
+        }
+    }
+
+    // .stock-Inventory-gap-tips{
+    //     position: absolute;
+    //     top: 89px;
+    //     right: 10px;
+    //     border: 2px dashed #ff9300;
+    //     width: 100px;
+    //     height: 75px;
+    //     z-index: 9;
+    //      &-txt{
+    //         border-radius: 4px;
+    //         width: 150px;
+    //         padding: 10px;
+    //         color: #fff;
+    //         background: #ff9300;
+    //         height: 62px;
+    //         position: absolute;
+    //         top: 0;
+    //         right: -150px;
+    //      }
+    //     &-closeIcon{
+    //         cursor: pointer;
+    //         position: absolute;
+    //         top: -9px;
+    //         right: -160px;
+    //         width: 18px;
+    //         height: 18px;
+    //         border-radius: 50%;
+    //         background: #fff url(../commonAssets/img/close_fill.png) no-repeat center center;
+    //     }
+    // }
+    
+    // .ant-table-content > .ant-table-scroll > .ant-table-body{
+    //     overflow-x: hidden!important;
+    //     overflow-y: scroll!important;
+    // }
+
+    .tdTextOverflow{
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .ttk-stock-app-completion-warehousing-filter-container{
+        overflow: hidden;
+        width: 173px;
+        flex: 1;
+    }
+    &.step3{
+        .ttk-stock-app-completion-warehousing-filter-container{
+            width: 240px;
+            float: left;
+        }
+        .mk-table .ant-table-tbody tr:not(.lazy_table_tr) td:nth-of-type(8){
+            overflow: visible!important;
+        }
+    }
+    &.step2_zangu, &.step1_zangu{
+        .mk-table .ant-table-tbody tr:not(.lazy_table_tr) td:nth-of-type(8){
+            overflow: visible!important;
+        }
+    }
+
+    .ant-table-footer{
+        padding: 0;
+        border: none;
+        &:before{
+            display: none;
+        }
+    }
+
+    .ant-table.ant-table-bordered .ant-table-footer{
+        border: none;
+    }
+    
+}
+
+.summary-row{
+    &>div{
+        position: relative;
+    }
+}
+.txtOverflow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ttk-stock-app-inventory-picking-ling.step2{
+    .stock-Inventory-gap-tips{width: 222px;}
+}
+
+.noBom-filter-icon{
+    display: inline-block;
+    width: 32px;
+    height: 34px;
+    line-height: 34px;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    text-align: center;
+    // top: 3px;
+    // left: -2px;
+    // position: relative;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-left: none;
+    cursor: pointer;
+    font-size: 18px;
+    float: left;
+}
+
+.noBom-filter-footer{
+    padding-top: 38px;
+    text-align: right;
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 28px;
+        left: -20px;
+        width: 278px;
+        border-top: 1px solid #d9d9df;
+    }
+    button{
+        padding: 0 10px;
+        height: 28px!important;
+        line-height: 28px!important;
+        margin-left: 10px;
+    }
+}
+
+.picking-lingliao-modal .ant-modal-content,
+.bomPicking-modal .ant-modal-content{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    .ant-modal-body{
+       // position: relative;
+        // &::after{
+        //     content: '';
+        //     width: 100%;
+        //     position: absolute;
+        //     left: 0;
+        //     bottom: 55px;
+        //     border-top: 1px solid #e0e0e0;
+        // }
+    }
+}
+
+
+.ant-table-footer{
+    padding: 0;
+    border: none;
+    &:before{
+        display: none;
+    }
+}
+
+.ant-table.ant-table-bordered .ant-table-footer{
+    border: none;
+}
+.summary-row-container{
+    height: 38px;
+    overflow-x: hidden;
+    // overflow-y: hidden;
+    overflow-y: scroll;
+    &::-webkit-scrollbar{
+        width: 10px;
+        height: 10px;
+        background-color: #eaeaea;
+    }
+
+    .summary-row{
+        display: table;
+        width: 100%;
+        min-width: 1000px;
+        height: 37px;
+        line-height: 37px;
+        overflow-x: hidden;
+        // overflow-y: hidden;
+        overflow-y: scroll;
+        background-color: #fff6ea;
+        text-align: right;
+        color: #333;
+        font-size: 12px;
+        border-top: 1px solid #d9d9d9;
+        &>div{
+            display: table-cell;
+            border-right: 1px solid #d9d9d9;
+            box-sizing: border-box;
+            font-weight: 700;
+            position: relative;
+            &:first-child{
+                text-align: center;
+            }
+            &>div{
+                width: 100%;
+                padding: 0 12px 0 12px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    &.pickingTable1{
+        width: 100%;
+        .summary-row{
+            &>div{
+                &:nth-of-type(1){width: 62px;}
+                &:nth-of-type(2){width: 88px;}
+                // &:nth-of-type(3){flex: 1 1 0%;}
+                &:nth-of-type(4){width: 77px;}
+                &:nth-of-type(5){width: 45px;}
+                &:nth-of-type(6){width: 120px;text-align: left;}
+                &:nth-of-type(7){width: 110px;}
+                &:nth-of-type(8){width: 110px;}
+                &:nth-of-type(9){width: 110px;text-align: left;}
+                &:nth-of-type(10){width: 110px;}
+                &:nth-of-type(11){width: 110px;text-align: left;}
+                &:nth-of-type(12){width: 110px;}
+    
+            }
+        }
+    }
+
+    &.pickingBill{
+        width: 100%;
+        .summary-row{
+            &>div{
+                &:nth-of-type(1){width: 90px;}
+                // &:nth-of-type(2){flex: 1 1 0%;}
+                &:nth-of-type(3){width: 80px;}
+                &:nth-of-type(4){width: 50px;}
+                &:nth-of-type(5){width: 128px;}
+                &:nth-of-type(6){width: 128px;}
+                &:nth-of-type(7){width: 128px;}
+                &:nth-of-type(8){width: 128px;}
+                &:nth-of-type(9){width: 128px;}
+            }
+        }
+    }
+    
+}
+

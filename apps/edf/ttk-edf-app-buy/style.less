@@ -1,0 +1,411 @@
+.ttk-edf-app-buy {
+	width: 100%;
+	height: 100%;
+	padding: 0!important;
+	&-backgroundColor {
+		position: relative;
+		background-color: #fff;
+	}
+	.primaryColor{
+		color: @primary-color;
+	}
+	&-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 5px 90px;
+		flex: 0 0 50px;
+		height: 50px;
+		border-bottom: 1px solid #D9D9D9;
+		&-left, &-center, &-right{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			overflow: hidden;
+		}
+		&-left {
+			justify-content: flex-start;
+			align-items: flex-end;
+			font-size: 18px;
+			color: @primary-color;
+			letter-spacing: -0.04px;
+		}
+		&-right{
+			width: 95px;
+			height: 30px;
+			align-items: center;
+			margin-top: 5px;
+			border: 1px solid @primary-color;
+			border-radius: 3px;
+			font-size: 12px;
+			color: @primary-color;
+			letter-spacing: 0.05px;
+		}
+		&-right:hover{
+			background: @primary-color;
+			color: #fff;
+		}
+		&-center{
+			&-bar {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 20px;
+				text-align: center;
+				width: 400px;
+				height: 80px;
+				position: relative;
+				&-step-icon{
+					width: 18px;
+					height: 18px;
+					border:1px solid #666666;
+					background: #ffffff;
+					border-radius: 100%;
+					text-align: center;
+					line-height: 18px;
+					font-size: 14px;
+					font-weight: 400;
+					color: #666666;
+					margin:0 auto;
+					cursor: default;
+				}
+				&-step-icon.active{
+					background: @primary-color;
+					color: #fff;
+					border: 1px solid @primary-color;
+				}
+				&-step-description{
+					font-size: 12px;
+					color: #666666;
+					letter-spacing: 0.11px;
+				}
+				&-step-description.active{
+					color: @primary-color;
+				}
+				&-line{
+					position: absolute;
+					width: 95px;
+					height: 1px;
+					background-image: linear-gradient(to right, #ccc 0%, #ccc 50%, transparent 50%);
+					background-size: 10px 1px;
+					background-repeat: repeat-x;
+				}
+				&-line.active{
+					background-image: linear-gradient(to right, @primary-color 0%, @primary-color 50%, transparent 50%);
+					background-size: 10px 1px;
+					background-repeat: repeat-x;
+				}
+				&-line:nth-of-type(1){
+					top:25px;
+					left:72px;
+				}
+				&-line:nth-of-type(2){
+					top:25px;
+					right:65px;
+				}
+			}
+		}
+	}
+	&-content{
+		flex: 1;
+		flex-direction: row;
+		padding: 0 90px;
+		&-left{
+			flex: 1;
+			width: 70%;
+			&-packageName{
+				height: 30px;
+				margin-top: 30PX;
+				display: flex;
+				align-items: center;
+				font-size: 16px;
+				color: #666666;
+				letter-spacing: -0.04px;
+			}
+			&-packageLine{
+				height: 1px;
+				background-image: linear-gradient(to right, #ccc 0%, #ccc 50%, transparent 50%);
+				background-size: 15px 1px;
+				background-repeat: repeat-x;
+				margin-bottom: 20px;
+				margin-top: 5px;
+			}
+			&-packageList{
+				width: 30%;
+				height: 130px;
+				display: inline-block;
+				vertical-align: middle;
+				border-radius: 3px;
+				margin-bottom: 10px;
+			}
+			&-packageList{
+				&>div:nth-of-type(2){
+					display:none;
+				}
+			}
+			&-packageList.remind{
+				&>div:nth-of-type(1){
+					display:block;
+				}
+				&>div:nth-of-type(2){
+					display:none;
+				}
+			}
+			&-packageList.remind:hover{
+				&>div:nth-of-type(1){
+					display:none;
+				}
+				&>div:nth-of-type(2){
+					display:block;
+				}
+			}
+			.remindInfo{
+				// width:100%;
+				// height:100%;
+				overflow:hidden;
+				text-align:left;
+				// padding-left:12px;
+				// padding-top:8px;
+				h1{
+					font-weight: bold;
+					font-size:16px;
+					color:#333333;
+					letter-spacing: 0.27px;
+				}
+				p{
+					font-size:12px;
+					color:#888888;
+					letter-spacing: 0.2px;
+					line-height:18px;
+					margin-bottom:0!important;
+				}
+			}
+			&-package{
+				position: relative;
+				width: 100%;
+				height: 100%;
+				display: inline-block;
+				border: 1px solid #D9D9D9;
+				text-align: center;
+				cursor: pointer;
+				&.active{
+					border: 2px solid @primary-color;
+				}
+				&.noAllow{
+					cursor: not-allowed;
+				}
+				&-Info1{
+					color: #CCCCCC;
+					font-size: 16px;
+					letter-spacing: 0.27px;
+					margin-top: 14px;
+				}
+				&-Info1.active{
+					color: #333333;
+				}
+				&-Info2{
+					font-size: 12px;
+					color: #CCCCCC;
+					letter-spacing: 0.2px;
+					margin-top: 1px;
+					padding: 0 5px;
+				}
+				&-Info2.active{
+					color: #888888;
+				}
+				&-Info3{
+					font-size: 23px;
+					color: #CCCCCC;
+					letter-spacing: 0.39px;
+					margin-top: 2px;
+				}
+				&-Info3.active{
+					color: #FA7C63;
+				}
+				&-Info4{
+					font-size: 12px;
+					color: #CCCCCC;
+					letter-spacing: 0.2px;
+					margin-top: 1px;
+				}
+				&-Info4.active{
+					color: #333333;
+				}
+				&-buyName{
+					height: 30px;
+					margin-top: 17PX;
+					display: flex;
+					align-items: center;
+					font-size: 16px;
+					color: #666666;
+					letter-spacing: -0.04px;
+				}
+				&-buyTime{
+					display: inline-block;
+					width: 60px;
+					height: 28px;
+					background: #FFFFFF;
+					border: 1px solid #D9D9D9;
+					border-radius: 3px;
+					text-align: center;
+					line-height: 28px;
+					margin-right: 8px;
+					cursor: pointer;
+					font-size: 12px;
+					&:hover{
+						color:@primary-color;
+						border: 1px solid @primary-color;
+					}
+				}
+				&-buyTime.active{
+					color:@primary-color;
+					border: 1px solid @primary-color;
+				}
+				.packageSelect {
+					bottom: 0;
+					right: 0;
+					height: 0;
+					border-bottom: 29px solid @primary-color;
+					border-left: 35px solid transparent;
+					position: absolute;
+				}
+				&-invoiceTitle{
+					display: inline-block;
+					width: 60px;
+					height: 28px;
+					border: 1px solid #D9D9D9;
+					border-radius: 3px;
+					text-align: center;
+					line-height: 28px;
+					margin-right: 8px;
+					font-size: 12px;
+					color: #333333;
+					letter-spacing: -0.03px;
+					&.active{
+						background: @primary-color;
+						border-radius: 3px;
+						border: 1px solid @primary-color;
+						color: #fff;
+					}
+					&:hover{
+						cursor: pointer;
+						background: @primary-color;
+						border-radius: 3px;
+						border: 1px solid @primary-color;
+						color: #fff;
+					}
+				}
+			}
+			&-taxList{
+				.ant-form-item-label{
+					font-size: 12px;
+				}
+				.ant-form-item-children{
+					font-size: 12px;
+				}
+			}
+			.ant-form-explain {
+				position: absolute;
+				top: 36px;
+				line-height: 18px;
+				font-size: 12px;
+				margin-top: 5px;
+				white-space: nowrap;
+			}
+			.mk-form .ant-form-item-label{
+				width: 110px;
+			}
+		}
+		&-right {
+			width: 30%;
+			&-info{
+				margin: 30px 0 0 5%;
+				height: 534px;
+				border: 1px solid #EDEDED;
+				border-radius: 3px;
+				&-packageName{
+					height: 30px;
+					display: flex;
+					align-items: center;
+					font-size: 16px;
+					color: #666666;
+					letter-spacing: -0.04px;
+					margin-top: 7px;
+					margin-bottom: 46px;
+				}
+				&-list{
+					margin-left: 28px;
+					margin-bottom: 6px;
+					&-tr{
+						display: inline-block;
+						font-size: 12px;
+						color: #888888;
+						letter-spacing: -0.03px;
+					}
+					&-td{
+						display: inline-block;
+						font-size: 12px;
+						color: #333333;
+						letter-spacing: -0.03px;
+					}
+					&-money{
+						display: inline-block;
+						font-size: 12px;
+						color: #FA7C63;
+						letter-spacing: -0.03px;
+					}
+					&-finMoney{
+						display: inline-block;
+						font-size: 20px;
+						color: #FA7C63;
+						letter-spacing: -0.03px;
+					}
+					&-input{
+						height: 30px;
+						width: 60%;
+						font-size: 12px;
+						border: 1px solid #DADADA;
+						border-radius: 3px;
+					}
+					&-commit{
+						height: 40px !important;
+						line-height: 40px;
+						width: 70%;
+						margin: 0 15% 17px;
+						text-align: center;
+						font-size: 14px;
+						color: #FFFFFF;
+						letter-spacing: -0.03px;
+						border-radius: 3px;
+					}
+					&-commit.disabled:hover{
+						color: rgba(0, 0, 0, 0.25);
+						background-color: #f5f5f5;
+						border-color: #d9d9d9;
+					}
+					&-treatyAll{
+						text-align: center;
+					}
+					&-treaty{
+						span{padding-right: 0;}
+						//padding: 0;
+						font-size: 12px;
+						color: #999999;
+						letter-spacing: 0.13px;
+					}
+					&-treaty:hover{
+						text-decoration:underline;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	&-iframe {
+		position: absolute;
+		margin: 0 5%;
+		padding: 0px;
+		border: 0px;
+		height: 100%;
+		width: 90%;
+	}
+}

@@ -1,0 +1,157 @@
+.inv-app-yunmeng-home {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    margin-bottom: 10px;
+    background-color: #fff;
+    overflow: auto;
+
+    .inv-app-yunmeng-home-header {
+        line-height: 32px;
+        height: 42px;
+        text-align: left;
+
+        .inv-app-yunmeng-home-header-title {
+            display: inline-block;
+            margin-left: 8px;
+            margin-top: 4px;
+            font-weight: bold;
+        }
+
+        .inv-app-yunmeng-home-header-date-title {
+            font-size: 12px;
+            margin-left: 8px;
+        }
+
+        .inv-app-yunmeng-home-header-date {
+            // .ant-calendar-picker-input {
+            //     background-color: rgba(255,255,255,0);
+            //     border: none;
+            //     box-shadow: none;
+            // }
+            input {
+                font-size: 12px;
+            }
+        }
+
+        .inv-app-yunmeng-home-header-type {
+            float: right;
+            margin-right: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+
+    .inv-app-yunmeng-home-content {
+        line-height: normal;
+        display: block;
+        // display: table;
+        height: 100%;
+        width: 100%;
+
+        .inv-app-yunmeng-home-table {
+            border-left: none;
+            border-bottom: none;
+
+            & > .ant-spin-nested-loading {
+                border-left: 1px solid #d9d9d9;
+            }
+
+            .ant-table-thead {
+                th {
+                    // text-align: center !important;
+                }
+            }
+
+            tr.total,
+            .total td {
+                background-color: #fff6ea !important;
+            }
+        }
+
+        .row {
+            margin: 0 !important;
+        }
+
+        .inv-app-yunmeng-home-legend {
+            overflow: hidden;
+            height: 60px;
+            position: absolute;
+            top: 290px;
+            width: 100%;
+
+            &.center {
+                text-align: center;
+
+                .inv-app-yunmeng-home-legend-item {
+                    margin: 0 10px;
+                }
+            }
+
+            &.row {
+                .inv-app-yunmeng-home-legend-item {
+                    width: 50%;
+                    padding: 0 10px;
+                }
+            }
+
+            .inv-app-yunmeng-home-legend-item {
+                display: inline-block;
+                text-align: left;
+
+                &.right {
+                    text-align: right;
+                }
+
+                .inv-app-yunmeng-home-legend-item-color {
+                    display: inline-block;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 5px;
+                    margin-left: 5px;
+                    margin-right: 5px;
+                }
+
+                .color-orange {
+                    background: rgb(255, 151, 29);
+                }
+
+                .color-blue {
+                    background: rgb(0, 167, 233);
+                }
+
+                .color-green {
+                    background: #00b38a;
+                }
+
+                .color-blue2 {
+                    background: rgb(8, 137, 241);
+                }
+
+                .inv-app-yunmeng-home-legend-item-text {
+                    color: rgb(125, 125, 125);
+                    font-size: 12px;
+                    position: relative;
+                    height: 14px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+}
+
+div[cust_appname="inv-app-yunmeng-home"] {
+    .ant-card,
+    .ant-card-body {
+        display: block !important;
+        flex-direction: unset !important;
+    }
+
+    .ant-card {
+        overflow: auto !important;
+    }
+
+    .ant-tabs-nav-scroll {
+        display: flex;
+    }
+}

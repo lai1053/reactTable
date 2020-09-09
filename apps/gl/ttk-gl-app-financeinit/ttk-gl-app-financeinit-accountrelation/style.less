@@ -1,0 +1,305 @@
+@lineBorderColor: #ECECEC;
+@fontColor: #515151;
+@Color: #fff;
+@gridBorder: 1px solid #D9D9D9;
+
+.batchIgnore-popover {
+    .anticon-close {
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.ttk-gl-app-financeinit-accountrelation {
+    width: 100%;
+    height: 100%;
+    background: @Color;
+    padding: 0px;
+
+    &-grid {
+        color: @primary-color;
+        // min-height: 500px;
+    }
+
+    &-grid.currentScrollRow {
+        background: @button-hover-color;
+        color: #fff !important;
+
+        a {
+            color: #fff !important;
+        }
+    }
+
+    &-content {
+        padding: 0px;
+        overflow: hidden;
+        background: #fff;
+        max-width: 100%;
+        height: 100%;
+
+        &-btn {
+            text-align: right;
+            overflow: hidden;
+            height: 35px;
+            position: relative;
+            padding: 0px 8px;
+
+            &-left {
+                float: left;
+
+                &-search {
+                    width: 165px;
+                }
+
+                .matchType {
+                    font-size: 12px;
+                    margin: 0px 8px;
+
+                }
+
+                input {
+                    height: 30px;
+                }
+            }
+
+            &-right {
+                float: right;
+
+                &-addSubject,
+                &-ignore {
+                    border-color: @primary-color;
+                    color: @primary-color;
+
+                    &:hover {
+                        background: @primary-color;
+                        color: #fff;
+                    }
+                }
+
+                &-ignore {
+                    margin-right: 8px;
+                }
+            }
+
+        }
+
+        &-header {
+            width: 100%;
+            height: 100%;
+
+            label {
+                font-size: 14px;
+            }
+
+            &-top {
+                padding-bottom: 2px;
+                color: #333333;
+                border-top: @gridBorder;
+            }
+
+            &-bottom {
+                border-top: @gridBorder;
+
+                &-cell {
+                    border-right: @gridBorder;
+                }
+            }
+        }
+
+        &-cell {
+            border-right: @gridBorder;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 36px;
+            padding-left: 8px;
+            border-bottom: @gridBorder;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        .operationcell {
+            border-bottom: @gridBorder;
+            height: 36px;
+            width: 114px;
+            display: inline-block;
+            text-decoration: none;
+            float: left;
+        }
+
+        &-msgcell {
+            white-space: pre-wrap;
+            height: 36px;
+            min-width: 50px;
+            border-bottom: @gridBorder;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        &-msgcell.lineheight {
+            line-height: 12px;
+        }
+    }
+
+    &-footerborder {
+        height: 1px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+
+        &-left {
+            border-top: @gridBorder;
+            width: 330px;
+        }
+
+        &-right {
+            border-top: @gridBorder;
+            flex: 1;
+            margin-left: 19px;
+        }
+    }
+
+    &-footer {
+        height: 35px;
+        min-height: 35px;
+        margin-top: 5px;
+        max-height: 40px;
+        text-align: center;
+
+        &-btn {
+            width: 80px;
+            margin-left: 8px;
+            border-color: @primary-color;
+        }
+
+        .nextStepBtn {
+            color: #fff;
+
+            &:disabled {
+                color: rgba(0, 0, 0, .25);
+                background-color: #f5f5f5;
+            }
+        }
+
+        .preStepBtn {
+            color: @primary-color;
+
+            &:hover {
+                background: @primary-color;
+                color: #fff;
+            }
+        }
+    }
+
+    .mk-datagrid-cellContent {
+        display: inline-block;
+        position: relative;
+        padding: 0px;
+    }
+
+    .mk-datagrid-cellContent.currentScrollRow {
+        background: @button-hover-color;
+        color: #fff !important;
+
+        a,
+        span {
+            color: #fff !important;
+        }
+    }
+
+    .fixedDataTableLayout_rowsContainer>div:nth-child(3) div.mk-datagrid-cellContent {
+        padding: 0px;
+        display: flex;
+        flex-direction: row;
+        text-overflow: inherit;
+        align-items: center;
+    }
+
+    .fixedDataTableLayout_main {
+        border-top: none;
+    }
+
+    .mk-datagrid .public_fixedDataTable_main {
+        display: flex;
+        flex: 1;
+        border-left: none;
+        border-right: none;
+        font-size: 12px;
+        height: 100%;
+    }
+
+    .public_fixedDataTableCell_main {
+        border-bottom: none !important;
+        height: auto;
+    }
+
+    &-cell-left {
+        padding-left: 8px;
+        text-align: left;
+    }
+
+    &-cell-right {
+        padding-right: 8px;
+        justify-content: flex-end;
+    }
+
+    .add {
+        &:before {
+            color: #33c2a1;
+        }
+
+        &:hover:before {
+            color: #009875;
+        }
+    }
+}
+
+.auxiliary-setting {
+    .ant-modal-body {
+        font-size: 12px;
+    }
+}
+
+.souceaccount-auxlist {
+    .ant-modal-body {
+        font-size: 12px;
+    }
+
+    .ant-btn {
+        display: none;
+    }
+
+    .ant-btn-primary {
+        display: inline;
+        margin: 0 auto;
+    }
+}
+
+.ttk-gl-unit-setting {
+    .ant-modal-body {
+        padding: 0;
+
+        .mk-btn.ant-btn {
+            padding: 0 15px;
+            height: 32px;
+            font-size: 14px;
+        }
+    }
+
+    .mk-form {
+        margin: 30px 0 60px 60px;
+    }
+
+    .ant-select {
+        width: 200px;
+    }
+
+    a {
+        margin-left: 8px;
+    }
+}
+
+.unit_setting_select {
+    .ant-select-dropdown-menu {
+        max-height: 210px;
+    }
+}

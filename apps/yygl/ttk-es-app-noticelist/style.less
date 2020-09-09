@@ -1,0 +1,216 @@
+.ttk-es-app-noticelist {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  flex-direction: row;
+  &-left {
+    width: 200px;
+    flex: 0 0 200px;
+    margin-right: 6px;
+    .mk-btn {
+      width: 30px;
+      padding: 0px;
+      font-size: 18px;
+    }
+    .ant-card-head {
+      border-radius: 0px;
+      border: 1px solid #d9d9d9;
+    }
+    .ant-card-body {
+      border: 1px solid #d9d9d9;
+      border-top: none;
+      overflow-y: auto;
+      .ant-tree li .ant-tree-node-content-wrapper:hover {
+        background: @item-hover-bg;
+      }
+      .ant-tree li .ant-tree-node-selected.ant-tree-node-content-wrapper {
+        background-color: @primary-1;
+        color: @primary-color;
+      }
+    }
+    .ant-input-suffix{
+      float: left;
+    }
+  }
+  &-content {
+    display: flex;
+    flex: auto;
+    overflow: hidden;
+    background-color: #f1f5f4;
+    border-radius: 0px;
+    .cellName:hover {
+      color: @link-color;
+    }
+    .mk-datagrid .public_fixedDataTable_main {
+      border-left: none;
+    }
+    .mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+      color: #333333;
+    }
+    .public_fixedDataTable_scrollbarSpacer {
+      top: 0px;
+    }
+    &-header {
+      display: block;
+      width:100%;
+      &-more {
+        position: relative;
+        right: 10px;
+        border-radius: 0 4px 4px 0;
+        border-left: 1px solid #eee;
+      }
+      .btn {
+        height: 30px;
+        margin-left: 8px;
+        outline: none;
+        float: right;
+      }
+      .btnMarginRight {
+        margin-right: 4px;
+      }
+      .importIconBtn {
+        height: 30px;
+        width: 30px;
+        padding: 0;
+        margin-left: 8px;
+        outline: none;
+        color: #00B38A;
+        &:hover, &:active {
+          border-color: #FFC000;
+        }
+        &:focus {
+          border-color: #d9d9d9;
+        }
+      }
+      .exportIconBtn {
+        height: 30px;
+        width: 30px;
+        padding: 0;
+        margin-left: 8px;
+        outline: none;
+        color: #00B38A;
+        &:hover, &:active {
+          border-color: #00B38A;;
+        }
+        &:focus {
+          border-color: #d9d9d9;
+        }
+      }
+      &-search{
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 165px;
+        //margin-right: 8px;
+        .ant-input{
+          height: 30px;
+          min-height: 30px;
+        }
+        .ant-input-affix-wrapper, .ant-input:not(:last-child) {
+          font-size: 12px;
+          padding-right: 30px !important;
+        }
+      }
+    }
+    .ant-card-head {
+      background-color: #fff;
+      border-radius: 0px;
+      border: 1px solid #d9d9d9;
+      border-bottom: none;
+    }
+    &-content {
+      border: 1px solid #d9d9d9;
+      border-top: none;
+      background-color: #ffffff;
+      .fixedDataTableLayout_main.public_fixedDataTable_main{
+        min-height: 300px;
+      }
+    }
+    &-footer {
+      flex-direction: column-reverse;
+      background-color: #f1f5f4;
+      height: 30px;
+      justify-content: flex-end;
+      flex: 0 0 30px !important;
+      align-items: flex-end;
+      margin-top: 10px;
+    }
+  }
+  .mk-card {
+    display: flex;
+    flex-direction: column;
+    .ant-card-head {
+      padding: 0 10px;
+      flex: 0 0 50px;
+    }
+    .ant-card-body {
+      padding: 0px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .no-enable {
+    color: #cccccc;
+  }
+  &-personModal {
+    .ant-modal-body {
+      height: 500px
+    }
+    .ant-modal-content {
+      min-width: 720px;
+    }
+  }
+  &-deptModal {
+    .ant-modal-body {
+      height: 134px
+    }
+  }
+  //滚动条上部
+  .public_fixedDataTable_scrollbarSpacer {
+    top: 0px;
+    background: #eaeaea;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  //兼容搜狗浏览器7.0
+  .ant-modal {
+    top: 50px;
+  }
+  .inv-batch-custom-filter-btn{
+    display: inline-block;
+    border: 1px solid #d9d9d9;
+    line-height: 30px;
+    height: 29px;
+    width: 32px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    position: absolute;
+    left:174px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    top: 10px;
+  }
+  .ant-input{
+    border-top-right-radius:0!important;
+    border-bottom-right-radius:0!important;
+  }
+}
+
+.ttk-es-app-noticelistNoBorder {
+  .ant-card-bordered {
+    border: none
+  }
+}
+
+.personnelDelModal{
+  .ant-confirm-btns{
+    button:nth-of-type(1){
+      display: none;
+    }
+  }
+}
+

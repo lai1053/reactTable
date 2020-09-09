@@ -1,0 +1,371 @@
+.ttk-es-app-ztmanage {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  flex-direction: row;
+  &-left {
+    width: 200px;
+    flex: 0 0 200px;
+    margin-right: 6px;
+    .mk-btn {
+      width: 30px;
+      padding: 0px;
+      font-size: 18px;
+    }
+    .ant-card-head {
+      border-radius: 0px;
+      border: 1px solid #d9d9d9;
+    }
+    .ant-card-body {
+      border: 1px solid #d9d9d9;
+      border-top: none;
+      overflow-y: auto;
+      .ant-tree li .ant-tree-node-content-wrapper:hover {
+        background: @item-hover-bg;
+      }
+      .ant-tree li .ant-tree-node-selected.ant-tree-node-content-wrapper {
+        background-color: @primary-1;
+        color: @primary-color;
+      }
+    }
+     
+  }
+  &-cjzt{
+    height:540px;
+    width: 750px;
+  }
+  &-content {
+    display: flex;
+    flex: auto;
+    overflow: hidden;
+    background-color: #f1f5f4;
+    border-radius: 0px;
+    .cellName:hover {
+      color: @link-color;
+    }
+    .mk-datagrid .public_fixedDataTable_main {
+      border-left: none;
+    }
+    .mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+      color: #333333;
+    }
+    .public_fixedDataTable_scrollbarSpacer {
+      top: 0px;
+    }
+    &-header {
+      display: flex;
+      width:100%;
+      justify-content: space-between;
+      &-leftbox{
+        float:left;
+        
+        .ant-input-affix-wrapper .ant-input:not(:last-child){
+          padding-left:30px!important;
+          padding-right: 0px !important;
+        }
+
+        .ant-input-search:not(.ant-input-search-small) > .ant-input-suffix{
+          right:auto;
+          left:10px;
+         }
+         
+      }
+      &-rightbox{
+        float:right;
+        width:30%;
+      }
+      &-more {
+        position: relative;
+        right: 10px;
+        border-radius: 0 4px 4px 0;
+        border-left: 1px solid #eee;
+      }
+      .btn {
+        height: 30px;
+        margin-left: 8px;
+        outline: none;
+      }
+      .btnMarginRight {
+        margin-right: 4px;
+      }
+      .importIconBtn {
+        height: 30px;
+        width: 30px;
+        padding: 0;
+        margin-left: 8px;
+        outline: none;
+        color: #00B38A;
+        &:hover, &:active {
+          border-color: #FFC000;
+        }
+        &:focus {
+          border-color: #d9d9d9;
+        }
+      }
+      .exportIconBtn {
+        height: 30px;
+        width: 30px;
+        padding: 0;
+        margin-left: 8px;
+        outline: none;
+        color: #00B38A;
+        &:hover, &:active {
+          border-color: #00B38A;;
+        }
+        &:focus {
+          border-color: #d9d9d9;
+        }
+      }
+      &-search{
+        width: 178px !important;
+        vertical-align: middle;
+        .ant-input{
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
+          border-right: none;
+          padding-left: 30px !important;
+          font-size: 12px;
+        }
+
+        .ant-input-affix-wrapper, .ant-input:not(:last-child) {
+          font-size: 12px;
+          padding-right: 30px !important;
+        }
+      }
+      &-pl{
+       position: absolute;
+        top: 15px;
+        left: 43%;
+        color: #333;
+        font-size: 14px;
+        &-icon{
+          color: #fd9400;
+          font-size: 16px;
+        }
+      }
+    }
+    .ant-card-head {
+      background-color: #fff;
+      border-radius: 0px;
+      border: 1px solid #d9d9d9;
+      border-bottom: none;
+    }
+    &-content {
+      border: 1px solid #d9d9d9;
+      border-top: none;
+      background-color: #ffffff;
+      .fixedDataTableLayout_main.public_fixedDataTable_main{
+        min-height: 300px;
+      }
+      .more-drop-down{
+        border: none;
+        background: rgba(0, 0, 0, 0.0);
+        color: #0066b3;
+        padding: 0 0;
+      }
+    }
+    
+    .btncjzt1{
+      cursor:default;
+      color:rgba(0, 0, 0, 0.25)!important;
+    }
+
+    .btncjzt2{
+      cursor:pointer;
+      color:#0066b3!important;
+    }
+    .btncjzt3{
+      cursor:default;
+      color:#333!important;
+    }
+    .btncjzt4{
+      cursor: not-allowed;
+      color:rgba(0, 0, 0, 0.25)!important;
+      pointer-events: none;
+    }
+
+    &-footer {
+      flex-direction: column-reverse;
+      background-color: #f1f5f4;
+      height: 30px;
+      justify-content: flex-end;
+      flex: 0 0 30px !important;
+      align-items: flex-end;
+      margin-top: 10px;
+    }
+    &-tishi{
+      .ant-popover-inner-content{
+        color: red !important;
+      }
+    }
+  }
+  .mk-card {
+    display: flex;
+    flex-direction: column;
+    .ant-card-head {
+      padding: 0 10px;
+      flex: 0 0 50px;
+    }
+    .ant-card-body {
+      padding: 0px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .no-enable {
+    color: #cccccc;
+  }
+  &-personModal {
+    .ant-modal-body {
+      height: 500px
+    }
+    .ant-modal-content {
+      min-width: 720px;
+    }
+  }
+  &-delMessage {
+    i{
+      display: none;
+    }
+  }
+
+  //滚动条上部
+  .public_fixedDataTable_scrollbarSpacer {
+    top: 0px;
+    background: #eaeaea;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  //兼容搜狗浏览器7.0
+  .ant-modal {
+    top: 50px;
+  }
+
+  
+  .ttk-es-app-ztmanageNoBorder {
+    .ant-card-bordered {
+      border: none
+    }
+  }
+
+  .personnelDelModal{
+    .ant-confirm-btns{
+      button:nth-of-type(1){
+        display: none;
+      }
+    }
+  }
+
+  .mk-card .ant-card-extra{
+    width: 100%;
+  }
+  .success{
+    color: #fd9400;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  .fail{
+    color: red;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+  .failTig{
+    color: red;
+    margin-left: 5px;
+    font-size: 13px;
+  }
+
+  .backG{
+    border: 1px solid red;
+    color: red;
+  }
+
+
+  .old-title{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    text-align: center;
+    //background: #00b050;
+    border: 1px solid #2692ce;
+    color: #2692ce;
+    font-size: 12px;
+    line-height: 17px;
+    margin-left: 8px;
+    //position: absolute;
+    //right: 5px;
+    //top: 8px;
+  }
+
+  &-backup{
+    .ant-checkbox-disabled + span{
+      color: rgba(0, 0, 0, 0.65);
+    }
+  }
+
+}
+.delModal{
+  .ant-modal-body{
+    padding: 32px 32px 12px 32px !important;
+  }
+}
+.more-drop-down-menu{
+  .ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title{
+    font-size: 12px;
+  }
+  .ant-upload{
+    font-size: 12px;
+  }
+}
+ //更多筛选条件 begin
+ .inv-ztgl-custom-filter-btn{
+  font-size: 18px;
+  display: inline-block;
+  border: 1px solid #d9d9d9;
+  line-height: 30px;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+  cursor: pointer;
+}
+
+.inv-ztgl-custom-popover{
+  width: 380px;
+  .ant-popover-arrow{
+    display: none;
+  }
+  .ant-popover-inner-content{
+    padding: 0;
+    .filter-content{
+      padding: 12px 10px 0 10px;
+    }
+    .filter-footer{
+      text-align: center;
+      padding: 12px 0;
+      border-top: 1px solid #e8e8e8;
+      .reset-btn{
+        margin-left: 10px;
+      }
+    }
+    .inv-ztgl-custom-popover-item{
+      margin-bottom: 12px;
+      .prefixCls{
+        float: right !important;
+      }
+    }
+    .inv-ztgl-custom-popover-label{
+      margin-right: 8px;
+    }
+    .ant-select{
+      width: 258px;
+    }
+   
+  }
+}
+ //更多筛选条件 end

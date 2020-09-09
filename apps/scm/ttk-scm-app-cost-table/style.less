@@ -1,0 +1,149 @@
+.ttk-scm-app-costTable {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: #666;
+    overflow-y: hidden;
+    flex: 1;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+
+    &-option{
+        width: 100%;
+        // height: 50px;
+        // padding: 10px 10px;
+        padding: 10px 10px 8px 10px;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        border-bottom: none;
+        &-left{
+            width: 70%;
+            display: inline-block;
+            height: 30px;
+            vertical-align: text-bottom;
+            .ant-calendar-picker {
+                width: 80px;
+                margin-right: 8px;
+            }
+            .mk-select {
+                width: 92px;
+                margin-right: 8px;
+            }
+            .ant-input-search {
+                width: 200px;
+            }
+            .ant-input {
+                height: 30px;
+                font-size: 12px;
+            }
+
+            .ant-select-selection__rendered {
+                line-height: 28px;
+            }
+            
+            .ant-select-selection--single{
+                height: 30px;
+            }
+
+        }
+        &-right{
+            width: 30%;
+            display: inline-block;
+            text-align: right;
+            .dayin, .daochu {
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border-radius: 5px;
+                border: 1px solid #d9d9d9;
+                margin-left: 8px;
+                cursor: pointer;
+            }
+            .daochu{
+                color: #00B38A;
+                &:hover{
+                    border: 1px solid #00B38A !important;
+                }
+            }
+            .dayin{
+                color: #45ACF7;
+                &:hover{
+                    border: 1px solid #45ACF7 !important;
+                }
+            }
+        }
+    }
+
+    &-table {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        
+        .ant-spin-container{
+            background-color: #fff;
+            height: 100%;
+            .ant-table-empty{
+                height: 100%;
+                .ant-table-content{
+                    height: 100%;
+                    .ant-table-scroll{
+                        height: 100%;
+                    }
+                    .ant-table-body{
+                        height: 100% !important;
+                    }
+                }
+            }
+        }
+        .ant-table-body {
+            background-color: #fff;
+            border-right: 1px solid #d9d9d9;
+            overflow: scroll;
+            tr:last-child{
+                td{
+                    background-color: #fff6ea !important;
+                    font-weight: 700;
+                }
+                td:first-child{
+                    text-align: left;   
+                }
+            }
+            td {  
+                text-align: right; 
+            }
+
+            .ant-table-row {
+                .detail_left{
+                    text-align: left !important;
+                    width: 100%;
+                    display: block;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                .detail_center{
+                    text-align: center !important;
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .ant-table-header {
+        border-right: 1px solid #d9d9d9;
+        &::-webkit-scrollbar/*滚动条整体部分*/
+        {
+            border-top:  1px solid #d9d9d9;
+            border-left: 1px solid #d9d9d9;
+            width: 10px;
+        }
+        tr>th:last-child{
+            border-right: none;
+        }
+    }
+}
+

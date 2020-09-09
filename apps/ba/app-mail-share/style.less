@@ -1,0 +1,135 @@
+
+.mail
+{
+    // .mailContainer{
+    //     // text-align: center;
+    //     border-radius: 4px;
+    // }
+    // .mailContainer.filterMailContainer{
+    //     opacity: 0.7;
+    //     filter: blur(0.5px);
+    //     -webkit-filter: blur(0.5px);
+    // }
+    .mail-pdf{
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .ant-form-explain{
+        position: static;
+    }
+    .ant-form-item-label{
+        // margin-top: -3px;
+    }
+    .ant-form-item-control {
+        min-height: 51px;
+    }
+    .mk-form-item{
+        align-items: inherit
+    }
+    
+    .ant-spin-nested-loading{
+        &>div:first-child{
+            height: 0 !important;
+        }
+        &>div.ant-spin-container{
+            height: auto !important;
+        }
+        .ant-spin{
+            position: static;
+        }
+    }
+    
+    .ant-form-item-label{
+        line-height: 25px;
+    }
+	div:first-child{
+        height: auto !important;
+    }
+    .mk-form-item:last-child{
+        .ant-form-item-control-wrapper{
+            .mail-mailcontent.ant-input{
+                font-family: "Microsoft Yahei";
+            }
+        }
+        .ant-form-item-label{
+            line-height: 13px;
+        }
+    }
+    .ant-row{
+        display: flex;
+        >div:nth-child(2){
+            flex: 1;
+        }
+        >div:first-child {
+            >label {
+                font-size: 12px;
+                width: 55px;
+                display: block;
+                // line-height: normal;
+            }
+        }
+    }
+    .ant-form-item-label{
+//        >label{
+//            word-spacing: 9px;
+//        }
+    }
+    .z-formitems {
+        .z-formitem {
+            // margin-bottom: 0;
+            
+            &-input{
+                font-size: 12px;
+                height: 29px;
+            }
+        }
+    }
+    .mail-content{
+        margin-top: 15px;
+        h5 {
+            font-size: 12px;
+        }
+    }
+    &-mailcontent{
+        // text-indent: 2em;
+    }
+    /* .has-error.has-feedback:after{
+        top: -8px;
+    } */
+     .has-feedback {
+          position: absolute;
+          width:30px;
+          height: 30px;
+          z-index:200;
+          right: 0;
+          top: 0;
+      }
+       & .has-error{
+            margin-left: 0px;
+        }
+
+        & .has-error.has-feedback:after {
+            position: relative;
+            margin-left: 0px;
+        }
+          .has-feedback {
+        position: absolute;
+        width:30px;
+        height: 30px;
+        right: 0px;
+        top:0px;
+    }
+    .mail-content h4{
+        font-size: 16px;
+    }
+    .mail-mailcontent a{
+        word-break: break-all;
+        display: inline-block;
+       
+    }
+    &-pdf{
+        // padding-left: 20px;
+        background-size: contain; 
+    }
+}

@@ -1,0 +1,121 @@
+.ttk-app-inventory-copy-subject {
+	&-header{
+		position: relative;
+		text-align: center;
+		.step{
+			width: 160px;
+			height: 30px;
+			background-color: @primary-color;
+			color: #fff;
+			display: inline-block;
+			line-height: 30px;
+			text-align: center;
+		}
+		.step1{
+			border-radius: 15px 0 0 15px;
+		}
+		.san{
+			width:0; 
+			height:0; 
+			display: inline-block;
+			position: absolute;
+			border-top:15px solid transparent;
+			border-bottom: 15px solid transparent;
+		}
+		.san1{
+			border-left: 15px solid @primary-color;
+			z-index: 10;
+		}
+		.san2{
+			border-left: 15px solid #fff;
+			margin-left: 3px;
+		}
+		.step2{
+			border-radius: 0 15px 15px 0;
+			background-color: #d9d9d9;
+			margin-left: 3px;
+		}
+		.step2-select{
+			border-radius: 0 15px 15px 0;
+			background-color: @primary-color;
+			margin-left: 3px;
+		}
+	}
+	&-body{
+		height: 320px;
+		padding: 40px;
+		.ant-form-item-label{
+			width: 15%;
+		}
+		.ant-form-item-control-wrapper{
+			display: inline-block;
+		}
+		.ant-select-selection{
+			width: 185px;
+			height: 30px;
+			.ant-select-selection-selected-value{
+				padding-right: 6px;
+			}
+		}
+		.ant-form-item{
+			margin-bottom: 0;
+		}
+	}
+	&-body2{
+		height: 320px;
+		display: flex;
+		flex-direction: column;
+		padding: 0 12px;
+		.body2-btn{
+			text-align: right;
+			padding: 10px 0;
+		}
+		.body2-body{
+			flex: 1;
+			border-bottom: 1px solid #d9d9d9;
+			.fixedDataTableLayout_main{
+				border: 1px solid #d9d9d9;
+			}
+			.ant-select{
+				width: 100%;
+			}
+			.ant-select-selection{
+				height: 30px;
+			}
+			.ant-input{
+				height: 30px;
+				font-size: 12px;
+			}
+			.body2-body-select{
+				padding: 1px 8px !important;
+			}
+		}
+		.body2-footer{
+			height: 45px;
+			padding: 9px 0;
+		}
+	}
+	&-footer{
+		height: 55px;
+		border-top: 1px solid #d9d9d9;
+		text-align: right;
+		padding: 15px 10px 0;
+		margin-top: 20px;
+		.ant-btn{
+			margin-left: 8px;
+		}
+	}
+	&-update{    
+		.ant-modal-body{
+			padding: 40px 75px;
+			.ant-form-item-control-wrapper{
+				display: inline-block;
+				width: 170px;
+				.ant-select-selection{
+					width: 170px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}

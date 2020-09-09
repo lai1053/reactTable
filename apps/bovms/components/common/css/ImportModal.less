@@ -1,0 +1,73 @@
+.ttk-bovms-app-common-import-modal {
+    .ant-modal-title {
+        font-weight: 700;
+    }
+
+    &-content {
+        margin: 0 20px;
+        // p {
+        //     line-height: 20px;
+        //     margin-bottom: 10px;
+        //     &:first-child {
+        //         font-weight: 700;
+        //         font-size: 16px;
+        //     }
+        //     .warning-span {
+        //         color: orange;
+        //     }
+        //     .p-icon-export {
+        //         color: #0066B3;
+        //         margin: 0 8px;
+        //         padding: 6px;
+        //         cursor: pointer;
+        //         box-shadow: 0 0 3px #bbb;
+        //         -webkit-box-shadow:  0 0 3px #bbb;
+        //         -ms-box-shadow:  0 0 3px #bbb;
+        //         border-radius: 2px;
+        //         -webkit-border-radius: 2px;
+        //         -ms-border-radius: 2px;
+        //     }
+        // }
+        &-download {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            .ant-radio-wrapper {
+                margin-right: 58px;
+            }
+            .img {
+                height: 30px;
+                width: 30px;
+                background: url(../../../img/download.png);
+                cursor: pointer;
+            }
+        }
+        &-download, &-upload {
+            padding-left: 20px;
+        }
+        .ttk-bovms-app-common-import-modal-default-content-upload {
+            margin-left: 50px;
+            line-height: 32px;
+        }
+        .helpIcon {
+            margin-left: 32px;
+            font-size: 22px;
+            vertical-align: bottom;
+            color: #0066b3;
+        }
+        .ant-input-group-wrapper {
+            // width: 250px;
+            .ant-input-group-addon {
+                padding: 0;
+                border-radius: 0 4px 4px 0;
+                overflow: hidden;
+            }
+        }
+    }
+
+    &-file-error-confirm {
+        .anticon-exclamation-circle {
+            color: red !important;
+        }
+    }
+}

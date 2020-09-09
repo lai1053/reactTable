@@ -1,0 +1,460 @@
+.bovms-app-guidePage {
+    width: 100%;
+    height: 100%;
+    font-family: Microsoft YaHei, Helvetica Neue, Helvetica, PingFang SC,
+        Hiragino Sans GB, Arial, sans-serif;
+
+    &-upSecretKeyContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 308px;
+        height: 328px;
+        cursor: pointer;
+        background-image: url(../img/01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .bovms-app-guidePage-upSecretKeyContent-span12 {
+        //position: absolute;
+        cursor: default;
+        padding: 12px;
+        margin-bottom: 0;
+        // margin-top: 30px;
+        // margin-left: -80px;
+        // font-size: 13px;
+
+        .bovms-app-guidePage-upSecretKeyContent-span11 {
+            color: #ff852d;
+        }
+
+        .bovms-app-guidePage-upSecretKeyContent-span22 {
+            color: #d0c9d0;
+            padding-left: 10px;
+        }
+
+        .bovms-app-guidePage-upSecretKeyContent-button {
+            cursor: default;
+            padding: 0px;
+            margin-bottom: 0;
+        }
+    }
+
+    &-upSecretKeyContent:hover {
+        background: url(../img/02.png);
+    }
+
+    .bovms-app-guidePage-heda {
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .bovms-app-guidePage-qupiao-wrap {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1440px) {
+        .bovms-app-guidePage-qupiao-wrap {
+            margin-top: 3%;
+        }
+    }
+
+    @media screen and (min-width: 1680px) {
+        .bovms-app-guidePage-qupiao-wrap {
+            margin-top: 6%;
+        }
+    }
+
+    .bovms-app-guidePage-heda-span {
+        margin-left: 50px;
+    }
+
+    .bovms-app-guidePageImgdiv {
+        // position: absolute;
+        // margin-top: 100px;
+        // margin-left: -160px;
+        font-size: 13px;
+        width: 586px;
+        height: 72px;
+        background: url(../img/03.png);
+    }
+
+    .bovms-app-guidePageImgdivSale {
+        // position: absolute;
+        // margin-top: 80px;
+        // margin-left: -230px;
+        font-size: 13px;
+        width: 780px;
+        height: 72px;
+        background: url(../img/sale03.png);
+    }
+
+    .bovms-app-guidePageImgdivPuchase {
+        font-size: 13px;
+        width: 780px;
+        height: 72px;
+        background: url(../img/puchase03.png);
+    }
+}
+
+.bovms-app-guidePage-heda-help {
+    color: #fe9400;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+// 取票样式
+.bovms-app-guidePage-invoce-range-popup {
+    .ant-spin-nested-loading {
+        height: 100%;
+    }
+
+    // height: 500px;
+    .bovms-app-guidePage-invoce-range-popup-img {
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    .ant-checkbox-group-item {
+        display: block;
+        padding-left: 8px;
+        line-height: 32px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .bovms-app-guidePage-popup-content {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .bovms-app-guidePage-invoce-range-popup-checkebox-section {
+        padding-left: 16px;
+        padding-bottom: 16px;
+    }
+
+    .bovms-app-guidePage-invoce-range-popup-checkebox-section-checkgroup {
+        position: relative;
+
+        .bovms-app-guidePage-invoce-range-popup-checkebox-section-checkgroup-tooltip {
+            position: absolute;
+            bottom: 17px;
+            left: 88px;
+        }
+    }
+
+    .bovms-app-guidePage-range-step-two {
+        .ant-tabs-bar {
+            border-bottom: 1px solid #e8e8e8;
+            margin: 0 0 16px 0;
+            outline: noen;
+
+            .ant-tabs-nav-container {
+                position: relative;
+                box-sizing: border-box;
+                margin-bottom: -1px;
+                overflow: hidden;
+                font-size: 14px;
+                line-height: 1.5;
+            }
+        }
+
+        .bovms-app-guidePage-range-step-two-filter {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ant-tabs-tab {
+            position: relative;
+            border-bottom: 2px solid transparent;
+            cursor: pointer;
+        }
+
+        .ant-tabs-tab.ant-tabs-tab-active {
+            border-color: #0066b3;
+        }
+    }
+}
+
+.bovms-app-chapiao-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+// 查票样式
+.bovms-app-chaPiao-table {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+
+    .ant-table-thead {
+        .inv-type {}
+    }
+
+    .ant-table-tbody {
+        .inv-type {
+            width: 130px;
+            font-size: 12px;
+            padding: 1px 0px 1px 0px;
+        }
+    }
+}
+
+.bovms-app-chaPiao-table-wab {
+    margin-top: 20px;
+}
+
+.bovms-app-chaPiao-pagination-heji {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+
+.bovms-app-chaPiao-pagination {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+}
+
+.bovms-app-chaPiao-pagination-span {
+    position: absolute;
+    bottom: 60px;
+    margin-left: 20px;
+}
+
+.bovms-app-chaPiao-pagination-hint {
+    color: #999999;
+    margin-left: -12px;
+    margin-right: -12px;
+    border-top: 1px solid #ebebeb;
+    padding: 16px 0 8px 12px;
+    margin-top: 24px;
+
+    span {
+        color: #ff852d;
+    }
+}
+
+.bovms-app-guidePage-invoce-range-popup-checkebox {
+    position: relative;
+    background-color: #fff;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 11px;
+        right: 0;
+        width: 88%;
+        border-top: 1px dashed #ececec;
+    }
+
+    &.empty {
+        height: 22px;
+
+        &:after {
+            width: 100%;
+        }
+    }
+
+    strong {
+        font-size: 14px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    margin-bottom: 16px;
+}
+
+.ellipsis-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bovms-app-chapiao-filter .ant-input-group.ant-input-group-compact .ant-btn {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right-width: 1px;
+}
+
+.bovms-batch-subject-setting {
+    .bovms-batch-subject-setting-debit-right {
+        button {
+            margin: 0 4px;
+        }
+    }
+
+    .bovms-batch-subject-setting-table {
+        height: 223px;
+        overflow-y: auto;
+
+        .ant-table-body {
+            height: auto !important;
+        }
+
+        .ant-table-scroll table {
+            width: fit-content;
+        }
+    }
+
+    .bovms-batch-subject-setting-debit-footer {
+        background-color: #f9f9fb;
+        padding: 12px 8px 8px 8px;
+        border-right: 1px solid #dadada;
+        border-left: 1px solid #dadada;
+        border-bottom: 1px solid #dadada;
+    }
+}
+
+.bovms-common-actions-header {
+    margin-bottom: 12px;
+}
+
+.bovms-common-table-style-footer {
+    background-color: #f9f9fb;
+    padding: 6px 8px 6px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+
+    .ant-pagination,
+    .mk-pagination .ant-btn {
+        font-size: 12px;
+    }
+}
+
+.bovms-common-table-style {
+    .ant-table-scroll table {
+        width: fit-content;
+    }
+
+    .ant-table-body {
+        overflow-y: scroll !important;
+    }
+}
+
+.bovms-app-actions-footer {
+    border-top: 1px solid #ebebeb;
+    margin: 24px -12px 0 -12px;
+    padding: 10px 12px 10px 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .bovms-app-actions-footer-tip {
+        span {
+            color: #ff852d;
+        }
+    }
+
+    button {
+        margin: 0 5px;
+    }
+}
+
+.bovms-app-actions-footer-not-tip {
+    border-top: 1px solid #ebebeb;
+    margin: 24px -12px 0 -12px;
+    padding: 10px 12px 0 12px;
+    text-align: right;
+
+    button {
+        margin: 0 5px;
+    }
+}
+
+.bovms-app-popup-content {
+    padding: 16px 16px 0 16px;
+}
+
+.bovms-app-popup-content.no-top-padding {
+    padding-top: 0;
+}
+
+.bovms-dimension-setting {
+    padding: 24px;
+}
+
+.bovms-app-unit-conversion-comfirm {
+    .ant-modal-header {
+        border-bottom: none;
+    }
+}
+
+.bovms-common-table-style-grey-row,
+.bovms-common-table-style-grey-row td {
+    background-color: #fff5f5 !important;
+}
+
+.bovms-help-icon {
+    font-size: 12px;
+    color: #53b2f5;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.footer-amount-item-span,
+.bovms-app-guidePage-invoce-range-popup-checkebox-section span:not(.ant-checkbox) {
+    font-size: 12px;
+}
+
+//账套信息提示框
+.bovms-app-zt-confirm {
+    .ant-confirm-body .ant-confirm-content {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .ant-confirm-btns {
+        margin-top: 50px;
+    }
+
+    .ant-confirm-body>.anticon {
+        color: #f5222d;
+    }
+
+    .ant-confirm-body-wrapper .ant-confirm-btns {
+        padding-right: 140px;
+    }
+}
+
+.collect-invoice {
+    .ant-modal {
+        padding-bottom: 0px;
+    }
+
+    .bovms-app-guidePage-range-step-one,
+    .bovms-app-guidePage-range-step-two,
+    .bovms-batch-subject-setting {
+
+        .bovms-app-actions-footer {
+            position: relative;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 60px;
+            background-color: #fff;
+            z-index: 1000;
+        }
+    }
+}

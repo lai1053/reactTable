@@ -1,0 +1,180 @@
+.ttk-stock-app-completion-warehousing-sales-list {
+    height: 100%;
+    width: 100%;
+    // background-color: #fff;
+    margin: 0 auto;
+    color: black !important;
+
+    &-div {
+        text-align: center;
+        padding: 10px;
+    }
+
+    &-header {
+        position: relative;
+        overflow: hidden;
+        padding: 10px;
+        height: 52px;
+        font-size: 13px;
+        background-color: #fff;
+        border: 1px solid #d9d9d9;
+        border-bottom: none;
+
+        &-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20px;
+        }
+
+        &-others {
+            &-left {
+                float: left;
+                text-align: left;
+
+                // &-top {
+                .back-btn {
+                    display: inline-block;
+                    height: 30px;
+                    width: 34px;
+                    border: 1px solid #d9d9d9;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    background: url(../commonAssets/img/return.png) no-repeat center center;
+                }
+
+                .bill-code {
+                    position: relative;
+                    top: -10px;
+                    margin-left: 10px;
+                    margin-right: 20px;
+                }
+
+                .rk-period {
+                    position: relative;
+                    top: -10px;
+                }
+
+                &-bottom {
+                    margin-top: 13px;
+                }
+            }
+
+            &-right {
+                float: right;
+                text-align: right;
+
+                &-top {
+                    .update-icon {
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: middle;
+                        margin: -4px 10px 0 0;
+                        background: url(../commonAssets/img/keyboard.png);
+                    }
+
+                    .delete-btn {
+                        margin-left: 8px;
+                    }
+                }
+
+                &-bottom {
+                    margin-top: 13px;
+
+                    .ant-input {
+                        height: 32px;
+                        width: 156px;
+                        font-size: 13px;
+                    }
+                }
+                .print-btn {
+                    vertical-align: top;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+
+    &-main {
+        margin-top: 0px;
+        border: 1px solid #d9d9d9;
+        border-top: none;
+
+        .ant-table-body {
+            overflow-x: hidden !important;
+            overflow-y: scroll !important;
+        }
+
+        .mk-table {
+            border: none;
+        }
+    }
+
+    &-footer {
+        text-align: left;
+        padding: 10px;
+        background-color: #fff;
+
+        &-btn {
+            float: right;
+        }
+
+        &-div {
+            color: #333;
+            margin-top: 5px;
+            display: inline-block;
+
+            span {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .operations {
+        .add-delete-Icon {
+            font-size: 15px;
+            color: #a8a8a8;
+            cursor: pointer;
+            display: block;
+        }
+    }
+
+    .ant-select-selection__rendered {
+        margin-left: 5px;
+    }
+
+    /* 表格的数字输入框 start */
+    .mk-table table td > div {
+        display: block;
+    }
+
+    .ant-input-number-handler-wrap {
+        display: none;
+    }
+
+    .ant-input-number-input-wrap {
+        input {
+            text-align: right;
+        }
+    }
+
+    .input_container {
+        input {
+            width: 96%;
+            padding: 0 6px;
+        }
+    }
+}
+
+.ttk-stock-app-completion-warehousing-sales-footer.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .total {
+        span {
+            margin-right: 8px;
+        }
+    }
+}

@@ -1,0 +1,510 @@
+.purchase-ru-ku-add-alert-new {
+    width: 100%;
+    height: 100%;
+
+    &-content {
+        margin-bottom: 12px;
+    }
+
+    // .mk-layout {
+    //     display: contents;
+    // }
+    .-header {
+        background: #ffffff;
+
+        // height: 110px;
+        .title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #971d18;
+            text-align: center;
+            padding-bottom: 12px;
+            line-height: 1;
+        }
+
+        .-modal-form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .ant-form-item {
+                padding-bottom: 12px;
+
+                &.lg .ant-form-item-control-wrapper {
+                    width: 260px;
+                }
+            }
+
+            .ant-form-item-label {
+                width: 80px;
+                text-align: left;
+                padding: 0px;
+                line-height: 20px;
+            }
+
+            .ant-form-item-control-wrapper {
+                width: 136px;
+
+                .ant-form-item-control {
+                    line-height: 20px;
+                }
+
+                .ant-input,
+                .ant-select-selection {
+                    border: none;
+                    border-bottom: 1px solid #d9d9d9;
+                    border-radius: 1px;
+                    height: 20px;
+                    line-height: 1;
+                    padding: 0px;
+                }
+
+                .ant-select-selection:focus,
+                .ant-input:focus {
+                    box-shadow: none !important;
+                }
+
+                .ant-select-selection__rendered {
+                    line-height: 20px;
+                }
+            }
+
+            .ant-form-explain {
+                margin-top: 5px;
+            }
+        }
+    }
+
+    &-tableHeader {
+        border-top: 1px solid #d9d9d9;
+        background: #f8f8f8;
+        color: #333333;
+    }
+
+    &-content {
+        // flex: 1;
+
+        .ck-fifo-icon-complete {
+            width: 18px;
+            height: 18px;
+            // top: -2px;
+            // left: 5px;
+            // position: relative;
+            position: absolute;
+            right: 5px;
+            top: 9px;
+            // display: inline-block;
+            // float: right;
+            // margin: 10px 5px 0 0;
+            vertical-align: middle;
+            background: url(../commonAssets/fifo_complete.png) no-repeat 0 0;
+        }
+
+        .add-delect-icons .icon-deleteRow {
+            margin-top: 0px;
+        }
+
+        .add-delect-icons {
+            margin: 0 auto;
+            display: block;
+            font-size: 15px;
+            color: #a8a8a8;
+            cursor: pointer;
+            z-index: 2;
+            height: 35px;
+            width: 36px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .icon-addRow {
+                display: none;
+            }
+
+            .icon-deleteRow {
+                display: none;
+            }
+        }
+
+        .fixedDataTableCellGroupLayout_cellGroupWrapper {
+            &:hover {
+                .icon-addRow {
+                    display: block;
+                    margin-right: 10px;
+                }
+
+                .icon-deleteRow {
+                    display: block;
+                }
+
+                .text {
+                    display: none;
+                }
+            }
+        }
+
+        .mk-datagrid .public_fixedDataTable_main {
+            border-left: none;
+        }
+
+        .mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+            color: #333333;
+        }
+
+        .public_fixedDataTable_scrollbarSpacer {
+            top: 0px;
+        }
+
+        //滚动条上部
+        .public_fixedDataTable_scrollbarSpacer {
+            top: 0px;
+            background: #eaeaea;
+        }
+
+        .mk-datagrid-cellContent-right {
+            padding-right: 8px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .del {
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .purchase-ru-ku-add-alert-new-Body {
+            // flex:1;
+            min-height: 315px;
+            background: #fff;
+            border: 1px solid #d9d9d9;
+            border-top: none;
+
+            .amount {
+                text-align: right;
+            }
+
+            .error {
+                border: 1px solid red;
+            }
+
+            .purchase-ru-ku-add-alert-new-td-con {
+                width: 100%;
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .tdChme .ant-select {
+                width: calc(100% - 2px);
+                top: 2px;
+                left: 1px;
+            }
+
+            .ant-select {
+                width: calc(100% - 2px);
+                top: 2px;
+                left: -1px;
+            }
+
+            .tdChme {
+                position: relative;
+                display: block;
+                padding-right: 30px;
+                // background: #fff;
+                height: 100%;
+
+                .selectMoreName {
+                    border-radius: 4px;
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    right: 3px;
+                    height: 22px;
+                    line-height: 22px;
+                    width: 24px;
+                    color: #b0b0b0;
+                    cursor: pointer;
+                    border: 1px solid #d9d9d9;
+                    text-align: center;
+                    display: none;
+                }
+
+                .anticon-ellipsis {
+                    font-size: 14px;
+                    font-weight: 777;
+                }
+            }
+
+            .columns-title {
+                width: 100%;
+                position: relative;
+                display: block;
+
+                > div {
+                    vertical-align: middle;
+                }
+
+                &-item {
+                    display: inline-block;
+                }
+
+                &-price {
+                    span {
+                        vertical-align: middle;
+                    }
+                }
+
+                &-icon {
+                    position: absolute;
+                    right: 0;
+                }
+
+                &-docCode {
+                    margin-left: 30px;
+                    width: 100px;
+
+                    span,
+                    a {
+                        vertical-align: middle;
+                    }
+                }
+
+                &-settlement {
+                    margin-left: 50px;
+                    position: absolute;
+                    max-width: 60%;
+                    text-align: right;
+
+                    span {
+                        vertical-align: middle;
+                    }
+
+                    .settlement-con {
+                        line-height: 23px;
+                        display: inline-block;
+                        max-width: 90%;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        position: relative;
+                        top: 0px;
+
+                        i {
+                            font-style: normal;
+                        }
+                    }
+
+                    .jiesuan-icon {
+                        position: relative;
+                        bottom: 1px;
+                    }
+
+                    .jiesuan {
+                        color: @primary-color;
+                    }
+
+                    .jiesuan.settlement {
+                        color: rgba(0, 0, 0, 0.25);
+                    }
+
+                    > a {
+                        display: inline-block;
+                        line-height: 23px;
+                        vertical-align: middle;
+                    }
+
+                    .jiesuan-item {
+                        cursor: not-allowed;
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+
+            .ybbalance {
+                width: ~"calc(100% - 2px)";
+            }
+
+            .fixedDataTableRowLayout_rowWrapper {
+                .mk-datagrid-cellContent {
+                    padding: 0 8px !important;
+                }
+            }
+        }
+    }
+
+    &-tableHeaderNoBoder {
+        border-left: none !important;
+    }
+
+    .fixedDataTableLayout_main {
+        height: 315px !important;
+
+        .p-r {
+            padding-right: 10px;
+        }
+
+        .fixedDataTableRowLayout_rowWrapper {
+            .inputSelectClass {
+                border: none;
+                border-radius: 1px;
+            }
+
+            &:hover {
+                .tdChme {
+                    .selectMoreName {
+                        display: block;
+                    }
+                }
+
+                .inputSelectClass {
+                    border: 1px solid #0066b3;
+                }
+
+                .readonly {
+                    border: none !important;
+                }
+            }
+        }
+    }
+
+    .mk-datagrid-sequence-cell {
+        border-left: 1px solid #d9d9d9;
+    }
+
+    .mk-addDel .public_fixedDataTable_main,
+    .mk-upDown .public_fixedDataTable_main {
+        border-right: 0px;
+    }
+
+    &-cell {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > div {
+            width: 100%;
+            height: 100%;
+
+            input {
+                height: 100%;
+            }
+        }
+    }
+
+    &-footer {
+        position: relative;
+        float: right;
+        display: block !important;
+
+        .zhidanren {
+            margin-bottom: -9px;
+            overflow: hidden;
+            float: right;
+        }
+
+        .ant-form-item-control-wrapper {
+            float: right;
+        }
+    }
+
+    &-footer-btn {
+        border-top: 1px solid #e8e8e8;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: -44px;
+        height: 55px;
+        display: flex;
+        background: #fff;
+        border-radius: 0 0 4px 4px;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 12px;
+        padding-left: 12px;
+
+        &-btnGroup {
+            &-item {
+                margin-left: 8px;
+                width: 59.39px;
+                float: right;
+            }
+
+            &-item:nth-child(3) {
+                width: 88px;
+            }
+        }
+    }
+
+    &-stockName-add {
+        height: 36px;
+        line-height: 36px;
+        width: 100%;
+        border-radius: 0;
+        font-size: 16px;
+        color: white;
+        background-color: rgb(0, 102, 179);
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            color: white;
+            border: none;
+            background-color: rgb(0, 102, 179);
+        }
+
+        .add {
+            text-align: center;
+            background-color: #0066b3;
+
+            & > img {
+                width: 15px;
+                height: 15px;
+                margin-right: 8px;
+            }
+
+            & > span {
+                color: white;
+                letter-spacing: 0px;
+            }
+        }
+    }
+
+    .inputSelectClass {
+        font-size: 12px;
+        background: none;
+    }
+
+    .inputSelectonClick {
+        font-size: 12px;
+        background: #fff;
+    }
+
+    .cell-hand {
+        display: inline-block;
+        position: absolute;
+        left: 0px;
+        top: 3px;
+        width: 30px;
+        height: 30px;
+        background: url(../commonAssets/hand.png) no-repeat center center;
+    }
+
+    .helloworld-add-form {
+        padding-bottom: 5px;
+    }
+}

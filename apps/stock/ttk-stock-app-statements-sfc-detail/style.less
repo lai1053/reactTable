@@ -1,0 +1,844 @@
+.ttk-stock-app-statements-sfc-detail {
+    width: 100%;
+    height: 100%;
+    // padding: 10px;
+    padding-top: 4px;
+    padding-bottom: 10px;
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    background-color: #f1f5f4;
+
+    .ant-tree-child-tree-open {
+        max-height: none;
+        overflow: visible;
+    }
+
+    .vt-header-cell {
+        // padding: 0 !important;
+        white-space: nowrap;
+    }
+
+    .sfc-detail-export {
+        width: 50px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    &-left {
+        width: 200px;
+        flex: 0 0 200px;
+        transition: all 0.1s;
+        visibility: visible;
+
+        &.arrowRight {
+            width: 0;
+            flex: 0;
+            visibility: hidden;
+            transition: all 0.1s;
+        }
+
+        .ttk-stock-app-inventory-picking-fast-spin-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .mk-btn {
+            width: 30px;
+            padding: 0px;
+            font-size: 18px;
+        }
+
+        .ant-card-head {
+            border-radius: 0px;
+            border: 1px solid #d9d9d9;
+        }
+
+        .ant-card-body {
+            border: 1px solid #d9d9d9;
+            border-top: none;
+            overflow-y: auto;
+
+            .ant-tree li .ant-tree-node-content-wrapper:hover {
+                background: @item-hover-bg;
+            }
+
+            .ant-tree li .ant-tree-node-selected.ant-tree-node-content-wrapper {
+                background-color: @primary-1;
+                color: @primary-color;
+            }
+        }
+
+        .inv-app-batch-sale-header-filter-input {
+            width: 183px;
+            vertical-align: middle;
+            border-right: 1px solid #d9d9d9;
+
+            .ant-input {
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+                border-right: none;
+                padding-left: 30px !important;
+                font-size: 12px;
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex: auto;
+        overflow: hidden;
+        border-radius: 0px;
+        transition: all 0.2s;
+
+        .sfc-detail-h2 {
+            text-align: center;
+            width: 100%;
+            margin-top: 8px;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        .cellName:hover {
+            color: @link-color;
+        }
+
+        .mk-datagrid .public_fixedDataTable_main {
+            border-left: none;
+        }
+
+        .mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+            color: #333333;
+        }
+
+        .public_fixedDataTable_scrollbarSpacer {
+            top: 0px;
+        }
+
+        &-header {
+            display: flex;
+
+            &-more {
+                position: relative;
+                right: 10px;
+                border-radius: 0 4px 4px 0;
+                border-left: 1px solid #eee;
+            }
+
+            .btn {
+                height: 30px;
+                margin-left: 8px;
+                outline: none;
+            }
+
+            .btnMarginRight {
+                margin-right: 4px;
+            }
+
+            .importIconBtn {
+                height: 30px;
+                width: 30px;
+                padding: 0;
+                margin-left: 8px;
+                outline: none;
+                color: #00b38a;
+
+                &:hover,
+                &:active {
+                    border-color: #ffc000;
+                }
+
+                &:focus {
+                    border-color: #d9d9d9;
+                }
+            }
+
+            .exportIconBtn {
+                height: 30px;
+                width: 30px;
+                padding: 0;
+                margin-left: 8px;
+                outline: none;
+                color: #00b38a;
+
+                &:hover,
+                &:active {
+                    border-color: #00b38a;
+                }
+
+                &:focus {
+                    border-color: #d9d9d9;
+                }
+            }
+
+            &-search {
+                position: absolute;
+                left: 60px;
+                top: 10px;
+                width: 165px;
+
+                //margin-right: 8px;
+                .ant-input {
+                    height: 30px;
+                    min-height: 30px;
+                }
+
+                .ant-input-affix-wrapper,
+                .ant-input:not(:last-child) {
+                    font-size: 12px;
+                    padding-right: 30px !important;
+                }
+            }
+        }
+
+        .ant-card-head {
+            background-color: #fff;
+            border-radius: 0px;
+            border: 1px solid #d9d9d9;
+            border-bottom: none;
+        }
+
+        &-content {
+            border: 1px solid #d9d9d9;
+            border-top: none;
+            background-color: #ffffff;
+        }
+
+        &-footer {
+            flex-direction: column-reverse;
+            background-color: #f1f5f4;
+            height: 30px;
+            justify-content: flex-end;
+            flex: 0 0 30px !important;
+            align-items: flex-end;
+            margin-top: 10px;
+        }
+
+        &-title-monthPicker {
+            width: 90px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        &-title-monthRangePicker {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+    }
+
+    &-contentlist {
+        flex: 1;
+        overflow: hidden;
+
+        .mk-datagrid .public_fixedDataTable_main {
+            border-left: none;
+        }
+
+        .mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+            color: #333333;
+        }
+
+        .public_fixedDataTable_scrollbarSpacer {
+            top: 0px;
+        }
+
+        //滚动条上部
+        .public_fixedDataTable_scrollbarSpacer {
+            top: 0px;
+            background: #eaeaea;
+        }
+
+        .mk-datagrid-cellContent-right {
+            padding-right: 8px;
+        }
+
+        .del {
+            cursor: pointer;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .ttk-stock-app-statements-sfc-detail-Body {
+            flex: 1;
+            background: #fff;
+            border: 1px solid #d9d9d9;
+            border-top: none;
+
+            tr {
+                .sfc-detail-table-nameStyle {
+                    width: 95%;
+                    position: absolute;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .sfc-detail-table-codeStyle {
+                    width: 95%;
+                    position: absolute;
+                    padding-left: 5px;
+                }
+
+                .sfc-detail-table-unitStyle {
+                    top: 10px;
+                    position: relative;
+                }
+
+                .sfc-detail-table-sheetCodeStyle {
+                    color: #009fff;
+                    cursor: pointer;
+                }
+            }
+
+            th.table_fixed_width>span {
+                line-height: 33px !important;
+            }
+
+            .ant-input,
+            .ant-select-selection {
+                font-size: 12px;
+                height: 26px;
+            }
+
+            .amount {
+                text-align: right;
+            }
+
+            .error {
+                border: 1px solid red;
+            }
+
+            .ant-select-selection__rendered {
+                font-size: 12px;
+                line-height: 26px;
+            }
+
+            .ant-table-tbody {
+                height: 100%;
+
+                tr {
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+
+            .ant-table-placeholder {
+                z-index: 3;
+                top: 55%;
+            }
+
+            .ttk-stock-app-statements-sfc-detail-td-con {
+                width: 100%;
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            tr>td.table_td_align_left {
+                text-align: left;
+                position: relative;
+
+                .div {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+            tr>td.table_td_align_right {
+                text-align: right;
+            }
+
+            tr>td.table_td_align_center {
+                text-align: center;
+            }
+
+            table tr.tr_heji td {
+                background-color: #fff6ea !important;
+                font-weight: bold !important;
+            }
+
+            .ant-table-header {
+                .ant-table-thead tr th {
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                >table {
+                    border-left: 0;
+                }
+            }
+
+            .ant-table-body {
+                z-index: 2;
+                background-color: #fff !important;
+                overflow-x: hidden;
+
+                &>table {
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+
+            .ant-table-fixed-right {
+                .ant-table-header {
+                    background: #eaeaea;
+                }
+
+                .ant-table-body-outer {
+                    border-top: 1px solid #d9d9d9;
+                }
+
+                //   .ant-table-fixed {
+                //       border: 0;
+                //   }
+            }
+
+            .columns-title {
+                width: 100%;
+                position: relative;
+                display: block;
+
+                >div {
+                    vertical-align: middle;
+                }
+
+                &-item {
+                    display: inline-block;
+                }
+
+                &-price {
+                    span {
+                        vertical-align: middle;
+                    }
+                }
+
+                &-icon {
+                    position: absolute;
+                    right: 0;
+                }
+
+                &-docCode {
+                    margin-left: 30px;
+                    width: 100px;
+
+                    span,
+                    a {
+                        vertical-align: middle;
+                    }
+                }
+
+                &-settlement {
+                    margin-left: 50px;
+                    position: absolute;
+                    max-width: 60%;
+                    text-align: right;
+
+                    span {
+                        vertical-align: middle;
+                    }
+
+                    .settlement-con {
+                        line-height: 23px;
+                        display: inline-block;
+                        max-width: 90%;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        position: relative;
+                        top: 0px;
+
+                        i {
+                            font-style: normal;
+                        }
+                    }
+
+                    .jiesuan-icon {
+                        position: relative;
+                        bottom: 1px;
+                    }
+
+                    .jiesuan {
+                        color: @primary-color;
+                    }
+
+                    .jiesuan.settlement {
+                        color: rgba(0, 0, 0, 0.25);
+                    }
+
+                    >a {
+                        display: inline-block;
+                        line-height: 23px;
+                        vertical-align: middle;
+                    }
+
+                    .jiesuan-item {
+                        cursor: not-allowed;
+                        text-decoration: none;
+                        color: rgba(0, 0, 0, 0.25);
+                    }
+                }
+            }
+
+            .ant-select-selection__clear {
+                margin-right: 10px !important;
+            }
+        }
+    }
+
+    .mk-card {
+        display: flex;
+        flex-direction: column;
+
+        .ant-card-head {
+            padding: 0 10px;
+            flex: 0 0 50px;
+            border-bottom: none;
+        }
+
+        .ant-card-body {
+            padding: 0 0 0 10px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .no-enable {
+        color: #cccccc;
+    }
+
+    &-personModal {
+        .ant-modal-body {
+            height: 500px;
+        }
+
+        .ant-modal-content {
+            min-width: 710px;
+        }
+    }
+
+    &-personModal-xdz {
+        .ant-modal-body {
+            height: 335px;
+        }
+
+        .ant-modal-content {
+            min-width: 710px;
+        }
+    }
+
+    &-deptModal {
+        .ant-modal-body {
+            height: 134px;
+        }
+    }
+
+    //滚动条上部
+    .public_fixedDataTable_scrollbarSpacer {
+        top: 0px;
+        background: #eaeaea;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    //兼容搜狗浏览器7.0
+    .ant-modal {
+        top: 50px;
+    }
+
+    .ant-table-fixed-left {
+        .ant-table-body-outer {
+            .ant-table-fixed {
+                border-left: none;
+            }
+        }
+    }
+}
+
+.ttk-stock-app-statements-sfc-detailNoBorder {
+    background-color: #f1f5f4;
+
+    .ant-card-bordered {
+        border: none;
+    }
+}
+
+.personnelDelModal {
+    .ant-confirm-btns {
+        button:nth-of-type(1) {
+            display: none;
+        }
+    }
+}
+
+.ttk-stock-app-statements-sfc-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f1f5f4;
+    height: 100%;
+
+    .ttk-stock-app-statements-sfc-detail-content {
+        background-color: #f1f5f4;
+        position: relative;
+        padding-left: 15px;
+
+        &-arrow {
+            position: absolute;
+            left: -3px;
+            top: 1px;
+            cursor: pointer;
+            display: inline-block;
+            background: url(./img/left.png) no-repeat 0 0;
+            width: 18px;
+            height: 39px;
+            display: block;
+            left: -18px;
+            position: absolute;
+            top: 2px;
+            z-index: 99999;
+
+            &.arrowRight {
+                background: url(./img/right.png) no-repeat 0 0;
+            }
+        }
+
+        .ant-card-body {
+            padding-left: 0px;
+            position: relative;
+        }
+
+        .ttk-stock-app-statements-sfc-detail-content-title {
+            flex: 0 0 50px;
+            // height: 70px;
+            position: relative;
+            background: #fff;
+            border: 1px solid #d9d9d9;
+            border-bottom: none;
+        }
+    }
+}
+
+.completion-of-warehousing-look {
+    &-title {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+        color: #971d18;
+        margin-bottom: 10px;
+    }
+
+    &-code,
+    &-period {
+        color: rgba(0, 0, 0, 0.85);
+    }
+
+    .ant-table-thead>tr>th {
+        text-align: center !important;
+    }
+}
+
+/*表格虚拟化*/
+.ttk-stock-app-statements-sfc-detail-table {
+    border-left: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+
+    .textOverflow {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .borderD9 {
+        position: relative;
+        height: 37px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #d9d9d9;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    .staticBg {
+        background-color: #fff6ea;
+    }
+
+    .padding8 {
+        padding: 0 10px;
+        height: 37px;
+    }
+
+    // .virtual-table .virtual-table-cell{
+    //     color: #000;
+    //     padding: 0;
+    //     .textAlignL{
+    //         text-align: left!important;
+    //     }
+    //     .textAlignR{
+    //         text-align: right!important;
+    //     }
+    //     .textAlignC{
+    //         text-align: center!important;
+    //     }
+
+    //     .sfc-detail-sheetCode-link{
+    //         .textOverflow;
+    //         color: #009FFF;
+    //         cursor: pointer;
+    //         user-select: none;
+    //     }
+    // }
+
+    .vt-body-row-cell {
+        padding: 0 !important;
+        color: #000;
+
+        .textAlignL,
+        .textAlignR,
+        .textAlignC {
+            line-height: 37px;
+        }
+
+        .textAlignL {
+            text-align: left !important;
+        }
+
+        .textAlignR {
+            text-align: right !important;
+        }
+
+        .textAlignC {
+            text-align: center !important;
+        }
+
+        .sfc-detail-sheetCode-link {
+            color: #009fff;
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+
+    .kcBalanceArr{
+        .baseDiv {
+            padding-right: 14px;
+        }
+    }
+    .isTrident {
+
+        .baseDiv,
+        .staticStyle1,
+        .staticStyle2,
+        .rowSpanDiv {
+            padding: 0 18px;
+        }
+    }
+
+    /*本月合计样式*/
+    .staticStyle1 {
+        .padding8;
+        .textOverflow;
+        .staticBg;
+        .borderD9;
+
+        &.fontBold {
+            font-weight: 900;
+        }
+    }
+
+    /*本年累计样式*/
+    .staticStyle2 {
+        .staticBg;
+        .padding8;
+        .textOverflow;
+
+        &.fontBold {
+            font-weight: 900;
+        }
+    }
+
+    .baseDiv {
+        .borderD9;
+        .padding8;
+        .textOverflow;
+
+        &.bgBlack {
+            background-color: #f8f8f8;
+        }
+
+        &.bgWhite {
+            background-color: #fff;
+        }
+    }
+
+    .row-hover {
+
+        .bgBlack,
+        .bgWhite,
+        .staticStyle1 {
+            background-color: #d4e8ff;
+        }
+    }
+
+    .rowSpanDiv {
+        .padding8;
+        .textOverflow;
+    }
+
+    .virtual-table .virtual-table-row.virtual-table-row-hover {
+        background-color: rgba(65, 106, 170, 0.1);
+
+        .virtual-table-cell {
+            .baseDiv {
+                background-color: rgba(65, 106, 170, 0.1);
+            }
+        }
+    }
+
+    .virtual-table {
+        .virtual-table-row {
+            background-color: #fff;
+
+            &:nth-of-type(2n) {
+                background-color: #f8f8f8;
+            }
+
+            &.virtual-table-row-hover {
+                background-color: rgba(65, 106, 170, 0.1);
+
+                .virtual-table-cell {
+                    .baseDiv {
+                        background-color: rgba(65, 106, 170, 0.02);
+                    }
+                }
+            }
+        }
+    }
+
+    .ant-table-bordered .ant-table-header>table,
+    .ant-table-bordered .ant-table-body>table,
+    .ant-table-bordered .ant-table-fixed-left table,
+    .ant-table-bordered .ant-table-fixed-right table {
+        border: none;
+    }
+}

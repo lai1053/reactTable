@@ -1,0 +1,662 @@
+.app-sumaccount-rpt{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
+
+    &-print{
+        position: relative;
+        width: 77px;
+        .ant-btn{
+            height: 30px;
+            float: left !important;
+        }
+        .ant-btn-default{
+            position: absolute;
+            top: 0px;
+        }
+        .ant-dropdown-trigger{
+            bottom:7px;
+            font-size: 12px;
+            color: @primary-color;
+            height: 30px;
+            position: absolute;
+            right: 0px;
+            &:hover {
+                background: @primary-color;
+                color: #fff;
+            }
+
+            i:last-child{
+                font-size: 12px;
+                &:before{
+                    content: "\E61D";
+                }
+            }
+        }
+        .ant-btn-default:first-child{
+            padding: 0 8px;
+        }
+    }
+
+    &-body {
+        display: flex;
+        flex-direction: row;
+        &-left{
+            width: 80px;
+            background: #fff;
+            font-size: 12px;
+            border: 1px solid #d9d9d9;
+            border-right: none;
+            // padding: 10px 6px 0 6px;
+            padding: 0px 6px 0 6px;
+            display: flex;
+            justify-content: center;
+            .TimeWrap {
+                width: 70px;
+                .TimelineDiv {
+                    padding: 0 6px 0 15px;
+                    .Timeline {
+                        .ant-timelineItem, .ant-timelineItemYear {
+                            padding: 0 0 40px;
+                            font-size: 12px;
+                            .ant-timeline-item-head-custom {
+                                padding: 0;
+                            }
+
+                            .yearLabel,.yearLabelDis {
+                                font-size: 12px;
+                                color: #0066B3;
+                                span{
+                                    margin-left: 10px;
+                                }
+                            }
+                            .yearLabelDis {
+                                color: #d9d9d9;
+                            }
+                            .ant-timeline-item-head {
+                                border: none !important;
+                            }
+                        }
+                        .ant-timelineItemYear {
+                            padding: 0 0 35px;
+                        }
+
+                        .ant-timeline-item {
+                            &:hover{
+                                cursor: pointer;
+                            }
+                            .ant-timeline-item-tail {
+                                border:1px dotted #d9d9d9;
+                            }
+                            &:last-child{
+                                padding: 0 0 5px;
+                            }
+                            .ant-timeline-item-content {
+                                font-size: 12px;
+                                position: relative;
+                                top: -3px;
+                                // color: #999999;
+                                color: #333;
+                            }
+                            .ant-timeline-item-head {
+                                margin: 2px 0;
+                                border: 1px solid transparent;
+                                z-index: 222;
+                            }
+                        }
+                        .ant-timeline-item-last .ant-timeline-item-content {
+                            height: 15px;
+                        }
+                        .nodeDiv {
+                            background-color: @primary-color;
+                            color: #fff;
+                            width: 65px;
+                            margin-left: 25px;
+                            height: 26px;
+                            border-radius: 13px;
+                            line-height: 25px;
+                            font-size: 12px;
+                        }
+                        .line {
+                            width: 0px;
+                            border: 1px dotted #d9d9d9;
+                            margin-left: 4px;
+                            height: 20px;
+                        }
+
+                        .ant-timelineItemDis {
+                            &:hover{
+                                cursor: not-allowed !important;
+                            }
+                            opacity: 0.6;
+                        }
+                        .selectItem {
+                            padding: 0 0 40px;
+                        }
+
+                        .ant-timelineEnabled {
+                            .ant-timeline-item-head {
+                                border: none !important;
+                            }
+                        }
+                    }
+                    ul>li{
+                        &:last-child {
+                            padding: 0px !important;
+                        }
+                    }
+                }
+            }
+
+
+
+            overflow-y: auto;
+
+            &::-webkit-scrollbar{
+                width: 0px !important;
+                height: 0px !important;
+            }
+            &:hover{
+                &::-webkit-scrollbar{
+                    width: 6px !important;
+                    height: 6px !important;
+                }
+            }
+        }
+        &-right{
+            .ant-spin-nested-loading{
+                height: 100%;
+                .ant-spin-container{
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .mk-table .ant-table-fixed-left table{
+        .ant-table-thead > tr > th{
+            // height: 37px;
+        }
+    }
+    .mk-table .ant-table-thead tr th{
+        position: relative;
+        .ellipsis{
+            // top: 10px;
+            overflow: hidden;
+            display: flex;
+            text-align: center;
+            position: relative;
+            height: 37px;
+            justify-content: center;
+            div{
+                width: 90%;
+                left: 0px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+    .mk-table .ant-table-fixed-left{
+        box-shadow: none !important;
+        .ant-table-header{
+            .ant-table-thead tr th{
+                position: relative;
+                // height: 37px;
+                .ellipsis{
+                    // top: 10px;
+                    overflow: hidden;
+                    display: flex;
+                    text-align: center;
+                    position: relative;
+                    height: 37px;
+                    justify-content: center;
+                    div{
+                        width: 90%;
+                        left: 0px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+        .ant-table-header-column{
+            width: 100%;
+        }
+        // .ant-table-tbody{
+        //     border-right: 1px solid #ccc;
+        // }
+    }
+    .mk-table .ant-table-tbody tr td{
+        position: relative;
+        .div{
+            white-space: nowrap;
+            overflow: hidden;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            top: 0px;
+            height: 100%;
+            left: 0px;
+            // text-align: left;
+            padding: 0 8px;
+            text-overflow: ellipsis;
+            .renderNameDiv{
+                overflow: hidden;
+                width: 100%;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+    // &-right{
+        .app-sumaccount-rpt-body-right {
+            position: relative;
+        }
+        &-rightFiexd{
+            position: relative;
+            .setting {
+                width: 34px;
+                height: 26px;
+                font-weight: 600;
+                font-size: 22px;
+                z-index: 19;
+                line-height: 26px;
+                box-shadow: 0 2px 4px 0 rgba(171, 178, 184, 0.45);
+            }
+            .setting-box {
+                text-align: right;
+                padding: 0 10px;
+                position: absolute;
+                background: #fff;
+                right: 0px;
+                top: 18px;
+                margin-top: -13px;
+                border-radius: 13px 0 0 13px;
+                cursor: pointer;
+                transition: width 1s;
+                -moz-transition: width 1s;
+                -webkit-transition: width 1s;
+                -o-transition: width 1s;
+            }
+        }
+        .mk-table .ant-table-tbody td{
+            position: relative;
+            // height: 37px !important;
+        }
+        .mk-table .ant-table-tbody tr {
+            td:last-child{
+                // background: #FEF6EB;
+            }
+            td:nth-last-child(2){
+                // background: #FEF6EB;
+            }
+        }
+        .ant-table .ant-table-thead {
+            tr {
+                th:last-child {
+                    border-right: 1px solid #d9d9d9;
+                }
+
+                th {
+                    text-align: center !important;
+                }
+            }
+        }
+        &-reload{
+            display: block;
+            line-height: 26px !important;
+            font-size: 20px;
+            width: 26px;
+            height: 26px;
+            box-sizing: border-box;
+            background: #FFFFFF;
+            border: @iconBorder;
+            border-radius: 5px;
+            color: @iconDayin;
+            cursor: pointer;
+        }
+        .mk-input{
+            width: 225px;
+            margin-right: 6px;
+            height: 26px;
+            input{
+                font-size: 10px;
+                height: 26px;
+            }
+
+        }
+        .mk-title-otherBtn {
+            float:right !important;
+            // width:19% !important;
+            label,button {
+                float:none !important;
+            }
+        }
+        .mk-normal-search{
+            .checkboxShow-label{
+                font-size: 12px;
+            }
+            .ant-select-selection__clear{
+                margin-right: none;
+                right: 38px;
+            }
+            .app-sumaccount-rpt-daochu{
+                // font-size: 26px;
+                // color: @iconDayin;
+                text-align: center;
+                box-sizing: border-box;
+                border: none;
+                // color: #fff;
+                cursor: pointer;
+                // position: relative;
+                // top: 2px;
+                // width: 20px;
+                // border: 1px solid #D9D9D9;
+                color: #00B38A;
+                font-size: 28px;
+                line-height: 28px;
+            }
+            .app-sumaccount-rpt-daochuBut{
+                &:hover{
+                    border: 1px solid #00B38A !important;
+                }
+            }
+            .app-sumaccount-rpt-dayinBut{
+                &:hover{
+                    border: 1px solid #45ACF7 !important;
+                }
+            }
+            
+            .app-sumaccount-rpt-dayin {
+                // font-size: 26px;
+                // color: @iconDayin;
+                text-align: center;
+                box-sizing: border-box;
+                border: none;
+                // color: #fff;
+                cursor: pointer;
+                // position: relative;
+                // top: 2px;
+                // width: 20px;
+                color: #45ACF7;
+                // border: 1px solid #D9D9D9;
+                font-size: 28px;
+                line-height: 30px;
+            }
+            .app-sumaccount-rpt-dayin-down{
+                // margin-left: 5px;
+                position: relative;
+                // top: -2px;
+                top: -5px;
+                color: #45ACF7;
+            }
+            .app-detailaccount-rpt-dayin-down1{
+                color: #00B38A;
+            }
+            .app-sumaccount-rpt-normalSearch{
+                display: inline-block;
+                position: relative;
+                margin-right: 8px;
+                .spanLabel {
+                    font-size: 12px;
+                    margin-right: 8px;
+                }
+                .edficon{
+                    font-size: 19px;
+                }
+                .app-sumaccount-rpt-normalSearch-leftBtn{
+                    display: inline-block;
+                    position: absolute;
+                    // left: 56px;
+                    left: 0px;
+                    top: 1px;
+                    width: 25px;
+                    z-index: 10;
+                    height: 20px;
+                    line-height: 30px;
+                    text-align: center;
+                    cursor: pointer;
+                    color: #ACACAC;
+                    border: none;
+                }
+                .app-sumaccount-rpt-normalSearch-input{
+                    width: 210px;
+                    height: 30px;
+                    .ant-select-selection--single{
+                        height: 30px;
+                        line-height: 1.1
+                    }
+                    .ant-select-arrow{
+                        margin-right: 14px;
+                        // display: none;
+                    }
+                    .ant-select-selection__rendered{
+                        height: 30px;
+                        line-height: 30px;
+                        margin: 0 20px;
+                        padding-right: 13px;
+                        .ant-select-selection-selected-value{
+                            padding-right: 0;
+                            font-size: 12px;
+                            line-height: 30px;
+                        }
+                    }
+                }
+                .app-sumaccount-rpt-normalSearch-rightBtn{
+                    display: inline-block;
+                    position: absolute;
+                    right: 1px;
+                    top: 1px;
+                    z-index: 10;
+                    height: 20px;
+                    width: 25px;
+                    line-height: 30px;
+                    text-align: center;
+                    cursor: pointer;
+                    color: #ACACAC;
+                    border: none;
+                }
+            }
+            .app-sumaccount-rpt-reload{
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                border: 1px solid #D9D9D9 ;
+                border-radius: 3px;
+                line-height: 30px;
+                color: #45ACF7 ;
+                cursor: pointer;
+            }
+        }
+        .mk-title-otherBtn{
+            display: flex;
+        }
+
+        &-Body{
+            flex: 1;
+            background:#fff;
+            border-right: 1px solid #d9d9d9;
+            table tr td:last-child{
+                // border-right: none !important;
+            }
+            table tr td:first-child{
+                text-align: left !important;
+            }
+            .ant-table .ant-table-thead{
+                tr{
+                    th:last-child{
+                        // border-right: none;
+                    }
+                }
+            }
+            .ant-table-fixed-header{
+                .cl_fixed {
+                    text-align: center;
+                    width: 63px;
+                    span {
+                        cursor: pointer;
+                    }
+                    .columnset{
+                        top: 5px;
+                        position: relative;
+                    }
+            
+                    .columnset::before {
+                        margin-right: 0;
+                        font-size: 28px;
+                    }
+                }
+            }
+
+            .ant-table-placeholder{
+                border-right: none !important;
+                border-left: none !important;
+            }
+            .ant-table-fixed-header table tr th:last-child{
+                border-right: 1px solid #d9d9d9 !important;
+            }
+            .ant-table-fixed-header table tr td:last-child{
+                border-right: 1px solid #d9d9d9 !important;
+            }
+            .balanceDirection{
+                text-align: center;
+            }
+            .total_data_weight{
+                font-weight: bold;
+            }
+            .table_center{
+                text-align: center;
+            }
+            table tr td{
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+            table tr td[rowspan]:first-child{
+                background: #fff ;
+                text-align: center;
+            }
+            table tr:hover td[rowspan]{
+                background: rgba(30, 181, 173, 0.07);
+            }
+        }
+    // }
+    &-footer {
+       margin-top: 10px;
+    }
+    .cl_fixed {
+        text-align: center;
+        width: 63px;
+        span {
+            cursor: pointer;
+        }
+        .columnset{
+            top: 5px;
+            position: relative;
+        }
+
+        .columnset::before {
+            margin-right: 0;
+            font-size: 28px;
+        }
+    }
+}
+.app-sumaccount-rpt-account-select-item{
+    font-size: 12px;
+}
+
+.app-sumaccount-rpt-print-modal-container {
+    .ant-modal-body {
+        padding: 0;
+    }
+    .mk-app-proof-of-list-sort {
+        padding: 12px 15px;
+    }
+    .ant-select {
+        .ant-select-selection-selected-value {
+            padding-left: 20px;
+            padding-right: 0px;
+        }
+    }
+    .ant-input-number {
+        .ant-input-number-handler-wrap {
+            opacity: 1;
+        }
+        .ant-input-number-input {
+            text-align: right;
+            padding-right: 27px;
+            height: 26px;
+            font-size: 12px;
+        }
+    }
+}
+@media screen and(-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .app-sumaccount-rpt{
+        .app-sumaccount-rpt-body-left{
+            width: 120px;
+            overflow-x: hidden;
+        }
+        .mk-table .ant-table-tbody tr td{
+            position: relative;
+            .div{
+                position: relative;
+                white-space: nowrap;
+                overflow: hidden;
+                // position: absolute;
+                width: 100%;
+                height: 100%;
+                // margin-top:10px;
+                // top:50%;
+                left: 0px;
+                // text-align: left;
+                padding: 0 8px;
+                text-overflow: ellipsis;
+                div{
+                    position: absolute;
+                    top: 50%;
+                    left: 0px;
+                    vertical-align: middle;
+                    // margin-bottom: 10px;
+                    margin-top:-10px;
+                    // span{
+                    //     position: relative;
+                    //     top:-50%
+                    // }
+                }
+                .renderNameDiv{
+                    overflow: hidden;
+                    width: 100%;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+        .app-sumaccount-rpt-body-right{
+            .ant-table-fixed{
+                .ant-table-thead tr th{
+                    .ellipsis{
+                        div{
+                            left: 0px;
+                        }
+                    }
+                }
+            }
+            .ant-table-header{
+                .ant-table-thead tr th{
+                    position: relative;
+                    // height: 37px;
+                    .ellipsis{
+                        div{
+                            left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

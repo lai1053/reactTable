@@ -1,0 +1,30 @@
+@Color: #fff;
+.ttk-gl-app-account-rereplace {
+    width: 100%;
+    height: 400px;
+    background: @Color;
+    padding: 0px;
+    overflow: hidden;
+    &-search {
+        width: 100%;        
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+    &-content {
+        display: flex;
+        flex: 1;
+        height: 300px;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        background: @Color;
+    }
+    .mk-datagrid {
+        border: 1px solid #d9d9d9;
+        border-top: none;
+    }
+    .ant-input {
+        font-size: 12px;
+    }
+}

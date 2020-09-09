@@ -1,0 +1,119 @@
+.ttk-scm-add-bank-statement-list{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    overflow: auto;
+    .ant-input {
+        font-size: 12px;
+    }
+    .public_Scrollbar_main {
+        border-left: 1px solid #d9d9d9;
+    }
+    .mk-search {
+        height: 51px;
+    }
+    .mk-normal-search{
+        .checkboxShow-label{
+            font-size: 12px;
+        }
+        .import{
+            text-align: center;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-size: 28px;
+            line-height: 28px;
+            margin-left: 8px;
+        }
+        .app-sumaccount-rpt-normalSearch{
+            display: inline-block;
+            position: relative;
+            margin-right: 8px;
+            .edficon{
+                font-size: 19px;
+            } 
+            .app-sumaccount-rpt-normalSearch-leftBtn{
+                display: inline-block;
+                position: absolute;
+                left: 1px;
+                top: 1px;
+                width: 25px;
+                z-index: 10;
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                cursor: pointer;
+                color: #ACACAC;
+                border: none;
+            }
+            .app-sumaccount-rpt-normalSearch-input{
+                width: 210px;
+                height: 30px;
+                .ant-select-selection--single{
+                    height: 30px;
+                    line-height: 1.1
+                }
+                .ant-select-arrow{
+                    margin-right: 15px;
+                }
+                .ant-select-selection__rendered{
+                    height: 30px;
+                    line-height: 22px;
+                    margin: 0 20px;
+                    .ant-select-selection-selected-value{
+                        font-size: 12px;
+                        line-height: 30px;
+                        padding-right: 0;
+                    }
+                }
+            }
+            .app-sumaccount-rpt-normalSearch-rightBtn{
+                display: inline-block;
+                position: absolute;
+                right: 1px;
+                top: 1px;
+                z-index: 10;
+                height: 30px;
+                width: 25px;
+                line-height: 30px;
+                text-align: center;
+                cursor: pointer;
+                color: #ACACAC;
+                border: none;
+            }
+        }      
+    }
+
+    &-table {
+        border-left: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+        .edficon{
+            cursor: pointer;
+        }
+        .edficon-shengdan{
+            &::before {
+                color: #33C2A1;
+            }
+            &:hover:before{
+                color: #009875;
+            }
+        }
+        .edficon-chaifen{
+            &::before {
+                color: #FFC000;
+            }
+            &:hover:before{
+                color: #e39200;
+            }
+        }
+    }
+
+    &-footer {
+        // overflow: hidden;
+        align-items: right;
+        padding-top: 10px;
+        height: 40px;
+    }
+}
+.ttk-scm-add-bank-statement-list-account-select-item{
+    font-size: 12px;
+}

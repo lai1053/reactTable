@@ -1,0 +1,125 @@
+.inv-app-pu-collect-card-modal {
+    font-size: 12px;
+    // margin-top: -100px;
+}
+
+.inv-app-pu-collect-card-is {
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 30px 10px;
+    height: 200px;
+
+    .ant-spin-nested-loading,
+    .ant-spin-container {
+        width: 100%;
+        height: 100%;
+    }
+  
+
+    .container {
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        .lable {
+            font-size: 12px;
+            width: 80px;
+            height: 32px;
+            line-height: 32px;
+            text-align: right;
+        }
+        .waring-tips{
+            line-height: 26px;
+        }
+
+        .month {
+            width: 150px;
+            height: 30px;
+            border-radius: 3px;
+            z-index: 999;
+        }
+
+        .tip {
+            font-size: 12px;
+            line-height: 32px;
+            color: #999;
+        }
+
+        .warning {
+            color: #faad14;
+        }
+
+    }
+
+    .invoice_nsqxTips-tip {
+        font-size: 12px;
+        line-height: 32px;
+        color: #999;
+        margin-left: 118px;
+    }
+
+    .footer {
+        border-top: 1px solid #e8e8e8;
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        button {
+            margin: 0 5px;
+        }
+    }
+
+    ul,li{
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        line-height: 26px;
+        color: #999;
+    }
+   
+    .ul-tips{
+        max-width: 320px;
+    }
+
+}
+
+.inv-app-custom-list-month-detail-table .ant-table-body {
+    height: auto !important;
+   
+}
+
+.salesAndPurchase-success-tips{
+    .colspan-td{
+        width: 200%;
+        position: absolute; 
+        left: 0; 
+        top: 0; 
+        bottom: 0; 
+        line-height: 32px;
+        text-align: center;
+        z-index: 2; 
+        background: #fff;
+    }
+    
+    .mk-table .ant-table-tbody tr:not(.lazy_table_tr) td{
+        overflow: visible;
+        position: relative;
+    }
+
+    &.purchase{
+        .salesAndPurchase-success-tips-footer{
+            &::before{
+                width: 700px;
+            }
+        }
+    }
+}
+

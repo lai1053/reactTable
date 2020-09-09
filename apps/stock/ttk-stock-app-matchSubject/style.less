@@ -1,0 +1,80 @@
+.ttk-stock-app-matchSubject{
+    overflow-x: hidden;
+    margin: 0 auto;
+    width: 100%;
+    &-container{
+        position: relative;
+    }
+	&-header{
+        height: 40px;
+        text-align: left;
+        .ttk-stock-app-completion-warehousing-filter-container{
+            // overflow: hidden;
+            float: left;
+        }
+        &-radio{
+            float: left;
+            margin: 5px 0 0 30px;
+        }
+        &-btns{
+            float: right;
+        }
+        &-batchCostSubject{
+            margin-left: 10px;
+        }
+    }
+
+    &-body{
+        height: 410px;
+        overflow: auto;
+        width: 100%;
+        .ant-table-body{ 
+            overflow-x: hidden!important;  
+            overflow-y: scroll!important;  
+        }
+        
+    }
+    .mk-table .ant-table-tbody tr:not(.lazy_table_tr) td{ overflow: visible; }
+
+    .subject-match-overflowCell{
+        position: relative; 
+        display: block;
+        height: 100%;
+        .subject-match-textOverflow{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            white-space: nowrap;
+            height: 100%;
+            line-height: 34px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+
+    .vt-body-scroll {
+        overflow-y: auto !important;
+    }
+
+    .title-text.required{
+        position: relative;
+        display: block;
+        &::before{
+            content: '*';
+            font-size: 18px;
+            color: red;
+            width: 5px;
+            height: 5px;
+            position: absolute;
+            top: 3px;
+            left: -10px;
+
+        }
+    }
+
+    .vt-table .vt-body .has-vertical-scroll .vt-body-row .last-cell{
+        padding-right: 10px;
+    }
+    
+}

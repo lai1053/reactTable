@@ -1,0 +1,278 @@
+@lineBorderColor: #ECECEC;
+@fontColor: #515151;
+@Color: #fff;
+@gridBorder: 1px solid #D9D9D9;
+.ttk-gl-app-importdata-accountrelation {
+    width: 100%;
+    background: @Color;
+    padding: 0px;
+    &-content {
+        padding: 0px;
+        overflow: hidden;
+        background: #fff;
+        max-width: 100%;
+        height: 100%;
+        position: relative;
+        &-btn {
+            height: 35px;
+            margin-bottom: 2px;
+            margin-top: 6px;
+            padding-left: 8px;
+            &-left {
+                float: left;
+                &-search {
+                    width: 165px;
+                    input{
+                        font-size: 12px;
+                    }
+                }
+                .matchType {
+                    font-size: 12px;
+                    margin: 0px 8px;
+                }
+            }
+            &-right {
+                float: right;
+                &-addSubject,
+                &-ignore {
+                    border-color: @primary-color;
+                    color: @primary-color;
+                    &:hover {
+                        background: @primary-color;
+                        color: #fff;
+                    }
+                    &[disabled]:hover {
+                        color: rgba(0, 0, 0, 0.25);
+                        background-color: #f5f5f5;
+                        border-color: #d9d9d9;
+                    }
+                    margin-right: 8px;
+                }
+                &-importbtn {
+                    margin-right: 8px;
+                    &[disabled]:hover {
+                        color: rgba(0, 0, 0, 0.25);
+                        background-color: #f5f5f5;
+                        border-color: #d9d9d9;
+                    }
+                }
+            }
+        }
+        &-header {
+            width: 100%;
+            height: 100%;
+            label {
+                font-size: 14px;
+            }
+            &-top {
+                padding-bottom: 2px;
+                align-items: center;
+                color: #333333;
+                border-top: @gridBorder;
+            }
+            &-bottom {
+                display: inline-block;
+                position: relative;
+                border-top: @gridBorder;
+                &-cell {
+                    border-right: @gridBorder;
+                }
+            }
+        }
+        .public_fixedDataTable_header{
+            .public_fixedDataTableCell_main:nth-child(2){
+                .mk-datagrid-cellContent{
+                    background: #fff;
+                }
+            }
+        }
+        .public_fixedDataTableCell_main:nth-child(2){
+            .row{
+                background: #fff;
+            }
+        }
+        &-cell {
+            border-right: @gridBorder;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 36px;
+            padding-left: 8px;
+            border-bottom: @gridBorder;
+        }
+        .operationcell {
+            border-bottom: @gridBorder;
+            display: inline-block;
+            text-overflow: inherit;
+            text-align: center;
+            height: 36px;
+            width: 114px;
+            text-decoration: none;
+            float: left;
+        }
+        &-msgcell {
+            white-space: pre-wrap;
+            height: 36px;
+            min-width: 50px;
+            border-bottom: @gridBorder;
+        }
+        &-msgcell.lineheight {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 12px;
+        }
+    }
+    &-grid {
+        border-right: @gridBorder;
+        min-height: 350px;
+    }
+    &-sjbgrid {
+        border-right: @gridBorder;
+        min-height: 500px;
+        height: 510px;
+    }
+    &-girdborder {
+        height: 1px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: space-between;
+        &-leftsjb {
+            border-top: @gridBorder;
+            margin-top: 0px;
+        }
+        &-left {
+            border-top: @gridBorder;
+            margin-top: 0px;
+            width: 510px;
+        }
+        &-right {
+            border-top: @gridBorder;
+            margin-top: 0px;
+            flex: 1;
+            margin-left: 19px;
+        }
+    }
+    &-footer {
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-right: 10px;
+        padding-top: 8px;
+        flex: none;
+        height: 46px;
+        line-height: 30px;
+        border: 1px solid #d9d9d9;
+        border-top: none;
+    }
+    &-bottombtn {
+        height: 38px;
+        min-height: 38px;
+        margin-top: 15px;
+        text-align: center;
+        &-btn {
+            width: 80px;
+            margin-left: 8px;
+        }
+    }
+    .mk-datagrid-cellContent {
+        display: inline-block;
+        position: relative;
+        padding: 0 0px;
+    }
+    .mk-datagrid-cellContent.currentScrollRow {
+        background: @button-hover-color;
+        color: #fff !important;
+        a,
+        span {
+            color: #fff !important;
+        }
+    }
+    .fixedDataTableLayout_rowsContainer>div:nth-child(3) div.mk-datagrid-cellContent {
+        padding: 0px;
+        display: inline-block;
+        text-overflow: inherit;
+        text-align: center;
+        position: relative;
+    }
+    .fixedDataTableLayout_main {
+        border-top: none;
+    }
+    .mk-datagrid .public_fixedDataTable_main {
+        //display: flex;
+        flex: 1;
+        border-left: none;
+        border-right: none;
+        font-size: 12px;
+        border-left: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    .public_fixedDataTableCell_main {
+        border-bottom: none !important;
+    }
+   
+    &-cell-left {
+        padding-left: 8px;
+        text-align: left;
+    }
+    &-cell-right {
+        padding-right: 8px;
+        justify-content: flex-end;
+    }
+    .add {
+        &:before {
+            color: #33c2a1;
+        }
+        &:hover:before {
+            color: #009875;
+        }
+    }
+    &-popover {
+        .ant-popover-inner-content {
+            font-size: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+.account-import {
+    .ant-modal-footer .ant-btn:first-child {
+        display: none;
+    }
+}
+
+.successinfos {
+    .ant-modal-footer .ant-btn:first-child {
+        display: none;
+    }
+    &-row {
+        position: relative;
+        &-left {
+            float: left;
+            width: 200px;
+            text-align: right
+        }
+        &-right {
+            float: left;
+            width: 200px;
+            text-align: left
+        }
+        &-label {
+            font-style: normal;
+            font-size: 14px;
+            margin: 0px 0px 0px 15px;
+            line-height: 40px !important;
+        }
+    }
+}
+
+.nodisplay {
+    display: none;
+}
+
+.souceauxaccounttips {
+    font-size: 16px;
+    line-height: 36px;
+    color: @primary-color;
+    background: transparent;
+}

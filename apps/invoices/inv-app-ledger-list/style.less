@@ -1,0 +1,343 @@
+.inv-app-ledger-list {
+    align-items: center;
+    margin: 0 auto;
+
+    &-div {
+        text-align: center;
+    }
+
+    .-select {
+        width: 330px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #d9d9d9;
+        padding-left: 8px;
+    }
+
+    button {
+        margin: 10px;
+    }
+
+    .affix {
+        position: fixed;
+        top: 16px;
+        right: 20px;
+        width: 120px;
+        z-index: 9;
+        background-color: #fff;
+        max-height: ~"calc(100vh - 16px)";
+        margin: 16px 0;
+        padding-left: 0;
+        font-size: 12px;
+        border-left: 1px solid #f0f0f0;
+
+        a {
+            display: block;
+            width: 110px;
+            margin-left: -1px;
+            overflow: hidden;
+            color: rgba(0, 0, 0, 0.85);
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            border-left: 1px solid transparent;
+            transition: all 0.3s ease;
+            padding-left: 10px;
+            line-height: 24px;
+
+            &.current {
+                color: #0066b3;
+                border-color: #0066b3;
+            }
+
+            &:hover {
+                color: #0066b3;
+            }
+        }
+    }
+}
+
+.virtual-table {
+    .virtual-table-summary {
+        line-height: 37px;
+        height: 37px;
+        background-color: #fff6ea;
+        border-top: 1px solid #d9d9d9;
+        border-bottom: 1px solid #d9d9d9;
+
+        &.left {
+        }
+
+        &.row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &.right {
+        }
+    }
+
+    .ant-table-fixed-right {
+        .ant-table-fixed {
+            position: relative;
+        }
+    }
+}
+
+.invoice-group-info {
+    display: flex;
+    flex: row;
+    justify-content: flex-start;
+    align-items: top;
+    position: relative;
+
+    &-extend {
+        display: block;
+        position: absolute;
+        left: -22px;
+        top: 0;
+        width: 22px;
+        line-height: 16px;
+        padding: 8px 0 4px;
+        text-align: center;
+        background-color: #fff;
+        border-bottom-left-radius: 8px;
+        box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
+        text-decoration: none !important;
+
+        .anticon-down {
+            transform: translateY(-2px);
+        }
+    }
+
+    .no-border-right {
+        border-right: none;
+    }
+
+    &-item {
+        width: 49.99999%;
+        border: 1px solid #777777;
+        display: flex;
+        justify-content: flex-start;
+
+        &-label {
+            margin: 0 auto;
+            width: 43px;
+            background-color: #ebebeb;
+            border-right: 1px solid #777777;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                width: 14px;
+                line-height: 16px;
+            }
+        }
+
+        &-sub {
+            width: ~"calc(100% - 43px)";
+            display: flex;
+            flex-direction: column;
+
+            &-item {
+                display: flex;
+                justify-content: flex-start;
+
+                .required {
+                    color: red;
+                    margin-right: 2px;
+                }
+
+                &.hidden {
+                    display: none;
+                }
+
+                &-label {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    width: 30%;
+                    min-height: 34px;
+                    line-height: 18px;
+                    padding: 2px 6px;
+                    background-color: #f7f7f7;
+                    text-align: right;
+                    border-bottom: 1px solid #eeeeee;
+                    border-right: 1px solid #eeeeee;
+                }
+
+                &-control {
+                    width: 70%;
+                    // height: 100%;
+                    border-bottom: 1px solid #eeeeee;
+
+                    .invoice-info-static-cell {
+                        height: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0 8px;
+                    }
+
+                    .ant-form-item,
+                    .ant-form-item-control-wrapper,
+                    .ant-form-item-control,
+                    .ant-form-item-children,
+                    .ant-input-affix-wrapper {
+                        height: 100%;
+                    }
+
+                    .ant-form-item {
+                        margin-bottom: 0;
+                    }
+
+                    .ant-form-item-control {
+                        line-height: normal;
+                    }
+
+                    .ant-form-explain {
+                        display: none;
+                    }
+
+                    .ant-input-affix-wrapper:hover
+                        .ant-input:not(.ant-input-disabled),
+                    .ant-input {
+                        border-color: #fff;
+                        box-shadow: none;
+                        // height: auto ;
+                        border-radius: 0;
+                    }
+
+                    .has-error .ant-input,
+                    .has-error .ant-input:not([disabled]):hover,
+                    .has-error .ant-input:focus {
+                        box-shadow: none;
+                        border-color: #e94033;
+                        background-color: #fff2f1;
+                        border-width: 1px;
+                        border-style: solid;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.invoice-common-info {
+    border: 1px solid #777777;
+    border-top: none;
+    border-bottom: none;
+
+    &-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid #777;
+
+        &-label {
+            background-color: #ebebeb;
+            padding: 0 8px;
+            text-align: right;
+            height: 34px;
+            line-height: 34px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            border-right: 1px solid #777777;
+            border-left: 1px solid #777777;
+
+            &:first-child {
+                border-left: none;
+            }
+
+            .required {
+                color: red;
+            }
+        }
+
+        &-control {
+            &-select,
+            &-input,
+            .ant-select {
+                width: 100%;
+            }
+
+            .invoice-info-static-cell {
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding: 0 8px;
+            }
+
+            .ant-form-item {
+                margin-bottom: 0;
+            }
+
+            .ant-select-selection__rendered,
+            .ant-form-item-control {
+                line-height: 33px;
+            }
+
+            .ant-select-selection--single {
+                height: 34px !important;
+            }
+
+            .ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled),
+            .ant-select-selection {
+                border-color: #fff;
+                box-shadow: none;
+                border-width: 1px;
+                border-radius: 0;
+            }
+
+            .ant-input {
+                height: 34px;
+                border-color: #fff;
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .has-error .ant-select-selection,
+            .has-error .ant-input,
+            .has-error .ant-input:not([disabled]):hover,
+            .has-error .ant-input:focus {
+                box-shadow: none;
+                border-color: #e94033;
+                border-width: 1px;
+                border-style: solid;
+                background-color: #fff2f1;
+            }
+
+            .ant-form-explain {
+                display: none;
+            }
+        }
+    }
+}
+
+.inv-select-pro-cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn {
+        border: 1px solid;
+        padding: 0 5px;
+        border-radius: 2px;
+        line-height: 11px;
+        height: 20px;
+        display: none;
+    }
+
+    &:hover {
+        .btn {
+            display: block;
+        }
+    }
+}
+
+@import "../components/VirtualTable/style.less";
+@import "../components/EditableCellTable/style.less";

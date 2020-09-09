@@ -1,0 +1,258 @@
+.ttk-stock-inventory-configure {
+    height: 100%;
+    padding: 10px !important;
+    background: #fff;
+    
+    &-header {
+        .header-left {
+            display: inline-block;
+            line-height: 30px;
+            	.back {
+                    display: inline-block;
+                    background:url(../../../../assets/img/back.png) no-repeat center center;
+                    background-size: '100% 100%';
+                    width: 32px;
+                    height: 32px;
+                    margin-left: 8px;
+                    vertical-align: top;
+                    cursor: pointer;
+                }
+        }
+        .header-right {
+            float: right;
+            .header-btn {
+                margin-left: 8px;
+            }
+        }
+    }
+    &-content {
+        padding: 10px;
+        // .ant-form-item-label {
+        //     margin-right: 14px;
+        //     font-weight: 700;
+        // }
+        .content-form {
+            position: relative;
+            border: 1px solid #e8e8e8;
+            z-index: 1;
+            overflow: hidden;
+            .ant-form-item {
+                border-bottom: 1px solid #e8e8e8;
+                &:last-of-type {
+                    border-bottom: none;
+                }
+                .ant-form-item-label {
+                    border-right: 1px solid #e8e8e8;
+                }
+                .ant-form-item-control-wrapper {
+                    padding-left: 10px;
+                }
+            }
+            &-bg {
+                position: absolute;
+                transform: rotateZ(-45deg);
+                z-index: -1;
+                font-size: 40px;
+                color: #e1e1e1;
+                &:nth-of-type(1) {
+                    top: 10%;
+                    left: 10%;
+                }
+                &:nth-of-type(2) {
+                    top: 40%;
+                    left: 40%;
+                }
+                &:nth-of-type(3) {
+                    top: 70%;
+                    left: 70%;
+                }
+            }
+        }
+    }
+
+    // 记录弹窗
+    &-record-modal {
+        .ant-modal-title {
+            font-weight: 700;
+        }
+        .ant-modal-body {
+            padding: 15px 0 0;
+            .ant-row {
+                height: 42px;
+            }
+        }
+        .record-content {
+            height: 400px;
+            overflow: auto;
+            .ant-form-item-label {
+                margin-right: 10px;
+                font-weight: 700;
+                font-size: 14px;
+            }
+            .ant-form-item-children {
+                font-size: 14px;
+            }
+            &-del-btn {
+                margin-left: 14px;
+                cursor: pointer;
+                color: #0066B3;
+            }
+        }
+        .record-footer {
+            padding: 12px;
+            text-align: right;
+        }
+    }
+}
+
+// 设置弹窗
+.ttk-stock-inventory-setting-modal {
+    .ant-modal-title {
+        font-weight: 700;
+    }
+    .ant-modal-body {
+        padding: 0;
+    }
+    .stock-setting-content {
+        height: 450px;
+        padding: 10px 30px;
+        overflow: auto;
+        .ant-form-item-label {
+            text-align: left;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        
+        // 商业类型
+        &-business {
+            .ant-radio-wrapper {
+                margin-right: 60px;
+            }
+        }
+
+        // 出库核算
+        &-delivery {
+            &-radio-wrapper {
+                margin-bottom: 14px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                .ant-radio-wrapper {
+                    // &:first-child {
+                    //     margin-right: 151px;
+                    // }
+                    margin-right: 66px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            &-month {
+                margin-left: 38px;
+            }
+        }
+
+        // 生产核算
+        &-production {
+            .ant-form-item-label {
+                width: 130px;
+                margin-right: 10px;
+                text-align: right;
+                font-weight: 500;
+            }
+            &-radio1 {
+                .ant-radio-wrapper:first-child {
+                    margin-right: 78px;
+                }
+            }
+            &-radio2 {
+                .ant-radio-wrapper:first-child {
+                    margin-right: 200px;
+                }
+            }
+            &-radio3 {
+                .ant-radio-wrapper:first-child {
+                    margin-right: 60px;
+                }
+            }
+        }
+
+        // 三个switch选项
+        // &-negative0 {
+        //     margin-left: 33px;
+        // }
+        // &-negative1 {
+        //     margin-left: 79px;
+        // }
+        &-negative0, &-negative1 {
+            margin-left: 102px;
+        }
+        &-bom {
+            margin-left: 109px;
+            &-product {
+                margin-left: 10px;
+            }
+        }
+        // &-negative, &-bom, &-bom-product {
+        //     margin-left: 167px;
+        // }
+
+        // 通用
+        .mgr8 {
+            margin-right: 8px;
+        }
+        .mgl8 {
+            margin-left: 8px;
+        }
+        .helpIcon {
+            // border: none;
+            font-size: 22px;
+            // top: 4px;
+            line-height: 30px;
+            color: #0066b3;
+            // position: relative;
+            // left: -10px;
+        }
+        .blank {
+            height: 40px;
+        }
+    }
+    .stock-setting-footer {
+        padding: 12px;
+        border-top: 1px solid #e8e8e8;
+        text-align: right;
+        line-height: 30px;
+        &-tip {
+            float: left;
+            color: orange;
+            span {
+                color: #000;
+            }
+        }
+        // &-confirm {
+
+        // }
+        &-cancel {
+            margin-left: 10px;
+        }
+    }
+}
+
+// 初始化弹窗
+.ttk-stock-inventory-configure-init-stock-modal {
+    p:nth-child(1), p:nth-child(5), p:nth-child(6) {
+        font-weight: 700;
+    }
+    p:nth-child(5), p:nth-child(6) {
+        color: #fa7c63;
+    }
+    p:nth-child(5) {
+        span {
+            color: #595959;
+            font-weight: 400;
+        }
+    }
+    p:nth-child(6) {
+        padding-left: 42px;
+    }
+}

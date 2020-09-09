@@ -1,0 +1,218 @@
+.app-card-revenueType {
+	width: 100%;
+	height: 100%;
+	padding: 5px 0;
+
+	&-content {
+		flex: 1;
+		.borderLeft {
+			padding: 0px 2px !important;
+			border-left: 1px solid #d3d3d3;
+		}
+		//.topBorder {
+		//	border-top: 1px solid #d3d3d3;
+		//}
+		.noPadding {
+			width: 100%;
+			padding: 0px 5px !important;
+			margin-top: 4px;
+		}
+		.public_fixedDataTable_scrollbarSpacer {
+			top: 0px;
+		}
+		.mk-datagrid .fixedDataTableLayout_main {
+			border-right: none;
+			border-left: none;
+		}
+		.mk-datagrid .public_Scrollbar_main {
+			border: 1px solid #d3d3d3;
+			border-left: none;
+		}
+		.app-card-revenueType-content .public_fixedDataTable_scrollbarSpacer {
+			border-top: 1px solid #d3d3d3;
+			border-right: 1px solid #d3d3d3;
+		}
+		.ant-select-selection__rendered {
+			font-size: 12px;
+		}
+		.selectStyle {
+			width: 100%;
+			padding: 0px 5px !important;
+			margin-top: 4px;
+		}
+		&-formDetails {
+			// flex: 1;
+			// margin: 8px 0;
+			flex: 1;
+			margin: 8px 10px 12px 10px;
+			// min-height: 280px;
+			// min-height: 245px;
+			.fixedDataTableRowLayout_main.public_fixedDataTable_footer{
+				overflow: hidden;
+				.public_fixedDataTable_scrollbarSpacer {
+					background: #fff6ea !important;
+				}
+			}
+			.public_fixedDataTable_header .public_fixedDataTableCell_main {
+				// background: #eaeaea linear-gradient(#eaeaea,#eaeaea);
+				background: #eaeaea !important;
+				color: #666;
+				border-top: 1px solid #d9d9d9;
+				.fixedDataTableCellGroupLayout_cellGroupWrapper {
+					border-top: 1px solid #d9d9d9;
+				}
+			}
+			.public_fixedDataTable_main {
+				border-right: 0px;
+				// width: 1145px !important;
+				.fixedDataTableLayout_header .mk-datagrid-cellContent {
+					font-weight: 700;
+					//font-size: 13px;
+					color: #333;
+				}
+				.fixedDataTableLayout_footer .mk-datagrid-cellContent {
+					font-weight: 700;
+					//font-size: 13px;
+					color: #333;
+				}
+				.public_fixedDataTableCell_cellContent {
+					color: #333;
+					font-size: 12px;
+				}
+				.mk-datagrid-sequence-cell {
+					font-size: 12px;
+				}
+				.fixedDataTableLayout_rowsContainer {
+					// width: 1146px !important;
+					// border-left: 1px solid #d9d9d9;
+					border: 1px solid #d9d9d9;
+					border-top: 0px;
+
+					.fixedDataTableRowLayout_rowWrapper {
+						// width: 1145px !important;
+						&>div:last-child{
+							// width: 1124px !important;
+							border-bottom: none;
+						}
+					}
+				}
+
+				.mk-datagrid-addDelRow-cell {
+					&:hover{
+						border-right-width: 0px;
+						z-index: 2;
+					}
+				}
+
+			}
+			.public_fixedDataTable_scrollbarSpacer {
+				// left: 1124px !important;
+				background: #eaeaea;
+				border: 1px solid #d9d9d9;
+				border-left:none;
+				border-right: none;
+			}
+			.fixedDataTableLayout_main {
+				margin-right: 10px;
+				border-top: 0px;
+			}
+
+			.fixedDataTableRowLayout_rowWrapper .public_fixedDataTable_footer {
+				.public_fixedDataTableCell_main{
+					// border-top: none;
+				}
+			}
+			.public_Scrollbar_main {
+				border-right: 1px solid #d9d9d9;
+			}
+
+			.fixedDataTableCellGroupLayout_cellGroupWrapper:first-child .fixedDataTableCellGroupLayout_cellGroup .public_fixedDataTableCell_main{
+				border-left-width: 0px;
+				z-index: 1;
+				&:hover {
+					border-left-width: 0px;
+					z-index: 1;
+				}
+			}
+			.mk-cascader, .ant-select, .ant-input {
+				font-size: 12px;
+				text-align: left;
+				.ant-select-selection-selected-value {
+					line-height: 34px;
+				}
+			}
+			.ant-cascader-picker-label {
+				padding-right: 25px;
+			}
+		}
+		//单选框高度28px，字体居中
+		.ant-select-selection--single{
+			height: 28px;
+		}
+		.app-card-revenueType-content-formDetails .mk-cascader .ant-select-selection-selected-value, .app-card-revenueType-content-formDetails .ant-select .ant-select-selection-selected-value, .app-card-revenueType-content-formDetails .ant-input .ant-select-selection-selected-value{
+			line-height: 28px;
+		}
+		.ant-select-selection__rendered{
+			margin-left: 9px;
+		}
+	}
+	&-footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		height: 46px;
+		padding-right: 12px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		overflow: hidden;
+		padding-top: 12px;
+		border-top: 1px solid #e8e8e8;
+		.btn {
+			height: 30px;
+			margin-left: 8px;
+			outline: none;
+		}
+	}
+	&-footerText {
+		display: flex;
+		flex-direction: row;
+		height: 45px;
+		padding-left: 24px;
+		overflow: hidden;
+		font-size: 12px;
+		color: #FA954C;
+	}
+	//&-cell {
+	//	width: 100%;
+	//	height: 100%;
+	//	display: flex;
+	//	justify-content: center;
+	//	align-items: center;
+	//	&>div {
+	//		width: 100%;
+	//		height: 100%;
+	//		input {
+	//			height: 100%;
+	//		}
+	//	}
+	//	/*input{
+	//		height: 40px;
+	//	}*/
+	//	.ant-select-selection {
+	//		height: 100%
+	//	}
+	//	.ant-select-selection__rendered {
+	//		height: 100%
+	//	}
+	//	.ant-select-selection-selected-value {
+	//		//line-height: 40px;
+	//	}
+	//}
+	//.ant-select-selection__rendered {
+	//	display: block;
+	//	margin-left: 11px;
+	//	margin-right: 11px;
+	//	position: relative;
+	//	line-height: 30px;
+	//}
+}

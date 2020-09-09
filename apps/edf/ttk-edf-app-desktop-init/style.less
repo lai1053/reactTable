@@ -1,0 +1,156 @@
+.ttk-edf-app-desktop-init{
+    position: relative;
+	font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+    &-top{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 26px;
+        width: 100%;
+        overflow:hidden;
+
+        &-title{
+            float: left;
+            font-size: 14px;
+            color: #333333;
+            line-height: 32px;
+        }
+
+        &-beginnerGuidance{
+            float: right;
+            font-size: 12px;
+            color: @primary-color;
+            line-height: 32px;
+            cursor: pointer;
+        }
+        &-beginnerGuidance.isExpire{
+            color: #999999;
+        }
+        &-beginnerGuidance:hover{
+            text-decoration: underline;
+        }
+        &-beginnerGuidance.isExpire:hover{
+            text-decoration: none;
+        }
+
+        &-close{
+            float: right;
+            font-size: 20px;
+            margin-left: 5px;
+            padding-top: 7px;
+            cursor: pointer;
+        }
+    }
+
+    &-body{
+        position: absolute;
+        top: 32px;
+        bottom: 0px;
+        width: 100%;
+
+        &-block{
+            width:100%;
+            position: relative;
+            background: #F9F8FA;
+            height:60px;
+            margin-bottom:5px;
+        }
+        &-block:nth-of-type(1):before{
+            content:'';
+            width:4px;
+            height:60px;
+            position: absolute;
+            top:0;
+            left:0;
+            background:#4ECACA;
+        }
+
+        &-block:nth-of-type(2):before{
+            content:'';
+            width:4px;
+            height:60px;
+            position: absolute;
+            top:0;
+            left:0;
+            background:#FF6E5B;
+        }
+
+        &-block:nth-of-type(3):before{
+            content:'';
+            width:4px;
+            height:60px;
+            position: absolute;
+            top:0;
+            left:0;
+            background:#FDD631;
+        }
+
+        &-block:nth-of-type(4):before{
+            content:'';
+            width:4px;
+            height:60px;
+            position: absolute;
+            top:0;
+            left:0;
+            background:#1EC6F3;
+        }
+
+        &-left{
+            position: absolute;
+            width:32px;
+            top:0;
+            left:0;
+            bottom:0;
+        }
+        &-right{
+            position: absolute;
+            top:0;
+            left:32px;
+            right:0;
+            bottom:0;
+            text-align: left;
+            padding-top:5px;
+            font-size:12px;
+            &-title{
+                line-height:20px;
+                margin-bottom:3px;
+            }
+            &-item{
+                padding-left:10px;
+                margin-bottom:0;
+                line-height:16px;
+            }
+        }
+    }
+
+    .highLight{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .highLight.first:hover{
+        color:rgba(30, 181, 173, 0.7)!important;
+    }
+    .highLight.second:hover{
+        color:rgba(255, 84, 62, 0.7)!important;
+    }
+    .highLight.third:hover{
+        color:rgba(255, 105, 13, 0.7)!important;
+    }
+    .highLight.fouth:hover{
+        color:rgba(16, 165, 242, 0.7)!important;
+    }
+    .isExpire.highLight.first:hover{
+        color:#999999!important;
+    }
+    .isExpire.highLight.second:hover{
+        color:#999999!important;
+    }
+    .isExpire.highLight.third:hover{
+        color:#999999!important;
+    }
+    .isExpire.highLight.fouth:hover{
+        color:#999999!important;
+    }
+}

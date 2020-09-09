@@ -1,0 +1,60 @@
+.ttk-scm-app-collate-invoice-form-settlement{
+    &-wrap {
+        margin: 10px 0;
+        .search {
+            margin-bottom: 10px;
+            position: relative;
+            .ant-input {
+                width: 240px;
+                height: 30px;
+            }
+
+            .mk-btn {
+                position: absolute;
+                right: 0px;
+                color: @primary-color;
+                border-color: @primary-color;
+                &:hover{
+                    background-color: @button-hover-color;
+                    border-color: @primary-color;
+                    color: #fff;
+                }
+            }
+        }
+        .ant-input-affix-wrapper {
+            input {
+                font-size: 12px;
+            }
+        }
+
+        .ant-table-tbody>tr>td:last-child {
+            // padding: 4px 6px !important;
+            padding: 4px 6px !important;
+            .mk-select{
+                position: relative;
+                top: 0.5px;
+            }
+        }
+        .tdText {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .align {
+            text-align: right;
+        }
+        .ant-table-body {
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+
+            .ant-select-selection--single {
+                height: 26px !important;
+                font-size: 12px;
+                .ant-select-selection__rendered {
+                    line-height: 26px !important;
+                }
+            }
+        }
+    }
+}

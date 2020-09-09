@@ -1,0 +1,226 @@
+.ttk-edf-app-message{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 10px;
+    left: 0;
+    padding:0!important;
+
+    &-list{
+        border:1px solid #e8e8e8;
+        position: absolute;
+        top:0;
+        bottom:39px;
+        width:100%;
+        background: #ffffff;
+
+        &-top{
+            position: absolute;
+            width:100%;
+            height:51px;
+            top:0;
+            left:0;
+            border-bottom:1px solid #fefefe;
+
+            &-title{
+                float: left;
+                font-size: 14px;
+                line-height: 50px;
+                margin-left: 20px;
+                color:#252525;
+            }
+
+            &-batch{
+                float: right;
+                padding-top: 10px;
+
+                &-delete{
+                    margin:0 8px;
+                }
+            }
+        }
+
+        &-main{
+            position: absolute;
+            width:100%;
+            top:51px;
+            bottom:0;
+            left:0;
+            background:#fefefe;
+            color:#515151;
+
+            &-top{
+                height:36px;
+                position: absolute;
+                top:0;
+                left:0;
+                width:100%;
+                border-bottom:1px solid #ececec;
+                 
+                &-left{
+                    padding:10px 0;
+                    height:100%;
+                    position: relative;
+                    label{
+                        font-size:12px;
+                        position: absolute;
+                        top:50%;
+                        transform: translateY(-50%);
+                        padding-left:20px;
+                    }
+                }
+            }
+
+            &-messagelist{
+                position: absolute;
+                top:36px;
+                bottom:0;
+                left:0;
+                width:100%;
+                overflow-y:auto;
+
+                .yidu{
+                    color:#979797;
+                    font-size: 24px;
+                    vertical-align: middle;
+                    margin:0 3px;
+                }
+
+                .weidu{
+                    color:@primary-color;
+                    font-size: 24px;
+                    vertical-align: middle;
+                    margin:0 3px;
+                }
+
+                &>div{
+                    font-size: 12px;
+                    height:48px;
+                    padding-left:20px;
+                    line-height:48px;
+                    border-bottom:1px solid #ececec;
+                    .mk-checkbox.ant-checkbox-wrapper{
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .messageTitle{
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .messageTitle.unread{
+                        font-weight: bold;
+                    }
+                    .messageDate{
+                        float:right;
+                        padding-right:10px;
+                    }
+                }
+                &>div:hover{
+                    background:@item-hover-bg;
+                    color:@primary-color;
+                    .messageTitle:hover{
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                    .messageDate{
+                        color:#515151;
+                    }
+                }
+                &>div:last-child{
+                    border:none;
+                }
+            }
+        }
+    }
+
+    &-pagination{
+        position: absolute;
+        bottom:0;
+        width:100%;
+        height:39px;
+        padding-top:9px;
+    }
+
+    &-modalContainer{
+        width:100%;
+        height:100%;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:5;
+
+        &-shadow{
+            position: absolute;
+            width:100%;
+            height:100%;
+            top:0;
+            left:0;
+            background:rgba(0,0,0,0.65);
+        }
+
+        &-modal{
+            width:570px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            background:#ffffff;
+            border-radius:6px;
+
+            &>.modalTitle{
+                height:38px;
+                border-bottom:1px solid #ececec;
+                padding-left:12px;
+                width:100%;
+                .title{
+                    line-height:38px;
+                    color:#252525;
+                    font-size:14px;
+                }
+                .close{
+                    float:right;
+                    font-size: 30px;
+                    margin-right: 4px;
+                    margin-top: 7px;
+                    color:#999999;
+                    cursor: pointer;
+                }
+            }
+
+            &>.modalBody{
+                width:100%;
+                padding-top:7px;
+                padding-left:13px;
+                line-height:24px;
+                // position: absolute;
+                // top:41px;
+                // bottom:54px;
+                min-height:142px;
+                max-height:260px;
+                overflow-y:auto;
+                #detailMessage{
+                    margin-bottom:6px;
+                }
+                p{
+                    font-size:12px!important;
+                    margin-bottom:0px!important;
+                }
+            }
+
+            &>.modalFooter{
+                height:54px;
+                text-align: center;
+                padding-top:12px;
+                border-top:1px solid #ececec;
+                // position: absolute;
+                // bottom:0;
+                // left:0;
+                width:100%;
+                button{
+                    width:70px;
+                    height:30px;
+                }
+            }
+        }
+    }
+}

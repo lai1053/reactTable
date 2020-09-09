@@ -1,0 +1,222 @@
+.app-list-userdefinecard {
+	width: 100%;
+	height: 100%;
+	padding: 10px 0;
+	.mk-layout {
+		overflow: hidden;
+	}
+	.ant-tabs-nav .ant-tabs-tab {
+		margin: 0 0 0 8px;
+	}
+	&-department {
+		width: 100%;
+		flex: 0 0 29px;
+	}
+	&-backgroundColor {
+		border: 1px solid #d9d9d9;
+		background-color: #fff
+	}
+	&-card {
+		height: 100%;
+		flex: 1;
+		width: 100%;
+		background-color: #fff;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: -15px;
+		&-son {
+			width: 495px
+		}
+		.divLeft {
+			display: inline-block;
+			float: left;
+			width: 40px
+		}
+		.divRight {
+			display: inline-block;
+			float: right;
+		}
+		.pMargin {
+			margin-bottom: 0px;
+		}
+		.btn {
+			margin-bottom: 1em;
+		}
+		.line {
+			border-top: 1px dashed #ECECEC;;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+	}
+	&-grid {
+		width: 100%;
+		height: 100%;
+		&-header {
+			display: flex;
+			flex-direction: row;
+			//flex: 0 0 50px;
+			padding: 9px 10px;
+			height: 50px;
+			z-index: 1;
+			&-left, &-right {
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-end;
+				overflow: visible;
+				.btn {
+					height: 30px;
+					margin-left: 8px;
+					outline: none;
+
+				}
+			}
+			&-left {
+				justify-content: flex-start;
+			}
+			//&-refreshIcon {
+			//	display: block;
+			//	height: 30px;
+			//	width: 30px;
+			//	border: 1px solid red;
+			//	font-size: 28px;
+			//	:active {
+			//		border: 1px solid #0093E2;;
+			//		color: #fff;
+			//	}
+			//}
+			.refresh {
+				display: flex;
+				align-content: center;
+				justify-content: center;
+				font-size: 28px;
+				height: 30px;
+				width: 30px;
+				color: #45ACF7 !important;
+				border-color: #D9D9D9;
+				&:hover {
+					border-color: #45ACF7;
+				}
+				&-btn {
+					position: absolute;
+					top: 1px;
+					left: 1px;
+				}
+			}
+		}
+
+		&-content {
+			display: flex;
+			margin-top: 5px;
+			flex: 1;
+			.mk-datagrid .public_fixedDataTable_main {
+				border-left: none;
+			}
+			.mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+				//background: #e4e4e4 !important;
+				color: #333333;
+			}
+			.mk-datagrid .fixedDataTableLayout_rowsContainer .fixedDataTableRowLayout_rowWrapper .public_fixedDataTable_header {
+				//background: #e4e4e4 !important;
+			}
+			.public_fixedDataTable_scrollbarSpacer {
+				top: 0px;
+			}
+			.mk-tabs {
+				padding: 0 10px 0 0px;
+			}
+			.mk-tabs .ant-tabs-bar {
+				margin-bottom: 0;
+				border-bottom: none;
+			}
+			.ant-tabs-ink-bar-animated {
+				background-color: transparent;
+			}
+			.ant-tabs-nav {
+				.ant-tabs-tab {
+					margin: 0 1px;
+					padding: 7px 22px 5px 8px;
+				}
+			}
+			.ant-tabs-tab {
+				font-size: 12px;
+				border: 1px solid #d9d9d9;
+				border-bottom: 0;
+				//border-left: 0;
+				border-radius: 4px 4px 0 0;
+			}
+			.ant-tabs-nav:first-child {
+				//border-left: 1px solid #d9d9d9;
+				border-radius: 4px 4px 0 0;
+			}
+			.ant-tabs-tab:last-child {
+				padding: 1px 2px 5px 2px;
+			}
+			.ant-tabs-nav > div:nth-child(2) {
+				margin-left: 10px;
+			}
+			.addArchives {
+				position: relative;
+				top: 3px;
+				padding: 0px;
+				margin: 0 !important;
+			}
+			.delArchives {
+				position: absolute;
+				right: 2px;
+				top: 6px;
+				margin-right: 0 !important;
+				color: #999999;
+				&:hover {
+					color: #d81a0a;
+				}
+			}
+			.del {
+				cursor: pointer;
+			}
+
+		}
+
+		&-footer {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			height: 30px;
+			margin-top: 10px;
+		}
+	}
+	.no-enable {
+		color: #cccccc;
+	}
+	&-modalList {
+		.ant-modal-body {
+			height: 259px
+		}
+	}
+	&-modalTitle {
+		.ant-modal-body {
+			height: 79px
+		}
+	}
+	&-contentHeight {
+		.fixedDataTableLayout_rowsContainer {
+			border: 1px solid #E9E9E9;
+			height: 99% !important;
+			width: 100% !important;
+		}
+	}
+	//滚动条上部
+	.public_fixedDataTable_scrollbarSpacer {
+		top: 0px;
+		background: #eaeaea;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+}
+
+.app-list-userdefinecard.first-entry {
+	display: flex;
+	flex-direction: column;
+	padding-top: 10%;
+}

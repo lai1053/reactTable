@@ -1,0 +1,158 @@
+.ttk-stock-app-inventory-select {
+    line-height: 22px;
+    font-size: 12px;
+    height: 22px;
+    overflow: hidden;
+
+    &-wrap {
+        z-index: 1100;
+    }
+    &-modal {
+        .modal-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0px;
+
+            .modal-radio-table {
+                width: 100%;
+                position: relative;
+                padding: 20px 20px 60px 20px;
+                min-height: 470px;
+
+                .modal-table {
+                    margin-bottom: 10px;
+
+                    .center {
+                        text-align: center;
+                    }
+
+                    .right {
+                        text-align: right;
+                    }
+                }
+
+                .ant-table-row-selected td {
+                    background: fade(#1f7fbf, 7%);
+                }
+
+                .ant-table-header {
+                    background-color: #d9d9d9 !important;
+                }
+
+                .ant-table-thead {
+                    th {
+                        background-color: #d9d9d9 !important;
+                    }
+                }
+            }
+
+            .footer {
+                border-top: 1px solid #e8e8e8;
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                width: 100%;
+                left: 0;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                button {
+                    margin: 0 5px;
+                }
+            }
+
+            // .-search-tree {
+            //     width: 200px;
+            //     height: 470px;
+            //     overflow: auto;
+            //     padding: 10px;
+            //     background-color: #fafafa;
+            // }
+        }
+    }
+
+
+    // @hoverColor: #1f7fbf;
+    &.init {
+        width: 220px;
+        // border: 1px solid #d9d9d9;
+    }
+
+    &.error {
+        border: 1px solid #e94033;
+        background-color: #ffecea;
+    }
+    .ant-select{
+        width: 90% !important;
+        height: 34px !important;
+        float: left;
+        line-height: 34px !important;
+        .selectSpanStyle{
+            padding-right: 8px;
+            float: left;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .input {
+        height: 34px;
+        .ant-input {
+            height: 22px;
+            width: 80%;
+            // border-radius: 1px;
+            border: none;
+            background-color: transparent;
+        }
+        .btn{
+            top: 5px;
+            position: absolute;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            height: 22px;
+            text-align: center;
+            float: left;
+            width: 22px;
+            right: 1px;
+        }
+    }
+    .ant-select-selection{
+        height: 34px !important;
+        line-height: 34px !important;
+        border: none;
+        background-color: inherit;
+    }
+    .ant-select-selection-selected-value{
+        width: 100% !important;
+    }
+    .ant-input-group-addon {
+        height: 18px;
+        padding: 0 2px;
+        background: none;
+        border-radius: 1px;
+        border-left: 1px solid #d9d9d9;
+        cursor: pointer;
+    }
+
+    .btn {
+        vertical-align: super;
+    }
+
+    .ant-tree li .ant-tree-node-content-wrapper.ant-tree-node-selected {
+        background-color: fade(#1f7fbf, 20%);
+    }
+
+    &.disabled {
+        .ant-input-group-addon {
+            cursor: not-allowed;
+        }
+    }
+}
+.selectSpanStyle{
+    padding-right: 8px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

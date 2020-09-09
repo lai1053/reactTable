@@ -1,0 +1,342 @@
+.ttk-stock-app-assessment-chonghui{
+    width: 100%;
+    height: 100%;
+
+    .mk-datagrid-cellContent{
+        margin-left: 0;
+        padding: 0 8px;
+        width: auto;
+    }
+
+    .fixedDataTableLayout_footer{
+        top: 1px!important;
+    }
+
+    .date{
+        flex: 1;
+    }
+    
+    .mk-datagrid{
+        border: 1px solid #ccc;
+    }
+    .ttk-stock-app-assessment-chonghui-DataGrid{
+       min-height: 315px;
+    //    border: 1px solid #ccc;
+       /* 新增隐藏 */
+       .mk-datagrid-editable-add-row{
+            display: none!important;
+           &:before{
+               display: none!important;
+           }
+       }
+
+        /* 删除 */
+        .mk-datagrid-editable-remove-row{
+           position: relative;
+           top: 0px;
+        }
+
+        .addDelrow{
+           position: relative;
+           top: 7px;
+        }
+    }
+    &-header-title{
+        background: #FFFFFF;
+        .ttk-stock-app-inventory-h2{
+            text-align: center;
+            width: 100%;
+            display: flex;
+            // height: 12px;
+            height: fit-content;
+            line-height: 1;
+            justify-content: center;
+            font-size: 20px;
+            // padding-bottom: 5px;
+            font-size: 20px;
+            font-weight: 700;
+            color: #971d18;
+        }
+        .helloworld-add-Button{
+            position: absolute;
+            right: 10px;
+        }
+        .helloworld-add-form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            padding: 0;
+
+            .form-item-supplier-name{
+                .ant-form-item-control{
+                    .ant-select{overflow: visible;}
+                    .ant-form-item-children{display: block;}
+                    .ant-select-selection__rendered{
+                        line-height: 17px;
+                        height: 19px;
+                        margin: 0;
+                        width: 100%;
+                        text-indent: 10px;
+                        border-bottom: 1px solid #d9d9d9;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+            }
+
+            .ant-form-item-label{
+                width: fit-content;
+                padding: 0;
+                line-height: unset;
+            }
+
+            .ant-form-item-control-wrapper{
+                width: 136px;
+                line-height: 1;
+                .ant-input{
+                    border: 0px;
+                    border-bottom: 1px solid #ccc;
+                    border-radius: 0px;
+                    height: 17px;
+                    padding-top:0;
+                }
+            }
+
+            .wrapperWidth200{
+                .ant-form-item-control-wrapper{
+                    width: 200px;
+                }
+            }
+            
+            .ant-form-explain{
+                margin-top: 5px;
+            }
+            .mk-form-item{
+                // width: 33%;
+                justify-content: center;
+                padding: 16px 0;
+            }
+            .ant-form-item-control{
+                text-align: left;
+                line-height: 1;
+            }
+    
+            .mk-datepicker,.mk-select{
+                width:100%
+            }
+        }
+    }
+    &-tableHeader{
+        border-top: 1px solid #D9D9D9;
+        background: #f8f8f8;
+        color:#333333;
+    }
+    &-tableHeaderNoBoder{
+        border-left: none !important;
+    }
+    .mk-datagrid-sequence-cell{
+        border-left: 1px solid #D9D9D9;
+    }
+    .mk-addDel .public_fixedDataTable_main, .mk-upDown .public_fixedDataTable_main{
+        border-right: 0px;
+    }
+    &-cell{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & > div {
+            width: 100%;
+            height: 100%;
+            input{
+                height: 100%;
+            }
+        }
+
+        .ant-select-selection{
+            height: 100%
+        }
+
+        .ant-select-selection__rendered{
+            height: 100%
+        }
+
+        .ant-select-selection-selected-value{
+            line-height: 40px;
+        }
+
+    }
+    .my-class{
+        text-align: right
+    }
+    .my-class-center{
+        text-align: center
+    }
+    // &-footer{
+    //     position: relative;
+    //     float: right;
+    //     display: block !important;
+    //     margin: 12px 0 2px;
+    //     overflow: hidden;
+    //     .zhidanren{
+    //         margin-bottom:-9px;
+    //         overflow: hidden;
+    //         float: right;
+    //     }
+    //     .ant-form-item-control-wrapper{
+    //         float:right;
+    //         .ant-form-item-control{
+    //             line-height: 20px;
+    //         }
+    //     }
+    //     .ant-form-item-label{
+    //         line-height: 20px;
+    //     }
+    // }
+    &-form-details{
+        height: 96px;
+
+        .mk-datagrid-cellContent{
+            line-height: 35px;
+            // margin-left: 0;
+            // padding: 0 4px;
+            // width: auto;
+        }
+
+        .ant-input-group-wrapper{
+            height: 33px;
+            line-height: 33px;
+        }
+
+        .mk-input-number{
+            text-align: right;
+            height: 33px;
+            line-height: 33px;
+        }
+        .ant-input{
+            font-size: 12px;
+            width: 99%;
+            border: none;
+            background-color: inherit;
+            height: 33px;
+            line-height: 33px;
+        }  
+
+        .ant-input:hover {
+            border: none;
+            box-shadow: none !important;
+            border-radius: 0;
+            
+        }
+        .ant-input:focus {
+            border: none;
+            box-shadow: none !important;
+        }
+        .ant-calendar-picker{
+            width: 99%;
+            height: 33px;
+            line-height: 33px;
+            .ant-calendar-picker-input{
+                text-align: center;
+            }
+        } 
+
+        .ant-input-group-wrapper{
+            height: 35px;
+            overflow: hidden;
+            width: 98.9%;
+            .ant-input-wrapper.ant-input-group{
+                background-color: inherit;
+                height: 33px;
+                .ant-input-affix-wrapper{
+                    height: 33px;
+                    line-height: 33px;
+                    .ant-input{
+                        height: 33px;
+                        line-height: 33px;
+                    }
+                }
+
+                .mk-input.ant-input-affix-wrapper{
+                    background-color: inherit;
+                }
+                .ant-input-group-addon{
+                    background-color: inherit;
+                    border: none;
+                    cursor:pointer;
+                    .btn{
+                        width: 19px;
+                        display: inline-block;
+                        background-color: inherit;
+                        border: solid 1px #d9d9d9;
+                        height: 20px;
+                        margin-top: 1px;
+                        text-align: center;
+                        line-height: 16px;
+                    }
+                }
+                .ant-input-group-addon:hover{
+                    border: none;
+                    box-shadow: none !important;
+                    border-radius: 0;
+                }
+            }
+        }
+
+
+    }
+    .ant-select{
+        width: 99%;
+        border: none;
+        height: 17px;
+        line-height: 1;
+        overflow: hidden;
+        .ant-select-selection{
+            height: 17px;
+            line-height: 1;
+            border: none;
+            background-color: inherit;
+            .ant-select-selection__rendered{
+                height: 17px;
+                line-height: 1;
+            }
+        }
+    }
+
+    &-footer {
+        position: relative;
+        display: block !important;
+        padding-left: 10px;
+        line-height: 28px;
+    }
+    
+    &-footer-btn {
+		border-top: 1px solid #e8e8e8;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		bottom: -53px;
+		padding: 12px;
+		display: flex;
+		background: #fff;
+		border-radius: 0 0 4px 4px;
+		justify-content: flex-end;
+		padding-right: 12px;
+		&-btnGroup {
+            height: 30px;
+			&-item {
+				margin-left: 8px;
+				width: 59.39px;
+				float: right;
+			}
+			&-item:nth-child(3) {
+				width: 78px;
+			}
+		} 
+    }
+    
+}
+

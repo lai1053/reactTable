@@ -1,0 +1,97 @@
+@Color: #fff;
+@gridBorder: 1px solid #D9D9D9;
+@stepFontColor: @primary-color;
+
+.ttk-gl-app-importdata-enterprise {
+    background-color: @Color;
+    height: 100%;
+    display: flex;
+    border: @gridBorder;
+    // margin: 0 10px 10px 0;
+    padding: 0 !important;
+
+    &-top {
+        background-color: @Color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 85px;
+        min-height: 85px;
+        max-height: 85px;
+        overflow: hidden;
+
+        &-bar {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            width: 490px;
+            height: 60px;
+            position: relative;
+
+            &-step-icon {
+                width: 35px;
+                height: 35px;
+                border: 1px solid #666666;
+                background: #ffffff;
+                border-radius: 100%;
+                text-align: center;
+                line-height: 35px;
+                font-size: 18px;
+                font-weight: 400;
+                color: #666666;
+                margin: 0 auto 5px;
+                cursor: default;
+            }
+
+            &-step-icon.titlesuccess {
+                background: @stepFontColor; //#1EB5AD;
+                border-color: @stepFontColor; //#1EB5AD;
+                color: #fff;
+            }
+
+            &-step-description {
+                color: #666;
+                white-space: nowrap;
+            }
+
+            &-step-description.descriptionsuccess {
+                color: @stepFontColor;
+            }
+
+            &-line {
+                position: absolute;
+                width: 170px;
+                height: 1px;
+                background-image: linear-gradient(to right, #ccc 0%, #ccc 50%, transparent 50%);
+                background-size: 10px 1px;
+                background-repeat: repeat-x;
+            }
+
+            &-line.active {
+                background-image: linear-gradient(to right, @stepFontColor 0%, @stepFontColor 50%, transparent 50%);
+                background-size: 10px 1px;
+                background-repeat: repeat-x;
+            }
+
+            &-line:nth-of-type(1) {
+                top: 20px;
+                left: 55px;
+            }
+
+            &-line:nth-of-type(2) {
+                top: 20px;
+                left: 270px;
+            }
+
+            &-line:nth-of-type(3) {
+                top: 20px;
+                right: 52px;
+            }
+        }
+    }
+
+    &-content {
+        // display: inline-block; 
+        height: 100%;
+    }
+}

@@ -1,0 +1,36 @@
+export const sbywbmsData = [
+    {
+      id:'zzs',
+      sbywbm:'ZZS',
+    },{
+      id:'fjs',
+      sbywbm:'FJSSB',
+    },{
+      id:'yhs',
+      sbywbm:'YHSSB',
+    },{
+      id:'whsyjsfyl',
+      sbywbm:'WHSYJSF_YGZ',
+    },{
+      id:'whsyjsfgg',
+      sbywbm:'WHSYJSF_YGZ',
+    },{
+      id:'qysds',
+      sbywbm:'QYSDS_A_18YJD',
+    },{
+      id:'cbj',
+      sbywbm:'CBJ',
+    },{
+      id:'sljj',
+      sbywbm:'TYSB',
+    },{
+      id:'ghjf',
+      sbywbm:'TYSB',
+    },{
+      id:'kjgrsds',
+      sbywbm:'KJGRSDSSB',
+    },{
+      id:'scjygrsds',
+      sbywbm:'GRSDS_SCJY_A',
+    }
+]

@@ -1,0 +1,64 @@
+.ttk-scm-app-exchange-accounts{
+    &-main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 12px;
+        .ant-form-item {
+            display: flex;
+            width: 50%;
+            .ant-form-item-control-wrapper {
+                width: 200px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .ant-form-item-control {
+                    width: 100%;
+                    position: relative;
+                    .mk-select {
+                        width: 100%;
+                    }
+                    .ant-form-explain {
+                        position: absolute;
+                        top: 36px;
+                        line-height: 18px;
+                        font-size: 12px;
+                    }
+                }
+            }
+            //警告字体12px，行间距22px
+            margin-bottom: 0px;
+            .ant-form-item-control {
+                min-height: 55px;
+            }
+            .ant-form-item-label {
+                min-height: 55px;
+            }
+        }
+        .ant-form-item-label{
+            width:80px;
+        }
+        .textarea {
+            resize: none;
+        }
+        .right-item {
+            text-align: right;
+        }
+    }
+    &-footer {
+        width: 100%;
+        text-align: center;
+        padding: 10px 16px;
+        border-top: 1px solid #e8e8e8;
+        .btn {
+            margin-left: 8px;
+        }
+        .ant-btn-primary[disabled], .ant-btn-primary[disabled]:hover {
+            color: rgba(0, 0, 0, 0.25);
+            background: #f5f5f5;
+            border-color: #d9d9d9;
+        }
+        .cancel, .save{
+            width: 60px;
+        }
+    }
+}

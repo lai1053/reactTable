@@ -1,0 +1,96 @@
+.ttk-es-app-customer-download-progress{
+  margin: 0 -12px;
+  .ttk-es-app-customer-download-progress-div{
+    padding: 0 20px;
+    position: relative;
+    .ttk-es-app-customer-download-progress-div-bar{
+
+    }
+    .ttk-es-app-customer-download-progress-div-value{
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      margin-top: -8px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 16px;
+      height: 16px;
+      color: #fff;
+    }
+    .ttk-es-app-customer-download-progress-div-value-half{
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      margin-top: -8px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 16px;
+      height: 16px;
+      color: #5c5c5c;
+    }
+  }
+  .ttk-es-app-customer-download-progress-list{
+    padding: 0 20px;
+    max-height: 200px;
+    overflow: auto;
+    .ttk-es-app-customer-download-progress-list-item{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 10px 0;
+      font-size: 12px;
+      .ttk-es-app-customer-download-progress-list-item-name{
+        //max-width: 70%;
+        //overflow: hidden;
+        white-space: nowrap;
+        //text-overflow: ellipsis;
+      }
+      .ttk-es-app-customer-download-progress-list-item-massage-error{
+        //max-width: 30%;
+        color: #d55252;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .ttk-es-app-customer-download-progress-list-item-massage-success{
+        //max-width: 30%;
+        color: #acd463;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .ttk-es-app-customer-download-progress-list-item-massage-pending{
+        //max-width: 30%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+  .ttk-es-app-customer-download-progress-btn{
+    border-top: 1px solid #9c9c9c;
+    padding-top: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ttk-es-app-customer-download-progress-btn-control{
+
+    }
+    .ttk-es-app-customer-download-progress-btn-close{
+      width: 66px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.ttk-es-app-customer-download-progress-popover{
+  .ant-popover-arrow{
+    display: none;
+  }
+  .ttk-es-app-customer-download-progress-popover-content{
+    padding: 0;
+  }
+}

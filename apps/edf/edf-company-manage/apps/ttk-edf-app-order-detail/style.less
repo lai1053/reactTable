@@ -1,0 +1,90 @@
+.ttk-edf-app-order-detail{
+    &-head{
+        &-title{
+            line-height:16px;
+            font-size:12px;
+            margin-bottom:5px;
+        }
+        &-status{
+            height:30px;
+            i{
+                margin-right:10px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+            &>span{
+                font-size:16px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+    &-info{
+        overflow:hidden;
+        &>div{
+            width:265px;
+            float:left;
+            padding-top:23px;
+        }
+        &>div:nth-of-type(1), &>div:nth-of-type(2){
+            height:198px;
+        }
+        &>div:nth-of-type(3), &>div:nth-of-type(4){
+            height:160px;
+        }
+        &>div:nth-of-type(2n+1) {
+            margin-right:105px;
+        }
+
+        &-title{
+            height:30px;
+            font-size:16px;
+            line-height:26px;
+            padding-left:12px;
+            position: relative;
+            background:url(./img/border.png) repeat-x left bottom;
+            margin-bottom:16px;
+        }
+        &-title:before{
+            content: '';
+            position: absolute;
+            width:3px;
+            height:16px;
+            top:5px;
+            left:0;
+        }
+        &-title-order:before{
+            background:#4ecacc;
+        }
+        &-title-invoice:before{
+            background:#FF6E5b;
+        }
+        &-title-pay:before{
+            background:#1ec6f3;
+        }
+        &-title-service:before{
+            background:#fdd631;
+        }
+        
+        &-content-item{
+            font-size:12px;
+            line-height:16px;
+            margin-bottom:6px;
+            &>span:nth-of-type(1){
+                width:65px;
+                color:#888888;
+                text-align: right;
+                display: inline-block;
+            }
+            &>span:nth-of-type(2){
+                color:#333333;
+                text-align: left;
+            }
+        }
+        &-content-invoice &-content-item{
+            &>span:nth-of-type(1){
+                width:120px;
+            }
+        }
+    }
+}

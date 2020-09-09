@@ -1,0 +1,73 @@
+.app-scm-accountdescription-kthree {
+    overflow-y: auto;
+    border-radius: 0;
+
+    .ant-collapse-header {
+        padding-left: 12px !important;
+        .arrow {
+            position: relative !important;
+            left: 550px !important;
+            height: 23px;
+            line-height: 23px !important;
+        }
+    }
+    .ant-collapse-header:hover {
+        background:@item-hover-bg;
+    }
+    .ant-collapse-content {
+        border-radius: 0 !important;
+    }
+    .img {
+        margin: 10px 0;
+        width: 100%;
+    }
+    .img-small {
+        width: 80px;
+    }
+}
+
+@media screen and (min-width: 1680px) {//大于1280样式
+    .app-scm-accountdescription-kthree {
+        height: 420px;
+    }
+}    
+
+@media screen and (min-width: 1280px) {//大于1280样式
+    .app-scm-accountdescription-kthree {
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 1279px) {//小于1280样式
+    .app-scm-accountdescription-kthree {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1023px) {//小于1024样式
+    .app-scm-accountdescription-kthree {
+        height: 250px;
+    }
+}
+
+.accountdescription.ant-modal-wrap {
+    .ant-modal-header {
+        border-bottom: 0;
+    }
+    .ant-modal-body {
+        padding: 0 !important;
+    }
+    .ant-modal-footer .ant-btn:first-child{
+        display: none;
+    }
+    .ant-modal-footer {
+        height: 52px;
+        margin-top: -1px;
+        position: relative;
+        z-index: 10;
+        border-color: #d9d9d9;
+    }
+}
+
+
+

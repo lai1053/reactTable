@@ -1,0 +1,58 @@
+.ttk-es-app-org-reinit{
+	.text{
+		font-size: 12px;
+		color: #363636;
+		&>span{
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	.mk-form-item{
+		display: block;
+		width:455px;
+		height:55px;
+		margin:0 auto;
+		.ant-form-item-control-wrapper{
+			display: inline-block;
+			vertical-align: middle;
+			height:100%;
+		}
+		.ant-form-item-label{
+			position: relative;
+			width:55px;
+			height:100%;
+			label{
+				position: absolute!important;
+				top:1px;
+				left:0;
+			}
+		}
+	}
+	&-formItem{
+		.ant-form-item{
+			width:350px;
+			.ant-form-item-control-wrapper{
+				width: 350px;
+			}
+	
+		}
+		.ant-input-group-addon{
+			padding: 0;
+			border-width: 0;
+			.mk-btn{
+				height: 32px;
+				border-bottom-left-radius: 0;
+				border-top-left-radius: 0;
+				// font-size: 14px;
+			}
+		}
+		.has-error .mk-input:hover .ant-input{
+			border-color: #ff4d4f;
+			outline: 0;
+			box-shadow: 0 0 0 2px rgba(245,34,45,.2);
+		}
+	}
+	.confirmText{
+		margin-bottom:0;
+	}
+}

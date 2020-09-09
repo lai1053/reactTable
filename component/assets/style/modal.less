@@ -1,0 +1,79 @@
+.mk-modal,.ant-modal {
+    font-family: "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #333;
+    .ant-btn-primary:hover, .ant-btn-primary:focus{
+        color: #fff;
+        background-color: @button-hover-color;
+        border-color: @button-hover-color;
+    }
+    .ant-modal-close-x{
+        width: 36px;
+        height: 47px;
+        line-height: 47px;
+    }
+    &-footer {
+        text-align: center;
+        span {
+            font-size: 13px;
+        }
+    }
+    .ant-modal-footer {
+        text-align: right !important;
+        height: 55px;
+        display: block !important;
+        padding: 12px !important;
+        .ant-btn{
+            height: 30px;
+            font-size: 13px;
+            float: right;
+            margin-left: 8px;
+        }
+    }
+    .ant-modal-header {
+        border-bottom: 1px solid #e8e8e8!important;
+        .ant-modal-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding-right: 20px;
+        }
+    }
+    &-body{
+        color: #333;
+        font-size: 13px;
+        .ant-form-item{
+            font-size: 13px;
+            .ant-form-item-control-wrapper{
+                .mk-select, .ant-input, .ant-calendar-picker {
+                    font-size: 13px;
+                }
+            }
+        }
+        .ant-select-dropdown-menu {
+            max-height: 300px;
+            font-size: 13px
+        }
+    }
+}
+
+.mk-confirm {
+    .ant-confirm-body-wrapper {
+        .ant-confirm-title {
+            display: none;
+        }
+        .ant-confirm-btns {
+            float: none;
+            text-align: right;
+            padding-top: 5px;
+            .ant-btn {
+                float: right;
+                height: 30px;
+                font-size: 13px;
+                margin-left: 8px;
+            }
+        }
+    }
+    .ant-modal-body {
+        padding: 32px 12px 12px 32px !important;
+    }
+}

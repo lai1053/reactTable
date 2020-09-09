@@ -1,0 +1,133 @@
+.ttk-stock-app-inventory-picking-ruku{
+    width: 100%;
+    height: 100%;
+    &-main{
+        position: relative;
+        .mk-datagrid-cellContent{
+            padding: 0 8px;
+        }
+    }
+    &-header-title{
+        background: #FFFFFF;
+        overflow: hidden;
+        .ttk-stock-app-inventory-h2{
+            text-align: center;
+            width: 100%;
+            justify-content: center;
+            font-size: 20px;
+            line-height: 1;
+            font-size: 20px;
+            font-weight: 700;
+            color: #971d18;
+        }
+
+        .helloworld-add-form{
+            display: flex;
+            justify-content: space-between;
+            align-items:center;
+            overflow:hidden;
+            padding: 16px 0px;
+            .ant-form-item-label{
+                padding: 0;
+                line-height: 1;
+                width: fit-content;
+            }
+            .ant-form-item-control-wrapper{
+                input{                 
+                    border: 0px;
+                    border-bottom: 1px solid #ccc;
+                    border-radius: 0px;
+                    height: 17px;
+                    padding-top:0;
+                }
+                .ant-select-selection--single{
+                    height: 18px;
+                }
+                .ant-select-selection__rendered{
+                    // line-height: 1px;
+                    line-height: 17px;
+                    height: 19px;
+                    margin: 0;
+                    width: 100%;
+                    text-indent: 10px;
+                    border-bottom: 1px solid #d9d9d9;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            .ant-form-explain{
+                margin-top: 5px;
+            }
+            .mk-form-item{
+                width: auto;
+            }
+            .ant-form-item-control{
+                line-height: 1;
+                text-align: left;
+                // border-bottom: 1px solid #ccc;
+            }
+            .ant-form-item-control-wrapper{
+                width: 136px;
+            }
+            .wraperWidth200 .ant-form-item-control-wrapper{
+                min-width: 200px;
+                width:fit-content;
+                max-width: 22%;
+            }
+    
+            .mk-datepicker,.mk-select{
+                width:100%
+            }
+        }
+    }
+
+    &-content-grid{
+        min-height: 315px;
+        border: 1px solid #d9d9d9;
+    }
+
+    .mk-datagrid-sequence-cell{
+        border-left: 1px solid #D9D9D9;
+    }
+    .mk-addDel .public_fixedDataTable_main, .mk-upDown .public_fixedDataTable_main{
+        border-right: 0px;
+    }
+    .my-class{
+        text-align: right
+    }
+    .my-class-center{
+        text-align: center
+    }
+    &-footer{
+        position: relative;
+        float: left;
+        display: block !important;
+        margin-top: 10px;
+        &-form-item {
+            display: flex;
+            margin: 0;
+            float: left;
+            .ant-form-item-label{
+                line-height: 20px;
+            }
+            .ant-form-item-control{
+                line-height: 20px;
+            }
+        }
+    }
+    .ant-select{
+        border: none;
+    }
+    .ant-select-selection{
+        border: none;
+    }
+
+    .ttk-stock-app-inventory-picking-add-footer-btn{
+        display: block;
+        .ttk-stock-app-inventory-picking-add-footer{
+            float: left;
+        }
+    }
+}
+

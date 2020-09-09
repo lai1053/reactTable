@@ -1,0 +1,160 @@
+.edfx-app-home-voucher{
+    .ant-spin-nested-loading > div:nth-of-type(1){
+        display: flex;
+        // height: 100%;
+        .edfx-app-home-voucher-main{
+            // height: 100%
+        }
+    }
+    .ant-spin-nested-loading > div > .ant-spin{
+        position:static!important;
+    }
+    .ant-spin-nested-loading{
+        flex: 1;
+    }
+    .ant-spin-container{
+        overflow: hidden;
+        &>div{
+            overflow: hidden;
+        }
+    }
+    &-header{
+        flex: 0 0 32px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        &-left{
+            display: flex;  
+            height: 32px;
+            line-height: 32px;
+            &-title{
+                line-height: 32px;
+                color: #333;
+            }
+            &-select{
+                .ant-select-open .ant-select-selection,
+                .ant-select-focused .ant-select-selection, 
+                .ant-select-selection:focus, .ant-select-selection:active{
+                    border-color: #fff;
+                    box-shadow: none;
+                }
+                .ant-select-selection, .ant-select-selection:hover{
+                    font-size: 12px;
+                    border: none;
+                    color: #999;
+                }
+                .ant-select-selection-selected-value{
+                    padding-right: 14px;
+                }
+            }
+        }
+        &-right{
+            display: flex;
+            .edficon{
+                border: 1px solid #d9d9d9;
+                border-radius: 5px;
+                margin-left: 8px;
+                font-size: 30px;
+            }
+            .edficon-shuaxin{
+                color: #45ACF7;
+                &:hover{
+                    border: 1px solid #45ACF7;
+                }
+            }
+        }
+    }
+    &-main{
+        padding-top: 55px;
+        a:disabled{
+            color:#E0E4E9;;
+        }
+        p{
+            margin-bottom: 18px;
+            font-weight: bold;
+        }
+        .mk-btn{
+            width: 320px;
+            height: 40px;
+            border-radius: 55px;
+            margin-bottom: 10px;
+        }
+        .mk-btn.ant-btn-primary:disabled:hover{
+            color: #ffffff;
+            background-color: #efefef;
+            border-color: #efefef;
+        }
+    }
+}
+.grayFilter .edfx-app-home-voucher{
+    .edfx-app-home-voucher-main p{
+        color: #E0E4E9;
+    }
+    a{
+        color: #E0E4E9;
+    }
+    .ant-btn.ant-btn-primary{
+        color: #ffffff;
+        background-color: #efefef;
+        border-color: #efefef;
+    }
+    .ant-btn{
+        color: #E0E4E9;
+        background-color: #ffffff;
+        border-color: #E0E4E9;
+    }
+    .edficon-shuaxin{
+        color: #E0E4E9;
+        &:hover{
+            border: 1px solid #E0E4E9;
+        }
+    }
+}
+.grayFilter:hover .edfx-app-home-voucher{
+    .edfx-app-home-voucher-main p{
+        color: rgba(0,0,0,0.65);
+    }
+    .ant-btn.ant-btn-primary{
+        color: #fff;
+        background-color: @primary-color;
+        border-color: @primary-color;
+    }
+    .mk-btn.ant-btn-primary:disabled{
+        color: #ffffff;
+        background-color: #efefef;
+        border-color: #efefef;
+    }
+    .ant-btn{
+        color: rgba(0, 0, 0, 0.65);
+        background-color: #fff;
+        border-color: #d9d9d9;
+    }
+    .ant-btn.ant-btn-primary:hover{
+        color: #fff;
+        background-color: @button-hover-color;
+        border-color: @button-hover-color;
+    }
+    .mk-btn.ant-btn-primary:disabled:hover{
+        color: #ffffff;
+        background-color: #efefef;
+        border-color: #efefef;
+    }
+    .ant-btn:hover{
+        color: @button-hover-color;
+        background-color: #ffffff;
+        border-color: @button-hover-color;
+    }
+    a{
+        color: @primary-color;
+    }
+    a[disabled]{
+        color:#E0E4E9;;
+    }
+    .edficon-shuaxin{
+        color: #45ACF7;
+        &:hover{
+            border: 1px solid #45ACF7;
+        }
+    }
+}

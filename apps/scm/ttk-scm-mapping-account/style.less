@@ -1,0 +1,167 @@
+.ttk-scm-mapping-account {
+    .fixedDataTableRowLayout_rowWrapper .fixedDataTableCellLayout_main.public_fixedDataTableCell_main:nth-child(4){
+        padding: 5px
+    }
+    .fixedDataTableRowLayout_rowWrapper .fixedDataTableCellLayout_main.public_fixedDataTableCell_main:nth-child(5){
+        padding: 5px
+    }
+    .cell_header{
+        line-height: 27px;
+        height: 27px !important;
+        width: 100% !important;
+    }
+    .inventoryName{
+        text-align: left
+    }
+
+    .ant-select{
+        width: 100%;
+        height: 26px;
+        .ant-select-selection.ant-select-selection--single{
+            height: 26px;
+            line-height: 26px;
+            .ant-select-selection__rendered{
+                height: 26px;
+                line-height: 26px;
+                .ant-select-selection-selected-value{
+                    height: 26px;
+                    line-height: 26px;
+                    font-size: 12px;
+                }
+            }
+            .ant-select-selection__clear{
+                right: 22px;
+            }
+        }
+    }
+
+    .checkbox{
+        margin: 5px 0 8px 32px
+    }
+    .customer{
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    &-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		//flex: 0 0 50px;
+		padding: 9px 10px;
+		height: 50px;
+		&-left, &-right {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			overflow: hidden;
+			.btn {
+				height: 30px;
+				margin-left: 8px;
+				outline: none;
+			}
+			.importIconBtn {
+				height: 30px;
+				width: 30px;
+				padding: 0;
+				margin-left: 8px;
+				outline: none;
+				color: #00B38A;
+				&:hover, &:active {
+					border-color: #FFC000;
+				}
+				&:focus {
+					border-color: #d9d9d9;
+				}
+			}
+		}
+		&-left {
+			justify-content: flex-start;
+			.refresh {
+				display: flex;
+				align-content: center;
+				justify-content: center;
+				font-size: 28px;
+				height: 30px;
+				width: 30px;
+				color: #45ACF7 !important;
+				border-color: #D9D9D9;
+				&:hover {
+					border-color: #45ACF7;
+				}
+				&-btn {
+					position: absolute;
+					top: 1px;
+					left: 1px;
+				}
+			}
+			&-search{
+				width: 165px;
+				margin-right: 8px;
+				.ant-input{
+					height: 30px;
+					min-height: 30px;
+				}
+				.ant-input-affix-wrapper, .ant-input:not(:last-child) {
+					font-size: 12px;
+					padding-right: 30px !important;
+				}
+			}
+		}
+	}
+    &-content{
+        height: 200px;
+        .mk-datagrid-addDelRow-cell {
+            &:hover{
+                border-right-width: 0px;
+                z-index: 2;
+            }
+        }
+        .fixedDataTableLayout_main.public_fixedDataTable_main{
+            height: 201px !important;
+        }
+        .public_Scrollbar_main{
+            border-left: 1px solid #d9d9d9 !important;
+            border-bottom: 2px solid #d9d9d9 !important
+        }
+        .fixedDataTableLayout_rowsContainer{
+            border-bottom: 2px solid #d9d9d9;
+            border-left: 1px solid #d9d9d9;
+        }
+        .mk-nodata{
+            img{
+                width: 130px;
+                height: 130px;
+                margin-top: 48px;
+            }
+        }
+    }
+
+    &-footer {
+    border-top: 1px solid #e8e8e8;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding-top: 10px;
+    height: 50px;
+    display: flex;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    justify-content: center;
+    &-btnGroup {
+        &-item {
+            margin: 0 4px;
+            width: 59.39px;
+        }
+        &-item:nth-child(3) {
+            width: 78px;
+        }
+    } 
+    }
+    .celldropdown{
+        .ant-select-dropdown-menu.ant-select-dropdown-menu-vertical.ant-select-dropdown-menu-root{
+            max-height: 180px;
+        }
+    }
+}

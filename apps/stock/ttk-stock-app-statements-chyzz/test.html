@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// (1) [2,4,5,7] 6
+function twoSum(arr, sum) {
+    let obj = {}
+    for(let i = 0; i < arr.length; i++) {
+        let current = arr[i]
+        let temp = sum - current
+        if(temp in obj) {
+            return [obj[temp], i]
+        }
+        obj[current] = i
+    }
+}
+
+// (2) // 链表加法
+function listNode(val) {
+    this.val = val
+    this.next = null
+}
+
+function addTwoNumbers (l1, l2) {
+    let head = null, temp = null, fl·ag = 0
+    while(l1 || l2) {
+        let sum = flag
+        if(l1) {
+            sum += l1
+            l1 = l1.next
+        }
+        if(l2) {
+            sum += l2
+            l2 = l2.next
+        }
+
+        flag = 0
+        if(sum >= 10) {
+            flag = 1
+        }
+
+        let node = listNode(sum % 10)
+        if(!head) {
+            head = node
+            temp = node
+        } else {
+            temp.next = node
+            temp = node
+        }
+    }
+    if(flag == 1) {
+        let node = listNode(1)
+        temp.next = node
+        temp = node
+    }
+    return temp
+}
+
+// (3) 滑动窗口
+function lengthOfLongestSubstring (s) {
+    if(!s.length) return 0
+    let l = 0, r = 1, res = 1
+    while(r < s.length) {
+        let str = s.slice(l, r)
+        if(str.includes(s)) {
+            l += str.indexOf(s[r]) + 1
+        } else {
+            res = Math.max(res, r - l + 1)
+        }
+        r++
+    }
+    return res
+}
+
+function lengthOfLongestSubstring2 (s) {
+    let l = 0, r = 0, res = 0, obj = {}
+    while(l < s.length) {
+        if(r < s.legnth && !obj[s[r]]) {
+            obj[s[r]] = 1
+            res = Math.max(res, r - l + 1)
+            r++
+        } else {
+            obj[s[l]] = null
+            l++
+        }
+    }
+    return res
+}
+
+
+// 4) 有序数组中位数
+function findMedianSortedArrays (arr1, arr2) {
+    let arr = arr1.concat(arr2).sort((a, b) => (a - b))
+    if(arr.length % 2 === 0) {
+        return (arr[length / 2 - 1] + arr[length / 2]) / 2
+    } else {
+        return arr[Math.floor(length / 2)]
+    }
+}
+
+// 5) 最长的回文子串--暴力法
+function longestPalindrome (s) {
+    let rs = s.split('').reverse().join(''), res = ''
+    for(let i = 0, sLen = s.length; i < sLen; i++) {
+        for(let j = 0; j < i; j++) {
+            let temp = s.slice(j, i + 1)
+            if(s.includes(temp) && temp == temp.split('').reverse().join('')) {
+                res.length < temp.length && (res = temp)
+            }
+        }
+    }
+    return res
+}
+
+// 11) 最大面积
+function maxArea (arr) {
+    let l = 0, r = arr.length - 1, res = 0
+    while(l < r) {
+        let temp = Math.min(arr[l], arr[r]) * (r - l)
+        if(res < temp) {
+            res = temp
+        }
+        if(arr[l] <= arr[r]) {
+            l++
+        } else {
+            r--
+        }
+    }
+    return res
+}
+
+// 12) 整数转换
+function intToRoman (num) {
+    let result = ''
+    const intArr = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    const RomanArr = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
+    for(let i = 0, len = intArr.length; i < len; i++) {
+        while(num % intArr[i] < num) {
+            result += RomanArr[i]
+            num -= intArr[i]
+        }
+    }
+    return result
+}
+
+// 15) 任意三个数等于目标数
+var threeSum1 = function (nums) {
+  const sortNums = nums.sort((r1, r2) => r1 - r2)
+  let targetValue
+  const cacheMap = new Map()
+  const result = []
+
+  for (let i = 0; i < sortNums.length - 2; i++) {
+    targetValue = -sortNums[i]
+    let l = i + 1
+    let r = sortNums.length - 1
+
+    while (l < r) {
+      let tmpArr = []
+      const mapValue = cacheMap.get(`${-targetValue}${sortNums[l]}${sortNums[r]}`)
+      if (sortNums[l] + sortNums[r] === targetValue && !mapValue) {
+        tmpArr.push(-targetValue)
+        tmpArr.push(sortNums[l])
+        tmpArr.push(sortNums[r])
+        result.push(tmpArr)
+        cacheMap.set(`${-targetValue}${sortNums[l]}${sortNums[r]}`, true)
+        l++
+        r--
+      } else if (sortNums[l] + sortNums[r] === targetValue && mapValue) {
+        l++
+      }else if (sortNums[l] + sortNums[r] > targetValue) {
+        r--
+      }else if (sortNums[l] + sortNums[r] < targetValue) {
+        l++
+      }
+    }
+  }
+  return result
+}
+
+function threeSum (nums) {
+    let arr = nums.sort((a, b) => (a - b)), target, res = []
+    for(let i = 0; i < arr.length - 2; i++) {
+        if(!i || arr[i] > arr[i - 1]) {
+            target = -arr[i]
+            let l = i + 1, r = arr.length - 1
+            while(l < r) {
+                let temp = []
+                if(arr[l] + arr[r] == target) {
+                    temp = [-target, arr[l], arr[r]]
+                    res.push(temp)
+                    r--
+                    l++
+                    while(l < r && arr[l - 1] == arr[l]) {
+                        l++
+                    }
+                    while(l < r && arr[l + 1] == arr[r]) {
+                        r--
+                    }
+                } else if(arr[l] + arr[r] > target) {
+                    r--
+                } else if (arr[l] + arr[r] < target) {
+                    l++
+                }
+            }
+        }
+    }
+}
+
+
+// 16) 最接近目标数的三数之和
+function threeSumClosest(nums, target) {
+    let sum = 0, close = nums[0] + nums[1] + num[2]
+    let arr = nums.sort((a, b) => a - b)
+    for(let i = 0; i < arr.length; i++) {
+        let l = i + 1, r = arr.length - 1
+        while(l < r) {
+            sum = arr[i] + arr[l] + arr[r]
+            if(Math.abs(sum - target) < Math.abs(close - target)) {
+                close = sum
+            } else if(sum > target) {
+                r--
+            } else if(sum < target) {
+                l++
+            } else {
+                return sum
+            }
+        }
+        return close
+    }
+}
+
+// 17) 字母组合
+function letterCombinations (d) {
+    const str = [
+        '',
+        '',
+        'abc',
+        'def',
+        'ghi',
+        'jkl',
+        'mno',
+        'pqrs',
+        'tuv',
+        'wxyz',
+    ]
+
+    if(!d.length) return
+
+    let res = ['']
+    for(let x of d) {
+        let len = res.length
+        for(let i = 0; i < len; i++) {
+            let l = res.shift()
+            for(let y of str[x]) {
+                res.push(l + y)
+            }
+        }
+    }
+    return res
+}
+
+// 18) 4sum
+function fourSum (arr, t) {
+    let res = [], len = arr.length
+    if(len < 4) return res
+    arr = arr.sort((a, b) => a - b)
+    for(let i = 0; i < len - 3; i++) {
+        if(!i || arr[i] > arr[i - 1]) {
+            let l = i + 1
+            while(l < len - 2) {
+                let r = len - 1, m = l + 1, sum = 0
+                if(l == i + 1 || arr[l] > arr[l - 1]) {
+                    while(m < r) {
+                        sum = arr[i] + arr[l] + arr[m] + arr[r]
+                        if(sum == t) {
+                            res.push([
+                                arr[i],
+                                arr[l],
+                                arr[m],
+                                arr[r]
+                            ])
+                            m++
+                            r--
+                            while(arr[m] == arr[m - 1]) { m++ }
+                            while(arr[r] == arr[r + 1]) { r-- }
+                        } else if(sum > t) {
+                            r--
+                        } else if(sum < t) {
+                            m++
+                        }
+                    }
+                }
+                l++
+            }
+        }
+    }
+    return res
+}
+
+// 19) 删除链表note(尾部)
+
+function removeNthFromEnd (h, n) {
+    let node = new listNode(0)
+    node.next = h
+    let l = node, r = node, o = n + 1
+
+    while(o--) {
+        r = r.next
+        if(o > 1 && r === null) {
+            return node.next
+        }
+    }
+
+    while(r) {
+        r = r.next
+        l = l.next
+    }
+
+    l.next = l.next.next
+    return node.next
+}
+
+// 20) 括号闭合
+
+function isValid (s) {
+    const obj = {
+        '(': ')',
+        '{': '}',
+        '[': ']',
+    }, arr = []
+    for(let i = 0; i < s.length; i++) {
+        if(s[i] in obj) {
+            arr.push(s[i])
+        } else {
+            let l = arr.pop()
+            if(obj[l] != s[i]) {
+                return false
+            }
+        }
+
+        return !arr.length
+    }
+}
+
+// 21) 链表合并
+
+function mergeTwoLists (list1, list2) {
+    let list = new listNode(0)
+    let h = list, l1 = list1, l2 = list2
+
+    while(l1 && l2) {
+        if(l1 < l2) {
+            h.next = l1
+            l1 = l1.next
+        } else {
+            h.next = l2
+            l2 = l2.next
+        }
+        h = h.next
+    }
+
+    while(l1) {
+        h = l1
+        h = h.next
+        l1 = l1.next
+    }
+
+    while(l2) {
+        h = l2
+        h = h.next
+        l2 = l2.next
+    }
+
+    return list.next
+}
+
+function mergeTwoLists (l1, l2) {
+    if(!l1) return l2
+    if(!l2) return l1
+
+    if(l1.val < l2.val) {
+        l1.next = mergeTwoLists(l1.next, l2)
+        return l1
+    } else {
+        l2.next = mergeTwoLists(l1, l2.next)
+        return l2
+    }
+}
+
+// 22) 括号组合--回溯法
+function generateParenthesis (n) {
+    let arr = []
+    function creat(l, r, s) {
+        if(!l && !r) {
+            arr.push(s)
+            return
+        }
+
+        if(l === r) {
+            creat(l - 1, r, s + '(')
+        } else if (!l) {
+            creat(l, r - 1, s + ')')
+        } else {
+            creat(l - 1, r, s + '(')
+            creat(l, r - 1, s + ')')
+        }
+    }
+    creat(n, n, '')
+    return arr
+}
+
+// 23) 合并链表
+function mergeKLists (list) {
+    let l = list[0] || null
+
+    for(let i = 1; i < list.length; i++) {
+        l = mergeTwoLists(l, list[i])
+    }
+
+    return l
+
+    function mergeTwoLists(list1, list2) {
+        let list = new listNode(0)
+        let r = list2, h = list
+        h.next = list1
+        while(h.next && r) {
+            if(h.next.val > r.val) {
+                let temp = r.next
+                r.next = h.next
+                h.next = r
+                r = temp
+            }
+            h = h.next
+        }
+        if(r) {
+            h.next = r
+        }
+    }
+}
+
+
+// 24)链表元素互换
+function swapPairs(head) {
+    let list = new listNode(0)
+    list.next = head
+    let p = list, f = list.next
+    
+    while(f && f.next) {
+        let s = f.next
+        let n = s.next
+
+        f.next = n
+        s.next = f
+        p.next = s
+
+        p = f
+        f = f.next
+
+    }
+    return list.next
+}
+
+// 25) 链表反转
+function reverseKGroup (list, k) {
+    let link = new listNode(0)
+    link.next = list
+    let p = link, t = link
+
+    while(1) {
+        let count = 0
+        while(t.next && count !== k) {
+            t = t.next
+            k++
+        }
+        if(count !== k) break
+
+        let h = p.next
+
+        while(p.next !== t) {
+            let c = p.next
+            p.next = c.next
+            c.next = t.next
+            t.next = c
+        }
+
+        p = h
+        t = h
+    }
+}
+
+// 26) 去重
+function removeDuplicates (arr) {
+    let ogj = {}, i = 0
+    while(i < arr.length) {
+        if(obj[arr[i]]) {
+            arr.splice(i, 1)
+            i--
+        } else {
+            obj[arr[i]] = 1
+        }
+        i++
+    }
+    return arr.length
+}
+
+function removeDuplicates (arr) {
+    let k = 0
+    if(arr.length < 2) return arr.length
+
+    for(let i = 1; i < arr.length; i++) {
+        if(arr[i] !== arr[k]) {
+            arr[k] = arr[i]
+            k++
+        }
+    }
+    return k + 1
+}
+
+// 27) 去除目标数
+function removeElement (nums, val) {
+    while(~nums.indexOf(val)) {
+        let i = nums.indexOf(val)
+        nums.splice(i, 1)
+    }
+    return nums.length
+}
+
+// 33) 二分查找--[4,5,6,7,0,2,3]
+// class Solution {
+//     public int search(int[] nums, int target) {
+//         int len = nums.length;
+//         int left = 0, right = len-1;
+//         while(left <= right){
+//             int mid = (left + right) / 2;
+//             if(nums[mid] == target)
+//                 return mid;
+//             else if(nums[mid] < nums[right]){
+//                 if(nums[mid] < target && target <= nums[right])
+//                     left = mid+1;
+//                 else
+//                     right = mid-1;
+//             }
+//             else{
+//                 if(nums[left] <= target && target < nums[mid])
+//                     right = mid-1;
+//                 else
+//                     left = mid+1;
+//             }
+//         }
+//         return -1;
+//     }
+// }
+function halfSearch (arr, t) {
+    let l = 0, r = arr.length - 1
+    while(l <= r) {
+        let m = (l + r) / 2 | 0
+        if(t == arr[m]) {
+            return m
+        } else if (arr[m] < arr[r]) {
+            if(arr[m] < t && t <= arr[r]) {
+                l = m + 1
+            } else {
+                r = m - 1
+            }
+        } else {
+            if(arr[m] > t && arr[l] <= t) {
+                r = m -1
+            } else {
+                l = m + 1
+            }
+        }
+    }
+    return -1
+}
+
+// 35) 返回最接近的索引
+function searchInsert (arr, t) {
+    let i = 0, len = arr.length
+    while(i < len) {
+        if(t <= arr[i]) {
+            return i
+        }
+        if(t > arr[len - 1]) {
+            return len - 1
+        }
+        i++
+    }
+}
+
+// 36) 数独填写合法
+function isValidSudoku (arr) {
+    let s = new Set()
+    for(let x = 0; x < 9; x++) {
+        for(let y = 0; y < 9; y++) {
+            let n = arr[x][y]
+            if(n != '.') {
+                if(
+                    set.has(`row ${x} ${n}`) ||
+                    set.has(`row ${y} ${n}`) ||
+                    set.has(`row ${x / 3 | 0} ${y / 3 | 0} ${n}`)
+                ) {
+                    return false
+                } else {
+                    set.add(`row ${x} ${n}`)
+                    set.add(`row ${y} ${n}`)
+                    set.add(`row ${x / 3 | 0} ${y / 3 | 0} ${n}`)
+                }
+            }
+        }
+    }
+}
+
+// 38) 报数序列
+var countAndSay = function (n) { // 5
+  if (cacheObj[n]) {
+    return cacheObj[n]
+  } else {
+    const findValue = countAndSay(n - 1) // 1211
+    let str = ''
+    let tmp = 0 // 截断不同数字的下标
+    for (let i = 0; i < findValue.length; i++) {
+      if (findValue[i] !== findValue[i + 1]) {
+        str += i - tmp + 1
+        str += findValue[i]
+        tmp = i + 1
+      }
+    }
+    cacheObj[n] = str
+    return str
+  }
+};
+
+// 39) 组合求和
+function combinationSum (nums, t) {
+    let res = []
+    function DFS(sum, arr, start) {
+        if(sum == t) {
+            res.push([...arr])
+            return
+        }
+        if(sum > t) {
+            return
+        }
+
+        for(let i = start; i < nums.length; i++) {
+            sum += nums[i]
+            arr.push(nums[i])
+            DFS(sum, arr, i)
+            sum -= nums[i]
+            arr.pop()
+        }
+    }
+
+    DFS(0, [], 0)
+    return res
+}
+
+// 40) 组合求和--去重
+function combinationSum2 (nums, t) {
+    nums = nums.sort((a, b) => a - b)
+    let res = []
+
+    function dfs (sum, arr, start) {
+        if(sum == t) {
+            res.push([...arr])
+            return
+        }
+        if(sum > t) return
+
+        for(let i = start; i < nums.length; i++) {
+            if(i != start && nums[i] == nums[i -1]) {
+                continue
+            }
+
+            sum += nums[i]
+            arr.push(nums[i])
+            dfs(sum, arr, i + 1)
+            arr.pop()
+            sum -= nums[i]
+        }
+    }
+}
+
+// 46) 数组全排列
+function permute (nums) {
+    let res = []
+    function dfs(arr) {
+        if(arr.length == nums.length) {
+            res.push([...arr])
+            return
+        }
+
+        for(let i = 0; i < nums.length; i++) {
+            if(!arr.includes(nums[i])) {
+                arr.push(nums[i])
+                dfs(arr)
+                arr.pop()
+            }
+        }
+    }
+    dfs([])
+    return res
+}
+
+// 47) 数组全排列--有重复元素
+function permuteUnique (nums) {
+    nums = nums.sort((a, b) => a - b)
+    let res = []
+    let used = new Array(nums.length).fill(false)
+
+    function dfs(arr) {
+        if(arr.length == nums.length) {
+            res.push([...arr])
+            return
+        }
+        for(let i = 0; i < nums.length; i++) {
+            if(!i && nums[i] == nums[i - 1] && !used[i - 1]) {
+                continue
+            }
+            if(!used[i]) {
+                arr.push(nums[i])
+                used[i] = true
+                dfs(arr)
+                arr.pop()
+                used[i] = false
+            }
+        }
+    }
+    dfs([])
+    return res
+}
+
+// 48) 二位数组旋转
+function rotateMatrix (matrix) {
+    matrix.reverse()
+    for(let x = 0; x < matrix.length; x++) {
+        for(let y = 0; y < x; y++) {
+            let temp = matrix[x][y]
+            matrix[x][y] = matrix[y][x]
+            matrix[y][x] = temp
+        }
+    }
+}
+
+// 49) 字符串分组--["eat", "tea", "tan", "ate", "nat", "bat"]
+function groupAnagrams (arr) {
+    let obj = {}
+    for(el of arr) {
+        let key = el.sort()
+        if(key in obj) {
+            obj[key].push(el)
+        } else {
+            obj[key] = [el]
+        }
+    }
+
+    return obj.values()
+}
+
+// 50) pow函数
+/*
+使用折半计算，每次把n缩小一半，这样n最终会缩小到0，任何数的0次方都为1，
+这时候我们再往回乘，如果此时n是偶数，直接把上次递归得到的值算个平方返回即可，
+如果是奇数，则还需要乘上个x的值。还有一点需要引起我们的注意的是n有可能为负数，
+对于n是负数的情况，我们可以先用其绝对值计算出一个结果再取其倒数即可。
+我们让i初始化为n，然后看i是否是2的倍数，是的话x乘以自己，
+否则res乘以x，i每次循环缩小一半，直到为0停止循环。最后看n的正负，如果为负，返回其倒数。
+*/
+function pow(x, n) {
+    let res = 1
+    for(let i = n; i != 0; i = i / 2 | 0) {
+        if(i % 2 != 0) {
+            res *= x
+        }
+        x *= x
+    }
+    return n < 0 ? 1 / res : res
+}
+
+// 61) 链表反转
+function rotateRight (list, k) {
+    let link = new listNode(0)
+    link.next = list
+    let count = 0, last = link
+
+    while(last.next) {
+        last = last.next
+        count++
+    }
+
+    if(!k || k == count) return link.next
+
+    let n = k % count + 1, l = link, r = link
+
+    while(n--) {
+        r = r.next
+    }
+
+    while(r.next) {
+        l = l.next
+        r = r.next
+    }
+
+    last.next = link.next
+    link.next = l.next
+    l.next = null
+
+    return link.next
+}
+
+// 71) 简化路径
+function simplifyPath(path) {
+    const arr = path.split('/'), res = []
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] === '..') {
+            res.pop()
+        } else if(arr[i] === '' || arr[i] === '.') {
+            continue
+        } else {
+            res.push(arr[i])
+        }
+    }
+
+    return `/${res.join('/')}`
+}
+
+// 78) 数组子集--不重复--回溯法  [1,2,3]
+function subsets(nums) {
+    let res = []
+
+    function backTrack(arr, start) {
+        res.push([...arr])
+
+        for(let i = start; i < nums.length; i++) {
+            arr.push(nums[i])
+            backTrack(arr, i + 1)
+            arr.pop()
+        }
+    }
+
+    backTrack([], 0)
+    return res
+}
+
+// 80) 数组去重，允许重复一次
+function removeDuplicates (arr) {
+    if(arr.length <= 2) return arr.length
+    let c = 1
+    for(let i = 2; i < arr.length; i++) {
+        if(arr[c - 1] != arr[i]) {
+            arr[c + 1] = arr[i]
+            c++
+        }
+    }
+    return c + 1
+}
+
+// 82) 去除重复的所有元素
+function deleteDuplicatesAll (list) {
+    let h = new listNode(0)
+    h.next = list
+    
+    let l = h
+    
+    while(l.next) {
+        let c = l.next
+        let r = c
+        while(r.next && r.next.val == c.val) {
+            r = r.next
+        }
+
+        if(c == r) {
+            l = l.next
+        } else {
+            l.next = r.next
+        }
+    }
+}
+
+// 83) 链表去重
+function deleteDuplicates (list) {
+    let link  = new listNode(0)
+    link.next = list
+
+    let l = link.next
+
+    while(l) {
+        let r = l
+        while(r.next && r.next.val === l.val) {
+            r = r.next
+        }
+
+        l.next = r.next
+        l = l.next
+    }
+
+    return link.next
+}
+
+// 86) 链表排序
+function partition(list, x) {
+    let cur = list
+    let s = new listNode(0), b = new listNode(0)
+    let sp = s, bp = b
+
+    while(cur) {
+        if(cur.val < x) {
+            sp.next = cur
+            sp = sp.next
+        } else {
+            bp.next = cur
+            bp = bp.next
+        }
+
+        cur = cur.next
+    }
+
+    sp.next = b.next
+    bp.next = null
+
+    return s.next
+}
+
+// 88) 合并数组
+var merge = function (nums1, m, nums2, n) {
+  const length = nums1.length
+  for (let i = 0; i < length - m; i++) {
+    nums1.pop()
+  }
+  for (let i = 0; i < n; i++) {
+    nums1.push(nums2[i])
+    nums1.sort((a, b) => a - b)
+  }
+}
+
+function mergeIn (arr1, m, arr2, n) {
+    if(arr1.length > m) {
+        let len = arr1.length - m
+        for (let i = 0; i < len; i++) {
+            arr1.pop()
+        }
+    }
+
+    let l = 0, r = 0
+    while(r < n) {
+        
+        while(arr2[r] > arr1[l] && l < m) {
+            l++
+        }
+        arr1.splice(l, 0, arr2[r])
+        r++
+        m++
+    }
+
+    return arr1
+}
+
+// 92) 链表区间元素反转
+var reverseBetween = function(head, m, n) {
+  const originList = new ListNode(0)
+  originList.next = head
+
+  let listNode = originList
+
+  for (let i = 0; i < m - 1; i++) {
+    listNode = listNode.next
+  }
+
+  let prev = null
+  let cur = listNode.next
+
+  for (let i = 0; i < n - m + 1; i++) {
+    let next = cur.next
+    cur.next = prev
+    prev = cur
+    cur = next
+  }
+
+  // 将 m 的 next 指向 n 指针的 next, 同时将排在 m 前面一位的指针的 next 指向 n
+  listNode.next.next = cur
+  listNode.next = prev
+  return originList.next
+}
+
+//                    p  c  n
+// // Input: 1->2->3->4->5->NULL, m = 2, n = 4
+//            null  2  3
+// // Output: 1->4->3->2->5->NULL
+//  p  h  c  c
+//  1--2--3--4--5
+//     4  2  
+//     3
+//  1-3-2-4-5
+//  1-4-3-2-5
+// class Solution {
+//     public ListNode reverseBetween(ListNode head, int m, int n) {
+//         ListNode dummy = new ListNode(0);
+//         dummy.next = head;
+//         ListNode pre = dummy;
+//         for(int i = 1; i < m; i++){
+//             pre = pre.next;
+//         }
+//         head = pre.next;
+//         for(int i = m; i < n; i++){
+//             ListNode c = head.next;  3 4
+//             head.next = c.next;  4 2
+//             c.next = pre.next;  2 3
+//             pre.next = c;  3 4
+//         }
+//         return dummy.next;
+//     }
+// }
+function reverseBetween (head, m, n) {
+    let dummy = new listNode(0)
+    dummy.next = head
+    let list = dummy
+
+    for(let i = 0; i < m - 1; i++) {
+        list = list.next
+    }
+
+    let pre = null, cur = list.next
+
+    for(let i = 0; i < n - m + 1; i++) {
+        let next = cur.next
+        cur.next = pre
+        pre = cur
+        cur = next
+    }
+
+    list.next.next = cur
+    list.next = pre
+
+    return dummy.next
+}
+
+// 94 二叉树中序遍历
+var inorderTraversal = function(root) {
+  if (root) {
+    return [...inorderTraversal(root.left), root.val, ...inorderTraversal(root.right)]
+  } else {
+    return []
+  }
+}
+
+function inorderTraversal(root) {
+    let res = [], temp = []
+    temp.push({
+        mark: 0,
+        node: root
+    })
+
+    while(temp.length) {
+        let p = temp.pop()
+        let {mark, node} = p
+        if(mark) {
+            res.push(node.val)
+        } else {
+            node.right && temp.push({
+                mark: 0,
+                node: node.right
+            })
+            temp.push({
+                mark: 1,
+                node: node
+            })
+            node.left && temp.push({
+                mark: 0,
+                node: node.left
+            })
+        }
+
+    }
+    return res
+}
+
+// 100 检查二叉树是否一样
+function isSameTree (p, q) {
+    if(p === null && q === null) {
+        return true
+    } else if(p === null || q === null) {
+        return false
+    }
+
+    if(p.val === q.val) {
+        return isSameTree(p.left, q.left) && isSameTree(p.right, q.left)
+    } else {
+        return false
+    }
+}
+
+// 101 检查二叉树是否为镜像-迭代
+function isSymmetric(root) {
+    if(!root) return true
+    if(!root.left && !root.right) return true
+    // if(root.left && root.right && root.left.val !== root.right.val) return false
+
+    let temp = []
+    temp.push(root.right)
+    temp.push(root.left)
+
+    while(temp.length) {
+        let l = temp.pop(), r = temp.pop()
+        if(!l && !r) continue
+        if(!l || !r || l.val !== r.val) return false
+        temp.push(r.right, l.left, r.left, l.right)
+    }
+    return true
+}
+
+// 102 二叉树广度遍历-队列
+function levelOrder (root) {
+    let res = [], temp = []
+    if(!root) return res
+    temp.push({
+        node: root,
+        level: 0
+    })
+    while(temp.length) {
+        let p = temp.shift()
+        let {node, level} = p
+        if(!res[level]) {
+            res[level] = []
+        }
+        res[level].push(node.val)
+        node.left && temp.push({
+            node: node.left,
+            level: level + 1
+        })
+        node.right && temp.push({
+            node: node.right,
+            level: level + 1
+        })
+    }
+    return res
+}
+
+// 103 二叉树广度遍历-层数是奇数正序，否则反序
+var zigzagLevelOrder = function(root) {
+  const printArr = []
+  if (!root) return printArr
+  const list = []
+  list.push({ level: 0, node: root })
+  while(list.length > 0) {
+    const { level, node } = list.shift()
+    if (!printArr[level]) {
+      printArr[level] = []
+    }
+
+    if (level % 2 === 0) {
+      printArr[level].push(node.val)
+    } else {
+      printArr[level].unshift(node.val)
+    }
+
+    node.left && list.push({ level: level + 1, node: node.left })
+    node.right && list.push({ level: level + 1, node: node.right })
+  }
+
+  return printArr
+}
+
+// 104 二叉树深度计算-栈
+function maxDepth (root) {
+    return root ? Math.max(maxDepth(root.left), maxDepth(root.right)) + 1 : 0 
+}
+
+// 107 二叉树广度遍历，从底部到顶部
+function levelOrderBottom(root) {
+    let res = [], temp = []
+    if(!root) return []
+    temp.push({
+        node: root,
+        level: 0
+    })
+    while(temp.length) {
+        let {node, level} = temp.shift()
+        if(!res[level]) {
+            res.unshift([])
+        }
+        res[0].push(node.val)
+        node.left && temp.push({node: node.left, level: level + 1})
+        node.right && temp.push({node: node.right, level: level + 1})
+    }
+    return res
+}
+
+// 平衡二叉树，层数差少于等于1
+// 自顶向下
+function isBalanced (root) {
+    if(!root) return true
+    return isBalanced(root.left) && isBalanced(root.right) && Math.abs(deep(root.left) - deep(root.right)) <= 1
+}
+function deep(note) {
+    return note ? Math.max(deep(note.left), deep(note.right)) + 1 : 0
+}
+
+// 自底向上
+function isBalanced(root) {
+    return deep(root) == -1 ? false : true
+}
+function deep(note) {
+    if(!note) return 0
+    let l = deep(note.left)
+    if(l == -1) return -1
+    let r = deep(note.right)
+    if(r == -1) return -1
+    return Math.abs(l - r) <= 1 ? Math.max(l, r) + 1 : -1
+}
+
+// 111 二叉树最小深度
+function minDepth(root) {
+    if(!root) return 0
+    let l = minDepth(root.left), r = minDepth(root.right)
+    if(!l || !r) {
+        return Math.max(l, r) + 1
+    }
+    return Math.min(l, r) + 1
+}
+
+// 112 二叉树路径之和(从根节点到叶节点)
+function hasPathSum(root, sum) {
+    if(!root) return false
+    if(!root.left && !root.right) return sum === root.val // 叶节点
+    sum -= note.val
+    return ifHasPathSum(note.left, sum) || ifHasPathSum(note.right, sum)
+}
+
+
+
+</script>
+</html>

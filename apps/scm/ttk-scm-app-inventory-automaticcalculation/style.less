@@ -1,0 +1,129 @@
+.ttk-scm-app-inventory-automaticcalculation {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	height: 380px;
+	&-confirm {
+		.anticon-question-circle{
+			display: none;
+		}
+		.ant-confirm-content {
+			margin-left: 0;
+		}
+		.ant-btn:first-child {
+			display: none;
+		}
+	}
+	&-modal {
+		.ant-modal-footer .ant-btn:first-child {
+			display: none;
+		}
+		.ant-modal-body p {
+			font-size: 12px;
+		}
+	}
+	.title {
+		font-size: 14px;
+		color: #515151;
+		font-weight: bold;
+		line-height: 31px;
+		text-align: center;
+		margin-top: 8px;
+	}
+	&-header {
+		display: flex;
+		flex-direction: row;
+		//flex: 0 0 50px;
+		padding: 9px 10px;
+		height: 50px;
+		.ant-calendar-picker {
+			width: 80px;
+			input {
+				font-size: 12px;
+			}
+		}
+		.ant-calendar-picker {
+            :hover{
+                .ant-calendar-picker-input:not(.ant-input-disabled)~.ant-calendar-picker-icon:after{
+                    color: @primary-color;
+                }
+            }
+        }
+		.ant-input-search {
+			width: 180px;
+			margin-left: 8px;
+			input {
+				font-size: 12px;
+			}
+		}
+	}
+
+	&-content {
+		flex: 1;
+		position: relative;
+		.mk-datagrid .public_fixedDataTable_main {
+			border-left: none;
+		}
+		.mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+			color: #333333;
+		}
+		.public_fixedDataTable_scrollbarSpacer {
+			top: 0px;
+		}
+		//滚动条上部
+		.public_fixedDataTable_scrollbarSpacer {
+			top: 0px;
+			background: #eaeaea;
+		}
+		.del {
+			cursor: pointer;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		input {
+			height: 26px;
+			margin-top: 5px;
+			text-align: right;
+			font-size: 12px;
+		}
+		input.error {
+			border-color: red;
+		}
+		.noData {
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			line-height: 50px;
+			background: #fff;
+			position: absolute;
+			bottom: 5px;
+			font-size: 12px;
+			z-index: 1;
+		}
+		.mk-datagrid-cellContent-left.currentScrollRow, 
+		.mk-datagrid-cellContent-right.currentScrollRow,
+		.mk-datagrid-cellContent-center.currentScrollRow{
+			background: @button-hover-color;
+			color: #fff !important;
+			a{
+				color: #fff !important;
+			}
+		}
+	}
+
+	.mk-nodata-img{
+		width: 150px;
+		height: 150px;
+		top: 25%;
+	}
+	.mk-nodata-message{
+		display: none;
+	}
+}
+
+.inventory-automaticcalculation {
+	.ant-modal-body {
+		height: 380px;
+	}
+}

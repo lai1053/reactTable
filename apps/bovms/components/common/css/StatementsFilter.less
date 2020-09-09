@@ -1,0 +1,79 @@
+.ttk-bovms-app-common-statements-filter {
+    display: inline-block;
+    width: 240px;
+
+    // input样式
+    .ant-input-group-addon {
+        border-left: 1px solid #d9d9d9;
+        cursor: pointer;
+
+        &:hover {
+            border-color: #0066b3;
+            color: #0066b3;
+        }
+    }
+
+    &-input {
+        .ant-input {
+            padding-left: 30px !important;
+        }
+    }
+
+    .filter-icon {
+        font-size: 16px;
+    }
+
+    // popover样式
+    .ant-popover-arrow {
+        display: none;
+    }
+
+    .ant-popover-inner-content {
+        min-width: 320px;
+        padding: 0;
+    }
+
+    .popover-content-main {
+        padding: 15px;
+
+        .filter-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        div {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-date {
+            width: 100px;
+        }
+
+        &-select {
+            min-width: 100px;
+        }
+
+        &-select-wrapper {
+            height: 30px;
+        }
+
+        &-checkbox {
+            margin-right: 8px;
+        }
+    }
+
+    .popover-content-btn {
+        padding: 10px;
+        border-top: 1px solid #d9d9d9;
+        text-align: right;
+
+        &-confirm {
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,111 @@
+.ttk-edf-app-org-activate {
+	width: 100%;
+	height: 100%;
+	flex-direction: row;
+	padding: 50px 100px 0px !important;
+	background-color: #fff;
+	&-leftContent {
+		display: inline-block;
+		width: 60%;
+		&-title{
+			font-size: 24px;
+			margin-bottom: 13px;
+		}
+		&-text{
+			font-size: 14px;
+			margin-bottom: 13px;
+		}
+		&-button{
+			width: 300px;
+			margin-left: 85px;
+			margin-bottom: 40px;
+			margin-top: 4px;
+		}
+		&-notationList{
+			font-size: 14px;
+			margin-bottom: 8px;
+		}
+		//.ant-form-item .ant-form-item-label{
+		//	min-height: 45px !important;
+		//}
+		//.ant-form-item .ant-form-item-control{
+		//	min-height: 45px !important;
+		//}
+		.ant-btn-primary.disabled,
+		.ant-btn-primary[disabled],
+		.ant-btn-primary.disabled:hover,
+		.ant-btn-primary[disabled]:hover,
+		.ant-btn-primary.disabled:focus,
+		.ant-btn-primary[disabled]:focus,
+		.ant-btn-primary.disabled:active,
+		.ant-btn-primary[disabled]:active,
+		.ant-btn-primary.disabled.active,
+		.ant-btn-primary[disabled].active {
+			color: rgba(0, 0, 0, 0.25) !important;
+			background-color: #f5f5f5 !important;
+			border-color: #d9d9d9 !important;
+		}
+	}
+	&-rightContent{
+		display: inline-block;
+		width: 40%;
+		&-container{
+			width: 300px;
+			float: right;
+		}
+		&-back{
+			float: right;
+			width: 70px;
+			margin-bottom: 20px;
+		}
+		&-connection{
+			background-color: #F1F3F4;
+			float: right;
+			width: 300px;
+			height: 180px;
+			&-icon{
+				display: inline-block;
+				height: 100%;
+				width: 100px;
+				margin-top: 40px;
+				float: left;
+			}
+			&-telNum{
+				display: inline-block;
+				height: 100%;
+				width: 200px;
+				float: right;
+				text-align: center;
+				&-telText{
+					margin-top: 55px;
+					font-size: 14px;
+				}
+				&-num{
+					font-size: 22px;
+					color: #1EC6F3;
+				}
+			}
+		}
+	}
+	.ant-form-item {
+		display: flex;
+		.ant-form-item-control-wrapper {
+			width: 300px;
+		}
+		//警告字体12px，行间距22px
+		margin-bottom: 0px;
+		.ant-form-item-control {
+			min-height: 45px;
+		}
+		.ant-form-item-label {
+			width: 85px;
+			min-height: 45px;
+		}
+	}
+	.ant-form-explain {
+		position: absolute;
+		top: 36px;
+		line-height: 18px;
+		font-size: 12px;
+	}
+}

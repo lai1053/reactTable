@@ -1,0 +1,150 @@
+.ttk-scm-app-collate-invoice-form-inventoty-select-dropdown{
+    font-size: 12px;
+    width: 161px !important;
+    .ant-select-dropdown-menu{
+        max-height: 210px;
+    }
+}
+.ttk-scm-app-collate-invoice-form-inventoty{
+    .ttk-scm-app-collate-invoice-form-inventoty-container{
+        overflow: hidden;
+    }
+.td_div_block{
+    display: block !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+        ::-webkit-scrollbar/*滚动条整体部分*/
+        {
+            border-top:  1px solid #d9d9d9;
+            border-left: 1px solid #d9d9d9;
+        }
+        .mk-select {
+            width: 150px;
+            height: 26px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            .ant-select-selection--single{
+                height: 26px;
+                line-height: 26px;
+                .ant-select-selection__rendered{
+                    height: 26px;
+                    line-height: 26px;
+                    .ant-select-selection-selected-value{
+                        height: 26px;
+                        line-height: 26px; 
+                    }
+                }
+            }
+        }
+        .ant-select-selection__clear {
+            margin-right: 12px;
+        }
+
+
+        .ant-input-affix-wrapper {
+            input {
+                font-size: 12px !important;
+            }
+        }
+
+        // overflow-x: hidden;
+        &-header{
+            padding: 10px 0;
+            .ant-input-search{
+                width: 160px;
+                height: 30px;
+                margin-right: 8px;
+                float: left;
+                input{
+                    height: 30px;
+                }
+               
+            }
+            .header-radio{
+                margin-right: 8px;
+                float: right;
+                line-height: 30px;
+                .mk-radio{
+                    font-size: 12px;
+                }
+            }
+            .ant-dropdown-trigger {
+                float: right;
+            }
+            .header-btn{
+                float: right;
+            }
+            .header-btn-color {
+                color: @primary-color;
+                border-color: @primary-color;
+                &:hover{
+                    background-color: @button-hover-color;
+                    border-color: @primary-color;
+                    color: #fff;
+                }
+            }
+        }
+        // &-table-container {
+        //     border: 1px solid #d9d9d9;
+        //     border-bottom: none;
+        //     border-top: none;
+        // }
+        &-table{
+            height: 250px;
+            border-right: 1px solid #d9d9d9;
+            
+            .ant-table-body{
+                overflow-x: hidden !important;
+            }
+            .ant-table-thead{
+                tr{
+                    th:last-child{
+                        border-right: none;
+                    }
+                }
+            }
+            .ant-table-tbody{
+                tr{
+                    td:last-child{
+                      border-right: none;
+                    }
+                    td{
+                        .ant-select-selection-selected-value{
+                            font-size: 12px;
+                        }
+                        
+                    }
+                }
+
+            }
+            .ant-table-placeholder{
+                border: none !important;
+            }
+        }
+
+        .edficon-shezhi:hover{
+            color: #45acf7;
+            border: 1px solid #45acf7;
+        }
+        .edficon-shezhi{
+           // margin-left: 8px;
+            width: 30px;
+            height: 30px;
+            font-size: 28px;
+            border-radius: 5px;
+            color: #45acf7;
+            border: 1px solid #d9d9d9;
+            cursor: pointer;
+           // float: left;
+        }
+        .has-error{
+            border-color: red;
+        }
+}
+.batch-inventory-content{
+    .ant-form-item-label label:after{
+        content: ''
+    }
+}

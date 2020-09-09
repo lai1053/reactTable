@@ -1,0 +1,39 @@
+.ttk-edf-app-beginner-guidance{
+    border:1px solid #e8e8e8;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 10px;
+    left: 0;
+    padding:0!important;
+    background:#ffffff;
+    overflow-y:auto;
+
+    &-container{
+        width: 985px;
+        margin:33px auto 12px;
+        position: relative;
+        bottom:10px;
+        img{
+            width:965px;
+            margin:0 10px;
+        }
+        &>div{
+            font-size: 12px;
+            letter-spacing: 0;
+            position: absolute;
+            color:@primary-color;
+            cursor: pointer;
+        }
+        &>div:hover{
+            text-decoration: underline;
+        }
+        &>div.hasNoLink{
+            color:#666666;
+            cursor: default;
+        }
+        &>div.hasNoLink:hover{
+            text-decoration: none;
+        }
+    }
+}

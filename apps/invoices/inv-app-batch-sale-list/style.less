@@ -1,0 +1,284 @@
+.inv-app-batch-sale-list{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  .ant-spin-nested-loading{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    .ant-spin-container{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex:1;
+
+    }
+    .ant-spin{
+      max-height: 100%;
+    }
+  }
+
+  .inv-app-batch-sale-header{
+    padding: 10px 8px;
+    .header-left{
+      float: left;
+      .header-item{
+        margin-right: 8px;
+      }
+      .label-item{
+        font-size: 12px;
+        .ant-calendar-picker{
+          width: 116px;
+          .ant-input{
+            font-size: 12px;
+          }
+        }
+      }
+      .ant-select {
+        width: 160px;
+      }
+      .inv-app-batch-sale-header-filter-input{
+        width: 178px;
+        vertical-align: middle;
+        .ant-input{
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
+          border-right: none;
+          padding-left: 30px !important;
+          font-size: 12px;
+        }
+
+      }
+      .inv-batch-custom-filter-btn{
+        font-size: 18px;
+        display: inline-block;
+        border: 1px solid #d9d9d9;
+        line-height: 30px;
+        height: 32px;
+        width: 32px;
+        text-align: center;
+        vertical-align: middle;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+      }
+      .tax-month{
+        .ant-calendar-picker{
+          width: 116px;
+          .ant-input{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .header-right{
+      float: right;
+      .header-btn:not(:last-child){
+        margin-right: 8px;
+      }
+    }
+
+  }
+
+  .inv-app-batch-sale-table{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #d9d9d9;
+    .ant-table-header{
+      //border-left: 1px solid #d9d9d9;
+    }
+    .ant-table-body{
+      overflow: auto !important;
+    }
+    .inv-type {
+      position: relative;
+
+      .inv-warn-icon-end {
+        .warning-icon {
+          font-size: 12px;
+          position: absolute;
+          right: 5px;
+          top: 13px;
+        }
+      }
+    }
+    .ant-spin-container{
+      height: 100%;
+      .ant-table-empty{
+        height: 100%;
+      }
+    }
+    .ant-table-thead{
+      tr:first-child{
+        th:last-child{
+          border-right: none;
+        }
+      }
+    }
+    .ant-table-tbody{
+      tr{
+        td:last-child{
+          border-right: none;
+        }
+        td.table_td_align_right{
+          text-align: right!important;
+        }
+      }
+    }
+    .operation {
+      position: relative;
+
+      .setting-box {
+        text-align: right;
+        padding: 0 10px;
+        position: absolute;
+        background: #fff;
+        right: 0;
+        top: 50%;
+        margin-top: -13px;
+        border-radius: 13px 0 0 13px;
+        cursor: pointer;
+        transition: width 1s;
+        -moz-transition: width 1s;
+        /* Firefox 4 */
+        -webkit-transition: width 1s;
+        /* Safari 和 Chrome */
+        -o-transition: width 1s;
+        /* Opera */
+      }
+
+      .setting {
+        width: 34px;
+        height: 26px;
+        line-height: 26px;
+        box-shadow: 0 2px 4px 0 rgba(171, 178, 184, 0.45);
+      }
+
+      .setting-active {
+        color: @primary-color;
+        width: 74px;
+        height: 26px;
+        line-height: 24px;
+        border-radius: 13px 0 0 13px;
+        border: solid 1px @primary-color;
+      }
+    }
+  }
+
+  .inv-batch-sale-list-footer{
+    border: 1px solid #d9d9d9;
+    border-top: none;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    height: 50px;
+    background: #f9f9fb;
+    .mk-pagination {
+      margin: 0;
+    }
+    .ant-pagination, .mk-pagination-goto-btn {
+      vertical-align: bottom
+    }
+
+    .footer-amount {
+      float: left;
+      line-height: 30px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      //width: calc(~"100% - 700px");
+      .count-item {
+        margin-right: 16px;
+
+        .bold-text {
+          font-weight: bold;
+        }
+        .inv-number{
+          margin: 0 4px;
+        }
+        .unit-text {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+.inv-batch-sale-list-popover-sss{
+  .ant-popover-arrow{
+    display: none;
+  }
+  .ant-popover-inner-content{
+    width: 564px;
+    padding: 12px 0;
+    .ant-input{
+      font-size: 12px;
+    }
+    .filter-content{
+      padding:0 10px;
+      .inv-batch-custom-popover-item{
+        display: inline-block;
+        margin-bottom: 12px;
+        &:nth-child(even) {
+          margin-left: 14px;
+        }
+      }
+      .inv-batch-custom-popover-label{
+        width: 72px;
+        text-align: right;
+        display: inline-block;
+        font-size: 12px;
+      }
+      .inv-batch-custom-popover-option {
+        width: 190px;
+      }
+
+      .popover-body-content-item-date {
+        width: 190px;
+      }
+      .ant-calendar-picker-clear{
+        display: block !important;
+        right: 8px;
+      }
+    }
+    .filter-footer{
+      text-align: center;
+      padding-top: 10px;
+      border-top: 1px solid #e8e8e8;
+      .reset-btn{
+        margin-left: 10px;
+      }
+    }
+  }
+}
+.more-drop-down-sale-invoice{
+  .sale-invoice-sub-menu{
+    .ant-dropdown-menu-submenu-title{
+      font-size: 12px;
+      padding-left: 20px;
+      .ant-dropdown-menu-submenu-arrow{
+        right: 100%;
+        left: 14px!important;
+        transform:rotate(180deg);
+        -ms-transform:rotate(180deg); 	/* IE 9 */
+        -moz-transform:rotate(180deg); 	/* Firefox */
+        -webkit-transform:rotate(180deg); /* Safari 和 Chrome */
+        -o-transform:rotate(180deg); 	/* Opera */
+      }
+    }
+  }
+
+}
+.inv-app-batch-purchase-list-import-modal{
+  .ant-modal-content{
+    height: 400px !important;
+    width: 580px !important;
+  }
+
+}
+.inv-app-batch-import-shili{
+  width: 1234px;
+  height: 123px;
+background: url("../inv-app-batch-purchase-list/img/shili.png");
+}
+

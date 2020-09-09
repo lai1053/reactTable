@@ -1,0 +1,1555 @@
+.minx-table-tr-td-disabled {
+    // background: rgba(255, 255, 255, 0.5);
+    color: rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+    pointer-events: none;
+
+    a,
+    i {
+        color: rgba(0, 0, 0, 0.25);
+    }
+}
+
+.bovms-app-footer-tool {
+    max-width: 100%;
+
+    .ant-tooltip-inner {
+        padding: 12px;
+        font-size: 12px;
+        background-color: #fff;
+        color: #333;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &.ant-tooltip-placement-topLeft {
+        .ant-tooltip-arrow {
+            border-top-color: #fff;
+        }
+    }
+
+    &.ant-tooltip-placement-bottomLeft {
+        .ant-tooltip-arrow {
+            border-bottom-color: #fff;
+        }
+    }
+}
+
+.bovms-app-table-container {
+    // height: 100%;
+    // display: flex;
+    flex: 1;
+    // flex-direction: column;
+    height: ~"calc(100% - 102px)";
+}
+
+.bovms-app-sale-list,
+.bovms-app-purchase-list {
+    height: 100%;
+    font-size: 12px;
+    background-color: #fff;
+
+    .ant-spin-nested-loading {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .ant-spin-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .ant-spin {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+
+    .ttk-filter-form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 8px;
+
+        .ant-form-inline .ant-form-item {
+            margin-right: 8px;
+        }
+
+        .ant-form-item-control,
+        .ant-form-item-label {
+            line-height: 30px;
+        }
+
+        .ttk-filter-form-left {
+            overflow: hidden;
+        }
+
+        .ttk-filter-form-right {
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            &>button {
+                margin-left: 4px;
+                margin-right: 4px;
+            }
+
+            .ant-btn-group {
+                margin: 0 4px;
+
+                button {
+                    &:first-child {
+                        margin-right: 2px;
+                    }
+                }
+            }
+        }
+
+        .-help-icon {
+            font-size: 16px;
+            color: #0066b3;
+            border: 1px solid;
+            border-radius: 50%;
+        }
+
+        .-search {
+            font-size: 12px;
+
+            .ant-input {
+                padding-left: 30px !important;
+            }
+        }
+
+        .filter-icon {
+            margin-left: -1px;
+
+            &.active {
+                border-color: #0066b3;
+            }
+        }
+    }
+
+    .ant-form label {
+        font-size: 12px;
+    }
+
+    &-table {
+        flex: 1;
+        border: 1px solid #d9d9d9;
+        border-bottom: none;
+        border-radius: 2px;
+        box-sizing: border-box;
+
+        .ant-table-scroll table {
+            width: fit-content;
+        }
+
+        .ant-table-scroll {
+            overflow: hidden;
+
+            .ant-table-body {
+                overflow-y: scroll !important;
+
+                .ant-table-row-selected td {
+                    background: #e8f1f8;
+                }
+
+                .ant-table-row-hover {
+                    &.ant-table-row-selected {
+                        td {
+                            background: #e4eaf0 !important;
+                        }
+                    }
+
+                    &.bovms-row-disabled {
+                        td {
+                            .minx-table-tr-td-disabled;
+                        }
+                    }
+                }
+
+                .bovms-row-disabled {
+                    td {
+                        .minx-table-tr-td-disabled;
+                    }
+                }
+            }
+        }
+
+        .ant-table-fixed-right {
+            .ant-table-header {
+                background: rgb(234, 234, 234);
+            }
+
+            table {
+                width: fit-content;
+            }
+        }
+
+        .ant-table-row-selected {
+            .public_fixedDataTableCell_main {
+                background: #e4eaf0 !important;
+            }
+        }
+
+        .bovms-row-disabled {
+            .minx-table-tr-td-disabled;
+        }
+
+        .ant-table-fixed-right,
+        .ant-table-fixed-left {
+            table {
+                .ant-table-row-selected td {
+                    background: #e8f1f8;
+                }
+
+                .ant-table-row-hover {
+                    &.ant-table-row-selected {
+                        td {
+                            background: #e4eaf0 !important;
+                        }
+                    }
+
+                    &.bovms-row-disabled {
+                        td {
+                            .minx-table-tr-td-disabled;
+                        }
+                    }
+                }
+
+                .bovms-row-disabled {
+                    td {
+                        .minx-table-tr-td-disabled;
+                    }
+                }
+            }
+        }
+
+        .bovms-cell-hover-show {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .del-icon {
+                display: none;
+                margin-left: 8px;
+                // color: #ccc;
+                font-size: 14px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #0066b3;
+                }
+            }
+
+            &:hover {
+                .del-icon {
+                    display: inline-block;
+                }
+            }
+        }
+
+        .bovms-app-table-operation {
+            position: relative;
+
+            .table-setting {
+                padding: 0 10px;
+                position: absolute;
+                background: #fff;
+                right: 0px;
+                top: 50%;
+                margin-top: -13px;
+                border-radius: 13px 0 0 13px;
+                cursor: pointer;
+                width: 34px;
+                height: 26px;
+                line-height: 26px;
+                box-shadow: 0 2px 4px 0 rgba(171, 178, 184, 0.45);
+                transition: width 1s;
+                -moz-transition: width 1s;
+                -webkit-transition: width 1s;
+                -o-transition: width 1s;
+            }
+        }
+    }
+
+    &-footer {
+        border: 1px solid #d9d9d9;
+        width: 100%;
+        overflow: hidden;
+        padding: 10px;
+        height: 50px;
+        background: #f9f9fb;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        box-sizing: border-box;
+        // margin-bottom: 1px;
+
+        .footer-total {
+            max-width: ~"calc(100% - 800px)";
+
+            .footer-total-content {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: #999;
+            }
+        }
+
+        .mk-pagination {
+            max-width: 1100px;
+            justify-content: flex-end;
+
+            .ant-pagination,
+            .ant-btn {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .editable-row-operations {
+        span a {
+            margin: 0 4px;
+        }
+    }
+
+    .bovms-editable-table-cell-row {
+        .bovms-cell {
+            line-height: 37px;
+            height: 37px;
+            border-bottom: 1px solid #d9d9d9;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0;
+
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+
+    .cell-span {
+        padding: 0 8px;
+    }
+
+    .mk-datagrid .fixedDataTableLayout_rowsContainer>div div.mk-datagrid-cellContent.no-padding,
+    .mk-table .ant-table-tbody .no-padding,
+    .no-padding .bovms-cell {
+        padding: 0px;
+    }
+
+    .ant-calendar-picker,
+    .ant-input-search,
+    .ant-input {
+        font-size: 12px;
+    }
+
+    .ant-btn,
+    .ant-input,
+    .ant-select-selection {
+        border-radius: 2px;
+        line-height: 30px;
+        height: 30px;
+    }
+
+    .mk-table .ant-table-tbody tr:not(.lazy_table_tr) {
+        .row4 {
+            height: 152px !important;
+        }
+
+        .row3 {
+            height: 38 * 3px !important;
+        }
+
+        .row2 {
+            height: 38 * 2px !important;
+        }
+
+        .row1 {
+            height: 38px !important;
+        }
+    }
+
+    .mk-datagrid .mk-datagrid-cellContent {
+        padding: 0 2px;
+    }
+}
+
+.footer-total-content {
+    span {
+        margin-right: 10px;
+    }
+}
+
+.bovms-app-purchase-list-habit-setting {
+    .habit-setting {
+        .habit-setting-sec {
+            padding-bottom: 24px;
+        }
+
+        .habit-setting-sec-title {
+            margin: 16px 0;
+            font-weight: bold;
+            font-size: 15px;
+            position: relative;
+
+            span {
+                background-color: #fff;
+                position: relative;
+                z-index: 11;
+                padding-right: 8px;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 11px;
+                right: 0;
+                width: 89%;
+                border-top: 1px dashed #ebebeb;
+            }
+        }
+
+        .habit-setting-sec-content {
+            padding: 0 32px;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 14px;
+            padding: 20px 0 0 0;
+            margin-bottom: 0px;
+            position: relative;
+            left: -22px;
+            color: rgba(0, 0, 0, 0.85);
+        }
+
+        .ant-checkbox-group {
+            margin-left: 20px;
+        }
+    }
+
+    .habit-setting-tooltip {
+        margin-left: 8px;
+    }
+}
+
+.bovms-app-habit-type-setting {
+    .ant-checkbox-group {
+        height: 255px;
+        overflow: scroll;
+    }
+}
+
+.unit-conversion-second-comfirm-modal {
+    .ant-confirm-btns {
+        float: none;
+        text-align: center;
+    }
+
+    .anticon-info-circle {
+        color: red !important;
+    }
+}
+
+.subject-setting-dorpdown .ant-select-dropdown-menu {
+    padding-bottom: 31px;
+}
+
+.subject-setting-dorpdown-add {
+    background-color: #0066b3;
+    color: #fff !important;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    &:hover {
+        opacity: 0.8;
+        background-color: #0066b3;
+    }
+}
+
+.bovms-app-purchase-list-set-same-subject {
+    padding-top: 16px;
+
+    &.has-bottom-padding {
+        padding-bottom: 50px;
+        position: relative;
+
+        .ant-form {
+            max-height: 400px;
+            overflow: auto;
+        }
+    }
+
+    .ant-form-item {
+        margin-bottom: 18px;
+    }
+
+    .ant-form-item-with-help {
+        margin-bottom: 2px;
+    }
+
+    .bovms-app-purchase-list-set-same-subject-lableleft .ant-form-item-label {
+        text-align: left;
+    }
+
+    .h2 {
+        margin-bottom: 18px;
+        padding-left: 12px;
+        padding-right: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        i {
+            flex: 1;
+            border-top: 1px dashed #d9d9d9;
+        }
+    }
+
+    .add-list {
+        &-title {
+            padding-bottom: 10px;
+            .ant-col-10, .ant-col-4, .ant-col-6 {
+                text-align: center;
+            }
+            .ant-col-10, .ant-col-6 {
+                span {
+                    color: red;
+                }
+            }
+            .ant-col-4 {
+                padding: 0 8px;
+            }
+            .ant-col-6 {
+                padding-right: 30px;
+            }
+            &-help-icon {
+                position: absolute;
+                top: 4px;
+                right: 26px;
+                font-size: 12px;
+                color: #56b4f5;
+                border: 1px solid;
+                border-radius: 50%;
+            }
+        }
+        &-content {
+            .ant-col-4 {
+                line-height: 39px;
+                padding: 0 8px;
+                text-align: center;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    .ant-form-item-control-wrapper {
+
+        .inv-custom-warning-text,
+        .del-icon {
+            position: absolute;
+            top: 0px;
+        }
+
+        .inv-custom-warning-text {
+            left: -30px;
+        }
+
+        .del-icon {
+            right: -25px;
+            color: #999;
+            cursor: pointer;
+            font-size: 14px;
+            display: none;
+        }
+    }
+
+    .ant-form-item {
+        &:hover {
+            .del-icon {
+                display: block;
+            }
+        }
+    }
+
+    .footer {
+        position: absolute;
+        left: -12px;
+        bottom: -12px;
+        right: -12px;
+        height: 50px;
+        padding: 10px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #d9d9d9;
+
+        .btn {
+            margin-right: 8px;
+        }
+    }
+}
+
+.bovms-app-set-same-file {
+    height: 510px;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+
+    .-search {
+        margin-bottom: 8px;
+    }
+
+    .mk-pagination {
+        justify-content: flex-end;
+        padding: 10px;
+        border: 1px solid #d9d9d9;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+        background-color: #f8f8f8;
+        font-size: 12px;
+
+        .ant-pagination,
+        .atn-btn {
+            font-size: 12px;
+        }
+    }
+}
+
+.bovms-app-purchase-list-table-row-edit {
+    font-size: 12px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    min-height: 544px;
+    justify-content: center;
+
+    .ant-spin-container {
+        flex: 1;
+        position: unset;
+    }
+
+    &.read-only {
+        padding-bottom: 66px;
+
+        &::before {
+            position: absolute;
+            content: "已记账";
+            color: rgba(204, 0, 0, 0.5);
+            font-size: 24px;
+            width: 116px;
+            height: 42px;
+            left: 50%;
+            top: 80px;
+            z-index: 9999;
+            border: 2px solid;
+            transform: rotate(-25deg) translateX(-60px);
+            border-radius: 2px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+    }
+
+    .mk-row {
+        border-top: 1px solid #d9d9d9;
+        border-left: 1px solid #d9d9d9;
+
+        .mk-col {
+            border-right: 1px solid #d9d9d9;
+            border-bottom: 1px solid #d9d9d9;
+            padding: 0 8px;
+            line-height: 37px;
+            height: 37px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .bg {
+            background-color: #eaeaea;
+            color: #333;
+            text-align: right;
+        }
+    }
+
+    .editable-row {
+        .editable-cell {
+            padding: 2px;
+            line-height: 30px;
+        }
+
+        &:hover {
+            .editable-cell-value-wrap {
+                border: 1px solid #d9d9d9;
+                border-radius: 0px;
+                min-height: 32px;
+
+                .assist-btn {
+                    display: block;
+                }
+            }
+
+            .no-right-padding {
+                padding-right: 0px;
+            }
+        }
+
+        .editable-cell-value-wrap {
+            cursor: pointer;
+            // height: 30px;
+            // line-height: 30px;
+            padding: 0px 8px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .no-right-padding {
+            padding-right: 0px;
+
+            .assist-btn {
+                display: none;
+            }
+        }
+
+        .subject-value {
+            width: ~"calc(100% - 20px)";
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .btns {
+        text-align: right;
+        padding: 20px 0 10px 0;
+
+        button {
+            margin-left: 8px;
+        }
+    }
+
+    .footer {
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        overflow: hidden;
+        background-color: #f8f8f8;
+        border: 1px solid #d9d9d9;
+        border-bottom-left-radius: 2px;
+        border-bottom-right-radius: 2px;
+
+        .total {
+            max-width: ~"calc(100% - 600px)";
+
+            span {
+                margin-right: 8px;
+            }
+        }
+
+        .mk-pagination {
+            max-width: 600px;
+            justify-content: flex-end;
+
+            .ant-pagination,
+            .ant-btn {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .mk-datagrid .fixedDataTableLayout_rowsContainer>div div.mk-datagrid-cellContent.no-padding {
+        padding: 0px;
+    }
+
+    .modal-footer {
+        position: absolute;
+        left: -12px;
+        bottom: -12px;
+        right: -12px;
+        height: 50px;
+        padding: 10px 30px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-top: 1px solid #d9d9d9;
+
+        button {
+            padding: 0 15px;
+        }
+    }
+}
+
+.ttk-filter-form-popover {
+    font-size: 12px;
+    width: 330px;
+
+    .ant-popover-content {
+        margin-top: -10px;
+    }
+
+    .ant-popover-arrow {
+        display: none;
+    }
+
+    .ant-popover-inner-content {
+        padding-bottom: 56px;
+    }
+
+    .ant-form-item {
+        margin-bottom: 8px;
+    }
+
+    .ant-form label {
+        font-size: 12px;
+    }
+
+    .ant-calendar-picker-clear {
+        display: block !important;
+        right: 8px;
+    }
+
+    .footer {
+        border-top: 1px solid #d9d9d9;
+        text-align: right;
+        padding: 8px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+
+        button {
+            margin: 0 4px;
+        }
+    }
+}
+
+.bovms-select-subject-container {
+    display: flex !important;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .assist-btn {
+        width: 16px;
+        font-size: xx-small;
+        text-overflow: unset;
+        white-space: normal;
+        line-height: 12px;
+        user-select: none;
+        display: block;
+    }
+}
+
+.bovms-select-subject-dropdown {
+    font-size: 12px;
+    // min-width: 200px;
+    // width: 100%;
+    // overflow: auto;
+
+    .ant-select-dropdown-menu {
+        margin-bottom: 31px;
+        // overflow: auto;
+    }
+
+    .ant-select-dropdown-menu-item {
+        // white-space: nowrap;
+        // cursor: pointer;
+        // overflow: unset;
+        // text-overflow: unset;
+    }
+
+    .select-subject-add {
+        padding: 0 !important;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+
+        button {
+            border-radius: 1px;
+            width: 100%;
+        }
+    }
+
+    &.no-add {
+        .ant-select-dropdown-menu {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.bovms-app-select-assist-card {
+    .-help-icon {
+        font-size: 16px;
+        color: #0066b3;
+        border: 1px solid;
+        border-radius: 50%;
+        position: absolute;
+        right: -28px;
+        top: -5px;
+    }
+}
+
+.ellipsis-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bovms-common-actions-header {
+    .ant-input-group {
+        transform: translateY(-1px);
+        width: auto;
+    }
+
+    .ant-select {
+        margin-left: 8px;
+    }
+
+    .mk-input {
+        input {
+            height: 30px;
+            padding-left: 30px !important;
+        }
+    }
+}
+
+.bovms-app-guidePage-fund-popup {
+    .bovms-common-actions-header {
+        .mk-input {
+            input {
+                padding-left: 8px !important;
+            }
+        }
+    }
+}
+
+.flex-start-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bomvs-baas-form-item {
+    position: relative;
+
+    .ant-form-item-control-wrapper {
+        position: relative;
+
+        .bomvs-baas-form-item-del {
+            position: absolute;
+            right: -32px;
+            top: 3px;
+            line-height: 0;
+            display: none;
+        }
+    }
+}
+
+.bomvs-baas-form-item:hover {
+    .ant-form-item-control-wrapper {
+        .bomvs-baas-form-item-del {
+            display: block;
+        }
+    }
+}
+
+.bovms-batch-subject-setting-debit {
+    .editable-row {
+        &:hover {
+            .editable-cell-value-wrap {
+                border: 1px solid #d9d9d9;
+                border-radius: 4px;
+
+                .assist-btn {
+                    display: block;
+                }
+            }
+
+            .no-right-padding {
+                padding-right: 0px;
+            }
+        }
+
+        .editable-cell-value-wrap {
+            align-items: center;
+            cursor: pointer;
+            height: 32px;
+            line-height: 32px;
+            vertical-align: middle;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .no-right-padding {
+            padding-right: 0px;
+
+            .assist-btn {
+                display: none;
+            }
+        }
+
+        .subject-value {
+            width: ~"calc(100% - 20px)";
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: block;
+        }
+    }
+}
+
+.bovms-bactch-aid-setting-tooltip {
+    position: absolute;
+    right: -25px;
+    top: 0;
+}
+
+.bovms-app-chapiao-filter .ant-input-group.ant-input-group-compact .ant-btn {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-right-width: 1px;
+}
+
+.bovms-unit-conversion-btn {
+    padding-bottom: 10px;
+    display: flex;
+    margin-left: 5px;
+    justify-content: flex-end;
+}
+
+.bovms-unit-conversion-btn .ant-btn-primary {
+    margin-right: 10px;
+}
+
+.conversion-ratio-filter {
+    padding-bottom: 8px;
+
+    .ant-input {
+        padding-left: 30px !important;
+    }
+}
+
+.conversion-ratio-editble-wrap {
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.conversion-ratio-oparate {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+    span,
+    a {
+        padding: 0 4px;
+        cursor: pointer;
+    }
+}
+
+.bovms-batch-subject-setting {
+    .bovms-batch-subject-setting-debit-right {
+        button {
+            margin: 0 4px;
+        }
+    }
+
+    .bovms-batch-subject-setting-table {
+        height: 223px;
+        overflow-y: auto;
+
+        .ant-table-body {
+            height: auto !important;
+        }
+
+        .ant-table-scroll table {
+            width: fit-content;
+        }
+    }
+
+    .fixedDataTableLayout_rowsContainer {
+        border-left: 1px solid #d9d9d9;
+    }
+
+    .bovms-batch-subject-setting-debit-footer {
+        background-color: #f9f9fb;
+        padding: 12px 8px 8px 8px;
+        border-right: 1px solid #dadada;
+        border-left: 1px solid #dadada;
+        border-bottom: 1px solid #dadada;
+    }
+}
+
+.bovms-batch-subject-setting,
+.bovms-app-purchase-list-subject-setting {
+    .editable-cell-value-wrap {
+        display: block;
+        margin-top: 2px;
+        line-height: 32px;
+        height: 32px;
+        cursor: pointer;
+        border: 1px solid transparent;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 0;
+        border-radius: 4px;
+    }
+
+    .editable-cell-value-wrap:hover {
+        border: 1px solid #d9d9d9;
+    }
+}
+
+.bovms-common-actions-header {
+    margin-bottom: 12px;
+}
+
+.bovms-common-table-style-footer {
+    background-color: #f9f9fb;
+    padding: 6px 8px 6px 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+
+    .ant-pagination,
+    .mk-pagination .ant-btn {
+        font-size: 12px;
+    }
+}
+
+.bovms-common-table-style {
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+
+    .ant-table-scroll table {
+        width: fit-content;
+    }
+
+    .ant-table-body {
+        overflow-y: scroll !important;
+    }
+}
+
+.bovms-app-actions-footer-not-tip {
+    border-top: 1px solid #ebebeb;
+    margin: 24px -12px 0 -12px;
+    padding: 10px 12px 0 12px;
+    text-align: right;
+
+    button {
+        margin: 0 5px;
+    }
+}
+
+.bovms-app-popup-content {
+    padding: 10px 16px 0 16px;
+}
+
+.bovms-app-popup-content.no-top-padding {
+    padding-top: 0;
+}
+
+.bovms-dimension-setting {
+    padding: 24px;
+}
+
+.bovms-app-unit-conversion-comfirm {
+    .ant-modal-header {
+        border-bottom: none;
+    }
+}
+
+.bovms-common-table-style-grey-row,
+.bovms-common-table-style-grey-row td,
+.bovms-common-table-style-grey-row .public_fixedDataTableCell_main {
+    background-color: #fff5f5 !important;
+}
+
+.bovms-help-icon {
+    font-size: 12px;
+    color: #53b2f5;
+    border: 1px solid;
+    border-radius: 50%;
+}
+
+.footer-amount-item-span,
+.bovms-app-guidePage-invoce-range-popup-checkebox-section span:not(.ant-checkbox) {
+    font-size: 12px;
+}
+
+.subject-setting-body-section {
+    h1 {
+        position: relative;
+        font-size: 14px;
+        font-weight: bold;
+        padding: 8px 0;
+
+        span {
+            display: inline-block;
+            background-color: #fff;
+            position: relative;
+            padding: 0 8px;
+        }
+
+        span::after {
+            content: "";
+            height: 16px;
+            width: 2px;
+            background-color: rgba(0, 102, 179, 0.7);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+    h1::before {
+        content: "";
+        width: 100%;
+        border-top: 1px dashed #ccc;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.aaa input {
+    border-color: red;
+}
+
+.hide-start .ant-form-item-required::before {
+    display: none;
+}
+
+.count-content-num {
+    position: absolute;
+    transform: translateX(40%) scale(0.8);
+    top: 0;
+    right: 0;
+    height: 20px;
+    border-radius: 10px;
+    min-width: 20px;
+    background: #f5222d;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: normal;
+    transform-origin: -10% center;
+    box-shadow: 0 0 0 1px #fff;
+}
+
+.stock-subject-setting .bovms-app-purchase-list-table-row-edit {
+    min-height: 250px;
+}
+
+.bovms-app-guidePage-invoce-range-popup-img {
+    width: 506px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+
+    &.stepImg1 {
+        background-image: url(../img/check-step1.png);
+    }
+
+    &.stepImg2 {
+        background-image: url(../img/check-step2.png);
+    }
+
+    &.stepImg3 {
+        background-image: url(../img/check-step3.png);
+    }
+
+    &.xsStepImg1 {
+        background-image: url(../img/check-step1-xs.png);
+    }
+
+    &.xsStepImg2 {
+        background-image: url(../img/check-step2-xs.png);
+    }
+
+    &.xsStepImg3 {
+        background-image: url(../img/check-step3-xs.png);
+    }
+}
+
+.bovms-app-fund-invoce-range-popup-img {
+    width: 466px;
+    height: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+
+    &.stepImg1 {
+        background-image: url(../img/funds-step-1.png);
+    }
+
+    &.stepImg2 {
+        background-image: url(../img/funds-step-2.png);
+    }
+
+    &.stepImg3 {
+        background-image: url(../img/funds-step-3.png);
+    }
+}
+
+.table-action-icon {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+
+    &.popEditIcon {
+        background-image: url(../img/pop-edit-icon.png);
+    }
+
+    &.editIcon {
+        background-image: url(../img/edit-icon.png);
+    }
+
+    &.invoicesIcon {
+        background-image: url(../img/invoices-icon.png);
+    }
+
+    &.cancelIcon {
+        background-image: url(../img/cancel-icon.png);
+    }
+
+    &.certificateIcon {
+        background-image: url(../img/certificate-icon.png);
+    }
+
+    &.certificateIcon {
+        background-image: url(../img/certificate-icon.png);
+    }
+
+    &.saveIcon {
+        background-image: url(../img/save-icon.png);
+    }
+
+    &.splitIcon {
+        background-image: url(../img/split-icon.png);
+    }
+}
+
+.bovms-app-auto-match-setting {
+    .bovms-app-auto-match-setting-wrap {
+        max-height: 490px;
+        overflow-y: scroll;
+    }
+
+    .bovms-app-auto-match-setting-accounting-accuracy {
+        .bovms-app-auto-match-setting-accounting-accuracy-sec {
+            padding-left: 24px;
+            margin-bottom: 32px;
+
+            .bovms-app-auto-match-setting-accounting-accuracy-sec-title {
+                font-size: 14px;
+                font-weight: bold;
+                color: #666;
+                padding-bottom: 8px;
+            }
+
+            .bovms-app-auto-match-setting-accounting-accuracy-sec-content {
+                padding-left: 16px;
+
+                .bovms-help-icon {
+                    font-size: 13px;
+                    color: #0066B3;
+                    margin-left: 16px;
+                }
+            }
+        }
+    }
+
+    .bovms-app-auto-match-setting-debit {
+        .bovms-app-auto-match-setting-debit-top {
+            padding-left: 24px;
+
+            &>div {
+                height: 40px;
+                line-height: 40px;
+                position: relative;
+
+                .bovms-app-auto-match-setting-debit-top-switch {
+                    position: absolute;
+                    left: 380px; 
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        .bovms-app-auto-match-setting-debit-subItem {
+            margin-top: 16px;
+            padding-left: 42px;
+            display: flex;
+            justify-content: flex-start;
+            height: auto !important;
+            margin-bottom: 16px;
+
+
+            .bovms-app-auto-match-setting-debit-subItem-titles {
+                width: 288px;
+
+                h5 {
+                    height: 50px;
+                    line-height: 50px;
+                    position: relative;
+                }
+            }
+
+            .bovms-app-auto-match-setting-debit-subItem-controls {
+                &>div {
+                    height: 50px;
+                    line-height: 50px;
+                    position: relative;
+
+                }
+            }
+
+            .bovms-app-auto-match-setting-debit-subItem-match-range {
+                display: flex;
+                justify-content: flex-start;
+                height: auto !important;
+
+                & a {
+                    display: inline-block;
+                    margin-right: 24px;
+                }
+
+                & p {
+                    margin-bottom: -15px;
+                }
+            }
+        }
+    }
+
+    .bovms-app-auto-match-setting-tips {
+        padding: 16px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: top;
+
+        .bovms-app-auto-match-setting-tips-title {
+            color: #fa954c;
+            margin-right: 8px;
+        }
+
+        .bovms-app-auto-match-setting-tips-content {
+            color: #666;
+
+            p {
+                margin-bottom: 4px
+            }
+        }
+    }
+
+    .bovms-app-auto-match-setting-footer {
+        position: relative;
+        padding: 10px 16px;
+
+        .bovms-app-auto-match-setting-footer-buttons {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+
+
+}
+
+.bovms-app-auto-match-setting-switch-style {
+    &.ant-switch-checked {
+        background-color: transparent;
+        border: 1px solid #0066B3;
+    }
+
+    &::after {
+        background-color: #0066B3
+    }
+}
+
+.bovms-app-auto-match-setting-range-setting {
+    .bovms-app-auto-match-setting-range-setting-list {
+        margin: 0;
+        padding: 0;
+
+        .bovms-app-auto-match-setting-range-setting-item {
+            padding: 0 16px;
+            margin-bottom: 8px;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 34px;
+            line-height: 34px;
+
+            a {
+                padding: 0 8px
+            }
+
+            .bovms-app-auto-match-setting-range-setting-item-actions {
+                display: none;
+            }
+
+            &:hover {
+                background-color: #ebebeb;
+
+                .bovms-app-auto-match-setting-range-setting-item-actions {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .bovms-app-auto-match-setting-range-setting-add {
+        margin: 16px 0;
+    }
+
+    .bovms-app-auto-match-setting-range-setting-add-select {
+        padding: 0 16px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        .ant-form-item {
+            margin-bottom: 0;
+        }
+
+        a {
+            margin-top: 9px;
+            padding: 0 8px;
+        }
+    }
+}

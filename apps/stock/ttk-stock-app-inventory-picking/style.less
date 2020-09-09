@@ -1,0 +1,374 @@
+.ttk-stock-app-inventory-picking {
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    .back{
+        background:url(../../../assets/img/back.png) no-repeat center center;
+        background-size:'100% 100%';
+    }
+
+    .voucher-button-group{
+      margin-right: 8px;
+      top: 1px;
+      .ant-btn:first-child{
+        margin-right: 0px;
+      }
+    }
+
+    .mk-datagrid .fixedDataTableLayout_main{
+      border-right: none;
+    }
+	&-backgroundColor {
+		border: 1px solid #d9d9d9;
+		background-color: #fff
+    }
+	&-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+    height: 50px;
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+
+		.ttk-stock-app-inventory-picking-title{
+            width: 100%;
+            height: 100%;
+            padding: 0px;
+            flex: 1;
+           
+            .inv-app-batch-sale-header{
+                .header-left{
+                  .header-item{
+                    margin-right: 8px;
+                  }
+                  .ant-select {
+                    width: 160px;
+                  }
+                  .inv-app-batch-sale-header-filter-input{
+                    width: 188px;
+                    vertical-align: middle;
+                    .ant-input{
+                      border-bottom-right-radius: 0;
+                      border-top-right-radius: 0;
+                      border-right: none;
+                      padding-left: 30px !important;
+                      font-size: 12px;
+                    }
+            
+                  }
+                  .inv-batch-custom-filter-btn{
+                    font-size: 18px;
+                    display: inline-block;
+                    border: 1px solid #d9d9d9;
+                    line-height: 30px;
+                    height: 32px;
+                    width: 32px;
+                    text-align: center;
+                    vertical-align: middle;
+                    border-bottom-right-radius: 3px;
+                    border-top-right-radius: 3px;
+                  }
+                }
+            
+              }
+            .ttk-stock-app-inventory-h2{
+                text-align: center;
+                width: 100%;
+                justify-content: center;
+                font-size: 20px;
+                position: relative;
+                top: 13px;
+                display: block;
+            }
+        }
+		.reinit{
+      z-index: 2;
+			position:absolute;
+			right: 10px;
+			top: 10px;
+			font-size: 12px;
+			color: #333333;
+			line-height:26px;
+			// i{
+			// 	font-size:28px;
+			// 	display: inline-block;
+			// 	vertical-align: middle;
+			// }
+			// span{
+			// 	display: inline-block;
+			// 	vertical-align: middle;
+      // }
+      .print-btn {
+        vertical-align: top;
+        margin-right: 8px;
+      }
+			.myhelloworld-button{
+        margin-right: 8px
+      }
+		}
+		.reinit:hover{
+			color:@link-color;
+			cursor: pointer;
+    }
+    
+    .back{
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+      cursor: pointer
+    }
+	}
+	&-content {
+		flex: 1;
+		.mk-datagrid .public_fixedDataTable_main {
+			border-left: none;
+		}
+		.mk-datagrid .public_fixedDataTable_header .public_fixedDataTableCell_main {
+			color: #333333;
+		}
+		.public_fixedDataTable_scrollbarSpacer {
+			top: 0px;
+    }
+    .del-icon {
+      display: none;
+      margin-left: 8px;
+      font-size: 14px;
+      cursor: pointer;
+
+      &:hover {
+          color: #0066B3;
+      }
+    }
+    .titledelect{
+      cursor: pointer
+    }
+    .titledelect:hover {
+        .del-icon {
+            display: inline-block;
+        }
+    }
+		//滚动条上部
+		.public_fixedDataTable_scrollbarSpacer {
+			top: 0px;
+			background: #eaeaea;
+		}
+
+    .cell-padding8{
+      padding: 0 8px!important;
+    }
+
+		.del {
+			cursor: pointer;
+		}
+		a:hover {
+			text-decoration: underline;
+    }
+    .spanselect{
+      color: rgba(0, 102, 179, 0.7),
+    }
+    .spanNoselect{
+      color: #ddd,
+    }
+    &-pointer {
+      color:#009fff;
+      cursor: pointer;
+    }
+    .ttk-stock-app-inventory-picking-content-del {
+      display: flex;
+      .spanselect, .spanNoselect {
+        font-size: 14px;
+        cursor: pointer;
+        padding-right: 5px;
+      }
+    }
+  }
+
+	&-footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		height: 30px;
+    margin-top: 10px;
+    padding-right:20px;
+    position: relative;
+    &-sumMsg {
+      position: absolute;
+      left: 20px;
+      height: 31px;
+      line-height: 31px;
+      span {
+        font-size: 14px;
+        margin-right: 10px;
+      }
+      .numText{
+        margin-left: 10px;
+        margin-right: 4px;
+      }
+    }
+	}
+
+	&-modal {
+		.ant-modal-body {
+			height: 425px
+		}
+  }
+  
+}
+.inv-batch-sale-list-popover {
+  .ant-popover-arrow{
+    display: none;
+  }
+  .ant-popover-inner-content{
+    width: 300px;
+    padding: 12px 0;
+    .ant-input{
+      font-size: 12px;
+    }
+    .filter-content{
+      padding:0 10px;
+      .inv-batch-custom-popover-item{
+        display: inline-block;
+        margin-bottom: 12px;
+        
+      }
+      .inv-batch-custom-popover-label{
+        width: 72px;
+        text-align: right;
+        display: inline-block;
+        font-size: 12px;
+      }
+      .inv-batch-custom-popover-option {
+        width: 190px;
+      }
+
+      .popover-body-content-item-date {
+        width: 190px;
+      }
+      .ant-calendar-picker-clear{
+        display: block !important;
+        right: 8px;
+      }
+    }
+    .filter-footer{
+      text-align: center;
+      padding-top: 10px;
+      border-top: 1px solid #e8e8e8;
+      .reset-btn{
+        margin-left: 10px;
+      }
+    }
+  }
+
+}
+
+// .fastpicking-success-tips{
+//   .ant-modal-content{
+//     .ant-modal-header{
+//       border-bottom: none!important;
+//     }
+//   }
+  
+//   &-content{
+//     display: flex;
+//     &-left{
+//       flex: 1;
+//       padding: 34px 15px 0px 45px;
+//       .success-icon{
+//         font-size: 30px;
+//         color: #00b38a;
+//       }
+//     }
+//     &-right{
+//       h4{
+//         color: rgba(0, 0, 0, 0.65);
+//         font-size: 16px;
+//         margin-bottom: 8px;
+//       }
+//       flex: 20;
+//       padding-top: 36px;
+//     }
+//   }
+// }
+
+@cellHeight: 37px;
+@cellPadding: 0 8px;
+@borderColor: #d9d9d9;
+
+.clearPadding{
+  padding: 0!important;
+}
+.textOverflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+div{
+  .detail-cell{
+    .textOverflow;
+    border-bottom: 1px solid @borderColor;
+    padding: @cellPadding;
+    height: @cellHeight;
+    line-height: @cellHeight;
+    box-sizing: border-box;
+  }
+}
+
+.sum-cell{
+  color: #333;
+  height: @cellHeight;
+  line-height: @cellHeight;
+  padding: @cellPadding;
+  box-shadow: 6px 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.fixedDataTableRowLayout_rowWrapper:hover{
+  .detail-cell:nth-of-type(2n),.detail-cell:nth-of-type(2n-1),.sum-cell{
+    background-color: #d4e8ff;
+  }
+}
+
+.pickingLimits .ant-modal-body{
+  position: relative;
+  &:after{
+    position: absolute;
+    content: '';
+    bottom: 65px;
+    left: 0;
+    border-top: 1px solid #d9d9d9;
+    width: 100%;
+  }
+
+  .picking-limits-container{
+    position: relative;
+    h4{
+      margin-bottom: 10px;
+    }
+    .ant-checkbox-group-item{
+      display: block;
+      line-height: 32px;
+    }
+    .ant-spin-spinning{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .picking-limits-footer{
+    padding: 40px 0 0;
+    text-align: right;
+    &>button:last-child{
+      margin-left: 8px;
+    }
+  }
+}
+
+
+

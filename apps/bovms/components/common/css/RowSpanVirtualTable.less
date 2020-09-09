@@ -1,0 +1,58 @@
+.ttk-bovms-app-common-row-span-virtual-table {
+    .hidden-text {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    &.row-span {
+        .vt-header-cell, .vt-body-row-cell {
+            padding: 0 !important;
+        }
+    }
+    .has-vertical-scroll {
+        .vt-body-row-cell.last-cell {
+            padding-right: 2px !important;
+        }
+    }
+    .vt-body-row-cell {
+        .hidden-text;
+    }
+    .row-span-td {
+        padding: 0 10px;
+        .hidden-text;
+        &.children {
+            line-height: 36px;
+            border-bottom: 1px solid #d9d9d9;
+        }
+    }
+    &.isTrident {
+        .row-span-td {
+            padding: 0 18px;
+        }
+    }
+    &-sum-row {
+        flex-wrap: nowrap;
+        font-size: 12px;
+        font-weight: 700;
+        text-align: right;
+        div {
+            border-right: 1px solid #d9d9d9;
+            padding: 0 10px;
+            .hidden-text;
+            // &:last-child {
+            //     padding-right: 20px;
+            // }
+        }
+        &-title {
+            text-align: center;
+        }
+        &.isTrident {
+            div {
+                padding: 0 18px;
+                &:last-child {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}

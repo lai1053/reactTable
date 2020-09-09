@@ -1,0 +1,116 @@
+.app-card-vendor{
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+	padding: 0 0 15px;
+
+    .ant-form-item {
+        display: flex;
+        width: 50%;
+        align-items: end;
+        .ant-form-item-control-wrapper {
+            width: 200px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .ant-form-item-control {
+                width: 100%;
+                position: relative;
+
+                .ant-form-explain {
+                    position: absolute;
+                    top: 36px;
+                    line-height: 18px;
+                    font-size: 12px;
+                }
+            }
+        }
+        //警告字体12px，行间距22px
+        margin-bottom: 0px;
+        .ant-form-item-control {
+            min-height: 55px;
+        }
+        .ant-form-item-label {
+            min-height: 55px;
+	        label:after {
+		        visibility: hidden;
+		        margin: 0 3px 0 2px;
+	        }
+        }
+    }
+
+    .ant-form-item-label{
+        width:87px;
+    }
+
+    &-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        overflow:hidden;
+
+        .ant-form-explain{
+            margin-top: 5px;
+        }
+
+        .ant-form-item-control{
+            text-align: center
+        }
+
+        .mk-datepicker,.mk-select{
+            width:100%
+        }
+    }
+	.title {
+		width: 100%;
+		display: flex;
+		.ant-form-item-control-wrapper {
+			width: auto;
+		}
+
+		.info {
+			width: 75px;
+			background: #fff;
+			position: relative;
+			z-index: 1;
+		}
+
+		.line {
+			flex: 1;
+			height: 1px;
+			border-bottom: 1px dashed #E8E8E8;
+			position: relative;
+			bottom: 12px;
+		}
+	}
+	.mk-datepicker, .mk-select {
+		width: 100%
+	}
+	.subjectRemark {
+		color: #ff913a;
+		width: 320px;
+		padding-left: 4px;
+	}
+	.textArea{
+		.ant-form-explain{
+			top:46px !important;
+		}
+	}
+	.selectClear {
+		.ant-select-selection__clear{
+			right: 22px;
+		}
+	}
+	&-dropdown {
+		max-height: 255px;
+		.ant-select-dropdown-menu {
+			max-height: 255px;
+		}
+    }
+    .btn{
+        position: absolute;
+        width: 100px;
+        padding-left: 10px;
+    }
+}

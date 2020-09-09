@@ -1,0 +1,223 @@
+.cashflowstatementDistributionSelect{
+    .ant-select-dropdown-menu-item{
+        min-height: 30px;
+        // line-height: 30px;
+    }
+}
+.app-cashflowstatement-distribution{
+    width: 100%;
+    height: 100%;
+    // padding: 10px 0;
+    overflow: auto;
+    display: flex;
+    // .reset {
+    //     position: absolute;
+    //     bottom: 11px;
+    //     left: 308px;
+    //     width: 64px;
+    //     font-size: 14px;
+    // }
+    .ant-select-selection__clear{
+        margin-right: 12px !important;
+    }
+    .ant-select-selection__rendered{
+        padding-right: 15px !important;
+        font-size: 12px;
+    }
+    &-footer{
+        margin-top: 10px;
+    }
+    .select-item-lang {
+        width: 250px;
+    }
+    .app-account-addmultiauxitem-body{
+        overflow-y: hidden !important;
+        height: 366px;
+        .div{
+            height: 366px;
+        }
+        table {
+            width: 100%;
+            table-layout: fixed;
+            background: #f00;
+            tr{
+                th:nth-child(1){
+                    text-align: center !important;
+                }
+                td:nth-child(1) {
+                    width: 10%;
+                }
+                td:nth-child(2) {
+                    width: 10%;
+                }
+                td:nth-child(3) {
+                    width: 10%;
+                }
+                td:nth-child(4) {
+                    width: 10%;
+                }
+                td:nth-child(5) {
+                    width: 30%;
+                }
+                td:nth-child(6) {
+                    width: 10%;
+                }
+                td:nth-child(7) {
+                    width: 20%;
+                }
+            }
+        }
+    }
+    .app-cashflowstatement-distribution-headerContent {
+        margin-bottom: 8px;
+        .app-cashflowstatement-distribution-subject-title, 
+        .app-cashflowstatement-distribution-symbol-title, 
+        .app-cashflowstatement-distribution-rule-title {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .ant-select {
+            width: 150px;
+        }
+        .app-cashflowstatement-distribution-subject-input {
+            width: 250px;
+        }
+        .ant-btn {
+            margin-left: 10px;
+        }
+    }
+    .app-cashflowstatement-distribution-content {
+        flex: 1;
+        // height: 268px;
+        .fixedDataTableLayout_rowsContainer:last-child {//合计行样式
+            .fixedDataTableRowLayout_rowWrapper:last-child {
+                .fixedDataTableRowLayout_main {
+                    font-weight: bold;
+                    .fixedDataTableRowLayout_body {
+                        .fixedDataTableCellGroupLayout_cellGroupWrapper:nth-child(4) {
+                            .public_fixedDataTableCell_main i {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ant-table-row {
+        .ant-select-selection-selected-value {
+            max-width: 170px;
+        }
+        .ant-select , .ant-input {
+            font-size: 12px;
+        }
+        .text-cell {
+            // display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            display: inline-block !important;
+            vertical-align: middle;
+        }
+        td:first-child {
+            .text-cell {
+                // width: 83px;
+            }
+        }
+        td:nth-child(2) {
+            .text-cell {
+                width: 183px;
+            }
+        }
+        td:nth-child(3) {
+            .text-cell {
+                // width: 33px;
+            }
+        }
+        td:nth-child(4) {
+            .text-cell {
+                // width: 83px;
+            }
+        }
+        td:nth-child(5) {
+            .text-cell {
+                width: 201px;
+            }
+        }
+        td:nth-child(6) {
+            .text-cell {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        td:last-child {
+            .text-cell {
+                width: 133px;
+            }
+        }
+        td:nth-child(5) {
+            .text-cell {
+                padding:0 12px;
+            }
+        }
+        td:last-child {
+            .text-cell {
+                padding:0 10px;
+            }
+        }
+    }
+
+    .ant-select-selection--single{
+        height: 30px;
+    }
+    .ant-table .ant-table-tbody td:nth-child(4){
+        text-align: right !important;
+    }
+    .mk-table .ant-table .ant-table-fixed tr td{
+        text-overflow: ellipsis;
+        border-bottom: 1px solid #d9d9d9;
+    }
+    
+    //报表公式 start
+    .asset-name-edit-cell {
+        i {
+            color:#fff;
+        }
+    }
+    td:hover {
+        .asset-name-edit-cell {
+            i {
+                color:#000;
+            }
+        }
+    }
+    //报表公式 end
+    
+    
+    .ant-select-selection-selected-value {
+        padding-right: 0px;
+    }
+}
+.profitstatement-formula {
+    .app-cashflowstatement-distribution-headerContent .ant-select {
+        width: 200px;
+    }
+    .app-cashflowstatement-distribution-headerContent .app-cashflowstatement-distribution-subject-input {
+        width: 250px;
+    }
+    // padding-bottom: 0px; 
+    // left: 50%;
+    // top: 50%;
+    // margin-left: -450px;
+    // margin-top: -215px;   
+}
+.mk-app-proof-of-list-modal-container{
+    .ant-form-item {
+        label{
+            display: inline;
+        }
+    }
+}
+.app-cashflowstatement-distribution-subject-input-down {
+    min-width: 350px !important;
+}

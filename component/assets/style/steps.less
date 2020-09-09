@@ -1,0 +1,78 @@
+.mk-steps {
+	font-family: "Microsoft Yahei",
+		"Helvetica Neue",
+		Helvetica,
+		Arial,
+		sans-serif;
+	width: 700px;
+	height: 32px;
+	border-radius: 16px;
+	overflow: hidden;
+	display: block;
+	//margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.step {
+		flex: 1;
+		width: 105px;
+		height: 100%;
+		background: #e8e8e8;
+	//	border-radius: 4px;
+		float: left;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #666;
+		font-size: 13px;
+
+		&:before {
+			content: '';
+			width: 0;
+			height: 0;
+			border: 19px solid transparent;
+			border-left-color: #fff;
+			position: absolute;
+			right: -38px;
+			top:-3px;
+			z-index: 1;
+		}
+
+		&:after {
+			content: '';
+			width: 0;
+			height: 0;
+			border: 16px solid transparent;
+			border-left-color: #e8e8e8;
+			position: absolute;
+			top: 0;
+			right: -32px;
+			z-index: 2;
+		}
+	}
+
+	.step.active {
+		background-color: #0066B3;
+		color: #fff;
+
+		&:after {
+			border-left-color: #0066B3;
+		}
+
+		.step-number {
+			border-color: #fff;
+		}
+	}
+
+	.step-number {
+		width: 19px;
+		height: 19px;
+		line-height: 17px;
+		border: 1px solid #666;
+		border-radius: 50%;
+		margin-right: 8px;
+		text-align: center;
+	}
+}

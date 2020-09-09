@@ -1,0 +1,97 @@
+.ticket-app-filter{
+  padding-left: 15px;
+  float: left;
+  width: 230px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  flex-direction: row;
+  overflow: hidden;
+  &-input{
+    .ant-input-prefix{
+      left: 10px;
+    }
+    &-prefix{
+      color: #A9B0BB;
+    }
+    .ant-input{
+      padding-left: 30px!important;
+      border-radius:0;
+      border-top-left-radius:3px;
+      border-bottom-left-radius:3px;
+      height: 34px;
+      font-size: 13px;
+    }
+  }
+  input[type="placeholder"]{
+    font-size: 13px;
+    color: #AEB1B6;
+  }
+  &-popover{
+    &-body{
+
+      &-content{
+        &-item{
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          align-items: center;
+
+          &-left{
+            width: 90px;
+            padding-right: 12px;
+            text-align: right;
+
+          }
+          &-date{
+            width: 144px;
+          }
+          &-divider{
+            width: 24px;
+            text-align: center;
+          }
+          &-select{
+            width: 294px;
+            padding-bottom: 5px;
+          }
+        }
+      }
+      &-footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #F5F6F7;
+        margin-top: 10px;
+        margin-left: -16px;
+        margin-bottom: -12px;
+        width: ~'calc(100% + 32px)';
+        button:first-child{
+          margin-right: 8px;
+        }
+        .ant-btn{
+          line-height: 30px;
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+    &-filter{
+      width: 34px;
+      border: 1px solid hsv(0, 0, 85%);
+      height: 34px;
+      border-left: none;
+      font-size: 18px;
+      display: flex;
+      color: #A9B0BB;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border-top-right-radius:3px;
+      border-bottom-right-radius:3px;
+      padding: 0 7px 0 8px;
+    }
+  }
+}

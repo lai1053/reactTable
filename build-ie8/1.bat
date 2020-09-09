@@ -1,0 +1,3 @@
+setlocal
+npm install
+endlocal

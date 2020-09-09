@@ -1,0 +1,115 @@
+// @borderColor: #d9d9d9;
+.ttk-stock-card-BOM-select-products {
+    height: 100%;
+    align-items: flex-start;
+    margin: 0 auto;
+
+    &-div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .ttk-stock-card-BOM-select-products-div-filter {
+        margin-bottom: 12px;
+        height: 30px;
+        position: relative;
+
+        &-search {
+            width: 225px;
+            float: left;
+            outline: none;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+            padding: 5px 10px 5px 28px;
+
+            &:focus {
+                border-color: #40a9ff;
+            }
+
+            .ant-input {
+                border-bottom-right-radius: 0;
+                border-top-right-radius: 0;
+                padding-left: 30px !important;
+            }
+        }
+
+        &-searchIcon {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 7px;
+            left: 3px;
+            background: url(../../../commonAssets/img/search.png) no-repeat 0 0;
+        }
+    }
+
+    &-div-main{
+        border: 1px solid #d9d9d9;
+        // .mk-table
+    }
+
+    .ant-table-body {
+        height: 100%;
+        overflow: hidden scroll !important;
+    }
+
+    .ttk-stock-card-BOM-select-products-footer {
+        padding: 24px 0px 0px;
+        display: flex;
+        justify-content: space-between;
+
+        .ttk-stock-card-BOM-select-products-statics {
+            line-height: 25px;
+            text-align: left;
+
+            & > div {
+                & > span:nth-of-type(2) {
+                    margin-left: 14px;
+                }
+            }
+        }
+
+        .ttk-stock-card-BOM-select-products-btn {
+            margin-left: 10px;
+        }
+    }
+
+    .ant-table-thead > tr > th {
+        text-align: center !important;
+    }
+}
+
+.ttk-stock-card-BOM-select-products-div-filter-search-filterOptions {
+    display: flex;
+    width: 388px;
+    position: relative;
+
+    .option1 {
+        flex: 3;
+        line-height: 32px;
+    }
+
+    .option1-txt {
+        flex: 11;
+    }
+
+    &-footer {
+        margin-top: 30px;
+        text-align: right;
+
+        .footerBtn-reset {
+            margin-left: 8px;
+        }
+    }
+
+    &-divisionLine {
+        position: absolute;
+        bottom: 48px;
+        left: 0;
+        width: 100%;
+        border: 1px solid #e0e0e0;
+        border-bottom: none;
+    }
+}
+
+

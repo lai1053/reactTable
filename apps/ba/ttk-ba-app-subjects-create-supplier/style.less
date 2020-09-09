@@ -1,0 +1,191 @@
+.ttk-ba-app-subjects-create-supplier {
+	width: 100%;
+	height: 100%;
+	padding: 5px 10px 0 10px;
+	color:#333333;
+	.fl{
+		float: left;
+	}
+	.ib{
+		display: inline-block;
+	}
+	&-title {
+		font-size: 12px;
+		//margin-bottom: 4px;
+		&-content{
+			margin-top: 7px;
+			padding-left: 0px;
+			//padding-bottom: 6px;
+			.ant-checkbox-wrapper{
+				font-size: 12px;
+			}
+			.radio{
+				display: block;
+				float: left;
+				margin-left: 0px;
+				margin-right: 20px;
+				margin-bottom: 6px;
+				font-size: 12px;
+				color:#333333;
+			}
+		}
+
+	}
+	&-content {
+		flex: 1;
+		margin-bottom: 12px;
+		border-bottom: 1px #d9d9d9 solid;
+		.borderLeft {
+			padding: 0px 2px !important;
+			border-left: 1px solid #d3d3d3;
+		}
+		.noPadding {
+			width: 100%;
+			padding: 0px 5px !important;
+			margin-top: 4px;
+		}
+		.public_fixedDataTable_scrollbarSpacer {
+			top: 0px;
+		}
+		.mk-datagrid .fixedDataTableLayout_main {
+			//border-right: none;
+			//border-left: none;
+			border: 1px solid #d9d9d9;
+		}
+		.mk-datagrid .public_Scrollbar_main {
+			//border: 1px solid #d3d3d3;
+			border-left: none;
+		}
+		//.ttk-ba-app-subjects-create-customer-content .public_fixedDataTable_scrollbarSpacer {
+		//	border-top: 1px solid #d3d3d3;
+		//	border-right: 1px solid #d3d3d3;
+		//}
+		.ant-select-selection__rendered {
+			font-size: 12px;
+		}
+		.selectStyle {
+			width: 100%;
+			padding: 1px 6px !important;
+			margin-top: 4px;
+		}
+		&-formDetails {
+			flex: 1;
+			margin: 8px 10px 12px 10px;
+			.fixedDataTableRowLayout_main.public_fixedDataTable_footer{
+				overflow: hidden;
+				.public_fixedDataTable_scrollbarSpacer {
+					background: #fff6ea !important;
+				}
+			}
+			.public_fixedDataTable_header .public_fixedDataTableCell_main {
+				background: #eaeaea !important;
+				color: #666;
+				border-top: 1px solid #d9d9d9;
+				.fixedDataTableCellGroupLayout_cellGroupWrapper {
+					border-top: 1px solid #d9d9d9;
+				}
+			}
+			.public_fixedDataTable_main {
+				border-right: 0px;
+				.fixedDataTableLayout_header .mk-datagrid-cellContent {
+					font-weight: 700;
+					color: #333;
+				}
+				.fixedDataTableLayout_footer .mk-datagrid-cellContent {
+					font-weight: 700;
+					color: #333;
+				}
+				.public_fixedDataTableCell_cellContent {
+					color: #333;
+					font-size: 12px;
+				}
+				.mk-datagrid-sequence-cell {
+					font-size: 12px;
+				}
+				.fixedDataTableLayout_rowsContainer {
+					border: 1px solid #d9d9d9;
+					border-top: 0px;
+					.fixedDataTableRowLayout_rowWrapper {
+						&>div:last-child{
+							//border-bottom: none;
+						}
+					}
+				}
+				.mk-datagrid-addDelRow-cell {
+					&:hover{
+						border-right-width: 0px;
+						z-index: 2;
+					}
+				}
+			}
+			.public_fixedDataTable_scrollbarSpacer {
+				background: #eaeaea;
+				border: 1px solid #d9d9d9;
+				border-left:none;
+				border-right: none;
+			}
+			.fixedDataTableLayout_main {
+				margin-right: 10px;
+				border-top: 0px;
+			}
+			.public_Scrollbar_main {
+				border-right: 1px solid #d9d9d9;
+			}
+			.fixedDataTableCellGroupLayout_cellGroupWrapper:first-child .fixedDataTableCellGroupLayout_cellGroup .public_fixedDataTableCell_main{
+				border-left-width: 0px;
+				z-index: 1;
+				&:hover {
+					border-left-width: 0px;
+					z-index: 1;
+				}
+			}
+			.mk-cascader, .ant-select, .ant-input {
+				font-size: 12px;
+				text-align: left;
+				.ant-select-selection-selected-value {
+					line-height: 34px;
+				}
+			}
+			.ant-cascader-picker-label {
+				padding-right: 25px;
+			}
+		}
+		//单选框高度28px，字体居中
+		.ant-select-selection--single{
+			height: 28px;
+		}
+		.ttk-ba-app-subjects-create-supplier-content-formDetails .mk-cascader .ant-select-selection-selected-value, .ttk-ba-app-subjects-create-supplier-content-formDetails .ant-select .ant-select-selection-selected-value, .ttk-ba-app-subjects-create-supplier-content-formDetails .ant-input .ant-select-selection-selected-value{
+			line-height: 28px;
+		}
+		.ant-select-selection__rendered{
+			margin-left: 9px;
+		}
+	}
+	&-footer {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		height: 46px;
+		padding-right: 24px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+		overflow: hidden;
+		padding-top: 12px;
+		border-top: 1px solid #e8e8e8;
+		.btn {
+			height: 30px;
+			margin-left: 8px;
+			outline: none;
+		}
+	}
+	//yang
+	.ant-select-selection-selected-value{
+		line-height:24px;
+	}
+	.ant-select{
+		height:26px;
+	}
+	.ant-select-selection--single{
+		height:26px;
+	}
+}
